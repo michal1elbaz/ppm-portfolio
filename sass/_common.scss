@@ -102,11 +102,6 @@ pre {
 .content-container {
 	width: 100%;
 	position: relative;
-	/* this enables hardware acceleration on some browser */
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	backface-visibility: hidden;
 	/* the container inside content-container will give us the
 	   flexibility to control responsive sizes */
 	> .container {
