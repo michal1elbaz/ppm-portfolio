@@ -1,2 +1,31 @@
 /* PPM Portfolio specific layout */
 
+/* site header */
+.site-header {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid $color-border-gray;
+}
+
+/* portfolio display panels */
+
+.panel {
+	width: 100%;
+	height: 768px;
+	&.red {
+		background: red;
+	}
+	&.black {
+		background: black;
+	}
+	&.blue {
+		background: blue;
+	}
+}
+
+/* panel backgrounds */
