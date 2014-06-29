@@ -1,0 +1,139 @@
+/* common styles and basic content containers shared across all assets */
+
+/* enable border-box sizing, not compatible with IE8 */
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* basic content styles */
+html {
+	background: $color-html-bg;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: $color-body-bg;
+	font-family: $fonts;
+	font-size: 16px;
+	line-height: 1;
+	color: $color-text;
+}
+
+a {
+	color: $color-link;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	.no-touch &:hover {color: $color-link-hover;}
+}
+
+p {
+	margin-bottom: 1em;
+	color: $color-text;
+	line-height: 1.4;
+	a {
+		text-decoration: underline;
+	}
+}
+
+h1 {
+	font-size: 32px;
+	color: $color-text-h1;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 22px;
+	color: $color-text-h2;
+	line-height: 1.2;
+}
+
+h3 {
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+blockquote {
+	background: $color-body-bg;
+	padding: 10px;
+	font-size: 14px;
+	overflow: auto;
+	border-radius: 6px;
+	margin-bottom: 1em;
+}
+
+pre {
+	font-family: Courier, sans-serif;
+	font-size: 12px;
+}
+
+
+/* operational styles */
+.clear {clear: both;}
+
+.border-gray {border: 1px solid $color-border-gray;}
+
+.round-corner-2 {border-radius: 2px;}
+.round-corner-4 {border-radius: 4px;}
+.round-corner-6 {border-radius: 6px;}
+.round-corner-8 {border-radius: 8px;}
+.round-corner-10 {border-radius: 10px;}
+.round-corner-12 {border-radius: 12px;}
+
+.padding-2 {padding: 2px;}
+.padding-4 {padding: 4px;}
+.padding-5 {padding: 5px;}
+.padding-6 {padding: 6px;}
+.padding-8 {padding: 8px;}
+.padding-10 {padding: 10px;}
+.padding-20 {padding: 20px;}
+
+.float-left {float: left;}
+.float-right {float: right;}
+
+.container {position: relative;}
+
+/* content container */
+.content-container {
+	width: 100%;
+	position: relative;
+	/* this enables hardware acceleration on some browser */
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	/* the container inside content-container will give us the
+	   flexibility to control responsive sizes */
+	> .container {
+		width: 960px;
+		margin: 0 auto;
+		padding: 10px;
+		@media #{$ipad-portrait} {
+			width: 768px;
+		}
+		@media #{$iphone-landscape}, #{$iphone-portrait} {
+			width: 100%;
+		}
+	}
+	&.fixed-width {
+		> .container {
+			@media #{$iphone-landscape} {
+				width: 480px;
+			}
+			@media #{$iphone-portrait} {
+				width: 320px;
+			}
+		}
+	}
+	&.no-padding {
+		> .container {
+			padding: 0;
+		}
+	}
+}
+

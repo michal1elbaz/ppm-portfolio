@@ -1,0 +1,171 @@
+/*
+	modal - standard modal style for loading inline and external resources
+	imported from 'modal.scss'
+*/
+
+@import 'variables';
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 40px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+	.csstransitions & {
+		display: block;
+		-webkit-transition-property: opacity;
+		-webkit-transition-duration: 500ms;
+		-moz-transition-property: opacity;
+		-moz-transition-duration: 500ms;
+		-ms-transition-property: opacity;
+		-ms-transition-duration: 500ms;
+		-o-transition-property: opacity;
+		-o-transition-duration: 500ms;
+		transition-property: opacity;
+		transition-duration: 500ms;
+		opacity: 0;
+	}
+	@media #{$iphone-landscape} {
+		top: 30px;
+	}
+	@media #{$iphone-portrait} {
+		top: 24px;
+	}
+	&.active {
+		display: block;
+		overflow: visible;
+		opacity: 1;
+		height: auto;
+		width: 800px;
+		margin-left: -410px;
+		padding: 10px;
+		background: #e4e4e4;
+		@media #{$ipad-portrait} {
+			width: 600px;
+			margin-left: -310px;
+		}
+		@media #{$iphone-landscape} {
+			width: 400px;
+			margin-left: -210px;
+		}
+		@media #{$iphone-portrait} {
+			width: 260px;
+			padding: 6px;
+			margin-left: -136px;
+		}
+	}		
+	/* modal content formatting */
+	.content {
+		background: #fff;
+		padding: 20px 30px 40px 30px;
+		max-height: 460px;
+		min-height: 100px;
+		overflow: auto;
+		@media #{$iphone-landscape} {
+			max-height: 200px;
+			padding: 12px 12px 30px 12px;
+		}
+		@media #{$iphone-portrait} {
+			padding: 12px 12px 30px 12px;
+			max-height: 320px;
+		}
+		h1 {
+			font-size: 24px;
+		}
+		@media #{$iphone-landscape}, #{$iphone-portrait} {
+			h1 {
+				font-size: 20px;
+				line-height: 1.1;
+			}
+			p {
+				font-size: 12px;
+			}
+			ul {
+				font-size: 12px;
+			}
+			ol {
+				font-size: 12px;
+			}
+		}
+	}
+	/* overlay for overflowing text */
+	.overlay {
+		width: 780px;
+		height: 60px;
+		position: absolute;
+		bottom: 0px;
+		background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 73%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(73%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+		pointer-events: none;
+		@media #{$ipad-portrait} {
+			width: 580px;
+		}
+		@media #{$iphone-landscape} {
+			width: 380px;
+			height: 30px;
+		}
+		@media #{$iphone-portrait} {
+			width: 240px;
+			height: 40px;
+		}
+	}
+	.close {
+		display: block;
+		position: absolute;
+		z-index: 10;
+		width: 30px;
+		height: 30px;
+		top: -22px;
+		right: -22px;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		background: $brand-white;
+		border-radius: 40px;
+		border: 2px solid $color-link;
+		.fa {
+			font-size: 23px;
+			margin: 2px 0 0 3px;
+		}
+		.no-touch &:hover {
+			color: $color-link-hover;
+			border-color: $color-link-hover;
+		}
+	}
+}
+
+.modal-overlay {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,0.8);
+	z-index: 900;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 400ms;
+	-moz-transition-property: opacity;
+	-moz-transition-duration: 400ms;
+	-ms-transition-property: opacity;
+	-ms-transition-duration: 400ms;
+	-o-transition-property: opacity;
+	-o-transition-duration: 400ms;
+	transition-property: opacity;
+	transition-duration: 400ms;
+	&.active {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	@media #{$iphone-landscape}, #{$iphone-portrait} {
+		background: rgba(0,0,0,0.5);
+	}
+}
