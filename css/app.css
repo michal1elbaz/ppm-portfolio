@@ -1393,6 +1393,13 @@ pre {
 .clear {
   clear: both; }
 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
 .border-gray {
   border: 1px solid #cccccc; }
 
@@ -2078,7 +2085,8 @@ input[type=checkbox]:checked + label .icon {
   height: 40px;
   border-bottom: 1px solid #cccccc;
   transition: all 300ms;
-  /* if hardware 3d functions are available */ }
+  /* if hardware 3d functions are available */
+  /* container for positioning */ }
   .site-header.active {
     display: block; }
   .csstransforms3d .site-header {
@@ -2087,6 +2095,17 @@ input[type=checkbox]:checked + label .icon {
   .csstransforms3d .site-header.active {
     -webkit-transform: translate3d(0, 41px, 0);
     transform: translate3d(0, 41px, 0); }
+  .site-header .container {
+    width: 100%; }
+
+/* site nav */
+.site-nav {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+  .site-nav li {
+    float: left;
+    padding: 0 4px 0 4px; }
 
 /* portfolio display panels */
 .panel {

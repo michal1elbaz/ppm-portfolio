@@ -23,6 +23,21 @@
 		-webkit-transform: translate3d(0,41px,0);
 		transform: translate3d(0,41px,0);
 	}
+	/* container for positioning */
+	.container {
+		width: 100%;
+	}
+}
+
+/* site nav */
+.site-nav {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	li {
+		float: left;
+		padding: 0 4px 0 4px;
+	}
 }
 
 /* portfolio display panels */

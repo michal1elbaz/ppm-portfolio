@@ -75,6 +75,13 @@ pre {
 
 /* operational styles */
 .clear {clear: both;}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
 
 .border-gray {border: 1px solid $color-border-gray;}
 
