@@ -2,7 +2,7 @@
 
 /* site header */
 .site-header {
-	display: block;
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -10,6 +10,19 @@
 	width: 100%;
 	height: 40px;
 	border-bottom: 1px solid $color-border-gray;
+	transition: all 300ms;
+	&.active {
+		display: block;
+	}
+	/* if hardware 3d functions are available */
+	.csstransforms3d & {
+		display: block;
+		top: -41px;
+	}
+	.csstransforms3d &.active {
+		-webkit-transform: translate3d(0,41px,0);
+		transform: translate3d(0,41px,0);
+	}
 }
 
 /* portfolio display panels */
