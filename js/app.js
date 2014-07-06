@@ -96,6 +96,17 @@ $(function(){
 
 		init = function() {
 			this.checkWindowSize();
+		},
+		
+		scroll = function() {
+			// attach correct class to the header to hide & display based on scroll position
+			var scrolltop = $(window).scrollTop();
+
+			if(scrolltop >= 500) {
+				$('.site-header').addClass('active');
+			} else {
+				$('.site-header').removeClass('active');
+			}
 		};
 
 		return {
@@ -105,6 +116,7 @@ $(function(){
 			activateTooltip: activateTooltip,
 			clearTooltip: clearTooltip,
 			resize: resize,
+			scroll: scroll,
 			init: init
 		};
 
@@ -116,6 +128,11 @@ $(function(){
 	// functions to run on window resize
 	$(window).on('resize',function(){
 		MyApp.resize();
+	});
+
+	// window on scroll
+	$(window).on('scroll', function(){
+		MyApp.scroll();
 	});
 
 	// on.click listeners
