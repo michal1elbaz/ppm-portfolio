@@ -2084,7 +2084,9 @@ input[type=checkbox]:checked + label .icon {
   width: 100%;
   height: 40px;
   border-bottom: 1px solid #cccccc;
+  background: rgba(255, 255, 255, 0.8);
   transition: all 300ms;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.4);
   /* if hardware 3d functions are available */
   /* container for positioning */ }
   .site-header.active {
@@ -2097,20 +2099,40 @@ input[type=checkbox]:checked + label .icon {
     transform: translate3d(0, 41px, 0); }
   .site-header .container {
     width: 100%; }
+  .site-header .logo.small {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
 
 /* site nav */
 .site-nav {
   position: absolute;
   right: 10px;
-  top: 10px; }
+  top: 12px; }
   .site-nav li {
     float: left;
     padding: 0 4px 0 4px; }
 
+/* logo */
+.logo {
+  display: block;
+  width: 383px;
+  height: 198px;
+  background: transparent url(../images/logo-ppm-large.png) no-repeat 0 0; }
+  .logo.small {
+    width: 246px;
+    height: 23px;
+    background: transparent url(../images/logo-ppm-small.png) no-repeat 0 0; }
+
 /* portfolio display panels */
 .panel {
   width: 100%;
-  height: 768px; }
+  height: 680px;
+  position: relative;
+  /* test styles only */ }
+  @media only screen and (min-width: 1280px) {
+    .panel {
+      height: 800px; } }
   .panel.red {
     background: red; }
   .panel.black {
@@ -2119,3 +2141,13 @@ input[type=checkbox]:checked + label .icon {
     background: blue; }
 
 /* panel backgrounds */
+.panel.shopsy {
+  background-image: url(../images/panel-shopsy.jpg);
+  background-size: cover;
+  background-position: center top; }
+
+/* panel specific layout */
+.panel.home .logo {
+  position: absolute;
+  left: 56px;
+  top: 36px; }
