@@ -2082,7 +2082,7 @@ input[type=checkbox]:checked + label .icon {
   left: 0;
   z-index: 1000;
   width: 100%;
-  height: 40px;
+  height: 44px;
   border-bottom: 1px solid #cccccc;
   background: rgba(255, 255, 255, 0.8);
   transition: all 300ms;
@@ -2093,7 +2093,7 @@ input[type=checkbox]:checked + label .icon {
     display: block; }
   .csstransforms3d .site-header {
     display: block;
-    top: -41px; }
+    top: -45px; }
   .csstransforms3d .site-header.active {
     -webkit-transform: translate3d(0, 41px, 0);
     transform: translate3d(0, 41px, 0); }
@@ -2101,14 +2101,14 @@ input[type=checkbox]:checked + label .icon {
     width: 100%; }
   .site-header .logo.small {
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 10px; }
 
 /* site nav */
 .site-nav {
   position: absolute;
   right: 10px;
-  top: 12px; }
+  top: 14px; }
   .site-nav li {
     float: left;
     padding: 0 4px 0 4px; }
