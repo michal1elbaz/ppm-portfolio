@@ -60,6 +60,18 @@
 	}
 }
 
+/* profile portrait */
+
+.my-portrait {
+	display: block;
+	width: 186px;
+	height: 186px;
+	background: transparent url(../images/profile-picture-me.jpg) no-repeat 0 0;
+	border-radius: 98px;
+	border: 6px solid $color-border-gray;
+}
+
+
 /* portfolio display panels */
 
 .panel {
@@ -98,6 +110,46 @@
 			position: absolute;
 			left: 56px;
 			top: 36px;
+			z-index: 5;
+		}
+		.my-portrait {
+			position: absolute;
+			left: 120px;
+			top: 280px;
+			z-index: 10;
+			@media #{$large-display} {
+				top: 340px;
+			}
+		}
+		.line {
+			display: block;
+			width: 6px;
+			height: 360px;
+			background: $color-border-gray;
+			position: absolute;
+			left: 212px;
+			top: 254px;
+			z-index: 1;
+			@media #{$large-display} {
+				height: 490px;
+			}
+		}
+		.fa-angle-down {
+			position: absolute;
+			left: 182px;
+			top: 580px;
+			z-index: 2;
+			font-size: 100px;
+			color: $color-border-gray;
+			@media #{$large-display} {
+				top: 700px;
+			}
+		}
+		.content {
+			width: 500px;
+			position: absolute;
+			top: 200px;
+			left: 400px;
 		}
 	}
 }

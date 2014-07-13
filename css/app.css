@@ -1347,7 +1347,7 @@ body {
   font-family: "Helvetica", Arial, sans-serif;
   font-size: 16px;
   line-height: 1;
-  color: #424242; }
+  color: #4d4d4d; }
 
 a {
   color: #3975c8;
@@ -1359,7 +1359,7 @@ a {
 
 p {
   margin-bottom: 1em;
-  color: #424242;
+  color: #4d4d4d;
   line-height: 1.4; }
   p a {
     text-decoration: underline; }
@@ -2124,6 +2124,15 @@ input[type=checkbox]:checked + label .icon {
     height: 23px;
     background: transparent url(../images/logo-ppm-small.png) no-repeat 0 0; }
 
+/* profile portrait */
+.my-portrait {
+  display: block;
+  width: 186px;
+  height: 186px;
+  background: transparent url(../images/profile-picture-me.jpg) no-repeat 0 0;
+  border-radius: 98px;
+  border: 6px solid #cccccc; }
+
 /* portfolio display panels */
 .panel {
   width: 100%;
@@ -2150,4 +2159,40 @@ input[type=checkbox]:checked + label .icon {
 .panel.home .logo {
   position: absolute;
   left: 56px;
-  top: 36px; }
+  top: 36px;
+  z-index: 5; }
+.panel.home .my-portrait {
+  position: absolute;
+  left: 120px;
+  top: 280px;
+  z-index: 10; }
+  @media only screen and (min-width: 1280px) {
+    .panel.home .my-portrait {
+      top: 340px; } }
+.panel.home .line {
+  display: block;
+  width: 6px;
+  height: 360px;
+  background: #cccccc;
+  position: absolute;
+  left: 212px;
+  top: 254px;
+  z-index: 1; }
+  @media only screen and (min-width: 1280px) {
+    .panel.home .line {
+      height: 490px; } }
+.panel.home .fa-angle-down {
+  position: absolute;
+  left: 182px;
+  top: 580px;
+  z-index: 2;
+  font-size: 100px;
+  color: #cccccc; }
+  @media only screen and (min-width: 1280px) {
+    .panel.home .fa-angle-down {
+      top: 700px; } }
+.panel.home .content {
+  width: 500px;
+  position: absolute;
+  top: 200px;
+  left: 400px; }
