@@ -96,10 +96,19 @@
 /* panel backgrounds */
 
 .panel {
+	background-size: cover;
+	background-position: center top;
 	&.shopsy {
 		background-image: url(../images/panel-shopsy.jpg);
-		background-size: cover;
-		background-position: center top;
+	}
+	&.legalzoom {
+		background-image: url(../images/panel-legalzoom.jpg);
+	}
+	&.fixya {
+		background-image: url(../images/panel-fixya.jpg);
+	}
+	&.mokafive {
+		background-image: url(../images/panel-mokafive.jpg);
 	}
 }
 

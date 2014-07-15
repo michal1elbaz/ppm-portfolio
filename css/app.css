@@ -2150,10 +2150,17 @@ input[type=checkbox]:checked + label .icon {
     background: blue; }
 
 /* panel backgrounds */
-.panel.shopsy {
-  background-image: url(../images/panel-shopsy.jpg);
+.panel {
   background-size: cover;
   background-position: center top; }
+  .panel.shopsy {
+    background-image: url(../images/panel-shopsy.jpg); }
+  .panel.legalzoom {
+    background-image: url(../images/panel-legalzoom.jpg); }
+  .panel.fixya {
+    background-image: url(../images/panel-fixya.jpg); }
+  .panel.mokafive {
+    background-image: url(../images/panel-mokafive.jpg); }
 
 /* panel specific layout */
 .panel.home .logo {

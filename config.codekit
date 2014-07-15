@@ -42,6 +42,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/panel-fixya.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37788,
+		"inputAbbreviatedPath": "\/images\/panel-fixya.jpg",
+		"outputAbbreviatedPath": "\/images\/panel-fixya.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/panel-legalzoom.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72262,
+		"inputAbbreviatedPath": "\/images\/panel-legalzoom.jpg",
+		"outputAbbreviatedPath": "\/images\/panel-legalzoom.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/panel-shopsy.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -49,6 +71,17 @@
 		"initialSize": 45651,
 		"inputAbbreviatedPath": "\/images\/panel-shopsy.jpg",
 		"outputAbbreviatedPath": "\/images\/panel-shopsy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/portfolio-panels-r5v1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80364,
+		"inputAbbreviatedPath": "\/images\/portfolio-panels-r5v1.jpg",
+		"outputAbbreviatedPath": "\/images\/portfolio-panels-r5v1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
