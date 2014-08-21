@@ -2161,6 +2161,8 @@ input[type=checkbox]:checked + label .icon {
     background-image: url(../images/panel-fixya.jpg); }
   .panel.mokafive {
     background-image: url(../images/panel-mokafive.jpg); }
+  .panel.reflect {
+    background-image: url(../images/panel-reflect.jpg); }
 
 /* panel specific layout */
 .panel.home .logo {
