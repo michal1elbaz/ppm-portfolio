@@ -1350,11 +1350,11 @@ body {
   color: #4d4d4d; }
 
 a {
-  color: #3975c8;
+  color: #752869;
   cursor: pointer;
   text-decoration: none;
   outline: none; }
-  .no-touch a:hover {
+  .no-touch a:hover, a:active {
     color: #8b0041; }
 
 p {
@@ -1558,7 +1558,7 @@ input[type=radio], input[type=checkbox] {
     margin: 0 8px 8px 0;
     width: 300px; }
     .no-touch input[type=radio] + label:hover, .no-touch input[type=checkbox] + label:hover {
-      box-shadow: 0 0 2px 2px #3975c8; }
+      box-shadow: 0 0 2px 2px #752869; }
     input[type=radio] + label .icon, input[type=radio] + label .text, input[type=checkbox] + label .icon, input[type=checkbox] + label .text {
       display: block;
       vertical-align: middle; }
@@ -1572,9 +1572,9 @@ input[type=radio], input[type=checkbox] {
       left: 8px;
       margin-top: -10px; }
   input[type=radio]:checked + label, input[type=checkbox]:checked + label {
-    box-shadow: 0 0 2px 2px #3975c8; }
+    box-shadow: 0 0 2px 2px #752869; }
     input[type=radio]:checked + label .text, input[type=checkbox]:checked + label .text {
-      color: #3975c8; }
+      color: #752869; }
   .columns input[type=radio] + label, .columns input[type=checkbox] + label {
     width: 196px; }
 
@@ -1873,7 +1873,7 @@ input[type=checkbox]:checked + label .icon {
     -webkit-tap-highlight-color: transparent;
     background: white;
     border-radius: 40px;
-    border: 2px solid #3975c8; }
+    border: 2px solid #752869; }
     .modal .close .fa {
       font-size: 23px;
       margin: 2px 0 0 3px; }
@@ -2022,7 +2022,7 @@ input[type=checkbox]:checked + label .icon {
     -webkit-tap-highlight-color: transparent;
     background: white;
     border-radius: 40px;
-    border: 2px solid #3975c8; }
+    border: 2px solid #752869; }
     .tooltip .close .fa {
       font-size: 24px;
       margin: 1px 0 0 2px; }
@@ -2163,6 +2163,12 @@ input[type=checkbox]:checked + label .icon {
     background-image: url(../images/panel-mokafive.jpg); }
   .panel.reflect {
     background-image: url(../images/panel-reflect.jpg); }
+  .panel.rushcard {
+    background-image: url(../images/panel-rushcard.jpg); }
+  .panel.zenbe {
+    background-image: url(../images/panel-zenbe.jpg); }
+  .panel.presto {
+    background-image: url(../images/panel-presto.jpg); }
 
 /* panel specific layout */
 .panel.home .logo {

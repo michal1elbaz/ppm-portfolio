@@ -75,6 +75,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/panel-presto.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30988,
+		"inputAbbreviatedPath": "\/images\/panel-presto.jpg",
+		"outputAbbreviatedPath": "\/images\/panel-presto.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/panel-reflect.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26023,
+		"inputAbbreviatedPath": "\/images\/panel-reflect.jpg",
+		"outputAbbreviatedPath": "\/images\/panel-reflect.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/panel-rushcard.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27480,
+		"inputAbbreviatedPath": "\/images\/panel-rushcard.jpg",
+		"outputAbbreviatedPath": "\/images\/panel-rushcard.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/panel-shopsy.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -82,6 +115,17 @@
 		"initialSize": 45651,
 		"inputAbbreviatedPath": "\/images\/panel-shopsy.jpg",
 		"outputAbbreviatedPath": "\/images\/panel-shopsy.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/panel-zenbe.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37920,
+		"inputAbbreviatedPath": "\/images\/panel-zenbe.jpg",
+		"outputAbbreviatedPath": "\/images\/panel-zenbe.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
