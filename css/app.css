@@ -5,6 +5,7 @@
  */
 /* FONT PATH
  * -------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic);
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
@@ -1344,8 +1345,9 @@ html {
 
 body {
   background: white;
-  font-family: "Helvetica", Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Lato", "Helvetica", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   line-height: 1;
   color: #4d4d4d; }
 
@@ -1511,7 +1513,7 @@ label {
 
 /* text inputs */
 input[type=text], input[type=password], input[type=email], textarea {
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: "Lato", "Helvetica", Arial, sans-serif;
   font-size: 14px;
   border: 1px solid #aeaeae;
   border-radius: 4px;
@@ -1935,7 +1937,7 @@ input[type=checkbox]:checked + label .icon {
   width: 0;
   overflow: hidden;
   font-size: 12px;
-  font-family: "Helvetica", Arial, sans-serif;
+  font-family: "Lato", "Helvetica", Arial, sans-serif;
   line-height: 1.3;
   z-index: 1000;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3); }
@@ -2101,7 +2103,7 @@ input[type=checkbox]:checked + label .icon {
     width: 100%; }
   .site-header .logo.small {
     position: absolute;
-    top: 12px;
+    top: 13px;
     left: 10px; }
 
 /* site nav */
@@ -2211,3 +2213,29 @@ input[type=checkbox]:checked + label .icon {
   position: absolute;
   top: 200px;
   left: 400px; }
+
+/* skills icon */
+.skills-icon {
+  display: block;
+  overflow: none;
+  width: 60px;
+  height: 60px;
+  background: transparent url(../images/sprite-skills-icon.png) no-repeat 0 0; }
+  .skills-icon.html {
+    background-position: 0 0; }
+  .skills-icon.js {
+    background-position: 0 -100px; }
+  .skills-icon.css {
+    background-position: 0 -200px; }
+  .skills-icon.ui {
+    background-position: 0 -300px; }
+  .skills-icon.print {
+    background-position: 0 -400px; }
+  .skills-icon.visual {
+    background-position: 0 -500px; }
+  .skills-icon.jquery {
+    background-position: 0 -600px; }
+  .skills-icon.mobile {
+    background-position: 0 -700px; }
+  .skills-icon.mobile-web {
+    background-position: 0 -800px; }

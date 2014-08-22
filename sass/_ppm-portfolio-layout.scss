@@ -31,7 +31,7 @@
 	}
 	.logo.small {
 		position: absolute;
-		top: 12px;
+		top: 13px;
 		left: 10px;
 	}
 }
@@ -174,3 +174,42 @@
 		}
 	}
 }
+
+/* skills icon */
+
+.skills-icon {
+	display: block;
+	overflow: none;
+	width: 60px;
+	height: 60px;
+	background: transparent url(../images/sprite-skills-icon.png) no-repeat 0 0;
+	&.html {
+		background-position: 0 0;
+	}
+	&.js {
+		background-position: 0 -100px;
+	}
+	&.css {
+		background-position: 0 -200px;
+	}
+	&.ui {
+		background-position: 0 -300px;
+	}
+	&.print {
+		background-position: 0 -400px;
+	}
+	&.visual {
+		background-position: 0 -500px;
+	}
+	&.jquery {
+		background-position: 0 -600px;
+	}
+	&.mobile {
+		background-position: 0 -700px;
+	}
+	&.mobile-web {
+		background-position: 0 -800px;
+	}
+}
+
+
