@@ -2180,7 +2180,7 @@ input[type=checkbox]:checked + label .icon {
   .panel.presto {
     background-image: url(../images/panel-presto.jpg); }
 
-/* panel specific layout */
+/* panel specific layout - home */
 .panel.home .logo {
   position: absolute;
   left: 56px;
@@ -2217,14 +2217,30 @@ input[type=checkbox]:checked + label .icon {
     .panel.home .fa-angle-down {
       top: 700px; } }
 .panel.home .content {
-  width: 500px;
+  width: 700px;
   position: absolute;
   top: 200px;
   left: 400px; }
+  .panel.home .content .main {
+    width: 460px;
+    float: left;
+    margin: 0 20px 0 0; }
+  .panel.home .content .sidebar {
+    float: left; }
+    .panel.home .content .sidebar .skills {
+      list-style: none;
+      margin-top: 8px; }
+      .panel.home .content .sidebar .skills li {
+        margin: 0 0 4px 0; }
+        .panel.home .content .sidebar .skills li .skills-icon {
+          float: left; }
+        .panel.home .content .sidebar .skills li span {
+          float: left;
+          margin: 12px 0 0 8px; }
 
 /* skills icon */
 .skills-icon {
-  display: block;
+  display: inline-block;
   overflow: none;
   width: 60px;
   height: 60px;
@@ -2273,3 +2289,18 @@ input[type=checkbox]:checked + label .icon {
       background-position: 0 -600px; }
     .skills-icon.small.rd {
       background-position: 0 -675px; }
+
+/* social links */
+.social-links ul {
+  margin-bottom: 10px; }
+.social-links li {
+  float: left;
+  margin: 0 8px 0 0; }
+  .social-links li .fa {
+    font-size: 38px; }
+
+.fa-linkedin-square {
+  color: #1b86bc; }
+
+.fa-twitter-square {
+  color: #55acee; }

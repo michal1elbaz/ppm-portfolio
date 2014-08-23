@@ -124,7 +124,7 @@
 	}
 }
 
-/* panel specific layout */
+/* panel specific layout - home */
 .panel {
 	&.home {
 		.logo {
@@ -167,10 +167,32 @@
 			}
 		}
 		.content {
-			width: 500px;
+			width: 700px;
 			position: absolute;
 			top: 200px;
 			left: 400px;
+			.main {
+				width: 460px;
+				float: left;
+				margin: 0 20px 0 0;
+			}
+			.sidebar {
+				float: left;
+				.skills {
+					list-style: none;
+					margin-top: 8px;
+					li {
+						margin: 0 0 4px 0;
+						.skills-icon {
+							float: left;
+						}
+						span {
+							float: left;
+							margin: 12px 0 0 8px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -178,7 +200,7 @@
 /* skills icon */
 
 .skills-icon {
-	display: block;
+	display: inline-block;
 	overflow: none;
 	width: 60px;
 	height: 60px;
@@ -251,3 +273,24 @@
 }
 
 
+/* social links */
+.social-links {
+	ul {
+		margin-bottom: 10px;
+	}
+	li {
+		float: left;
+		margin: 0 8px 0 0;
+		.fa {
+			font-size: 38px;
+		}
+	}
+}
+
+.fa-linkedin-square {
+	color: #1b86bc;
+}
+
+.fa-twitter-square {
+	color: #55acee;
+}
