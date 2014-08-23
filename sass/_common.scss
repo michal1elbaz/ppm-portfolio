@@ -58,6 +58,10 @@ h2 {
 	color: $color-text-h2;
 	line-height: 1.2;
 	font-weight: 300;
+	margin-bottom: 0.75em;
+	&.no-margin {
+		margin-bottom: 0;
+	}
 }
 
 h3 {

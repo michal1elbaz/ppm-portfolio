@@ -1349,7 +1349,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1;
-  color: #585858; }
+  color: #393939; }
 
 a {
   color: #752869;
@@ -1361,14 +1361,14 @@ a {
 
 p {
   margin-bottom: 1em;
-  color: #585858;
+  color: #393939;
   line-height: 1.4; }
   p a {
     text-decoration: underline; }
 
 h1 {
   font-size: 40px;
-  color: #585858;
+  color: #393939;
   line-height: 1.2;
   font-weight: 300;
   margin-bottom: 0.75em; }
@@ -1377,9 +1377,12 @@ h1 {
 
 h2 {
   font-size: 22px;
-  color: #585858;
+  color: #393939;
   line-height: 1.2;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 0.75em; }
+  h2.no-margin {
+    margin-bottom: 0; }
 
 b, strong {
   font-weight: bold; }

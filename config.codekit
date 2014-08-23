@@ -152,6 +152,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/sprite-skills-icon-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8881,
+		"inputAbbreviatedPath": "\/images\/sprite-skills-icon-small.png",
+		"outputAbbreviatedPath": "\/images\/sprite-skills-icon-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/sprite-skills-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
