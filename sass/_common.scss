@@ -43,15 +43,21 @@ p {
 }
 
 h1 {
-	font-size: 32px;
+	font-size: 40px;
 	color: $color-text-h1;
 	line-height: 1.2;
+	font-weight: 300;
+	margin-bottom: 0.75em;
+	&.no-margin {
+		margin-bottom: 0;
+	}
 }
 
 h2 {
 	font-size: 22px;
 	color: $color-text-h2;
 	line-height: 1.2;
+	font-weight: 300;
 }
 
 h3 {

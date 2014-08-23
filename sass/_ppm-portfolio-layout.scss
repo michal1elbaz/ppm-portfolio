@@ -210,6 +210,44 @@
 	&.mobile-web {
 		background-position: 0 -800px;
 	}
+	&.rd {
+		background-position: 0 -900px;
+	}
+	&.small {
+		width: 45px;
+		height: 45px;
+		background: transparent url(../images/sprite-skills-icon-small.png) no-repeat 0 0;
+		&.html {
+			background-position: 0 0;
+		}
+		&.js {
+			background-position: 0 -75px;
+		}
+		&.css {
+			background-position: 0 -150px;
+		}
+		&.ui {
+			background-position: 0 -225px;
+		}
+		&.print {
+			background-position: 0 -300px;
+		}
+		&.visual {
+			background-position: 0 -375px;
+		}
+		&.jquery {
+			background-position: 0 -450px;
+		}
+		&.mobile {
+			background-position: 0 -525px;
+		}
+		&.mobile-web {
+			background-position: 0 -600px;
+		}
+		&.rd {
+			background-position: 0 -675px;
+		}
+	}
 }
 
 

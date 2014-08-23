@@ -1349,7 +1349,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1;
-  color: #4d4d4d; }
+  color: #585858; }
 
 a {
   color: #752869;
@@ -1361,20 +1361,25 @@ a {
 
 p {
   margin-bottom: 1em;
-  color: #4d4d4d;
+  color: #585858;
   line-height: 1.4; }
   p a {
     text-decoration: underline; }
 
 h1 {
-  font-size: 32px;
-  color: #2e2e2e;
-  line-height: 1.2; }
+  font-size: 40px;
+  color: #585858;
+  line-height: 1.2;
+  font-weight: 300;
+  margin-bottom: 0.75em; }
+  h1.no-margin {
+    margin-bottom: 0; }
 
 h2 {
   font-size: 22px;
-  color: #2e2e2e;
-  line-height: 1.2; }
+  color: #585858;
+  line-height: 1.2;
+  font-weight: 300; }
 
 b, strong {
   font-weight: bold; }
@@ -2239,3 +2244,29 @@ input[type=checkbox]:checked + label .icon {
     background-position: 0 -700px; }
   .skills-icon.mobile-web {
     background-position: 0 -800px; }
+  .skills-icon.rd {
+    background-position: 0 -900px; }
+  .skills-icon.small {
+    width: 45px;
+    height: 45px;
+    background: transparent url(../images/sprite-skills-icon-small.png) no-repeat 0 0; }
+    .skills-icon.small.html {
+      background-position: 0 0; }
+    .skills-icon.small.js {
+      background-position: 0 -75px; }
+    .skills-icon.small.css {
+      background-position: 0 -150px; }
+    .skills-icon.small.ui {
+      background-position: 0 -225px; }
+    .skills-icon.small.print {
+      background-position: 0 -300px; }
+    .skills-icon.small.visual {
+      background-position: 0 -375px; }
+    .skills-icon.small.jquery {
+      background-position: 0 -450px; }
+    .skills-icon.small.mobile {
+      background-position: 0 -525px; }
+    .skills-icon.small.mobile-web {
+      background-position: 0 -600px; }
+    .skills-icon.small.rd {
+      background-position: 0 -675px; }
