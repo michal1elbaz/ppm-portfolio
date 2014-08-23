@@ -2185,6 +2185,19 @@ input[type=checkbox]:checked + label .icon {
   width: 960px;
   margin: 0 auto;
   padding: 10px; }
+  .panel .content .desc {
+    padding-top: 20px; }
+    .panel .content .desc .col {
+      float: left;
+      width: 50%;
+      padding: 0 10px 0 0; }
+      .panel .content .desc .col.detail {
+        font-size: 20px;
+        padding-top: 10px; }
+    .panel .content .desc h1 {
+      margin-bottom: 0.25em; }
+    .panel .content .desc .skills-icon {
+      margin-left: 2px; }
 
 /* panel specific layout - home */
 .panel.home {
@@ -2258,6 +2271,10 @@ input[type=checkbox]:checked + label .icon {
           .panel.home .content .sidebar .skills li span {
             float: left;
             margin: 12px 0 0 8px; }
+
+.panel.legalzoom h1, .panel.legalzoom h2, .panel.legalzoom p {
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.8); }
 
 /* skills icon */
 .skills-icon {
