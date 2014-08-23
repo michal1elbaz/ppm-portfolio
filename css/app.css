@@ -2149,7 +2149,7 @@ input[type=checkbox]:checked + label .icon {
   height: 680px;
   position: relative;
   /* test styles only */ }
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 1279px) {
     .panel {
       height: 800px; } }
   .panel.red {
@@ -2180,63 +2180,84 @@ input[type=checkbox]:checked + label .icon {
   .panel.presto {
     background-image: url(../images/panel-presto.jpg); }
 
+/* panel generic layout */
+.panel .content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px; }
+
 /* panel specific layout - home */
-.panel.home .logo {
-  position: absolute;
-  left: 56px;
-  top: 36px;
-  z-index: 5; }
-.panel.home .my-portrait {
-  position: absolute;
-  left: 120px;
-  top: 280px;
-  z-index: 10; }
-  @media only screen and (min-width: 1280px) {
-    .panel.home .my-portrait {
-      top: 340px; } }
-.panel.home .line {
-  display: block;
-  width: 6px;
-  height: 360px;
-  background: #cccccc;
-  position: absolute;
-  left: 212px;
-  top: 254px;
-  z-index: 1; }
-  @media only screen and (min-width: 1280px) {
-    .panel.home .line {
-      height: 490px; } }
-.panel.home .fa-angle-down {
-  position: absolute;
-  left: 182px;
-  top: 580px;
-  z-index: 2;
-  font-size: 100px;
-  color: #cccccc; }
-  @media only screen and (min-width: 1280px) {
-    .panel.home .fa-angle-down {
-      top: 700px; } }
-.panel.home .content {
-  width: 700px;
-  position: absolute;
-  top: 200px;
-  left: 400px; }
-  .panel.home .content .main {
-    width: 460px;
-    float: left;
-    margin: 0 20px 0 0; }
-  .panel.home .content .sidebar {
-    float: left; }
-    .panel.home .content .sidebar .skills {
-      list-style: none;
-      margin-top: 8px; }
-      .panel.home .content .sidebar .skills li {
-        margin: 0 0 4px 0; }
-        .panel.home .content .sidebar .skills li .skills-icon {
-          float: left; }
-        .panel.home .content .sidebar .skills li span {
-          float: left;
-          margin: 12px 0 0 8px; }
+.panel.home {
+  height: 700px; }
+  .panel.home .logo {
+    position: absolute;
+    left: 56px;
+    top: 36px;
+    z-index: 5; }
+  .panel.home .my-portrait {
+    position: absolute;
+    left: 120px;
+    top: 280px;
+    z-index: 10; }
+    @media only screen and (min-width: 1279px) {
+      .panel.home .my-portrait {
+        top: 340px; } }
+  .panel.home .line {
+    display: block;
+    width: 6px;
+    height: 370px;
+    background: #cccccc;
+    position: absolute;
+    left: 212px;
+    top: 254px;
+    z-index: 1; }
+    @media only screen and (min-width: 1279px) {
+      .panel.home .line {
+        height: 490px; } }
+  .panel.home .fa-angle-down {
+    position: absolute;
+    left: 182px;
+    top: 600px;
+    z-index: 2;
+    font-size: 100px;
+    color: #cccccc; }
+    @media only screen and (min-width: 1279px) {
+      .panel.home .fa-angle-down {
+        top: 700px; } }
+  .panel.home .content {
+    width: 580px;
+    position: relative;
+    top: 200px;
+    left: 380px;
+    margin: 0;
+    padding: 0; }
+    @media only screen and (min-width: 1279px) {
+      .panel.home .content {
+        top: 240px;
+        left: 420px;
+        width: 800px; } }
+    .panel.home .content .main {
+      width: 360px;
+      float: left;
+      margin: 0 20px 0 0; }
+      @media only screen and (min-width: 1279px) {
+        .panel.home .content .main {
+          width: 530px;
+          margin-right: 40px;
+          margin-top: 30px; } }
+    .panel.home .content .sidebar {
+      float: left;
+      width: 200px; }
+      .panel.home .content .sidebar .skills {
+        list-style: none;
+        margin-top: 8px; }
+        .panel.home .content .sidebar .skills li {
+          margin: 0 0 4px 0; }
+          .panel.home .content .sidebar .skills li .skills-icon {
+            float: left; }
+          .panel.home .content .sidebar .skills li span {
+            float: left;
+            margin: 12px 0 0 8px; }
 
 /* skills icon */
 .skills-icon {
