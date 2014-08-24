@@ -1350,6 +1350,8 @@ body {
   font-size: 18px;
   line-height: 1;
   color: #393939; }
+  body.noscroll {
+    overflow: hidden; }
 
 a {
   color: #752869;
@@ -1942,6 +1944,28 @@ input[type=checkbox]:checked + label .icon {
       opacity: 1;
       height: 100%;
       width: 100%; }
+  .modal-fullscreen .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    display: block;
+    padding: 8px 10px 8px 10px;
+    background: black;
+    border-radius: 6px;
+    transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms; }
+    .modal-fullscreen .close .fa {
+      font-size: 30px;
+      color: #fff;
+      transition: 300ms;
+      -moz-transition: 300ms;
+      -webkit-transition: 300ms; }
+    .no-touch .modal-fullscreen .close:hover {
+      background: #fff; }
+      .no-touch .modal-fullscreen .close:hover .fa {
+        color: #000; }
 
 /*
 	tooltips - standard "help content" tooltips

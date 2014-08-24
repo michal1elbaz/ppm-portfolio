@@ -21,6 +21,9 @@ body {
 	font-size: 18px;
 	line-height: 1;
 	color: $color-text;
+	&.noscroll {
+		overflow: hidden;
+	}
 }
 
 a {

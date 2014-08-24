@@ -90,6 +90,7 @@ $(function(){
 		},
 
 		modalFullScreen = function() {
+			$('body').addClass('noscroll');
 			$('.modal-fullscreen').addClass('active');
 			$('.modal-fullscreen').on('click','.close', function(){
 				modalFullScreenClear();
@@ -98,6 +99,7 @@ $(function(){
 		},
 
 		modalFullScreenClear = function() {
+			$('body').removeClass('noscroll');
 			$('.modal-fullscreen').removeClass('active');
 		},
 
