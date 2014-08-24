@@ -97,7 +97,7 @@ $(function(){
 			if (thisID !== undefined) {
 				// split ID and use it as an URL
 				var res = thisID.split("_");
-				var loadURL = "images/" + res[1] + "/" + res[2] + "_" + res[3] + ".html";
+				var loadURL = res[0] + "/" + res[1] + "/" + res[2] + "_" + res[3] + ".html";
 				
 				// load URL into the modal content
 				$('.modal-fullscreen .content').load(loadURL);
