@@ -89,13 +89,26 @@ $(function(){
 
 		},
 
-		modalFullScreen = function() {
+		modalFullScreen = function(thisID) {
 			$('body').addClass('noscroll');
 			$('.modal-fullscreen').addClass('active');
+			
+			// check to see if there is an ID for the link
+			if (thisID !== undefined) {
+				// split ID and use it as an URL
+				var res = thisID.split("_");
+				var loadURL = "images/" + res[1] + "/" + res[2] + "_" + res[3] + ".html";
+				
+				// load URL into the modal content
+				$('.modal-fullscreen .content').load(loadURL);
+			}
+
+			// close modal event
 			$('.modal-fullscreen').on('click','.close', function(){
 				modalFullScreenClear();
 				$('.modal-fullscreen').off('click','.close');
 			});
+
 		},
 
 		modalFullScreenClear = function() {
@@ -159,7 +172,8 @@ $(function(){
 	});
 
 	$(document).on('click', '.open-modal-fullscreen', function(){
-		MyApp.modalFullScreen();
+		var thisID = $(this).attr('id');
+		MyApp.modalFullScreen(thisID);
 	});
 
 	// bind esc key to close modal 
