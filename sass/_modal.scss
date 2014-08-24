@@ -3,8 +3,6 @@
 	imported from 'modal.scss'
 */
 
-@import 'variables';
-
 .modal {
 	display: none;
 	position: fixed;
@@ -167,5 +165,42 @@
 	}
 	@media #{$iphone-landscape}, #{$iphone-portrait} {
 		background: rgba(0,0,0,0.5);
+	}
+}
+
+
+/* full screen modals */
+.modal-fullscreen {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	background: rgba(0,0,0,0.7);
+	&.active {
+		display: block;
+	}
+	.csstransitions & {
+		display: block;
+		height: 0;
+		width: 0;
+		-webkit-transition-property: opacity;
+		-webkit-transition-duration: 300ms;
+		-moz-transition-property: opacity;
+		-moz-transition-duration: 300ms;
+		-ms-transition-property: opacity;
+		-ms-transition-duration: 300ms;
+		-o-transition-property: opacity;
+		-o-transition-duration: 300ms;
+		transition-property: opacity;
+		transition-duration: 300ms;
+		opacity: 0;	
+		&.active {
+			opacity: 1;
+			height: 100%;
+			width: 100%;
+		}
 	}
 }

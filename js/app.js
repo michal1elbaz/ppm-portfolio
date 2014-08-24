@@ -89,6 +89,18 @@ $(function(){
 
 		},
 
+		modalFullScreen = function() {
+			$('.modal-fullscreen').addClass('active');
+			$('.modal-fullscreen').on('click','.close', function(){
+				modalFullScreenClear();
+				$('.modal-fullscreen').off('click','.close');
+			});
+		},
+
+		modalFullScreenClear = function() {
+			$('.modal-fullscreen').removeClass('active');
+		},
+
 		resize = function() {
 			this.checkWindowSize();
 			this.clearTooltip();
@@ -115,6 +127,8 @@ $(function(){
 			checkWindowSize: checkWindowSize,
 			activateTooltip: activateTooltip,
 			clearTooltip: clearTooltip,
+			modalFullScreen: modalFullScreen,
+			modalFullScreenClear: modalFullScreenClear,
 			resize: resize,
 			scroll: scroll,
 			init: init
@@ -140,6 +154,17 @@ $(function(){
 		var thisTooltip = $(this);
 		var thisTooltipID = '#' + $(this).attr('id') + '_tooltip';
 		MyApp.activateTooltip(thisTooltip,thisTooltipID);
+	});
+
+	$(document).on('click', '.open-modal-fullscreen', function(){
+		MyApp.modalFullScreen();
+	});
+
+	// bind esc key to close modal 
+	$(document).keyup(function(e){
+		if(e.keyCode === 27) {
+			MyApp.modalFullScreenClear();
+		}
 	});
 
 });
