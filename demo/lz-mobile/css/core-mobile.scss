@@ -1,0 +1,32 @@
+/*
+	core css file for all modules and components
+*/
+
+/* external stylesheets for HTML 5 reset and fonts */
+@import 'html5-doctor-reset-stylesheet.min.css';
+@import 'font-awesome.css';
+@import 'fonts.css';
+
+/* scss files for modules and components */
+@import 'variables';
+@import 'common';
+@import 'buttons';
+@import 'forms';
+@import 'module-floating';
+@import 'module-image';
+@import 'modal';
+@import 'tooltips';
+@import 'progress-bar';
+
+/* layouts from 5n5 */
+@import '5n5';
+
+/* mobile specific layout files */
+@import 'mobile';
+@import 'mobile-segment-menu';
+@import 'mobile-home';
+@import 'mobile-products';
+@import 'mobile-account';
+@import 'mobile-sidemenu';
+@import 'mobile-questionnaire';
+@import 'mobile-checkout';

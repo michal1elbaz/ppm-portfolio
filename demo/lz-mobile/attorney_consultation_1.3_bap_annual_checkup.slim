@@ -1,0 +1,189 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title Speak to an Attorney | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+	
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"	
+
+		javascript:
+			$(function(){
+				var is_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
+				// var is_safari_or_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit/i.test(navigator.userAgent);
+				if (is_uiwebview == true) {
+					$('.siteHeader').hide();
+				}
+			});
+		
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+
+			.bgSignin
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				/! progress bar
+				.progress-bar
+					.completed
+						.text
+							span 25
+							| % complete
+						.arrow
+
+				.pageBody
+					.page-questionnaire
+						.legalPlanIndicator YOU ARE A CURRENT LEGAL PLAN MEMBER
+						br
+						.pageHeader
+							h2.leftAlign Annual Checkup Questions
+
+						p.light
+							| Your answer to these questions will help the Advantage Attorney provide the best Annual Checkup possible.
+						form
+							hr
+							.form-group.iconic-button.small
+								p.question-text
+									| How many employees does your company have?
+
+								input.iconic#employees_0 type='radio' name='employees'
+								label for='employees_0' 0
+								input.iconic#employees_1_5 type='radio' name='employees'
+								label for='employees_1_5'
+									| 1-5
+								input.iconic#employees_6_14 type='radio' name='employees'
+								label for='employees_6_14'
+									| 6-14
+								input.iconic#employees_15_50 type='radio' name='employees'
+								label for='employees_15_50'
+									| 15-50
+								input.iconic#employees_over_50 type='radio' name='employees'
+								label for='employees_over_50' Over 50
+
+							hr
+							.form-group.iconic-button.small
+								p.question-text
+									| What type of entity is your company?
+
+								input.iconic#entity_llc type='radio' name='entity'
+								label for='entity_llc' LLC
+								input.iconic#entity_c_corp type='radio' name='entity'
+								label for='entity_c_corp'
+									| C-Corp
+								input.iconic#entity_s_corp type='radio' name='entity'
+								label for='entity_s_corp'
+									| S-Corp
+								input.iconic#entity_partnership type='radio' name='entity'
+								label for='entity_partnership' Partnership
+								input.iconic#entity_sole_proprietor type='radio' name='entity'
+								label for='entity_sole_proprietor' Sole proprietor
+								input.iconic#entity_non_profit type='radio' name='entity'
+								label for='entity_non_profit'
+									| Non-profit
+
+							hr
+							.form-group.iconic-button
+								p.question-text
+									| Which of the following changes has your business gone through since your last Annual Checkup (if any)?
+
+								input.iconic#changes_01 type='checkbox' name='changes'
+								label for='changes_01' Moved or planning on moving into office space
+								input.iconic#changes_02 type='checkbox' name='changes'
+								label for='changes_02' Major acquistions completed or planned
+								input.iconic#changes_03 type='checkbox' name='changes'
+								label for='changes_03' Entered into long-term agreements with vendors, suppliers, etc.
+								input.iconic#changes_04 type='checkbox' name='changes'
+								label for='changes_04' Created service contracts or service agreements that you use with your customers
+								input.iconic#changes_05 type='checkbox' name='changes'
+								label for='changes_05' Launched a website
+								input.iconic#changes_06 type='checkbox' name='changes'
+								label for='changes_06' Hired employees
+								input.iconic#changes_07 type='checkbox' name='changes'
+								label for='changes_07' Made a change to the goods or services you are selling
+								input.iconic#changes_08 type='checkbox' name='changes'
+							
+							hr
+							.form-group
+								label Do you have a CPA?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select
+										optgroup
+											option
+												| -- Please select --
+											option Yes
+											option No
+
+							hr
+							.form-group
+								label Do you have a separate bank account for your business?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select
+										optgroup
+											option
+												| -- Please select --
+											option Yes
+											option No
+
+							hr
+							.form-group
+								label If your company has a website, please provide the address here:
+								input type='text'
+
+							hr
+							.form-group
+								label Have you trademarked your company?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select
+										optgroup
+											option
+												| -- Please select --
+											option Yes
+											option No
+
+						/! questionnaire navigation links
+						nav.nav-questionnaire
+							a.link-previous
+								i.icon.icon-caret-left
+								|  Previous
+						
+							a.button.flex.has-right.button-next href="#"
+								.button-right
+									.inner
+										i.icon.button-icon.arrow-large
+								.button-center Next
+								
+						.clear
+
+						p.disclaimer 
+							| By clicking next, you agree to the 
+							a Supplemental Terms of Service for Legal Plans
+							| .
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.

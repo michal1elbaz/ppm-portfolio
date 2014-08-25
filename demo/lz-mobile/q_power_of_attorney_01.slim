@@ -1,0 +1,102 @@
+doctype html
+html
+	head
+		meta charset='utf-8'
+		meta name='viewport' content='width=device-width, minimum-scale=1, maximum-scale=1'
+
+		title Creating your Power of Attorney | LegalZoom.com
+		link type='text/css' rel='stylesheet' href='css/core-mobile.css'
+
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+
+	body
+		.sidemneu-container#sidemneu_container
+
+		a.menu-overlay
+
+		.viewport
+
+			.bgSignin
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.progress-bar
+					.completed
+						.text
+							span 25
+							| % complete
+						.arrow
+
+				.pageBody
+					.page-questionnaire
+
+						.pageHeader
+							 h2.leftAlign Get started on your power of attorney
+
+						p.light Before you start creating your power of attorney, here are some answers to commonly asked questions.
+
+						h4.tight What is a power of attorney?
+						p.light A power of attorney allows you to name someone else to make decisions for you either immediately, or only if you are unable to make decisions for yourself, based upon your state's laws. 
+
+						h4.tight How long will this take?
+						p.light If you're like most people, you'll find these questions simple to answer - in fact, you'll probably finish in as little as 5 minutes.
+						
+						h4.tight Your state of residence
+						p.light Your LegalZoom Power of Attorney is designed to meet the unique legal requirements of your state. 
+
+						p.light Please select that state in which you currently reside.
+
+						form
+							.form-group.select
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select#state name='state'
+										optgroup
+											option
+												| -- Select state --
+											option AK
+											option AL
+											option CA
+											option TX
+
+
+						/! questionnaire navigation links
+						nav.nav-questionnaire
+							/a.link-previous
+							/	i.icon.icon-caret-left
+							/	|  Previous
+						
+							a.button.flex.has-right.button-next href="q_power_of_attorney_02.html"
+								.button-right
+									.inner
+										i.icon.button-icon.arrow-large
+								.button-center Next
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.
+
+			.modal-overlay
+
+			.tooltip-container
+
+				.tooltip#placeholder_tooltip
+					.arrow.left
+					a.close
+						i.icon.icon-tooltip-close
+					.container
+						p Lorem ipsum

@@ -1,0 +1,11 @@
+.iphone {
+  width: 380px;
+  height: 799px;
+  background: transparent url(../images/bg-iphone5.png) no-repeat 0 0;
+  margin: 30px auto 0 auto;
+  position: relative; }
+  .iphone iframe {
+    position: absolute;
+    z-index: 100;
+    top: 115px;
+    left: 29px; }

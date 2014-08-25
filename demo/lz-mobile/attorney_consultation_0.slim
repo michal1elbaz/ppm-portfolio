@@ -1,0 +1,111 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title Speak to an Attorney | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+	
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+
+		javascript:
+			$(function(){
+				var is_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
+				// var is_safari_or_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit/i.test(navigator.userAgent);
+				if (is_uiwebview == true) {
+					$('.siteHeader').hide();
+				}
+			});	
+		
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+		
+			.bgSignin
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				/! progress bar
+				.progress-bar
+					.completed
+						.text
+							span 0
+							| % complete
+						.arrow
+
+				.pageBody
+					.page-questionnaire
+						.legalPlanIndicator YOU ARE A CURRENT LEGAL PLAN MEMBER
+						br
+						.pageHeader
+							h2.leftAlign Your LegalZoom Order History
+
+						p.light LegalZoom would like to make some information about your orders available to the Legal Plan Attorneys with whom you request consultations.
+						p.light having your order history and questionnaire responses will lead to a more productive consultation as it gives your plan attorney the infomration they need to help you. For example, they'll be able to see the name and type of your business entity or that you have ordered a Living Trust.
+						p.light Please let us know your preference then click Continue. you can change this at any time in My Account on the Manage My Membership page.
+
+						form
+							.form-group
+								p.question-text.tight Do you want to allow your Legal Plan Attorney to see your Order Information?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select
+										optgroup
+											option Yes
+											option No
+
+
+						/! questionnaire navigation links
+						nav.nav-questionnaire
+							a.link-previous
+								i.icon.icon-caret-left
+								|  Previous
+						
+							a.button.flex.has-right.button-next href="#"
+								.button-right
+									.inner
+										i.icon.button-icon.arrow-large
+								.button-center Next
+								
+						.clear
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.
+
+			.modal-overlay
+
+			.tooltip-container
+
+				.tooltip#attorney_detail_tooltip
+					.arrow.left
+					a.close
+						i.icon.icon-tooltip-close
+					.container
+						p While the majority of questions can be answered within the consultation period, your plan attorney may determine that a particular matter is too complex to be handled in this time period. You may also want additional legal work done that falls outside of the plan benefits, such as a legal document review that is longer than 10 pages, or you would like advice on an ongoing legal matter. In these cases, you may request additional legal services from the attorney at a 25% discount off their regular hourly rate.
+
+				.tooltip#legal_matter_tooltip
+					.arrow.left
+					a.close
+						i.icon.icon-tooltip-close
+					.container
+						p You only need to include a general description of your legal matter. The information is submitted to LegalZoom.com and is not protected by any attorney-client privilege. You will have the opportunity to discuss your situation directly with your attorney in more detail.
+

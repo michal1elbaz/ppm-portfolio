@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport" />
+    <title>
+      LegalZoom.com
+    </title>
+    <link href="css/core-mobile.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/modernizr-2.6.2.min.js" type="text/javascript"></script>
+    <script src="js/swipe.min.js" type="text/javascript"></script>
+    <script src="js/5n5.min.js" type="text/javascript"></script>
+    <script src="js/app.min.js" type="text/javascript"></script>
+    <script src="js/mobile-sidemenu.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function() {
+              // Modal Windows
+              $( "#businessPopup" ).on({
+                  popupbeforeposition: function() {
+                      var h = $( window ).height();
+                      $( "#businessPopup" ).css( "height", h-30 );
+                  }
+              });
+      
+              $( "#personalPopup" ).on({
+                  popupbeforeposition: function() {
+                      var h = $( window ).height();
+                      $( "#personalPopup" ).css( "height", h-30 );
+                  }
+              });
+      
+              // Videos
+              $("#playButton").click(function() {
+                      $( "div.howWeWorkVideo" ).replaceWith( "<div class=\"howWeWorkVideoPlaying\"><video width=\"100%\" height=\"170\" controls autoplay><source src=\"http://www.willus.com/video_example/2010b/video.mp4\" type=\"video/mp4\"><source src=\"http://www.willus.com/video_example/2010b/video.webm\">Your browser does not support the video tag.</video></div>" );
+              });
+      
+              $("#playLink").click(function() {
+                      $( "div.howWeWorkVideo" ).replaceWith( "<div class=\"howWeWorkVideoPlaying\"><video width=\"100%\" height=\"170\" controls autoplay><source src=\"http://www.willus.com/video_example/2010b/video.mp4\" type=\"video/mp4\"><source src=\"http://www.willus.com/video_example/2010b/video.webm\">Your browser does not support the video tag.</video></div>" );
+              });
+      
+          });
+    </script>
+  </head>
+  <body>
+    <div class="sidemenu-container" id="sidemenu_container"></div>
+    <a class="menu-overlay"></a>
+    <div class="viewport">
+      <div class="homebg">
+        <div class="siteHeader">
+          <a class="leftNavButton" id="remote-content-menu"><span class="badge hamburgerBadge">12</span></a>
+          <div class="lz-logo">
+            <a href="index.html">LegalZoom</a>
+          </div>
+          <a class="rightNavButton" href="tel:800-773-0888"></a>
+        </div>
+        <div class="howCanWeHelp">
+          How can we help you?
+        </div>
+        <div class="productsList">
+          <div>
+            <ul>
+              <li>
+                <div class="productCell businessIcon">
+                  <a onclick="openModalID('product_business');">Business</a>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <div class="productCell personalIcon">
+                    <a onclick="openModalID('product_personal');">Personal</a>
+                  </div>
+                </div>
+              </li>
+              <li class="end">
+                <div class="inner">
+                  <div class="productCell attorneyIcon">
+                    <a href="find_attorney.html">Find attorney</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="productCell taxAdviceIcon">
+                  <a href="tax_advice.html">Tax Advice</a>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <div class="productCell legalFormsIcon">
+                    <a href="legal_form.html">Legal Forms</a>
+                  </div>
+                </div>
+              </li>
+              <li class="end">
+                <div class="inner">
+                  <div class="productCell orderStatusIcon">
+                    <a href="account_overview.html">Order Status</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="helpMe">
+          <div class="helpMeInner">
+            <a class="helpMeBox" href="guide.html">Help me find what I need »</a><a class="button has-right helpMeButton" href="guide.html"><span class="button-right"><span class="inner"><i class="icon button-icon arrow-large"></i></span></span><span class="button-center">Help me find what I need</span></a>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="popularProductsHeader">
+        Popular products
+      </div>
+      <div class="popularProducts">
+        <ul>
+          <li>
+            <a href="product_llc.html">LLC </a> »
+          </li>
+          <li>
+            <a href="product_last_will_and_testament">Last will &amp; testament</a> »
+          </li>
+          <li>
+            <a href="product_incorporation.html">Incorporation</a> »
+          </li>
+          <li>
+            <a href="product_living_trust.html">Living trust</a> »
+          </li>
+          <li>
+            <a href="product_trademark.html">Trademark</a> »
+          </li>
+          <li>
+            <a href="product_living_will.html">Living will</a> »
+          </li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <div class="howWeWorkVideo">
+        <a class="playButton" href="#playVideo" id="playButton"></a>
+        <div style="width:35%">
+          <h2>
+            How we work
+          </h2>
+          <a href="#playVideo" id="playLink">Watch our short video »</a>
+        </div>
+      </div>
+      <div class="pageDivider"></div>
+      <div class="helpMeDecide">
+        <div class="helpMeDecideLandscapeIcon"></div>
+        <h2>
+          LLC, C Corp or S Corp?
+        </h2>
+        <div class="helpMeDecidePortraitIcon"></div>
+        <p>
+          Your options can be confusing. Answer a few simple questions and find out which one may be right for you.
+        </p>
+        <a class="button small flex has-right" href="guide.html"><span class="button-right"><span class="inner"><i class="icon button-icon arrow"></i></span></span><span class="button-center">Help me decide</span></a><br />
+        <div class="clear"></div>
+      </div>
+      <div class="pageDivider"></div>
+      <div class="productBox bgNeedAttorney">
+        <h3>
+          Need an attorney?
+        </h3>
+        <p>
+          Get help from a legal plan attorney when you need it. No expensive hourly fees. No surprise pricing.
+        </p>
+        <br /><a class="button small flex has-right" href="find_attorney.html"><span class="button-right"><span class="inner"><i class="icon button-icon arrow-large"></i></span></span><span class="button-center">Get attorney help</span></a>
+      </div>
+      <div class="pageDivider"></div>
+      <div class="guarantee">
+        <a class="guaranteeIcon" onclick="openModalID('satisfaction_guarantee');"></a>
+        <h2>
+          Quality you can trust
+        </h2>
+        <p>
+          Over the past 12 years, over 2 million businesses and families have used us for their <strong>Wills</strong>, <strong>Trademarks</strong>, <strong>LLCs</strong> and more.  
+        </p>
+        <p>
+          With LegalZoom, your satisfaction is <strong>100% guaranteed</strong>.  
+        </p>
+      </div>
+      <div class="pageDivider"></div>
+      <div class="content-container texture-stripes swipe-quotes">
+        <div class="shadow-strip"></div>
+        <div class="container">
+          <h2>
+            What people are saying about LegalZoom
+          </h2>
+          <div class="slide-control">
+            <a class="arrow previous" onclick="mySwipe.prev();return false;"></a><a class="arrow next" onclick="mySwipe.next();return false;"></a>
+          </div>
+          <div class="swipe" id="slider">
+            <div class="swipe-wrap">
+              <div class="slides">
+                <div class="content">
+                  <blockquote>
+                    <div class="open">
+                      &#8220;
+                    </div>
+                    <div class="quote">
+                      And a big thank you to <a>@LegalZoom</a> for hosting this great platform - a true friend to small business! <a>#legalzoomstartup</a><span class="close">&#8221;</span>
+                    </div>
+                  </blockquote>
+                  <div class="twitter-persona">
+                    <div class="avatar steve-strauss"></div>
+                    <div class="name">
+                      Steve Strauss
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slides huffpost">
+                <div class="content">
+                  <blockquote>
+                    <div class="open">
+                      &#8220;
+                    </div>
+                    <div class="quote">
+                      Get top quality legal documents without paying top dollar.<span class="close">&#8221;</span>
+                    </div>
+                    <div class="from">
+                      <div class="from-huffpost"></div>
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="slides">
+                <div class="content">
+                  <blockquote>
+                    <div class="open">
+                      &#8220;
+                    </div>
+                    <div class="quote">
+                      Great service. I could not be more pleased with the service I received.<span class="close">&#8221;</span>
+                    </div>
+                    <div class="from">
+                      Gary O., Williamsburg, VA
+                    </div>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="slides wrightway">
+                <div class="content">
+                  <div class="col-small">
+                    <div class="module-image small framed video">
+                      <div class="shadow"></div>
+                      <div class="container">
+                        <div class="youtube-thumb">
+                          <iframe allowfullscreen="" frameborder="0" height="74" src="https://www.youtube.com/embed/jKNBcCy0T78?wmode=opaque&amp;showinfo=0&amp;controls=0" style="max-width: 100%; margin: 0 auto;" type="text/html" width="118"></iframe>
+                        </div>
+                        <a href="https://www.youtube.com/watch_popup?v=jKNBcCy0T78" id="testimonial-vid"><image src="/sites/legalzoom.com/themes/legalzoom/assets/mobile/images/5n5-home-swipe-video-wrightway-thumbnail.jpg"></image>
+                          <div class="button-play small"></div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-large">
+                    Mason and Chelsea Wright started Wright Way Painting in 2009 on LegalZoom
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class="slides nine-out-of-ten">
+                <div class="content">
+                  <div class="col-small">
+                    <div class="people"></div>
+                  </div>
+                  <div class="col-large">
+                    <strong>9 out of 10</strong> customers would recommend us to friends and family.
+                    <p class="disclaimer">
+                      Number of customers who would recommend LegalZoom is based on surveys conducted in 2012.
+                    </p>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pageDivider"></div>
+      <!--sample document and help-->
+      <div class="content-container help-footer">
+        <div class="container">
+          <div class="sample-document">
+            <div class="icon-sample-document"></div>
+            <div class="text">
+              <p>
+                <a onclick="openModalExternal('text','http://start.legalzoom.com/modals/sample_documents');">View a sample LLC document</a>
+              </p>
+              <p>
+                Your final forms, documents and filings may differ depending on your state.
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="pageDivider"></div>
+      <div class="clear siteFooter">
+        <br />
+        <div class="footerLinks">
+          <a href="disclaimer.html">Disclaimer</a> | <a href="privacy_policy.html">Privacy Policy</a>
+        </div>
+        <div class="socialIcons">
+          <ul>
+            <li class="socialIconFacebook">
+              <a href="http://www.facebook.com/LegalZoom" rel="external"></a>
+            </li>
+            <li class="socialIconTwitter">
+              <a href="http://twitter.com/LegalZoom" rel="external"></a>
+            </li>
+            <li class="socialIconLinkedIn">
+              <a href="http://www.linkedin.com/company/legalzoom" rel="external"></a>
+            </li>
+            <li class="socialIconGPlus">
+              <a href="https://plus.google.com/+legalzoom" rel="external"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="legalAdvice">
+          The information provided on this site is not legal advice.
+        </div>
+      </div>
+      <div class="modal-overlay"></div>
+      <div class="modal text noBorder" id="product_business" style="display:none;">
+        <div class="container">
+          <a class="close inside"></a>
+          <div class="content noPadding">
+            <div class="modalHeader">
+              <h2>
+                Business
+              </h2>
+              <div>
+                <a href="products.html#business">View all business</a> »
+              </div>
+            </div>
+            <ul class="blueGradient">
+              <li class="large">
+                <div class="inner first">
+                  <span><a href="product_llc.html">LLC</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner second right">
+                  <span><a href="product_incorporation.html">Incorporation (S Corp, C Corp)</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner second">
+                  <span><a href="product_nonprofit.html">Nonprofit</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner right">
+                  <span><a href="product_dba.html">Sole Proprietorship</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner second third">
+                  <span><a href="product_trademark.html">Trademark</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner second right">
+                  <span><a href="product_real_estate_transfer.html">Real Estate</a></span>
+                </div>
+              </li>
+            </ul>
+            <div class="modalButtonDiv clear">
+              <br /><a class="button has-right" href="guide.html"><span class="button-right"><span class="inner"><i class="icon button-icon arrow-large"></i></span></span><span class="button-center">Help me decide</span></a>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="modal text noBorder" id="product_personal" style="display: none;">
+        <div class="container">
+          <a class="close inside"></a>
+          <div class="content noPadding">
+            <div class="modalHeader">
+              <h2>
+                Personal
+              </h2>
+              <div>
+                <a href="products.html#personal">View all personal</a> »
+              </div>
+            </div>
+            <ul class="orangeGradient">
+              <li>
+                <div class="inner first">
+                  <span><a href="product_last_will_and_testament">Last Will & Testament</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner second right">
+                  <span><a href="product_living_trust.html">Living Trust</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner second">
+                  <span><a href="product_living_will.html">Living Will</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner right">
+                  <span><a href="product_divorce.html">Divorce</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner second third">
+                  <span><a href="product_bankruptcy.html">Bankruptcy</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="inner second right">
+                  <span><a href="product_power_of_attorney.html">Power of Attorney</a></span>
+                </div>
+              </li>
+            </ul>
+            <div class="modalButtonDiv clear">
+              <br /><a class="button has-right" href="guide.html"><span class="button-right"><span class="inner"><i class="icon button-icon arrow-large"></i></span></span><span class="button-center">Help me decide</span></a>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div class="modal external">
+        <div class="container">
+          <a class="close"></a>
+          <div class="content"></div>
+        </div>
+      </div>
+      <div class="modal text" id="satisfaction_guarantee">
+        <div class="container">
+          <a class="close"></a>
+          <div class="overlay"></div>
+          <div class="content">
+            <h1>
+              The LegalZoom Satisfaction Guarantee
+            </h1>
+            <p>
+              In addition to certain guarantees provided by law, LegalZoom guarantees your satisfaction with our services and support. Because our company was created by experienced attorneys, we strive to be the best legal document service on the web. If you are not satisfied with our services, please contact us immediately and we will correct the situation, provide a refund or offer credit that can be used for future LegalZoom orders.
+            </p>
+            <p>
+              <strong>LegalZoom Satisfaction Guarantee Details:</strong>
+            </p>
+            <ol>
+              <li>
+                <span>If you're not satisfied, simply call us toll-free at (800) 773-0888 during our normal business hours. All requests made under this guarantee must be made within 60 days of purchase. We will process your request within 5 business days after we've received all of the documents and materials sent to you. Unfortunately, we can't refund or credit any money paid to government entities, such as filing fees or taxes, or to other third parties with a role in processing your order. We also cannot refund any money paid by you directly to third parties, such as payments made by you directly to attorneys affiliated with our legal plans or attorney-assisted products.</span>
+              </li>
+              <li>
+                <span>If you want to exchange the product you ordered for a different one, you must request this exchange and complete your replacement order within 60 days of purchase. The purchase price of the original item, less any money paid to government entities, such as filing fees or taxes, or to other third parties with a role in processing your order, will be credited to your LegalZoom account. Any payments made directly by you to attorneys affiliated with our legal plans or attorney-assisted products are not eligible for exchange or credit. Any price difference between the original order and the replacement order or, if a replacement order is not completed within 60 days of purchase, the full original purchase price (in each case less any money paid to government entities or other third parties) will be credited to the original form of payment. If you paid for your original order by check, LegalZoom will mail a check for the applicable amount to your billing address.</span>
+              </li>
+              <li>
+                <span>Please note that we cannot guarantee the results or outcome of your particular procedure. For instance, the government may reject a trademark application for legal reasons beyond the scope of LegalZoom's service. In some cases, a government backlog can lead to long delays before your process is complete. Similarly, LegalZoom does not guarantee the results or outcomes of the services rendered by our legal plan attorneys or attorney-assisted products. Problems like these are beyond our control and are not covered by this guarantee.</span>
+              </li>
+              <li>
+                <span>Since we're dedicating time and effort to your legal document preparation, our guarantee only covers satisfaction issues caused by LegalZoom - not changes to your situation or your state of mind.</span>
+              </li>
+            </ol>
+            <p>
+              Updated April 13, 2012
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

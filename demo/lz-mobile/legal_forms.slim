@@ -1,0 +1,597 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title Legal Forms | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+	
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+	
+		javascript:
+			$(function() {				
+				    
+				  // Cat/AZ Segmented Control
+				  $( "#azButton" ).click(function() {
+					  displayTypeTap('az');
+					});
+					
+				  $( "#catButton" ).click(function() {
+					  displayTypeTap('categories');
+					});
+					
+					// Get clicks for categories
+					$( "dt" ).click(function() {
+						toggleMenuItem($(this));
+					});
+					
+					// Listen for changes in hash
+					$(window).on('hashchange', function() {
+						if(window.location.hash) if($( window.location.hash )) toggleMenuItem($( window.location.hash ));
+						
+						$.sidr('close', 'sidr-remote-content');
+					});
+					
+					// Open correct section for current hash
+					if(window.location.hash){
+						if($( window.location.hash )) toggleMenuItem($( window.location.hash ));
+					}
+				});
+				
+				function displayTypeTap(type) {
+					if(type == 'categories') {
+						$( "#catButton" ).addClass( "selected" );
+						$( "#azButton" ).removeClass( "selected" );
+
+						$('#productsCategorized').show();
+						$('#productsAZ').hide();
+					} else {
+						$( "#catButton" ).removeClass( "selected" );
+						$( "#azButton" ).addClass( "selected" );
+						  
+						$('#productsCategorized').hide();
+						$('#productsAZ').show();
+					}
+				}
+				
+				function toggleMenuItem(item)
+				{
+					if (item.hasClass('on')) item.removeClass('on');
+					else item.addClass('on');
+						
+					item.nextUntil( "dt" ).slideToggle('fast');
+				}
+		
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+			
+			.stripesBG
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.pageHeader
+					h2 Legal forms
+				.pageBody
+					.paddedHeader
+						p.pageInfo.center Our forms are regularly reviewed by top attorneys and come with quick and easy instructions.
+						br
+						.roundedSegmentMenu
+							ul
+								li#catButton.selected Categories
+								li#azButton A-Z
+							br
+						br
+					#productsAZ.hidden
+						.productList
+							dl
+								dd
+									a href="legal_form.html" Academic Letter of Recommendation
+								dd
+									a href="legal_form.html" Acknowledgement of Customer Complaint
+								dd
+									a href="legal_form.html" Adverse Action Disclosure Letters
+								dd
+									a href="legal_form.html" Affidavit of Lost Promissory Note
+								dd
+									a href="legal_form.html" Affidavit of Lost Promissory Note and Indemnity Agreement
+								dd
+									a href="legal_form.html" Affidavit of Lost Stock Certificate
+								dd
+									a href="legal_form.html" Affidavit of Lost Stock Certificate and Indemnity Agreement
+								dd
+									a href="legal_form.html" Agency Agreement
+								dd
+									a href="legal_form.html" Amendment of Agreement
+								dd
+									a href="legal_form.html" Applicant Rejection Letter
+								dd
+									a href="legal_form.html" Arbitration Agreement
+								dd
+									a href="legal_form.html" Artwork Release
+								dd
+									a href="legal_form.html" Assignment of Agreement
+								dd
+									a href="legal_form.html" Assignment of Commercial Lease
+								dd
+									a href="legal_form.html" Assignment of Residential Lease
+								dd
+									a href="legal_form.html" Band Partnership Agreement
+								dd
+									a href="legal_form.html" Bill of Sale - Automobile
+								dd
+									a href="legal_form.html" Bill of Sale - Automobile with Promissory Note
+								dd
+									a href="legal_form.html" Bill of Sale - Boat with Warranty
+								dd
+									a href="legal_form.html" Bill of Sale - Cat
+								dd
+									a href="legal_form.html" Bill of Sale - Dog
+								dd
+									a href="legal_form.html" Bill of Sale - Quitclaim
+								dd
+									a href="legal_form.html" Bill of Sale with Warranty
+								dd
+									a href="legal_form.html" Breach of Contract Notice
+								dd
+									a href="legal_form.html" Business Letter of Recommendation
+								dd
+									a href="legal_form.html" Business Plan Nondisclosure Agreement
+								dd
+									a href="legal_form.html" California General Affidavit
+								dd
+									a href="legal_form.html" California Partial Release and Waiver of Liens (Conditional)
+								dd
+									a href="legal_form.html" California Partial Release and Waiver of Liens (Unconditional)
+								dd
+									a href="legal_form.html" California Release and Waiver of Liens on Full Payment (Conditional)
+								dd
+									a href="legal_form.html" California Release and Waiver of Liens on Full Payment (Unconditional)
+								dd
+									a href="legal_form.html" Catering Services Agreement
+								dd
+									a href="legal_form.html" Certification of Cease and Desist
+								dd
+									a href="legal_form.html" Cohabitation Agreement
+								dd
+									a href="legal_form.html" Commercial Rental Application
+								dd
+									a href="legal_form.html" Consent to Drug Testing
+								dd
+									a href="legal_form.html" Consignment Agreement
+								dd
+									a href="legal_form.html" Consulting Services Agreement
+								dd
+									a href="legal_form.html" Continuing Guaranty (Limited Amount)
+								dd
+									a href="legal_form.html" Continuing Guaranty (Unlimited Amount)
+								dd
+									a href="legal_form.html" Copyright Assignment
+								dd
+									a href="legal_form.html" Copyright License Agreement (Artwork)
+								dd
+									a href="legal_form.html" Copyright License Agreement (Written Work)
+								dd
+									a href="legal_form.html" Debt Settlement Agreement
+								dd
+									a href="legal_form.html" Demand for Full Payment on Installment Promissory Note
+								dd
+									a href="legal_form.html" Demand for Payment on Demand Promissory Note
+								dd
+									a href="legal_form.html" Direct Deposit Authorization
+								dd
+									a href="legal_form.html" Distribution Agreement (Commission-Based)
+								dd
+									a href="legal_form.html" Dog Walking Agreement
+								dd
+									a href="legal_form.html" Domain Name Assignment
+								dd
+									a href="legal_form.html" Domain Name Cease and Desist Letter
+								dd
+									a href="legal_form.html" Earnest Money Promissory Note
+								dd
+									a href="legal_form.html" Employee Absence Report and Summary
+								dd
+									a href="legal_form.html" Employee Agreement
+								dd
+									a href="legal_form.html" Employee Cell Phone Policy
+								dd
+									a href="legal_form.html" Employee Handbook Acknowledgment
+								dd
+									a href="legal_form.html" Employee Internet Policy
+								dd
+									a href="legal_form.html" Employee Nondisclosure Agreement
+								dd
+									a href="legal_form.html" Employee Review
+								dd
+									a href="legal_form.html" Employee Separation Checklist
+								dd
+									a href="legal_form.html" Employee Termination Letter
+								dd
+									a href="legal_form.html" Employee Written Warning
+								dd
+									a href="legal_form.html" Employment and Salary Verification Form
+								dd
+									a href="legal_form.html" Employment Application
+								dd
+									a href="legal_form.html" Employment Offer Letter
+								dd
+									a href="legal_form.html" Equipment Lease Agreement
+								dd
+									a href="legal_form.html" Exclusive Purchasing Agency Agreement
+								dd
+									a href="legal_form.html" Exclusive Sales Representative Agreement
+								dd
+									a href="legal_form.html" Extension of Agreement
+								dd
+									a href="legal_form.html" Final Invoice
+								dd
+									a href="legal_form.html" Florida General Affidavit
+								dd
+									a href="legal_form.html" General Agreement
+								dd
+									a href="legal_form.html" General Contractor Agreement
+								dd
+									a href="legal_form.html" General Contractor Agreement (Cost Plus Fee)
+								dd
+									a href="legal_form.html" Illinois General Affidavit
+								dd
+									a href="legal_form.html" Independent Contractor Agreement
+								dd
+									a href="legal_form.html" Independent Contractor Application
+								dd
+									a href="legal_form.html" Independent Contractor Unilateral Nondisclosure Agreement
+								dd
+									a href="legal_form.html" Intellectual Property Assignment
+								dd
+									a href="legal_form.html" Job Acceptance Letter
+								dd
+									a href="legal_form.html" Job Offer Rejection Letter
+								dd
+									a href="legal_form.html" Joint Venture Agreement Amendments
+								dd
+									a href="legal_form.html" Land Co-Ownership Agreement
+								dd
+									a href="legal_form.html" Landlord Consent to Assignment
+								dd
+									a href="legal_form.html" Landlord Consent to Sublease
+								dd
+									a href="legal_form.html" Landlord Welcome Letter
+								dd
+									a href="legal_form.html"
+										| Landlord's Letter Returning Security Deposit
+								dd
+									a href="legal_form.html" Late Payment Collection Letter
+								dd
+									a href="legal_form.html" Lead Warning and Disclosure Statement
+								dd
+									a href="legal_form.html" Letter of Intent for Business Transaction
+								dd
+									a href="legal_form.html" Letter of Resignation
+								dd
+									a href="legal_form.html" Location Release
+								dd
+									a href="legal_form.html" Management Services Agreement
+								dd
+									a href="legal_form.html" Model Release for Adults
+								dd
+									a href="legal_form.html" Model Release for Minors
+								dd
+									a href="legal_form.html" Motorcycle Bill of Sale
+								dd
+									a href="legal_form.html" Move-In, Move-Out Checklist
+								dd
+									a href="legal_form.html" Mutual Nondisclosure Agreement
+								dd
+									a href="legal_form.html" Mutual Rescission of Contract and Release
+								dd
+									a href="legal_form.html" Nonexclusive Purchasing Agency Agreement
+								dd
+									a href="legal_form.html" Nonexclusive Sales Representative Agreement
+								dd
+									a href="legal_form.html" Notice of Default on Installment Promissory Note
+								dd
+									a href="legal_form.html" Notice of Dissolution of Partnership (Debtors and Creditors)
+								dd
+									a href="legal_form.html" Notice to Pay Rent or Quit
+								dd
+									a href="legal_form.html" Online Advertising Agreement
+								dd
+									a href="legal_form.html" Partnership Dissolution Agreement
+								dd
+									a href="legal_form.html" Patent Application Assignment
+								dd
+									a href="legal_form.html" Patent Assignment
+								dd
+									a href="legal_form.html" Performance Agreement
+								dd
+									a href="legal_form.html" Permission to Reprint Published Material
+								dd
+									a href="legal_form.html" Permission to Reproduce Images
+								dd
+									a href="legal_form.html" Personal Management Agreement
+								dd
+									a href="legal_form.html" Pet Custody Agreement
+								dd
+									a href="legal_form.html" Pet Sitting Agreement
+								dd
+									a href="legal_form.html" Photography Services Agreement
+								dd
+									a href="legal_form.html" Product Supply Agreement
+								dd
+									a href="legal_form.html" Promissory Note (secured - amortized payments)
+								dd
+									a href="legal_form.html" Promissory Note (secured - demand)
+								dd
+									a href="legal_form.html" Promissory Note (secured - installment with balloon final payment)
+								dd
+									a href="legal_form.html" Promissory Note (secured - interest only with balloon final payment)
+								dd
+									a href="legal_form.html" Promissory Note (secured - lump-sum payment)
+								dd
+									a href="legal_form.html" Promissory Note (unsecured - amortized payments)
+								dd
+									a href="legal_form.html" Promissory Note (unsecured - demand)
+								dd
+									a href="legal_form.html" Promissory Note (unsecured - installment with balloon final payment)
+								dd
+									a href="legal_form.html" Promissory Note (unsecured - interest only with balloon final payment)
+								dd
+									a href="legal_form.html" Promissory Note (unsecured - lump-sum payment)
+								dd
+									a href="legal_form.html" Property Management Agreement
+								dd
+									a href="legal_form.html" Purchase Receipt
+								dd
+									a href="legal_form.html" Release and Authorization to Use Voice and/or Likeness
+								dd
+									a href="legal_form.html" Release of Credit Information (Employee)
+								dd
+									a href="legal_form.html" Release of Information (Employee)
+								dd
+									a href="legal_form.html" Release of Promissory Note
+								dd
+									a href="legal_form.html" Rent Receipt
+								dd
+									a href="legal_form.html" Request for Permission to Reprint Published Material
+								dd
+									a href="legal_form.html" Request for Permission to Reproduce Images
+								dd
+									a href="legal_form.html" Research and Development Agreement
+								dd
+									a href="legal_form.html" Residential Rental Application
+								dd
+									a href="legal_form.html" Returned Check Notice
+								dd
+									a href="legal_form.html" Sale of Goods Agreement
+								dd
+									a href="legal_form.html" Screenplay Collaboration Agreement
+								dd
+									a href="legal_form.html" Security Agreement
+								dd
+									a href="legal_form.html" Software Distribution Agreement
+								dd
+									a href="legal_form.html" Specific Guaranty
+								dd
+									a href="legal_form.html" Sponsorship Agreement
+								dd
+									a href="legal_form.html" Sponsorship Commitment
+								dd
+									a href="legal_form.html" Sponsorship Fee Invoice
+								dd
+									a href="legal_form.html" Sponsorship Solicitation Letter
+								dd
+									a href="legal_form.html" Sublease of Residential Lease (with Landlord Consent)
+								dd
+									a href="legal_form.html" Submission Release
+								dd
+									a href="legal_form.html" Talent Release for Adults
+								dd
+									a href="legal_form.html" Talent Release for Minors
+								dd
+									a href="legal_form.html" Termination of Agreement and Release (General)
+								dd
+									a href="legal_form.html" Termination of Lease
+								dd
+									a href="legal_form.html" Texas General Affidavit
+								dd
+									a href="legal_form.html" Trademark Assignment
+								dd
+									a href="legal_form.html" Trademark Cease and Desist
+								dd
+									a href="legal_form.html" Trademark License Agreement
+								dd
+									a href="legal_form.html" Unilateral Nondisclosure Agreement
+								dd
+									a href="legal_form.html" Videography Services Agreement
+								dd
+									a href="legal_form.html" Waiver of Default (Loan)
+								dd
+									a href="legal_form.html" Website Affiliate Agreement
+								dd
+									a href="legal_form.html" Website Development Agreement
+								dd
+									a href="legal_form.html" Website Hosting Agreement
+								dd
+									a href="legal_form.html" Website Maintenance Agreement
+								dd
+									a href="legal_form.html" Wedding Planning Services Agreement
+								dd
+									a href="legal_form.html" Whistleblower Protection Policy
+								dd
+									a href="legal_form.html" Work Made for Hire Agreement
+								dd
+									a href="legal_form.html" Workplace Injury and Illness Incident Report
+
+						br
+						.pageDivider
+
+					#productsCategorized
+						.expandableProductList
+							dl
+								dt#mostPopular
+									div.icon
+										img src="images/icons/icon_star-2x.png" width="22" height="20"
+									| Most Popular
+									dd
+										a href="legal_form.html" Late Payment Collection Letter
+									dd
+										a href="legal_form.html" Letter of Intent for Business Transaction
+									dd
+										a href="legal_form.html" General Agreement
+									dd
+										a href="legal_form.html" Mutual Rescission of Contract and Release
+									dd
+										a href="legal_form.html" Notice of Dissolution of Partnership (Debtors and Creditors)
+									dd
+										a href="legal_form.html" Partnership Dissolution Agreement
+									dd
+										a href="legal_form.html" Product Supply Agreement
+								dt id="affidavits"
+									div class="icon"
+										img src="images/icons/icon_hand-2x.png" width="14" height="22"
+									| Affidavits
+									dd
+										a href="legal_form.html" Product 1
+								dt id="billofsale"
+									div class="icon"
+										img src="images/icons/icon_car-2x.png" width="22" height="13"
+									| Bill of Sale
+									dd
+										a href="legal_form.html" Product 1
+								dt id="business"
+									div class="icon"
+										img src="images/icons/icon_briefcase-2x.png" width="20" height="19"
+									| Business
+									dd
+										a href="legal_form.html" Product 1
+								dt id="entertainment"
+									div class="icon"
+										img src="images/icons/icon_camera-2x.png" width="20" height="20"
+									| Entertainment
+									dd
+										a href="legal_form.html" Product 1
+								dt id="eventplanning"
+									div class="icon"
+										img src="images/icons/icon_drink-2x.png" width="19" height="20"
+									| Event Planning
+									dd
+										a href="legal_form.html" Product 1
+								dt id="household"
+									div class="icon"
+										img src="images/icons/icon_home-2x.png" width="20" height="19"
+									| Household
+									dd
+										a href="legal_form.html" Product 1
+								dt id="hr"
+									div class="icon"
+										img src="images/icons/icon_users-2x.png" width="24" height="16"
+									| Human Resources / Employment
+									dd
+										a href="legal_form.html" Product 1
+								dt id="ip"
+									div class="icon"
+										img src="images/icons/icon_bulb-2x.png" width="14" height="23"
+									| Intellectual Property
+									dd
+										a href="legal_form.html" Product 1
+								dt id="internet"
+									div class="icon"
+										img src="images/icons/icon_chip-2x.png" width="18" height="19"
+									| Internet / Technology
+									dd
+										a href="legal_form.html" Product 1
+								dt id="landlord"
+									div class="icon"
+										img src="images/icons/icon_keys-2x.png" width="18" height="20"
+									| Landlord / Tenant
+									dd
+										a href="legal_form.html" Product 1
+								dt id="lending"
+									div class="icon"
+										img src="images/icons/icon_coins-2x.png" width="20" height="16"
+									| Lending
+									dd
+										a href="legal_form.html" Product 1
+								dt id="loans"
+									div class="icon"
+										img src="images/icons/icon_dollar-2x.png" width="14" height="20"
+									| Loans / Promissory Notes
+									dd
+										a href="legal_form.html" Product 1
+								dt id="nondisclosure"
+									div class="icon"
+										img src="images/icons/icon_mouth-2x.png" width="22" height="12"
+									| Nondisclosure Agreements
+									dd
+										a href="legal_form.html" Product 1
+								dt id="retail"
+									div class="icon"
+										img src="images/icons/icon_tag-2x.png" width="19" height="18"
+									| Retail
+									dd
+										a href="legal_form.html" Product 1
+								dt id="service"
+									div class="icon"
+										img src="images/icons/icon_identity-2x.png" width="20" height="18"
+									| Service-Related Agreements
+									dd
+										a href="legal_form.html" Product 1
+
+					.productBox
+						h3 Subscribe now and get:
+
+						.features
+							ul
+								li
+									.icon
+										img src="images/icons/icon_key-2x.gif" width="25" height="24"
+									| Unlimited access to our entire library of 160+ legal forms
+								li
+									.icon
+										img src="images/icons/icon_folder-2x.gif" width="26" height="24"
+									| Professional documents crafted by top attorneys
+								li
+									.icon
+										img src="images/icon_order_checked-2x.gif" width="31" height="27"
+									| Quick and easy detailed instructions
+
+						.productButton
+							a.button.has-right href="testpage.html" data-transition="slide"
+								span.button-right
+									span.inner
+										i.icon.button-icon.arrow-large
+								span.button-center Subscribe now
+					br
+				
+					
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.socialIcons
+					ul
+						li.socialIconFacebook
+							a href="http://www.facebook.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconTwitter
+							a href="http://twitter.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconLinkedIn
+							a href="http://www.linkedin.com/company/legalzoom" rel="external" data-transition="slide"
+						li.socialIconGPlus
+							a href="https://plus.google.com/+legalzoom" rel="external" data-transition="slide"
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.

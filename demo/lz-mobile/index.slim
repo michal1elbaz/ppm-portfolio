@@ -1,0 +1,378 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"	
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/swipe.min.js"
+		script type="text/javascript" src="js/5n5.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+	
+		javascript:
+			$(function() {
+					// Modal Windows
+					$( "#businessPopup" ).on({
+						popupbeforeposition: function() {
+							var h = $( window ).height();
+							$( "#businessPopup" ).css( "height", h-30 );
+						}
+					});
+					
+					$( "#personalPopup" ).on({
+						popupbeforeposition: function() {
+							var h = $( window ).height();
+							$( "#personalPopup" ).css( "height", h-30 );
+						}
+					});
+					
+					// Videos
+					$("#playButton").click(function() {
+							$( "div.howWeWorkVideo" ).replaceWith( "<div class=\"howWeWorkVideoPlaying\"><video width=\"100%\" height=\"170\" controls autoplay><source src=\"http://www.willus.com/video_example/2010b/video.mp4\" type=\"video/mp4\"><source src=\"http://www.willus.com/video_example/2010b/video.webm\">Your browser does not support the video tag.</video></div>" );
+					});
+					
+					$("#playLink").click(function() {
+							$( "div.howWeWorkVideo" ).replaceWith( "<div class=\"howWeWorkVideoPlaying\"><video width=\"100%\" height=\"170\" controls autoplay><source src=\"http://www.willus.com/video_example/2010b/video.mp4\" type=\"video/mp4\"><source src=\"http://www.willus.com/video_example/2010b/video.webm\">Your browser does not support the video tag.</video></div>" );
+					});
+					
+				});
+		
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+				
+			.homebg
+				.siteHeader
+					a#remote-content-menu.leftNavButton
+							span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.howCanWeHelp How can we help you?
+				.productsList
+					div
+						ul
+							li
+								.productCell.businessIcon
+									a onclick="openModalID('product_business');" Business
+							li
+								.inner
+									.productCell.personalIcon
+										a onclick="openModalID('product_personal');" Personal
+							li class="end"
+								.inner
+									.productCell.attorneyIcon
+										a href="find_attorney.html" Find attorney
+							li
+								.productCell.taxAdviceIcon
+									a href="tax_advice.html" Tax Advice
+							li
+								.inner
+									.productCell.legalFormsIcon
+										a href="legal_form.html" Legal Forms
+							li.end
+								.inner
+									.productCell.orderStatusIcon
+										a href='account_overview.html' Order Status
+
+				.helpMe
+					.helpMeInner
+						a.helpMeBox href="guide.html" Help me find what I need »
+						a.button.has-right.helpMeButton href="guide.html"
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Help me find what I need
+				
+				.clear
+			.popularProductsHeader Popular products
+			.popularProducts
+				ul
+					li
+						a href="product_llc.html" LLC 
+						|  »
+					li
+						a href="product_last_will_and_testament" Last will &amp; testament
+						|  »
+					li
+						a href="product_incorporation.html" Incorporation
+						|  »
+					li
+						a href="product_living_trust.html" Living trust
+						|  »
+					li
+						a href="product_trademark.html" Trademark
+						|  »
+					li
+						a href="product_living_will.html" Living will
+						|  »
+			.clear
+			.howWeWorkVideo
+				a#playButton.playButton href="#playVideo"
+				div style="width:35%"
+					h2 How we work
+					a#playLink href="#playVideo" Watch our short video »
+			.pageDivider
+
+			.helpMeDecide
+				.helpMeDecideLandscapeIcon
+				h2 LLC, C Corp or S Corp?
+				.helpMeDecidePortraitIcon
+				p Your options can be confusing. Answer a few simple questions and find out which one may be right for you.
+				a.button.small.flex.has-right href="guide.html"
+						span.button-right
+							span.inner
+								i.icon.button-icon.arrow
+						span.button-center Help me decide
+				br
+				.clear
+			.pageDivider
+
+			.productBox.bgNeedAttorney
+				h3 Need an attorney?
+				p Get help from a legal plan attorney when you need it. No expensive hourly fees. No surprise pricing.
+				br
+				a.button.small.flex.has-right href="find_attorney.html"
+					span.button-right
+						span.inner
+							i.icon.button-icon.arrow-large
+					span.button-center Get attorney help
+			.pageDivider
+
+			.guarantee
+				a.guaranteeIcon onclick="openModalID('satisfaction_guarantee');"
+				h2 Quality you can trust
+				p
+					| Over the past 12 years, over 2 million businesses and families have used us for their 
+					strong Wills
+					| , 
+					strong Trademarks
+					| , 
+					strong LLCs
+					|  and more.  
+
+				p
+					| With LegalZoom, your satisfaction is 
+					strong 100% guaranteed
+					| .  
+			.pageDivider
+
+			.content-container.texture-stripes.swipe-quotes
+				.shadow-strip
+				.container
+					h2 What people are saying about LegalZoom
+					.slide-control
+						a.arrow.previous onclick='mySwipe.prev();return false;'
+						a.arrow.next onclick='mySwipe.next();return false;'
+					#slider.swipe
+						.swipe-wrap
+							.slides
+								.content
+									blockquote
+										.open &#8220;
+										.quote
+											| And a big thank you to <a>@LegalZoom</a> for hosting this great platform - a true friend to small business! <a>#legalzoomstartup</a>
+											span.close &#8221;
+									.twitter-persona
+										.avatar.steve-strauss
+										.name Steve Strauss
+
+							.slides.huffpost
+								.content
+									blockquote
+										.open &#8220;
+										.quote
+											| Get top quality legal documents without paying top dollar.
+											span.close &#8221;
+										.from
+											.from-huffpost
+							.slides
+								.content
+									blockquote
+										.open &#8220;
+										.quote
+											| Great service. I could not be more pleased with the service I received.
+											span.close &#8221;
+										.from Gary O., Williamsburg, VA
+							.slides.wrightway
+								.content
+									.col-small
+										.module-image.small.framed.video
+											.shadow 
+											.container
+												.youtube-thumb
+													iframe type='text/html' width='118' height='74' src="https://www.youtube.com/embed/jKNBcCy0T78?wmode=opaque&showinfo=0&controls=0" allowfullscreen=true frameborder="0" style="max-width: 100%; margin: 0 auto;"
+												a#testimonial-vid href="https://www.youtube.com/watch_popup?v=jKNBcCy0T78"
+													image src='/sites/legalzoom.com/themes/legalzoom/assets/mobile/images/5n5-home-swipe-video-wrightway-thumbnail.jpg' 
+													.button-play.small
+
+									.col-large
+										| Mason and Chelsea Wright started Wright Way Painting in 2009 on LegalZoom
+									.clear
+							.slides.nine-out-of-ten
+								.content
+									.col-small
+										.people
+									.col-large
+										| <strong>9 out of 10</strong> customers would recommend us to friends and family.
+										p.disclaimer Number of customers who would recommend LegalZoom is based on surveys conducted in 2012.
+									.clear
+
+			.pageDivider
+
+			/! sample document and help
+			.content-container.help-footer
+				.container
+					.sample-document
+						.icon-sample-document
+						.text
+							p
+								a onclick=="openModalExternal('text','http://start.legalzoom.com/modals/sample_documents');" View a sample LLC document
+							p Your final forms, documents and filings may differ depending on your state.
+						.clear
+					.clear
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.socialIcons
+					ul
+						li.socialIconFacebook
+							a href="http://www.facebook.com/LegalZoom" rel="external"
+						li.socialIconTwitter
+							a href="http://twitter.com/LegalZoom" rel="external"
+						li.socialIconLinkedIn
+							a href="http://www.linkedin.com/company/legalzoom" rel="external"
+						li.socialIconGPlus
+							a href="https://plus.google.com/+legalzoom" rel="external"
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.
+				
+
+			.modal-overlay
+				
+			.modal.text.noBorder#product_business style="display:none;"
+				.container
+					a.close.inside
+					.content.noPadding
+						.modalHeader
+							h2 Business
+							div
+								a href="products.html#business" View all business
+								|  »
+						ul.blueGradient
+							li.large
+								.inner.first
+									span
+										a href="product_llc.html" LLC
+							li
+								.inner.second.right
+									span
+										a href="product_incorporation.html" Incorporation (S Corp, C Corp)
+							li
+								.inner.second
+									span
+										a href="product_nonprofit.html" Nonprofit
+							li
+								.inner.right
+									span
+										a href="product_dba.html" Sole Proprietorship
+							li
+								.inner.second.third
+									span
+										a href="product_trademark.html" Trademark
+							li
+								.inner.second.right
+									span
+										a href="product_real_estate_transfer.html" Real Estate
+						.modalButtonDiv.clear
+							br
+							a.button.has-right href="guide.html"
+								span.button-right
+									span.inner
+										i.icon.button-icon.arrow-large
+								span.button-center Help me decide
+						br
+
+			.modal.text.noBorder#product_personal style="display: none;"
+				.container
+					a.close.inside
+					.content.noPadding
+						.modalHeader
+							h2 Personal
+							div
+								a href="products.html#personal" View all personal
+								|  »
+						ul.orangeGradient
+							li
+								.inner.first
+									span
+										a href="product_last_will_and_testament" Last Will & Testament
+							li
+								.inner.second.right
+									span
+										a href="product_living_trust.html" Living Trust
+							li
+								.inner.second
+									span
+										a href="product_living_will.html" Living Will
+							li
+								.inner.right
+									span
+										a href="product_divorce.html" Divorce
+							li
+								.inner.second.third
+									span
+										a href="product_bankruptcy.html" Bankruptcy
+							li
+								.inner.second.right
+									span
+										a href="product_power_of_attorney.html" Power of Attorney
+						.modalButtonDiv.clear
+							br
+							a.button.has-right href="guide.html"
+								span.button-right
+									span.inner
+										i.icon.button-icon.arrow-large
+								span.button-center Help me decide
+						br
+
+			.modal.external
+				.container
+					a.close
+					.content
+
+			.modal.text#satisfaction_guarantee
+				.container
+					a.close
+					.overlay
+					.content
+						h1 The LegalZoom Satisfaction Guarantee
+						p In addition to certain guarantees provided by law, LegalZoom guarantees your satisfaction with our services and support. Because our company was created by experienced attorneys, we strive to be the best legal document service on the web. If you are not satisfied with our services, please contact us immediately and we will correct the situation, provide a refund or offer credit that can be used for future LegalZoom orders.
+
+						p
+							strong LegalZoom Satisfaction Guarantee Details:
+
+						ol
+							li
+								span If you're not satisfied, simply call us toll-free at (800) 773-0888 during our normal business hours. All requests made under this guarantee must be made within 60 days of purchase. We will process your request within 5 business days after we've received all of the documents and materials sent to you. Unfortunately, we can't refund or credit any money paid to government entities, such as filing fees or taxes, or to other third parties with a role in processing your order. We also cannot refund any money paid by you directly to third parties, such as payments made by you directly to attorneys affiliated with our legal plans or attorney-assisted products.
+							li 
+								span If you want to exchange the product you ordered for a different one, you must request this exchange and complete your replacement order within 60 days of purchase. The purchase price of the original item, less any money paid to government entities, such as filing fees or taxes, or to other third parties with a role in processing your order, will be credited to your LegalZoom account. Any payments made directly by you to attorneys affiliated with our legal plans or attorney-assisted products are not eligible for exchange or credit. Any price difference between the original order and the replacement order or, if a replacement order is not completed within 60 days of purchase, the full original purchase price (in each case less any money paid to government entities or other third parties) will be credited to the original form of payment. If you paid for your original order by check, LegalZoom will mail a check for the applicable amount to your billing address.
+							li 
+								span Please note that we cannot guarantee the results or outcome of your particular procedure. For instance, the government may reject a trademark application for legal reasons beyond the scope of LegalZoom's service. In some cases, a government backlog can lead to long delays before your process is complete. Similarly, LegalZoom does not guarantee the results or outcomes of the services rendered by our legal plan attorneys or attorney-assisted products. Problems like these are beyond our control and are not covered by this guarantee.
+							li 
+								span Since we're dedicating time and effort to your legal document preparation, our guarantee only covers satisfaction issues caused by LegalZoom - not changes to your situation or your state of mind.
+						p Updated April 13, 2012

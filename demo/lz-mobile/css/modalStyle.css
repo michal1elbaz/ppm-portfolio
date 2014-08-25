@@ -1,0 +1,139 @@
+/* import responsive size variables */
+/*
+	variables for legalzoom:
+	colors
+	background
+	border
+	fonts
+	text colors
+	responsive screen sizes
+	imported from 'variables.scss'
+*/
+/* branding colors */
+/* background colors */
+/* border colors */
+/* fonts */
+/* text colors */
+/* responsive screen sizes */
+/* real styles starts here */
+.modal-body { overflow: hidden; }
+@media only screen and (min-width: 180px) and (max-width: 459px), only screen and (min-width: 460px) and (max-width: 760px) { .modal-body { margin: 0; overflow: auto; -webkit-text-size-adjust: none; } }
+.modal-body a { color: #0068d3; text-decoration: none; }
+.modal-body a:hover { color: #0068d3; text-decoration: underline; }
+.modal-body b { font-weight: bold; }
+.modal-body i { font-style: italic; }
+.modal-body h1, .modal-body h2, .modal-body h3, .modal-body h4 { margin: 7px 0 10px 0; color: #333384; font-weight: bold; }
+.modal-body h1 { font-size: 21px; line-height: 22px; }
+.modal-body h2 { font-size: 17px; line-height: 20px; margin-top: 25px; }
+.modal-body h3 { font-size: 16px; line-height: 18px; }
+.modal-body h4 { font-size: 14px; line-height: 16px; }
+.modal-body p { margin: 10px 0; font-family: Arial; }
+.modal-body strong { color: #333384; font-weight: bold; }
+.modal-body hr { height: 0; border-style: solid; border-color: #ccc; border-width: 1px 0 0 0; margin: 30px 0; clear: both; }
+.modal-body label:hover, .modal-body input[type=checkbox], .modal-body select { cursor: pointer; }
+.modal-body ul { list-style-type: square; color: #0068d3; margin-left: 1.5em; }
+@media only screen and (min-width: 180px) and (max-width: 459px), only screen and (min-width: 460px) and (max-width: 760px) { .modal-body ul { margin-left: -8px; } }
+.modal-body ol { list-style-type: decimal; color: #333384; margin-left: 2em; }
+.modal-body li { border-bottom: 1px dashed #bfbfbf; padding: 7px 0; position: relative; display: list-item; }
+@media only screen and (min-width: 180px) and (max-width: 459px), only screen and (min-width: 460px) and (max-width: 760px) { .modal-body li { padding: 6px 0; } }
+.modal-body li.last-child, .modal-body li:last-child { border-bottom: none; }
+.modal-body li .text-color { color: #7a7a7a; }
+.modal-body ul li ul, .modal-body ul li ol { margin-top: 5px; }
+.modal-body ul li ul li, .modal-body ul li ol li { border: none; padding: 2px 0; }
+.modal-body table { position: relative; }
+.modal-body th { text-align: left; position: relative; }
+.modal-body td { position: relative; vertical-align: top; }
+
+.modal { width: 722px; color: #7a7a7a; font-size: 13px; line-height: 17px; }
+@media only screen and (min-width: 180px) and (max-width: 459px), only screen and (min-width: 460px) and (max-width: 760px) { .modal { width: 100%; } }
+.modal .disclaimer { color: #7a7a7a; }
+
+.modal-inner { padding: 30px; }
+@media only screen and (min-width: 180px) and (max-width: 459px), only screen and (min-width: 460px) and (max-width: 760px) { .modal-inner { padding: 0; } }
+
+/*#modal-load {display:none;}*/
+.modal-main-title { font-family: 'UniversLTW01-67BoldCn'; font-size: 21pt; color: #1c3583; padding-bottom: 10px; }
+
+.modal-guest-choice { width: 700px; color: #7a7a7a; font-size: 13px; line-height: 15px; overflow: hidden; }
+.modal-guest-choice .disclaimer { color: #7a7a7a; }
+.modal-guest-choice .button-medium { margin: 15px auto 10px auto; }
+.modal-guest-choice .button-guest { width: 200px; }
+.modal-guest-choice .button-new-existing { width: 300px; }
+.modal-guest-choice .button-medium img { margin: 11px 0 2px 0; }
+.modal-guest-choice #stopwatch { position: absolute; right: 25px; top: -45px; }
+
+.modal-guest-choice-header { background: url("/assets/images/modal-guest-choice-header-bk.gif"); background-repeat: repeat-x; background-color: #3673cc; overflow: hidden; position: relative; }
+.modal-guest-choice-header img { margin: 15px 0 7px 15px; }
+
+.modal-guest-choice-inner { padding: 20px; }
+
+.modal-guest-choice-column { border-right: 1px solid #ccc; float: left; width: 318px; margin: 0 20px 0 0; }
+.modal-guest-choice-column:last-child { border-right: none; margin-right: 0; }
+
+.modal-guest-choice-column-last-child { border-right: none; margin-right: 0; }
+
+.modal-pointer { position: absolute; width: 495px; left: -525px; top: 0; background: #fff; display: none; color: #7a7a7a; font-size: 13px; line-height: 18px; -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); }
+.modal-pointer h2 { margin-top: 0; }
+.modal-pointer h3 { margin: 15px 0 10px 0; }
+.modal-pointer p { margin: 15px 0 0 0 !important; }
+.modal-pointer li { padding: 5px 0; line-height: 15px; }
+.modal-pointer li .text-color { width: 400px !important; color: #444; }
+
+.modal-pointer-inner { padding: 20px 25px; }
+
+.modal-pointer-close-button { position: absolute; top: -14px; right: -15px; }
+.modal-pointer-close-button:hover { cursor: pointer; }
+
+.modal-pointer-tip { position: absolute; right: -14px; }
+
+.modal-pointer-shadow { width: 485px; height: 15px; position: absolute; left: 5px; bottom: -15px; }
+
+.modal-kit-image { margin: auto; }
+
+#satisfactionLogo { border: 0; clear: right; margin-bottom: 10px; }
+
+/* toggle these depdning on whether we display the extended BSI hours */
+#bsi-hours { display: inline-block; }
+
+#bsi-hours-ext { display: none; }
+
+#modal-national-business, #modal-national-business ul { color: #333; font-size: 15px; line-height: 19px; }
+
+#modal-national-business a { text-decoration: underline; }
+#modal-national-business li { border-bottom: none; padding: 3px 0; }
+#modal-national-business h1, #modal-national-business h2 { text-align: center; }
+#modal-national-business h1 { font-size: 23px; line-height: 26px; color: #095C2E; }
+#modal-national-business h2 { margin-top: 5px; font-size: 18px; line-height: 21px; color: #000; }
+
+/* Flat fee products modals */
+.modal-ldr-price h1 { position: relative; top: -20px; text-align: center; }
+
+#modal-ldr-price-box { background-color: #ededed; border: 1px solid #e0e0e0; padding: 0 20px 20px 20px; }
+#modal-ldr-price-box div { padding-top: 10px; text-align: center; color: #fff; font-family: "UniversLTW01-67BoldCnOb"; background-image: url(/assets/images/bk-orange-parallelogram.png); background-repeat: no-repeat; width: 353px; height: 36px; margin: 0 auto; position: relative; top: -20px; }
+#modal-ldr-price-box p { font-size: 13px; color: #000; }
+
+.modal-tmoar-price h1 { position: relative; top: -20px; text-align: center; }
+
+#modal-tmoar-price-box { background-color: #ededed; border: 1px solid #e0e0e0; padding: 0 20px 20px 20px; }
+#modal-tmoar-price-box #modal-tmoar-headline { padding-top: 10px; text-align: center; color: #fff; font-family: "UniversLTW01-67BoldCnOb"; background-image: url(/assets/images/bk-orange-parallelogram-long.png); background-repeat: no-repeat; width: 453px; height: 36px; margin: 0 auto; position: relative; top: -20px; font-size: 15px; }
+#modal-tmoar-price-box p { font-size: 13px; color: #000; }
+
+.modal-pricebox-elipse { background-image: url(/assets/images/backgrounds/period.png); background-repeat: repeat-x; background-position: 0 11px; }
+
+.level1, .level2, .level3, .level4 { position: relative; display: block; }
+
+.level1 { width: 575px; left: 20px; }
+
+.level2 { width: 555px; left: 40px; }
+
+.level3 { width: 535px; left: 60px; }
+
+.level4 { width: 515px; left: 80px; }
+
+.line-item { clear: left; background-color: #ededed; }
+
+.line-item-price { float: right; clear: right; background-color: #ededed; }
+
+.clear { clear: both; }
+
+#oStateSel { padding-top: 4px; padding-bottom: 12px; }

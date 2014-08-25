@@ -1,0 +1,228 @@
+/* questionnaire specific layout */
+
+@import 'variables';
+
+/* page layout */
+.page-questionnaire {
+	width: 280px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.nav-questionnaire {
+	height: 80px;
+	margin-top: 20px;
+	display: block;
+	width: 100%;
+	position: relative;
+	.button-next {
+		position: absolute;
+		width: 80px;
+		right: 0;
+		top: 0;
+	}
+	.link-previous {
+	 	position: absolute;
+	 	left: 0;
+	 	top: 13px;
+	}
+}
+
+/* page layout for the "thank you page" after some questionnaires */
+.comprehensive-package {
+	position: relative;
+	border-top: 1px solid $color-border-gray;
+	border-bottom: 1px solid $color-border-gray;
+	padding: 14px 0 14px 0;
+	.image {
+		width: 80px;
+		height: 66px;
+		background: transparent url(../images/questionnaire-comprehensive-package.jpg) no-repeat 0 0;
+		background-size: 80px 66px;
+		position: absolute;
+		top: 120px;
+		left: 0;
+	}
+	ul {
+		margin-left: 100px;
+		li {
+			font-size: 10px;
+		}
+	}
+}
+
+
+/* page layout for the "what's included in your order" */
+.included-in-your-order {
+	position: relative;
+	padding: 14px 0 14px 0;
+	border-bottom: 1px solid $color-border-gray;
+	.customer-support {
+		position: relative;
+		.image {
+			width: 80px;
+			height: 60px;
+			background: transparent url(../images/questionnaire-customer-service.jpg) no-repeat 0 0;
+			background-size: 80px 60px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.content {
+			margin-left: 100px;
+		}
+	}
+	.peace-of-mind {
+		position: relative;
+		.image {
+			width: 80px;
+			height: 60px;
+			background: transparent url(../images/questionnaire-peace-of-mind.jpg) no-repeat 0 0;
+			background-size: 80px 60px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.content {
+			margin-left: 100px;
+		}
+	}
+}
+
+
+/* package selection on mobile */
+.package-table {
+	margin-bottom: 20px;
+	.table {
+		list-style: none;
+		margin: 0;
+		&.scrollable {
+			overflow: scroll;
+			height: 210px;
+			-webkit-overflow-scrolling: touch;
+			border-bottom: 1px solid $color-border-gray;
+			border-right: 1px solid $color-border-gray;
+			border-left: 1px solid $color-border-gray;
+		}
+		> li {
+			color: $color-text;
+			position: relative;
+			display: block;
+			font-size: 11px;
+			border-bottom: 1px solid $color-border-gray;
+			margin-bottom: 0;
+			&.table-header {
+				.desc {
+					color: $brand-indigo;
+					font-weight: bold;
+				}
+				.second, .best {
+					text-align: center;
+					.package-name {
+						margin-top: 4px;
+						font-weight: bold;
+					}
+					.price {
+						color: $brand-indigo;
+						position: absolute;
+						width: 100%;
+						bottom: 4px;
+					}
+				}
+				.second {
+					color: $brand-blue;
+				}
+				.best {
+					color: $brand-dark-orange;
+				}
+			}
+			.desc {
+				width: 40%;
+				padding: 8px 0 8px 0;
+				strong {
+					font-family: $font-medium;
+					font-weight: normal;
+				}
+				> ul {
+					li {
+						color: $color-text;
+						font-family: $font-medium;
+					}
+				}
+			}
+			.test {
+				font-family: 'FontAwesome';
+			}
+			.second {
+				position: absolute;
+				width: 30%;
+				height: 100%;
+				display: block;
+				top: 0;
+				right: 30%;
+				&.checked {
+					background: #d1def9;
+				}
+			}
+			.best {
+				position: absolute;
+				width: 30%;
+				height: 100%;
+				display: block;
+				top: 0;
+				right: 0;
+				&.checked {
+					background: #f8e792;
+				}
+			}
+			.chart-icon-checkmark {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: -8px 0 0 -9px;
+			}
+			.best, .second {
+				.chart-icon-checkmark {
+					display: none;
+				}
+				&.checked {
+					.chart-icon-checkmark {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+.chart-icon-checkmark {
+	width: 18px;
+	height: 16px;
+	display: block;
+	background: transparent url(../images/sprite-chart-icons.png) no-repeat 0 -30px;
+	.best & {
+		background-position: 0 -60px;
+	}
+	.second & {
+		background-position: 0 -90px;
+	}
+	.last & {
+		background-position: 0 -120px;
+	}
+}
+
+input[type=radio].package-basic {
+	+ label {
+		font-size: 18px;
+		color: $brand-blue;
+		font-weight: bold;
+	}
+}
+
+input[type=radio].package-comprehensive {
+	+ label {
+		font-size: 18px;
+		color: $brand-dark-orange;
+		font-weight: bold;
+	}
+}

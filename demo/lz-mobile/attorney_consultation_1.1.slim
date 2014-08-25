@@ -1,0 +1,210 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title Speak to an Attorney | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+	
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+
+		javascript:
+			$(function(){
+				var is_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
+				// var is_safari_or_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit/i.test(navigator.userAgent);
+				if (is_uiwebview == true) {
+					$('.siteHeader').hide();
+				}
+			});	
+		
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+		
+			.bgSignin
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				/! progress bar
+				.progress-bar
+					.completed
+						.text
+							span 25
+							| % complete
+						.arrow
+
+				.pageBody
+					.page-questionnaire
+						.legalPlanIndicator YOU ARE A CURRENT LEGAL PLAN MEMBER
+						br
+						.pageHeader
+							h2.leftAlign Speak to an Attorney
+
+						p.light
+							| To speak to an attorney, simply fill out the form below. Once you click Submit, you will be able to schedule your appointment with an attorney to handle your legal matter. For more information about submitting requests or what is covered by your membership plan, 
+							a.help#attorney_detail click here
+							| .
+
+						form
+							.form-group
+								label for='first_name' First name
+								input#first_name name='first_name' type='text'
+							.form-group
+								label for='last_name' Last name
+								input#last_name name='last_name' type='text'
+							.form-group
+								label for='primary_phone' Primary phone number
+								input#primary_phone name='primary_phone' type='tel'
+							.form-group
+								label for='alternate_phone' Alternate phone number
+								input#alternate_phone name='alternate_phone' type='tel' placeholder='optional'
+							.form-group
+								label for='email_address' Email address
+								input#email_address name='email_address' type='email'
+							/! selection field for states
+							.form-group
+								label To which state does your question apply?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select#state name='state'
+										optgroup
+											option
+												| -- Select state --
+											option AK
+											option AL
+											option CA
+											option TX
+
+							.form-group
+								label for='county'
+									| What county do you live in? 
+									em
+										| (not country)
+								input#county name='county' type='text' placeholder='optional'
+							
+							/! selection field for the different legal matters
+							.form-group
+								label Legal matter
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select
+										optgroup
+											option Please select
+											option
+												| -----------------------------------------------
+											option Business Start Up Consultation on Legal Matters
+											option
+												| -----------------------------------------------
+											option Legal Document Review -- up to 10 pages
+											option Annual Legal Checkup -- Business
+											option Annual Legal Checkup -- Personal
+											option Business Formation and Management
+											option Corporate Ownership and Shares
+											option Collections or Debt Issues
+											option Copyright or Trademark Issues
+											option Employment Issues
+											option Insurance and Liability
+											option Landlord/Tenant and Property Issues
+											option Lawsuits or Fraud
+											option LegalZoom Trademark Search Results
+											option Patent Questions
+											option Regulatory Issues and Business Licenses
+											option Tax Advice
+											option Trademark Goods and Services Description and Class Selection
+											option Other
+											option
+												| -----------------------------------------------
+											option Flat Fee: Comprehensive Trademark Search Review
+											option Flat Fee: Franchise Disclosure Document Review
+											option Flat Fee: Legal Document Review -- 11 to 25 pages
+											option Flat Fee: Trademark Office Action Response
+											option Flat Fee: Website Terms & Conditions
+											option
+												| -----------------------------------------------
+											option BSP Consultation
+											option CRC Consultation
+
+							.form-group
+								label for='description'
+									| Brief description of your legal matter
+								a.help.absolute#legal_matter
+									i.icon.icon-question-sign
+
+								textarea#description name='description'
+
+							/! selection field for involving another party
+							.form-group
+								label Does your legal matter involve another party?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select
+										optgroup
+											option No
+											option Yes
+
+						/! questionnaire navigation links
+						nav.nav-questionnaire
+							a.link-previous
+								i.icon.icon-caret-left
+								|  Previous
+						
+							a.button.flex.has-right.button-next href="#"
+								.button-right
+									.inner
+										i.icon.button-icon.arrow-large
+								.button-center Next
+								
+						.clear
+
+						.disclaimer-box
+							p
+								| By clicking submit, you agree to the 
+								a Contact Terms
+								| , 
+								a Legal Plan Contract
+								| , and 
+								a Advantage Terms of Service
+								| . In addition, you authorize LegalZoom to share your order information with your legal plan attorney.
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.
+
+			.modal-overlay
+
+			.tooltip-container
+
+				.tooltip#attorney_detail_tooltip
+					.arrow.left
+					a.close
+						i.icon.icon-tooltip-close
+					.container
+						p While the majority of questions can be answered within the consultation period, your plan attorney may determine that a particular matter is too complex to be handled in this time period. You may also want additional legal work done that falls outside of the plan benefits, such as a legal document review that is longer than 10 pages, or you would like advice on an ongoing legal matter. In these cases, you may request additional legal services from the attorney at a 25% discount off their regular hourly rate.
+
+				.tooltip#legal_matter_tooltip
+					.arrow.left
+					a.close
+						i.icon.icon-tooltip-close
+					.container
+						p You only need to include a general description of your legal matter. The information is submitted to LegalZoom.com and is not protected by any attorney-client privilege. You will have the opportunity to discuss your situation directly with your attorney in more detail.
+

@@ -1,0 +1,130 @@
+!!!
+%html
+	%head
+		%meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+		%meta{:content => "IE=Edge", "http-equiv" => "X-UA-Compatible"}/
+		%meta{:content => "chrome=1", "http-equiv" => "X-UA-compatible"}/
+		%title Legalzoom
+		%link{:href => "css/html5-doctor-reset-stylesheet.min.css", :rel => "stylesheet", :type => "text/css"}/
+		%link{:href => "css/font-awesome.css", :rel => "stylesheet", :type => "text/css"}/
+		%link{:href => "css/app.css", :rel => "stylesheet", :type => "text/css"}/
+		%script{:src => "js/modernizr-2.6.2.js", :type => "text/javascript"}
+		%script{:src => "js/jquery-1.10.1.min.js", :type => "text/javascript"}
+		%script{:src => "js/app.min.js", :type => "text/javascript"}
+		/[if lte IE 8]
+			<link href="css/ie8.css" rel="stylesheet" type="text/css">
+		/[if lte IE 9]
+			<link href="css/ie9.css" rel="stylesheet" type="text/css">
+	%body
+		.container{:style => "width: 620px;"}
+			/ forms sample code
+			.form-group
+				%h1 Tell us about your business
+				%h3 Are you forming a new business?
+				%p Please type in EXACTLY as you want your business name to appear. The name must end with the words “LLC”, “L.L.C.” or “Limited Liability Company”.
+				.form-fields
+					%input{:placeholder => "Your business name", :type => "text"}/
+					%a#learn.help.icon.lz-icon-help
+					%br/
+					.error-text
+				.form-fields
+					%input.error{:type => "text"}/
+					%a#learn2.help.icon.lz-icon-help
+					%br/
+					.error-text Please enter your business name.
+				.form-fields
+					%input.darker{:placeholder => "Your business name", :type => "text"}/
+					%a#learn.help.icon.lz-icon-help
+					%br/
+					.error-text
+				.form-fields
+					%input.error.darker{:type => "text"}/
+					%a#learn2.help.icon.lz-icon-help
+					%br/
+					.error-text Please enter your business name.
+			/ forms with label on top
+			.form-group
+				.form-fields
+					%label Business name
+					%br/
+					%input{:placeholder => "Your business name", :type => "text"}/
+					%a#learn.help.icon.lz-icon-help
+					%br/
+					.error-text
+				.form-fields
+					%label More labels
+					%br/
+					%input{:type => "text"}/
+					%a#learn2.help.icon.lz-icon-help
+					%br/
+					.error-text
+			/ forms with label to the side
+			.form-group
+				.form-fields
+					%label.column First &amp; last name:
+					%input.short{:type => "text"}/
+					%a#learn.help.icon.lz-icon-help
+					%br/
+					.error-text
+				.form-fields
+					%label.column Address:
+					%input.short{:type => "text"}/
+					%a#learn2.help.icon.lz-icon-help
+					%br/
+					.error-text
+			/ radio and check boxes
+			.form-group
+				%h3 Are you the registered agent for your business?
+				.form-fields
+					%input#demo{:type => "checkbox"}/
+					%label{:for => "demo"} This is a checkbox
+				.form-fields
+					%input#agreement.disclaimer{:type => "checkbox"}/
+					%label{:for => "agreement"} This is a disclaimer (smaller text). By checking this box, you legally state that the person or company named above consents to acting as the registered agent for your business.
+			.form-group
+				%h3 Are you forming a new business?
+				.form-fields
+					%input#new_yes{:name => "new", :type => "radio"}/
+					%label{:for => "new_yes"} Yes
+					%br/
+					%input#new_no{:name => "new", :type => "radio"}/
+					%label{:for => "new_no"} No
+			/ select drop downs
+			.form-group
+				%h3 What will your business be doing?
+				%p If you don’t see your activity or have multiple activities, select "Other" and type it in.
+				.form-fields.select
+					.select-field
+						.select-arrow-container
+							.select-arrow
+						%select#param_interest{:name => "interest"}
+							%optgroup
+								%option Please select
+								%option Option 1
+								%option Option 2
+								%option Option 3
+								%option Option 4
+								%option Option 5
+					%a.help.icon.lz-icon-help
+			/ tooltip container
+			.tooltip-container
+				#learn_tooltip.tooltip.wide
+					.arrow.left
+					.close
+						%i.icon.icon-tooltip-close
+					%p The majority of our customers form their LLC in the state where they plan to locate and run their business. However, the following types of businesses often choose to form their business in Delaware:
+					%ul
+						%li Businesses seeking investments from venture capital groups
+						%li Businesses with plans for an initial public offering (IPO) in the next few years
+					%p If you form your business in a state other than where it will be located, your business will most likely have to file additional paperwork and pay additional fees to "foreign qualify" in the state where the business is located.
+					%p
+						If you have more questions about business formation or foreign qualification, please call us at
+						= succeed "." do
+							%a (855) 773-0880
+					%p
+						%a{:onclick => "openModalID('sample_documents');"} Click here for sample
+				#learn2_tooltip.tooltip
+					.arrow.left
+					.close
+						%i.icon.icon-tooltip-close
+					%p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet placerat sagittis.

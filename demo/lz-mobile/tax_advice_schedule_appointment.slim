@@ -1,0 +1,129 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title Schedule Consultation | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+		
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+		
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+			
+			.grassBG
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.pageBody
+					.pageFixed.pagePadded
+						br
+						
+						.legalPlanIndicator YOU ARE A CURRENT LEGAL PLAN MEMBER
+
+
+						.pageHeader
+							h2.leftAlign.ctnLogo Schedule an appointment
+						
+						span.pageInfo 
+							| Choose the most convenient date and time for your appointment and provide details of what you'd like to discuss.
+							br
+							br
+							| If you need to reschedule or cancel an appointment, please call 866-970-3882 or send us an 
+							a href="mailto:" email
+							| .
+						br
+						br
+						
+						.pendingAppointments
+							h3 Your pending appointments
+							span.date 10/28/2013  04:30 PM
+							a.cancelLink href="" Cancel
+						br
+						
+						form
+							label.formHeader for="month" Appointment date
+							br
+							div
+								div style="width:98px;float:right;"
+									.form-fields.select
+										.select-field.fitSize
+											.select-arrow-container
+												.select-arrow
+											select#param_day name="day"
+												optgroup
+													option Day
+								div style="width:174px;"
+									.form-fields.select
+										.select-field.fitSize
+											.select-arrow-container
+												.select-arrow
+											select#param_month name="month"
+												optgroup
+													option Month
+				
+							br
+							br
+							label.formHeader for="time" Appointment time
+							br
+							.form-fields.select
+								.select-field.fullMobile
+									.select-arrow-container
+										.select-arrow
+									select#param_time name="time"
+										optgroup
+											option Time
+						
+							br
+							br
+							label.formHeader for="discuss" What would you like to discuss?
+							br
+							textarea#discuss.fullMobile name="discuss" rows="4" placeholder="Please, provide as much detail as possible to help the tax professional assist you."
+							br
+							br
+							label.formHeader for="phone_num" Phone number
+							br
+							input#phone_num.fullMobile type="text" name="phone_num"
+							br
+							br
+							
+							.rightAlign
+								a.button.flex.has-right href="tax_advice_schedule_appointment_confirmation.html"
+									span.button-right
+										span.inner
+											i.icon.button-icon.arrow-large
+									span.button-center Send request
+							br
+							br
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.socialIcons
+					ul
+						li.socialIconFacebook
+							a href="http://www.facebook.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconTwitter
+							a href="http://twitter.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconLinkedIn
+							a href="http://www.linkedin.com/company/legalzoom" rel="external" data-transition="slide"
+						li.socialIconGPlus
+							a href="https://plus.google.com/+legalzoom" rel="external" data-transition="slide"
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.

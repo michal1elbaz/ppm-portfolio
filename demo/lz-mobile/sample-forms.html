@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+    <meta content='chrome=1' http-equiv='X-UA-compatible'>
+    <title>Legalzoom</title>
+    <link href='css/html5-doctor-reset-stylesheet.min.css' rel='stylesheet' type='text/css'>
+    <link href='css/font-awesome.css' rel='stylesheet' type='text/css'>
+    <link href='css/app.css' rel='stylesheet' type='text/css'>
+    <script src='js/modernizr-2.6.2.js' type='text/javascript'></script>
+    <script src='js/jquery-1.10.1.min.js' type='text/javascript'></script>
+    <script src='js/app.min.js' type='text/javascript'></script>
+    <!--[if lte IE 8]>
+      <link href="css/ie8.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+    <!--[if lte IE 9]>
+      <link href="css/ie9.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+  </head>
+  <body>
+    <div class='container' style='width: 620px;'>
+      <!-- forms sample code -->
+      <div class='form-group'>
+        <h1>Tell us about your business</h1>
+        <h3>Are you forming a new business?</h3>
+        <p>Please type in EXACTLY as you want your business name to appear. The name must end with the words “LLC”, “L.L.C.” or “Limited Liability Company”.</p>
+        <div class='form-fields'>
+          <input placeholder='Your business name' type='text'>
+          <a class='help icon lz-icon-help' id='learn'></a>
+          <br>
+          <div class='error-text'></div>
+        </div>
+        <div class='form-fields'>
+          <input class='error' type='text'>
+          <a class='help icon lz-icon-help' id='learn2'></a>
+          <br>
+          <div class='error-text'>Please enter your business name.</div>
+        </div>
+        <div class='form-fields'>
+          <input class='darker' placeholder='Your business name' type='text'>
+          <a class='help icon lz-icon-help' id='learn'></a>
+          <br>
+          <div class='error-text'></div>
+        </div>
+        <div class='form-fields'>
+          <input class='error darker' type='text'>
+          <a class='help icon lz-icon-help' id='learn2'></a>
+          <br>
+          <div class='error-text'>Please enter your business name.</div>
+        </div>
+      </div>
+      <!-- forms with label on top -->
+      <div class='form-group'>
+        <div class='form-fields'>
+          <label>Business name</label>
+          <br>
+          <input placeholder='Your business name' type='text'>
+          <a class='help icon lz-icon-help' id='learn'></a>
+          <br>
+          <div class='error-text'></div>
+        </div>
+        <div class='form-fields'>
+          <label>More labels</label>
+          <br>
+          <input type='text'>
+          <a class='help icon lz-icon-help' id='learn2'></a>
+          <br>
+          <div class='error-text'></div>
+        </div>
+      </div>
+      <!-- forms with label to the side -->
+      <div class='form-group'>
+        <div class='form-fields'>
+          <label class='column'>First &amp; last name:</label>
+          <input class='short' type='text'>
+          <a class='help icon lz-icon-help' id='learn'></a>
+          <br>
+          <div class='error-text'></div>
+        </div>
+        <div class='form-fields'>
+          <label class='column'>Address:</label>
+          <input class='short' type='text'>
+          <a class='help icon lz-icon-help' id='learn2'></a>
+          <br>
+          <div class='error-text'></div>
+        </div>
+      </div>
+      <!-- radio and check boxes -->
+      <div class='form-group'>
+        <h3>Are you the registered agent for your business?</h3>
+        <div class='form-fields'>
+          <input id='demo' type='checkbox'>
+          <label for='demo'>This is a checkbox</label>
+        </div>
+        <div class='form-fields'>
+          <input class='disclaimer' id='agreement' type='checkbox'>
+          <label for='agreement'>This is a disclaimer (smaller text). By checking this box, you legally state that the person or company named above consents to acting as the registered agent for your business.</label>
+        </div>
+      </div>
+      <div class='form-group'>
+        <h3>Are you forming a new business?</h3>
+        <div class='form-fields'>
+          <input id='new_yes' name='new' type='radio'>
+          <label for='new_yes'>Yes</label>
+          <br>
+          <input id='new_no' name='new' type='radio'>
+          <label for='new_no'>No</label>
+        </div>
+      </div>
+      <!-- select drop downs -->
+      <div class='form-group'>
+        <h3>What will your business be doing?</h3>
+        <p>If you don’t see your activity or have multiple activities, select "Other" and type it in.</p>
+        <div class='form-fields select'>
+          <div class='select-field'>
+            <div class='select-arrow-container'>
+              <div class='select-arrow'></div>
+            </div>
+            <select id='param_interest' name='interest'>
+              <optgroup>
+                <option>Please select</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </optgroup>
+            </select>
+          </div>
+          <a class='help icon lz-icon-help'></a>
+        </div>
+      </div>
+      <!-- tooltip container -->
+      <div class='tooltip-container'>
+        <div class='tooltip wide' id='learn_tooltip'>
+          <div class='arrow left'></div>
+          <div class='close'>
+            <i class='icon icon-tooltip-close'></i>
+          </div>
+          <p>The majority of our customers form their LLC in the state where they plan to locate and run their business. However, the following types of businesses often choose to form their business in Delaware:</p>
+          <ul>
+            <li>Businesses seeking investments from venture capital groups</li>
+            <li>Businesses with plans for an initial public offering (IPO) in the next few years</li>
+          </ul>
+          <p>If you form your business in a state other than where it will be located, your business will most likely have to file additional paperwork and pay additional fees to "foreign qualify" in the state where the business is located.</p>
+          <p>
+            If you have more questions about business formation or foreign qualification, please call us at
+            <a>(855) 773-0880</a>.
+          </p>
+          <p>
+            <a onclick="openModalID('sample_documents');">Click here for sample</a>
+          </p>
+        </div>
+        <div class='tooltip' id='learn2_tooltip'>
+          <div class='arrow left'></div>
+          <div class='close'>
+            <i class='icon icon-tooltip-close'></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet placerat sagittis.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

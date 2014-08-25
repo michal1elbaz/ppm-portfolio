@@ -1,0 +1,133 @@
+doctype html
+html
+	head
+		meta charset='utf-8'
+		meta name='viewport' content='width=device-width, minimum-scale=1, maximum-scale=1'
+
+		title Creating your Power of Attorney | LegalZoom.com
+		link type='text/css' rel='stylesheet' href='css/core-mobile.css'
+
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+
+	body
+		.sidemneu-container#sidemneu_container
+
+		a.menu-overlay
+
+		.viewport
+
+			.bgSignin
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.progress-bar
+					.completed
+						.text
+							span 25
+							| % complete
+						.arrow
+
+				.pageBody
+					.page-questionnaire
+
+						.pageHeader
+							 h2.leftAlign Who will be your agent?
+
+						form
+							.form-group.has-help
+								a.help.absolute#help_agent
+									i.icon.icon-question-sign
+								p.light Your agent will have the power to make financial and legal decision on your behalf.
+
+							h4.tight What is your agent's name?
+							p.light Please enter your agent's legal name (as it appears on driver's license or passport).
+
+							.form-group
+								label for='agent_first_name' First name
+								input#agent_first_name name='agent_first_name' type='text'
+
+							.form-group
+								label for='agent_middle_name' Middle name (optional)
+								input#agent_middle_name name='agent_middle_name' type='text'
+
+							.form-group
+								label for='agent_last_name' Last name
+								input#agent_last_name name='agent_last_name' type='text'
+
+							hr
+
+							h4.tight Where does your agent live?
+							p.light This information helps identify your agent in your power of attorney.
+
+							.form-group
+								label for='agent_city' City
+								input#agent_city name='agent_city' type='text'
+
+							.form-group.select
+								label State
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select#agent_state name='agent_state'
+										optgroup
+											option Alaska
+											option Arkansas
+											option California
+
+							hr
+
+							h4.tight Do you want to name an alternate agent?
+							p.light.tight An alternate agent will make decisions on your behalf if your first choice is unable or unwilling to serve.
+
+							.form-group.select
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select#alternate_agent name='alternate_agent'
+										optgroup
+											option No
+											option Yes
+
+						/! questionnaire navigation links
+						nav.nav-questionnaire
+							a.link-previous href='q_power_of_attorney_03.html'
+								i.icon.icon-caret-left
+								|  Previous
+						
+							a.button.flex.has-right.button-next href='q_power_of_attorney_04_1_alternate_agent.html'
+								.button-right
+									.inner
+										i.icon.button-icon.arrow-large
+								.button-center Next
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.
+
+			.modal-overlay
+
+			.tooltip-container
+
+				.tooltip#help_agent_tooltip
+					.arrow.left
+					a.close
+						i.icon.icon-tooltip-close
+					.container
+						p
+							| Do not assume your spouse automatically has legal power over your financial affairs should you become incapacitated. To ensure your spouse has that power, name him/her as your agent.
+
+						p
+							| You can only have one agent at a time. If your selected agent cannot perform his/her duties or chooses not to continue, your alternate will then become your new agent.

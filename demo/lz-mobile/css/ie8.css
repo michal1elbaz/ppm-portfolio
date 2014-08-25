@@ -1,0 +1,157 @@
+/* ie 8 and below style fixes */
+/* font rendering fixes - kinda horrible, not using it, but leaving code in here as a reference */
+/*h1, h2, h3, h4 {
+	letter-spacing: 0;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/hIEfix.png,sizingMethod=crop);
+	zoom: 1;
+}*/
+/* text input reset */
+input[type=text], input[type=password] {
+  height: 16px;
+  padding: 2px; }
+
+input[type=password] {
+  font-family: Helvetica, Arial, sans-serif; }
+
+/* text input reset for 'save your work' on the sidebar in the qaire */
+.email-sidebar .form-group input[type=text] {
+  height: 16px;
+  padding: 2px; }
+.email-sidebar .button.small {
+  height: 22px; }
+  .email-sidebar .button.small .button-center {
+    padding: 4px 0 0 0; }
+
+/* form radio and checkbox reset */
+input[type=radio] {
+  display: inline-block;
+  margin-top: -3px; }
+  input[type=radio] + label {
+    background: none;
+    height: auto;
+    padding: 0 0 4px 0; }
+    input[type=radio] + label:hover {
+      background: none; }
+
+input[type=checkbox] {
+  display: inline-block;
+  height: auto;
+  float: left;
+  padding: 0; }
+  input[type=checkbox] + label {
+    background: none;
+    margin: 0 0 0 4px;
+    display: inline-block;
+    width: 90%;
+    padding: 0; }
+    input[type=checkbox] + label:hover {
+      background: none; }
+  input[type=checkbox].disclaimer + label {
+    padding: 0; }
+
+/* form select box reset */
+.select-field {
+  display: block;
+  width: 290px;
+  height: auto;
+  overflow: visible;
+  box-shadow: none;
+  background: none;
+  border: none;
+  float: left;
+  padding: 0; }
+  .select-field select {
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 290px;
+    -webkit-appearance: menulist;
+    padding: 0;
+    position: relative;
+    font-family: Arial, sans-serif; }
+  .select-field .select-arrow-container {
+    display: none;
+    background: none; }
+  .select-field .select-arrow {
+    display: none;
+    background: none; }
+  .select-field + .help.icon {
+    margin-top: 7px; }
+  .select-field.short {
+    width: 140px; }
+    .select-field.short select {
+      width: 140px; }
+  .select-field.shortest {
+    width: 80px; }
+    .select-field.shortest select {
+      width: 80px; }
+  .select-field.month {
+    width: 130px; }
+    .select-field.month select {
+      width: 130px; }
+  .select-field.year {
+    width: 87px; }
+    .select-field.year select {
+      width: 87px; }
+  .select-field.wide {
+    width: 520px; }
+    .select-field.wide select {
+      width: 520px; }
+  .select-field.state {
+    width: 340px; }
+    .select-field.state select {
+      width: 340px; }
+  .select-field.credit-cards {
+    width: 220px; }
+    .select-field.credit-cards select {
+      width: 220px; }
+
+.form-group .form-fields.select label.column {
+  margin: 0 4px 0 0; }
+
+/* select field reset for ie8 questionnaire only */
+.questionnaire .select-field {
+  width: auto; }
+  .questionnaire .select-field select {
+    width: auto;
+    -webkit-appearance: menulist;
+    padding: 0;
+    position: relative;
+    font-family: Arial, sans-serif; }
+
+/* Bank of America offer in the qaire */
+.offer-bofa .offer-bofa-bottom {
+  padding: 10px 10px 30px 10px; }
+  .offer-bofa .offer-bofa-bottom .form-group {
+    padding: 10px 0 8px 0; }
+    .offer-bofa .offer-bofa-bottom .form-group .select-field.wide {
+      margin-left: 23px;
+      width: 460px; }
+      .offer-bofa .offer-bofa-bottom .form-group .select-field.wide select {
+        width: 460px; }
+
+/* comparison chart fly-out content text for IE 8 */
+.flyout-content p {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 1em; }
+.flyout-content li {
+  font-family: Arial, sans-serif;
+  font-size: 12px; }
+
+/* hiding normal shadows for floating-modules and showing IE compatible shadow images */
+.texture-stripes .shadow-strip {
+  display: none; }
+
+.module-floating .shadow {
+  display: none; }
+.module-floating.has-shadow .shadow {
+  display: none; }
+
+.module-image .shadow {
+  display: none; }
+
+.banner-folded .banner-fold-bottom {
+  display: none; }
+
+.comparison-chart .shadow {
+  display: none; }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport" />
+    <title>
+      Speak to an Attorney | LegalZoom.com
+    </title>
+    <link href="css/core-mobile.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/modernizr-2.6.2.min.js" type="text/javascript"></script>
+    <script src="js/app.min.js" type="text/javascript"></script>
+    <script src="js/mobile-sidemenu.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+          var is_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
+          // var is_safari_or_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit/i.test(navigator.userAgent);
+          if (is_uiwebview == true) {
+              $('.siteHeader').hide();
+          }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="sidemenu-container" id="sidemenu_container"></div>
+    <a class="menu-overlay"></a>
+    <div class="viewport">
+      <div class="bgSignin">
+        <div class="siteHeader">
+          <a class="leftNavButton" href="#remote-content-menu" id="remote-content-menu"><span class="badge hamburgerBadge">12</span></a>
+          <div class="lz-logo">
+            <a href="index.html">LegalZoom</a>
+          </div>
+          <a class="rightNavButton" href="tel:800-773-0888"></a>
+        </div>
+        <!--progress bar-->
+        <div class="progress-bar">
+          <div class="completed">
+            <div class="text">
+              <span>25</span>% complete
+            </div>
+            <div class="arrow"></div>
+          </div>
+        </div>
+        <div class="pageBody">
+          <div class="page-questionnaire">
+            <div class="legalPlanIndicator">
+              YOU ARE A CURRENT LEGAL PLAN MEMBER
+            </div>
+            <br />
+            <div class="pageHeader">
+              <h2 class="leftAlign">
+                Website Terms & Conditions
+              </h2>
+            </div>
+            <p class="light">
+              One of the benefits of legal plan membership is having access to attorney-drafted legal documents for a low, flat fee. Your attorney will customize your website terms and conditions and privay policy to fit your business needs &mdash; without you having to pay an expensive hourly rate.
+            </p>
+            <p class="light">
+              To help your attorney better prepare for your phone consultation, please answer a few additional questions.
+            </p>
+            <form>
+              <hr />
+              <div class="form-group">
+                <p class="question-text tight">
+                  Do you want to discuss your current website terms and conditions and privacy policy or do you want your attorney to draft new ones?
+                </p>
+                <div class="select-field">
+                  <div class="select-arrow-container">
+                    <div class="select-arrow"></div>
+                  </div>
+                  <select><optgroup><option>-- Select --</option><option>current</option><option>new</option></optgroup></select>
+                </div>
+              </div>
+              <div class="form-group">
+                <p class="question-text tight">
+                  Enter your website URL (if available)
+                </p>
+                <input type="text" />
+              </div>
+              <div class="form-group">
+                <p class="question-text tight">
+                  Briefly describe the main purpose of your website.
+                </p>
+                <textarea></textarea>
+              </div>
+              <div class="form-group">
+                <p class="question-text tight">
+                  If you want to discuss your current terms and conditions and privacy policy, please explain your main issue or concern.
+                </p>
+                <textarea></textarea>
+              </div>
+              <p class="light">
+                PLEASE NOTE: Your consultation is free and covered by your legal plan. But for your attorney to draft new website terms and conditions and privacy policy, there is a $399 flat fee that you will need to pay directly to your attorney.
+              </p>
+            </form>
+            <!--questionnaire navigation links-->
+            <nav class="nav-questionnaire">
+              <a class="link-previous"><i class="icon icon-caret-left"></i> Previous</a><a class="button flex has-right button-next" href="#">
+                <div class="button-right">
+                  <div class="inner">
+                    <i class="icon button-icon arrow-large"></i>
+                  </div>
+                </div>
+                <div class="button-center">
+                  Next
+                </div>
+              </a>
+            </nav>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pageDivider"></div>
+      <div class="clear siteFooter">
+        <br />
+        <div class="footerLinks">
+          <a href="disclaimer.html">Disclaimer</a> | <a href="privacy_policy.html">Privacy Policy</a>
+        </div>
+        <div class="clear"></div>
+        <div class="legalAdvice">
+          The information provided on this site is not legal advice.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

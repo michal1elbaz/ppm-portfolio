@@ -1,0 +1,138 @@
+/* mobile checkout layout */
+
+@import 'variables';
+
+/* order summary */
+.order-summary {
+	font-size: 13px;
+	margin: 10px 0 30px 0;
+	h4 {
+		margin-bottom: 0;
+		padding-bottom: 4px;
+		border-bottom: 1px solid $color-border-gray;
+	}
+	p {
+		&.savings {
+			font-size: 13px;
+			strong {
+				font-family: $font-medium;
+			}
+			span {
+				font-size: 11px;
+			}
+		}
+	}
+}
+
+/* order detail table */
+.order-detail {
+	list-style: none;
+	position: relative;
+	margin: 0 0 14px 0;
+	padding: 0 0 8px 0;
+	width: 100%;
+	border-bottom: 1px solid #e5e5e5;
+	.item-list {
+		width: 100%;
+		position: relative;
+		padding: 4px 0 0 0;
+		background: transparent url(../images/bg-dotted-line.png) repeat-x center bottom;
+		line-height: 1.1;
+		color: $color-text;
+		.item {
+			position: relative;
+			bottom: -1px;
+			background: #fff;
+			display: inline-block;
+			max-width: 220px;
+			.included {
+				font-size: 11px;
+				font-family: $font-sans-serif;
+			}
+			a {
+				text-decoration: underline;
+			}
+			&.package-name {
+				font-family: $font-medium;
+				color: $brand-indigo;
+			}
+			&.state-fees {
+				@media #{$iphone-portrait} {
+					width: 240px;
+				}
+			}
+		}
+		.price {
+			position: absolute;
+			right: 0;
+			bottom: -1px;
+			background: #fff;
+			&.see-details {
+				font-size: 11px;
+			}
+		}
+		&.total {
+			background-image: none;
+			border-top: 1px solid #e5e5e5;
+			.item {
+				text-align: right;
+				width: 100%;
+				padding: 3px 0 0 0;
+				font-weight: bold;
+				max-width: 100%;
+				span {
+					margin: 0 10px 0 0;
+				}
+			}
+			.ra-agreement {
+				font-size: 11px;
+				font-weight: normal;
+				text-align: left;
+				width: 100%;
+			}
+		}
+		&.installment {
+			margin-top: -4px;
+			.item {
+				text-align: right;
+				display: block;
+				font-size: 11px;
+				margin: 0 0 3px 0;
+				span {
+					font-weight: bold;
+					color: $brand-indigo;
+				}
+			}
+		}
+		&.rebate {
+			.item {
+				text-align: right;
+				width: 100%;
+				span {
+					color: #218e0f;
+					@media #{$iphone-portrait} {
+						width: 100%;
+						display: block;
+					}
+				}
+				a {
+					font-size: 11px;
+				}
+			}
+		}
+	}
+}	
+
+
+/* payment information */
+
+.badge-creditcards {
+	display: inline-block;
+	position: relative;
+	top: 6px;
+	left: 130px;
+	width: 142px;
+	height: 20px;
+	overflow: hidden;
+	background: transparent url(../images/badge-creditcards.png) no-repeat 0 0;
+}

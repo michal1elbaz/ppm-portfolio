@@ -1,0 +1,140 @@
+doctype html
+html
+	head
+		meta charset='utf-8'
+		meta name='viewport' content='width=device-width, minimum-scale=1, maximum-scale=1'
+
+		title Creating your Power of Attorney | LegalZoom.com
+		link type='text/css' rel='stylesheet' href='css/core-mobile.css'
+
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+
+	body
+		.sidemneu-container#sidemneu_container
+
+		a.menu-overlay
+
+		.viewport
+
+			.bgSignin
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.progress-bar
+					.completed
+						.text
+							span 25
+							| % complete
+						.arrow
+
+				.pageBody
+					.page-questionnaire
+
+						.pageHeader
+							 h2.leftAlign More details about your power of attorney.
+
+						p.light You can include additional instructions in your power of attorney.
+
+						form
+							.form-group.select
+								a.help.absolute#help_personal_benefit
+									i.icon.icon-question-sign
+								h4.tight Personal Benefit
+								p.light.tight Do you want your agent to be able to financially benefit from any transactions taken on your behalf?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select#personal_benefit name='personal_benefit'
+										optgroup
+											option No
+											option Yes
+
+							.form-group.select
+								h4.tight Additional Powers
+								p.light.tight Do you want to list any additional types of decisions that your agent can make on your behalf?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select#additional_powers name='additional_powers'
+										optgroup
+											option No
+											option Yes
+
+							.form-group.select
+								h4.tight Limitations on Powers
+								p.light.tight Do you want to limit any types of decisions your agent can make on your behalf?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select#limitations_on_powers name='limitations_on_powers'
+										optgroup
+											option No
+											option Yes
+
+							.form-group.select
+								a.help.absolute#help_revoke_prior_powers
+									i.icon.icon-question-sign
+								h4.tight Revoke Prior Powers of Attorney
+								p.light.tight If you have prior, signed, powers of attorney, do you want to revoke all of them?
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select#revoke_prior_powers name='revoke_prior_powers'
+										optgroup
+											option No
+											option Yes
+
+
+						/! questionnaire navigation links
+						nav.nav-questionnaire
+							a.link-previous href='q_power_of_attorney_06.html'
+								i.icon.icon-caret-left
+								|  Previous
+						
+							a.button.flex.has-right.button-next href='q_power_of_attorney_07_1_additional_power.html'
+								.button-right
+									.inner
+										i.icon.button-icon.arrow-large
+								.button-center Next
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.
+
+			.modal-overlay
+
+			.tooltip-container
+
+				.tooltip#help_personal_benefit_tooltip
+					.arrow.left
+					a.close
+						i.icon.icon-tooltip-close
+					.container
+						p Generally, your agent is not permitted to financially benefit from any actions taken on your behalf. However, if your agent is your spouse or other close family member whose financial interests are connected with yours, some people choose to allow them to benefit.
+
+						p
+							| To view a sample Power of Attorney, including agent powers, 
+							a href='https://www.legalzoom.com/brainnet/huge.aspx?TIMESTRING=n%2f8lq%2fX6QWTdHglubP9Kow%3d%3d&iP=8#' click here
+							| .
+
+				.tooltip#help_revoke_prior_powers_tooltip
+					.arrow.left
+					a.close
+						i.icon.icon-tooltip-close
+					.container
+						p Individuals who have already signed a durable power of attorney often want to alter it, for example, to name a new agent, or change the agent’s powers. To do so, generally, the power of attorney must be revoked by creating a new power of attorney with language revoking prior powers of attorney. Also, the agent using the prior power of attorney must be notified that the power of attorney has been revoked.
+
+						p Please note that by answering "Yes" to this question, the new power of attorney and additional documentation will, once signed, revoke all prior powers of attorney signed by that principal.

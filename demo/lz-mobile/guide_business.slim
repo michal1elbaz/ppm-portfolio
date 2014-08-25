@@ -1,0 +1,69 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title Guide | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+		
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"		
+		script type="text/javascript" src="js/guide.js"
+		
+		css:
+			.guidePages {
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			.page {
+				color: white;
+				width: 100%;
+			    overflow: hidden;
+			    float: left;
+			}
+			
+			.guideContainer
+			{
+			    width: 100%;
+			    overflow: hidden;
+			}
+			
+			.content {
+				position:relative;
+			}
+		
+		javascript:
+			$(document).ready(function () {
+				setPageWidth();
+			      
+				$("li").on("mousedown mouseup", function(e){
+					$(this).toggleClass( "active", e.type === "mousedown" );
+				});
+				
+				buildPagesWithJSON('[{"question":"Where Do You Plan to Run Your Business?","type":"options","percentage":"10","options":[{"question":"In What State is your Home\/ Home Office located?","type":"select_state","value":"From my home\/ home office","icon":"icon_home","percentage":"20","options":[{"type":"GOTOSET:1"}]},{"question":"In What State is Your Biz\/Office Located?","type":"select_state","value":"From an office or location separate from my Home","icon":"icon_buildings","percentage":"20","options":[{"type":"GOTOSET:1"}]}]},{"question":"Will your business be operating outside of @ANSWER_0_1@?","type":"options","percentage":"30","options":[{"question":"Which of the following best describes the nature of your business?","type":"options","value":"Yes","icon":"icon_checkmark","percentage":"35","options":[{"type":"GOTOSET:2","value":"I, my employees or others associated with the biz will be required to physically operate outside of @ANSWER_0_1@)"},{"type":"GOTOSET:3","value":"my employees or others associated with the biz will NOT be physically operating outside of @ANSWER_0_1@ (e.g. mail order etc.)"}]},{"type":"GOTOSET:3","value":"No","icon":"icon_cross"},{"type":"GOTOSET:3","value":"Not Sure","icon":"icon_arrow"}]},{"question":"Select the state\/s outside of @ANSWER_0_1@ in which you will need to physically operate?","type":"select_state_multi","percentage":"40","options":[{"type":"GOTOSET:3"}]},{"question":"What is Your Primary Business Activity?","type":"options","percentage":"50","options":[{"type":"GOTOSET:4","value":"Accommodations","icon":"icon_accomodation"},{"type":"GOTOSET:4","value":"Construction","icon":"icon_construction"},{"type":"GOTOSET:4","value":"Consulting","icon":"icon_users"},{"type":"GOTOSET:4","value":"Finance","icon":"icon_graph"},{"type":"GOTOSET:4","value":"Food Service","icon":"icon_drink"},{"type":"GOTOSET:4","value":"Healthcare","icon":"icon_healthcare"},{"type":"GOTOSET:4","value":"Insurance","icon":"icon_id_badge"},{"type":"GOTOSET:4","value":"Manufacturing","icon":"icon_cogs"},{"type":"GOTOSET:4","value":"Professional Services","icon":"icon_briefcase"},{"type":"GOTOSET:4","value":"Real Estate","icon":"icon_home"},{"type":"GOTOSET:4","value":"Rental and Leasing","icon":"icon_keys"},{"type":"GOTOSET:4","value":"Retail","icon":"icon_tag"},{"type":"GOTOSET:4","value":"Social Assistance","icon":"icon_hand"},{"type":"GOTOSET:4","value":"Transportation","icon":"icon_plane"},{"type":"GOTOSET:4","value":"Warehousing","icon":"icon_warehouse"},{"type":"GOTOSET:4","value":"Wholesale","icon":"icon_dollar"},{"type":"GOTOSET:4","value":"Other","icon":"icon_arrow"}]},{"question":"Will you have other owners besides yourself for the business?","type":"options","percentage":"60","options":[{"type":"GOTOSET:5","value":"Yes","icon":"icon_checkmark"},{"type":"GOTOSET:5","value":"No","icon":"icon_cross"},{"type":"GOTOSET:5","value":"Not Sure","icon":"icon_arrow"}]},{"question":"How Do you Intend to Finance this Business?","type":"multioptions","percentage":"70","options":[{"type":"GOTOSET:6","value":"Money\/ Resources from other owners"},{"type":"GOTOSET:6","value":"Use My Own Money\/ Resources"},{"type":"GOTOSET:6","value":"Money\/ Resources from Friends & Family"},{"type":"GOTOSET:6","value":"Bank Loan"},{"type":"GOTOSET:6","value":"Other"},{"type":"GOTOSET:6","value":"Not Sure"},{"type":"GOTOSET:7","value":"Funding from VCs or angel investors"}]},{"question":"Which of the Following Best Describes Your Goal for this Business?","type":"options","percentage":"90","options":[{"type":"GOTOSET:8","value":"Grow the biz but keep biz with original owners or within our families","icon":"icon_circle_arrows"},{"type":"GOTOSET:8","value":"Sell the Business for a Profit","icon":"icon_coins"},{"type":"GOTOSET:9","value":"Grow the business so it can be publically traded","icon":"icon_graph"},{"type":"GOTOSET:8","value":"Other","icon":"icon_arrow"},{"type":"GOTOSET:8","value":"Not Sure","icon":"icon_arrow"}]},{"question":"Which of the Following Best Describes Your Goal for this Business?","type":"options","percentage":"90","options":[{"type":"GOTOSET:9","value":"Grow the business so it can be publically traded","icon":"icon_graph"},{"type":"GOTOSET:9","value":"Grow the biz but keep biz with original owners or within our families","icon":"icon_circle_arrows"},{"type":"GOTOSET:9","value":"Sell the Business for a Profit","icon":"icon_coins"},{"type":"GOTOSET:9","value":"Other","icon":"icon_arrow"},{"type":"GOTOSET:9","value":"Not Sure","icon":"icon_arrow"}]},{"type":"fullresults","title":"Limited Liability Company (LLC)","description":"Result details","link":"product.html","button":"Limited Liability Company"},{"type":"fullresults","title":"Incorporation","description":"Result details","link":"product.html","button":"Incorporation"}]');
+			});
+				
+	body
+		.bgGuide
+			.siteHeader
+				a href="javascript:back();" class="leftBackButton" « Back
+				.lz-logo
+					a href="index.html" LegalZoom
+				a.rightNavButton href="tel:800-773-0888"
+
+			.smallProgressBar
+				.bar.hasEnd#guideProgressBar style="width:10%"
+			.guideBody
+				.guideContainer
+					.guidePages
+					
+		.clear.siteFooter style="background-color:white;"
+			.footerLinks
+				a href="disclaimer.html" Disclaimer
+				|  | 
+				a href="privacy_policy.html" Privacy Policy
+			.clear
+			.legalAdvice" The information provided on this site is not legal advice.

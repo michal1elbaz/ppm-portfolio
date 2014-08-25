@@ -1,0 +1,77 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title Speak to an Attorney | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+	
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"	
+		
+		javascript:
+			$(function(){
+				var is_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(navigator.userAgent);
+				// var is_safari_or_uiwebview = /(iPhone|iPod|iPad).*AppleWebKit/i.test(navigator.userAgent);
+				if (is_uiwebview == true) {
+					$('.siteHeader').hide();
+				}
+			});
+
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+			
+			.bgSignin
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				/! progress bar
+				.progress-bar
+					.completed style='width: 90%;'
+						.text
+							span 90
+							| % complete
+						.arrow
+
+				.pageBody
+					.page-questionnaire
+						.legalPlanIndicator YOU ARE A CURRENT LEGAL PLAN MEMBER
+						br
+						.pageHeader
+							h2.leftAlign Step 2
+
+						p Confirm your attorney callback request below.
+						p
+							| Please visit our 
+							a full website
+							|  if you need to schedule the consultation for a specific date and time.
+						
+						a.button.orange.has-right.button-next href="attorney_consultation_1.6_confirmation.html"
+							.button-right
+								.inner
+									i.icon.button-icon.arrow-large
+							.button-center Request callback
+							
+						.clear
+
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.

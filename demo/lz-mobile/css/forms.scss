@@ -1,0 +1,739 @@
+/*
+	form style and layout - basic input, checkbox, radio box, textarea, select dropdown styling
+	imported from 'forms.scss'
+*/
+
+@import 'variables';
+
+.form-group {
+	padding: 0 0 14px 0;
+	line-height: 1;
+	margin: 0;
+	position: relative;
+	@media #{$iphone-landscape} {
+		width: 280px;
+		margin: 0 auto;
+	}
+	&.tight {
+		padding-bottom: 10px;
+	}
+	h4 {
+		margin: 1em 0 0.2em 0;
+	}
+	p {
+		&.sign-in-link {
+			font-size: 12px;
+			margin-left: 4px;
+		}
+		&.notes {
+			font-size: 11px;
+		}
+	}
+	label {
+		font-size: 12px;
+		padding: 0;
+		position: relative;
+		line-height: 1;
+		font-weight: normal;
+		color: $brand-indigo;
+		@media #{$iphone-landscape}, #{$iphone-portrait} {
+			max-width: 270px;
+		}
+		&.column {
+			display: inline-block;
+			width: 144px;
+			margin-right: 4px;
+			font-size: 13px;
+		}
+		.optional {
+			color: $brand-dark-gray;
+		}
+	}
+	&.select {
+		.lz-icon-help {
+			top: -8px;
+		}
+		label.column {
+			margin: 14px 7px 0 0;
+			float: left;
+			@media #{$iphone-landscape}, #{$iphone-portrait} {
+				margin-top: 0;
+			}
+		}
+		label {
+			padding-bottom: 2px;
+			display: block;
+		}
+		.instruction {
+			@media #{$iphone-landscape}, #{$iphone-portrait}, #{$ipad-portrait} {
+				top: 6px;
+			}
+		}
+	}
+	&.has-help {
+		p {
+			@media #{$iphone-portrait}, #{$iphone-portrait} {
+				max-width: 260px;
+			}
+		}
+	}
+	.lz-icon-help {
+		top: 5px;
+		margin: 0 0 0 4px;
+		position: relative;
+	}
+	.instruction {
+		position: absolute;
+		top: 3px;
+		right: 0;
+		width: 165px;
+		color: $brand-indigo;
+		font-size: 11px;
+		line-height: 1.2em;
+		@media #{$ipad-portrait} {
+			position: relative;
+			margin-left: 160px;
+			width: 270px;
+			display: block;
+			top: 2px;
+		}
+		@media #{$iphone-landscape}, #{$iphone-portrait} {
+			position: relative;
+			width: 270px;
+			display: block;
+			top: 2px;
+		}
+		.container {
+			display: table-cell;
+			vertical-align: middle;
+			height: 30px;
+			@media #{$iphone-landscape}, #{$iphone-portrait}, #{$ipad-portrait} {
+				height: auto;
+			}
+		}
+	}
+	.error-text {
+		color: #ff5252;
+		font-size: 11px;
+		position: relative;
+		margin: 4px 0 0 156px;
+		font-weight: normal;
+		display: none;
+	}
+	/* error states for the forms */
+	&.error {
+		box-shadow: none;
+		label {
+			color: #ff5252;
+			-webkit-transition: color 1s;
+			-moz-transition: color 1s;
+			-o-transition: color 1s;
+			transition: color 1s;
+		}
+		input[type=text], input[type=password], input[type=email], input[type=tel], textarea, .select-field {
+			box-shadow: 0px 0px 0px 2px rgba(255, 149, 149, 1);
+		}
+		.error-text {
+			display: block;
+		}
+	}
+}
+
+/* select field replacement styles */
+.select-field {
+	display: inline-block;
+	width: 250px;
+	height: 32px;
+	margin: 3px 0 0 0;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	background: #f1f1f1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f1f1f1 0%, #e6e6e6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f1f1f1 0%,#e6e6e6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+	@media #{$ipad-portrait} {
+		width: 270px;
+	}
+	@media #{$iphone-landscape}, #{$iphone-portrait} {
+		width: 270px;
+	}
+	
+	&.fullMobile {
+		width:280px;
+	}
+	
+	&.fitSize {
+		width:100%;
+	}
+	
+	.no-touch &:hover {
+		.select-arrow-container {
+			.select-arrow {
+				background-position: 0 -20px;
+			}
+		}
+	}
+	&.column {
+
+	}
+	select {
+		font-size: 14px;
+		font-family: $font-sans-serif;
+		line-height: 1;
+		color: #222222;
+		background: transparent;
+		-webkit-appearance: none;
+		border: 0;
+		padding: 8px 0 8px 12px;
+		width: 290px;
+		outline: none;
+		cursor: pointer;
+		z-index: 10;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@media #{$ipad-portrait} {
+			width: 310px;
+		}
+		@media #{$iphone-landscape}, #{$iphone-portrait} {
+			width: 310px;
+		}
+	}
+	.select-arrow-container {
+		position: absolute;
+		z-index: 3;
+		pointer-events: none;
+		border-radius: 10px;
+		top: 0;
+		right: 0;
+		width: 34px;
+		height: 32px;
+		background: #f1f1f1; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f1f1f1 0%, #e6e6e6 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f1f1f1 0%,#e6e6e6 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+	}
+	.select-arrow {
+		position: absolute;
+		width: 14px;
+		height: 11px;
+		background: transparent url(../images/sprite-form-select.png) no-repeat 0 0;
+		margin: 11px 0 0 8px;
+		z-index: 3;
+		pointer-events: none;
+		@media #{$retina-display} {
+			background-image: url(../images/sprite-form-select-2x.png);
+			background-size: 14px 310px;
+		}
+	}
+	&.short {
+		width: 140px;
+		select {
+			width: 180px;
+		}
+	}
+	&.shortest {
+		width: 77px;
+		select {
+			width: 117px;
+		}
+	}
+	&.month {
+		width: 130px;
+		select {
+			width: 170px;
+		}
+	}
+	&.year {
+		width: 87px;
+		select {
+			width: 127px;
+		}
+	}
+	&.state {
+		width: 340px;
+		select {
+			width: 380px;
+		}
+	}
+	&.wide {
+		width: 520px;
+		select {
+			width: 560px;
+		}
+	}
+	&.credit-cards {
+		width: 220px;
+		select {
+			width: 260px;
+		}
+	}
+	&.micro {
+		height: 22px;
+		.no-touch &:hover {
+			.select-arrow-container {
+				.select-arrow {
+					background-position: 0 -220px;
+				}
+			}
+		}
+		.select-arrow-container {
+			width: 18px;
+			height: 20px;
+		}
+		.select-arrow {
+			width: 9px;
+			height: 10px;
+			margin: 7px 0 0 2px;
+			background-position: 0 -200px;
+		}
+		select {
+			font-size: 12px;
+			padding: 4px 0 0 4px;
+		}
+	}
+	optgroup {
+		font-family: Helvetica, Arial, sans-serif;
+	}
+}
+
+/* text, radio, and checkbox input replacement */
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+	font-family: $font-sans-serif;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	font-size: 14px;
+	height: 32px;
+	padding: 0 10px 0 10px;
+	margin: 3px 0 0 0;
+	width: 230px;
+	display: inline-block;
+	box-shadow: 0 0 0 2px rgba(0,0,0,0), inset 0 2px 0 0 rgba(0,0,0,0.2);
+	background: #fff;
+	outline: none;
+	-webkit-transition: box-shadow 1s;
+	-moz-transition: box-shadow 1s;
+	-o-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+  -webkit-appearance: none;
+	&.short {
+		width: 180px;
+	}
+	&.shortest {
+		width: 80px;
+	}
+	@media #{$ipad-portrait}, #{$iphone-landscape}, #{$iphone-portrait} {
+		width: 250px;
+	}
+	&:disabled {
+		color: $brand-gray;
+	}
+	
+	&.fullMobile {
+		width:260px;
+	}
+}
+
+textarea {
+	font-family: $font-sans-serif;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	font-size: 14px;
+	padding: 10px;
+	width: 400px;
+	height: 140px;
+	display: inline-block;
+	box-shadow: inset 0 2px 0 0 rgba(0,0,0,0.2);
+	background: #fff;
+	&.short {
+		width: 180px;
+	}
+	
+	&.fullMobile {
+		width:260px;
+		height:100px;
+	}
+	@media #{$iphone-portrait}, #{$iphone-landscape} {
+		width: 250px;
+		height: 100px;
+	}
+}
+
+
+input[type=radio] {
+	display: none;
+	+ label {
+		background: transparent url(../images/sprite-form-radio.png) no-repeat 0 0;
+		height: 22px;
+		display:inline-block;
+		padding: 4px 0 0 28px;
+		font-size: 14px;
+		margin: 0 0 -4px 0;
+		cursor: pointer;
+		&:hover {
+			background-position: 0 -160px;
+		}
+		@media #{$retina-display} {
+			background-image: url(../images/sprite-form-radio-2x.png);
+			background-size: 22px 240px;
+		}
+	}
+	&:checked {
+		+ label {
+			background-position: 0 -80px ;
+		}
+	}
+}
+
+input[type=checkbox] {
+	display: none;
+	+ label {
+		background: transparent url(../images/sprite-form-checkbox.png) no-repeat 0 0;
+		height: 22px;
+		display:inline-block;
+		padding: 2px 0 0 28px;
+		font-size: 14px;
+		margin: 0 0 4px 0;
+		cursor: pointer;
+		line-height: 1.3;
+		&:hover {
+			background-position: 0 -160px;
+		}
+		@media #{$retina-display} {
+			background-image: url(../images/sprite-form-checkbox-2x.png);
+			background-size: 22px 321px;
+		}
+	}
+	&:checked {
+		+ label {
+			background-position: 0 -80px ;
+		}
+	}
+	&.disclaimer {
+		+ label {
+			font-size: 12px;
+			padding: 2px 0 0 28px;
+			line-height: 1.3;
+		}
+	}
+}
+
+/* iconic form styles */
+
+.iconic {
+	input[type=radio], input[type=checkbox] {
+		display: none;
+		+ label {
+			background: #fff;
+			color: $color-text;
+			display: inline-block;
+			font-size: 13px;
+			height: 34px;
+			width: 174px;
+			padding: 4px 0 0 6px;
+			margin: 0 8px 10px 0;
+			box-shadow: 0 0 0 3px transparent, inset 0 1px 0 0 rgba(0,0,0,0.2);
+			outline: none;
+			border-radius: 8px;
+			border: 1px solid #d1d1d1;
+			position: relative;
+			.text {
+				.container {
+					display: table-cell;
+					vertical-align: middle;
+					height: 38px;
+				}
+				width: 130px;
+				position: absolute;
+				top: 1px;
+				left: 42px;
+			}
+		}
+		&:checked {
+			+ label {
+				box-shadow: 0 0 0 3px $brand-blue;
+			}
+		}
+	}
+}
+
+.icon-business {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	overflow: hidden;
+	background: transparent url(../images/sprite-icon-business.png) no-repeat 0 0;
+	@media #{$retina-display} {
+		background-image: url(../images/sprite-icon-business-2x.png);
+		background-size: 300px 300px;
+	}
+	&.accomodations {
+		background-position: 0 0;
+	}
+	&.construction {
+		background-position: -30px 0;
+	}
+	&.consulting {
+		background-position: -60px 0;
+	}
+	&.finance {
+		background-position: 0 -30px;
+	}
+	&.foodservice {
+		background-position: -30px -30px;
+	}
+	&.healthcare {
+		background-position: -60px -30px;
+	}
+	&.insurance {
+		background-position: 0 -60px;
+	}
+	&.manufacturing {
+		background-position: -30px -60px;
+	}
+	&.professionalservices {
+		background-position: -60px -60px;
+	}
+	&.realestate {
+		background-position: 0 -90px;
+	}
+	&.rentalandleasing {
+		background-position: -30px -90px;
+	}
+	&.retail {
+		background-position: -60px -90px;
+	}
+	&.socialassistance {
+		background-position: 0 -120px;
+	}
+	&.transportation {
+		background-position: -30px -120px;
+	}
+	&.warehousing {
+		background-position: -60px -120px;
+	}
+	&.wholesale {
+		background-position: 0 -150px;
+	}
+	&.other {
+		background-position: -30px -150px;
+	}
+}
+
+.iconic-square {
+	text-align: center;
+	input[type=radio], input[type=checkbox] {
+		display: none;
+		+ label {
+			background: #fff;
+			color: $color-text;
+			display: inline-block;
+			font-size: 13px;
+			height: 98px;
+			width: 108px;
+			padding: 10px 0 0 0;
+			margin: 0 16px 20px 0;
+			box-shadow: 0 0 0 3px transparent, inset 0 1px 0 0 rgba(0,0,0,0.2);
+			outline: none;
+			border-radius: 8px;
+			border: 1px solid #d1d1d1;
+			position: relative;
+			text-align: center;
+			@media #{$iphone-landscape}, #{$iphone-portrait} {
+				width: 50px;
+				height: 50px;
+				padding: 0;
+				margin: 0 10px 20px 0;
+				box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+				color: #222222;
+				background: #f1f1f1; /* Old browsers */
+				background: -moz-linear-gradient(top,  #f1f1f1 0%, #ebebeb 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #f1f1f1 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #f1f1f1 0%,#ebebeb 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #f1f1f1 0%,#ebebeb 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  #f1f1f1 0%,#ebebeb 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+				.icon-owners {
+					display: none;
+				}
+			}
+			.text {
+				width: 100%;
+				text-align: center;
+				@media #{$iphone-landscape}, #{$iphone-portrait} {
+					display: table-cell;
+					vertical-align: middle;
+					height: 50px;
+					width: 50px;
+				}
+			}
+		}
+		&:checked {
+			+ label {
+				box-shadow: 0 0 0 3px $brand-blue;
+			}
+		}
+	}
+}
+
+.iconic-button {
+	input[type=radio], input[type=checkbox] {
+		display: none;
+		+ label {
+			background: #fff;
+			color: $color-text;
+			display: inline-block;
+			font-size: 13px;
+			line-height: 1;
+			width: 260px;
+			height: auto;
+			padding: 12px;
+			margin: 0 0 8px 0;
+			box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
+			outline: none;
+			border-radius: 8px;
+			border: 1px solid #d1d1d1;
+			position: relative;
+			text-align: center;
+			background: #f1f1f1; /* Old browsers */
+			background: -moz-linear-gradient(top,  #f1f1f1 0%, #ebebeb 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#ebebeb)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #f1f1f1 0%,#ebebeb 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #f1f1f1 0%,#ebebeb 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #f1f1f1 0%,#ebebeb 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #f1f1f1 0%,#ebebeb 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#ebebeb',GradientType=0 ); /* IE6-9 */
+		}
+		&:checked {
+			+ label {
+				box-shadow: 0 0 0 3px $brand-blue;
+			}
+		}
+	}
+	&.small {
+		input[type=radio], input[type=checkbox] {
+			+ label {
+				width: 106px;
+				margin-right: 8px;
+			}
+		}
+	}
+}
+
+.icon-owners {
+	width: 100px;
+	height: 70px;
+	overflow: hidden;
+	display: inline-block;
+	background: transparent url(../images/sprite-owners.png) no-repeat 0 0;
+	&.one {
+		background-position: 0 0;
+	}
+	&.two {
+		background-position: -100px 0;
+	}
+	&.three {
+		background-position: -200px 0;
+	}
+}
+
+/* question text format */
+.question-text {
+	text-align: left;
+	font-size: 14px;
+	color: $brand-indigo;
+	.light {
+		font-family: $font-light;
+	}
+	.gray {
+		color: $brand-dark-gray;
+	}
+}
+
+/* input form placeholder text styles */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: #c4c4c3;
+	font-family: $font-sans-serif;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+	color: #c4c4c3;
+	font-family: $font-sans-serif;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+	color: #c4c4c3;
+	font-family: $font-sans-serif;
+}
+input:-ms-placeholder, textarea:-ms-placeholder {
+	color: #c4c4c3;
+	font-family: $font-sans-serif;
+}
+
+/* mobile specific forms */
+form.wizard {
+	div.steps {
+		display:none;
+	}
+	div.step-title {
+		display:none;
+	}
+	fieldset, div.content {
+		position:relative;
+	}
+	.actions {
+		height: 80px;
+		margin-top: 20px;
+		width: 100%;
+		position: relative;
+		li.disabled {
+			display:none;
+		}
+		ul {
+			list-style: none outside none;
+		}
+		.button-next {
+			position: absolute;
+			width: 80px;
+			right: 0;
+			top: 0;
+		}
+		.wizard-prev {
+			position: absolute;
+			left: 0;
+			top: 13px;
+			color: #247BD3; 
+			vertical-align:middle;
+		}
+	}
+}
+.lead-gen {
+	.progress-text {
+		float:right; 
+		padding-right: 15px; 
+		padding-top:3px; 
+		color: #FFFFFF;
+	}
+	.smallProgressBar {
+		height:20px;
+		background-size:6px 20px, 100% 100%;
+		.bar.hasEnd {
+			height:20px;
+			background-size:6px 20px, 100% 100%;
+		}
+	}
+}
+#lead-gen-form div.pageFixed {
+	/*overflow:hidden;*/
+}

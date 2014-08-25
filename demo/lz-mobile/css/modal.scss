@@ -1,0 +1,235 @@
+/*
+	modal - standard modal style for loading inline and external resources
+	imported from 'modal.scss'
+*/
+
+@import 'variables';
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 80px;
+	left: 50%;
+	@media #{$iphone-landscape} {
+		top: 30px;
+	}
+	@media #{$iphone-portrait} {
+		top: 24px;
+	}
+	&.active {
+		display: block;
+	}
+	&.text {
+		width: 800px;
+		margin-left: -410px;
+		padding: 10px;
+		background: #dadada;
+		@media #{$ipad-portrait} {
+			width: 600px;
+			margin-left: -310px;
+		}
+		@media #{$iphone-landscape} {
+			width: 400px;
+			margin-left: -210px;
+		}
+		@media #{$iphone-portrait} {
+			width: 260px;
+			padding: 6px;
+			margin-left: -136px;
+		}
+		/* modal content formatting */
+		.content {
+			background: #fff;
+			padding: 20px 30px 40px 30px;
+			max-height: 460px;
+			min-height: 100px;
+			overflow: auto;
+			@media #{$iphone-landscape} {
+				max-height: 200px;
+				padding: 12px 12px 30px 12px;
+			}
+			@media #{$iphone-portrait} {
+				padding: 12px 12px 30px 12px;
+				max-height: 320px;
+			}
+			h1 {
+				font-size: 24px;
+				.small {
+					font-size: 18px;
+				}
+			}
+			@media #{$iphone-landscape}, #{$iphone-portrait} {
+				h1 {
+					font-size: 20px;
+					line-height: 1.1;
+					.small {
+						font-size: 16px;
+					}
+				}
+				p {
+					font-size: 12px;
+				}
+				ul {
+					font-size: 12px;
+				}
+			}
+			
+			&.noPadding {
+				padding: 0;
+				padding-bottom: 15px;
+			}
+		}
+		.overlay {
+			width: 780px;
+			height: 60px;
+			position: absolute;
+			bottom: 0px;
+			background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 73%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(73%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+			pointer-events: none;
+			@media #{$ipad-portrait} {
+				width: 580px;
+			}
+			@media #{$iphone-landscape} {
+				width: 380px;
+				height: 30px;
+			}
+			@media #{$iphone-portrait} {
+				width: 240px;
+				height: 40px;
+			}
+		}
+	}
+	&.noBorder {
+		background-color: white;
+		padding: 0;
+	}
+	&.video {
+		width: 800px;
+		margin-left: -400px;
+		padding: 10px;
+		background: #fff;
+		@media #{$ipad-portrait} {
+			width: 600px;
+			margin-left: -300px;
+			iframe {
+				width: 600px;
+				height: 361px;
+				overflow: hidden;
+			}
+		}
+	}
+	.close {
+		display: block;
+		position: absolute;
+		width: 31px;
+		height: 31px;
+		background: transparent url(../images/sprite-modal-close.png) no-repeat 0 0;
+		z-index: 10;
+		top: -22px;
+		right: -22px;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		@media #{$retina-display} {
+			background-image: url(../images/sprite-modal-close-2x.png);
+			background-size: 31px 100px;
+		}
+		.no-touch &:hover, &:active {
+			background-position: 0 -50px;
+		}
+		
+		&.inside {
+			top: -15px;
+			right: -15px;
+		}
+	}
+	.shadow {
+		position: absolute;
+		bottom: -20px;
+		width: 100%;
+		height: 10px;
+		background: transparent url(../images/shadow-curved-photo-md.png) no-repeat center top;
+		background-size: 100% 10px;
+		@media #{$iphone-portrait} {
+			bottom: -16px;
+		}
+	}
+	.shadow-ie8 {
+		position: absolute;
+		bottom: -20px;
+		width: 100%;
+		height: 10px;
+	}
+}
+
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f2f2f2;
+	z-index: 900;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	opacity: 0.9;
+	@media #{$iphone-landscape}, #{$iphone-portrait} {
+		background: #000;
+		opacity: 0.6;
+	}
+	&.active {
+		display: block;
+	}
+	
+	&.dark {
+		background: rgba(0, 0,0, 0.9);
+	}
+	
+	&.transparent {
+		background: rgba(255,255,255,0);
+	}
+}
+
+
+/* sign in modal */
+
+.sign-in-modal {
+	h1 {
+		margin-bottom: 0.2em;
+	}
+	h2 {
+		margin-bottom: 0.1em;
+		padding-top: 0.4em;
+		border-top: 1px solid $color-border-gray;
+	}
+	.form-group {
+		position: relative;
+		.form-field {
+			float: left;
+			margin-right: 10px;
+			input.shortest {
+				width: 120px;
+			}
+		}
+		.button {
+			float: left;
+			margin-top: 18px;
+			position: absolute;
+			right: 0;
+		}
+	}
+	.forgot-password-link {
+		top: 5px;
+		position: relative;
+		font-size: 12px;
+	}
+	.forgot-password {
+		display: none;
+	}
+}

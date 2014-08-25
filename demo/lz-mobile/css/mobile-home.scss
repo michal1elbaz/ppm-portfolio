@@ -1,0 +1,537 @@
+@import 'variables';
+
+body {
+	background-color: white;
+}
+			
+.howCanWeHelp {
+	text-align: center;
+	width:100%;
+	font-family: "psLight", "psRegular", Helvetica, Arial, sans-serif;
+	font-size: 21px;
+	color:#281360;
+	height:35px;
+}
+
+.productsList {
+	width: 100%;
+	min-width:320px;
+	@media #{$notportrait} {
+		width: 75%;
+		float: left;
+		height:165px;
+	}
+	
+	ul {
+		width: 100%;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	li {
+		width:33%;
+		overflow: auto;
+		height: 100px;
+		display: table;
+		margin: 0;
+		margin-bottom: 1px;
+		float:left;
+		text-align: center;
+		font-size: 12px;
+		font-family: "psLight", "psRegular", Helvetica, Arial, sans-serif;
+		color: #281360;
+		/*background: rgba(255, 255, 255, 0.6);*/
+		vertical-align: middle;
+		@media #{$notportrait} {
+			height: 64px;
+		}
+		.inner {
+			padding-left: 1px;
+			width: 100%;
+			height: 100%;
+			display:table-cell;
+		}
+		
+		.productCell {
+			width: 100%;
+			height: 100%;
+			vertical-align:middle;
+			text-align:center;
+			background-position:center center;
+			background-repeat: no-repeat;
+			background-color: rgba(255, 255, 255, 0.6);
+			
+			a {
+				text-decoration: none;
+				color:#000000;
+				font-size: 12px;
+				display: block;
+				width: 100%;
+				padding-top: 77px;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+				-webkit-tap-highlight-color: transparent;
+				@media #{$notportrait} {
+					padding-top: 44px;
+				}
+			}
+			
+			&.businessIcon {
+				background-image: url('../images/icon_product_business-2x.png');
+				background-size: 49px 38px;
+				@media #{$notportrait} {
+					background-size: 27px 21px;
+					background-position: center 10px;
+				}
+			}
+			
+			&.personalIcon {
+				background-image: url('../images/icon_product_personal-2x.png');
+				background-size: 57px 44px;
+				@media #{$notportrait} {
+					background-size: 32px 26px;
+					background-position: center 7px;
+				}
+			}
+			
+			&.attorneyIcon {
+				background-image: url('../images/icon_product_attorney-2x.png');
+				background-size: 43px 50px;
+				@media #{$notportrait} {
+					background-size: 25px 29px;
+					background-position: center 6px;
+				}
+			}
+			
+			&.taxAdviceIcon {
+				background-image: url('../images/icon_product_tax-2x.png');
+				background-size: 45px 45px;
+				@media #{$notportrait} {
+					background-size: 26px 26px;
+					background-position: center 9px;
+				}
+			}
+			
+			&.legalFormsIcon {
+				background-image: url('../images/icon_product_legalForms-2x.png');
+				background-size: 36px 49px;
+				@media #{$notportrait} {
+					background-size: 20px 28px;
+					background-position: center 8px;
+				}
+			}
+			
+			&.orderStatusIcon {
+				background-image: url('../images/icon_product_orderStatus-2x.png');
+				background-size: 29px 42px;
+				@media #{$notportrait} {
+					background-size: 17px 25px;
+					background-position: center 9px;
+				}
+			}
+		}
+		
+		&.end {
+			width:34%;
+		}
+	}
+}
+
+
+.popularProducts {
+	width:100%;
+	background-color: white;
+	height:100px;
+	overflow-x: hidden;
+	
+	ul {
+		width: 100%;
+		list-style: none;
+		padding: 0;
+		padding-left:16px;
+		padding-right:16px;
+		margin: 0;
+		position: relative;
+	}
+	
+	li {
+		width:50%;
+		display: inline-block;
+		margin: 0;
+		margin-bottom: 1px;
+		float:left;
+		font-size: 12px;
+		font-family: "psRegular", Helvetica, Arial, sans-serif;
+		height:25px;
+		color:#666767;
+	}
+	
+	a {
+		text-decoration: underline;
+	}
+}
+
+.howWeWorkVideo {
+	height:150px;
+	padding:20px;
+	padding-bottom: 0;
+	background: url('../images/bg_your_business_video-2x.jpg');
+	background-size: 182px 170px;
+	background-position:right bottom;
+	background-repeat: no-repeat;
+	background-color: #d0dee9;
+	position: relative;
+	overflow-x: hidden;
+	
+	h2 {
+		color: #281360;
+		font-family: $font-light;
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	
+	.playButton {
+		background: url('../images/but_video_play-2x.png') no-repeat;
+		background-size: 60px 60px;
+		background-position: center center;
+		position: absolute;
+		width:95%;
+		height:150px;
+	}
+	
+	a {
+		text-decoration: none;
+		font-size: 13px;
+		font-family: "psRegular", Helvetica, Arial, sans-serif;
+	}
+}
+
+.howWeWorkVideoPlaying {
+	height:170px;
+	padding:20px;
+	background-color: #d0dee9;
+}
+
+.helpMeDecide {
+	min-height: 103px;
+	padding: 20px;
+	
+	h2 {
+		color:black;
+		font-size: 20px;
+		font-family: "psLight", "psRegular", Helvetica, Arial, sans-serif;
+		margin-bottom: 15px;
+	}
+	
+	p {
+		font-size: 12px;
+		font-family: "psLight", "psRegular", Helvetica, Arial, sans-serif;
+	}
+}
+
+.helpMe {
+	clear: both;
+	width:100%;
+	height:75px;
+	background: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	display: inline;
+	float: right;
+	@media #{$notportrait} {
+		display: inline;
+		height:129px;
+		width:25%;
+		background-color:#5096d3;
+		font-size: 22px;
+		color:white;
+		clear: none;
+		text-align: left;
+	}
+}
+
+.helpMeInner {
+	width:90%;
+	height:75px;
+	vertical-align: middle;
+	position: relative;
+	left:0;
+	right:0;
+	display: inline-block;
+	@media #{$notportrait} {
+		display: table-cell;
+		height: 129px;
+		vertical-align: middle;
+		position: relative;
+		padding-left: 18px;
+		padding-right:18px;
+	}
+}
+
+.popularProductsHeader {
+	font-size: 15px;
+	text-align: center;
+	width:100%;
+	height: 45px;
+	vertical-align: middle;
+	font-family: "psLight", "psRegular", Helvetica, Arial, sans-serif;
+	color: #281360;
+	display: inline-block;
+	line-height:40px;
+	background-color: white;
+	
+	background-image: url('../images/bg_top_shadow_lansdscape-2x.png');
+	background-position:right top;
+	background-size: 480px 32px;
+	background-repeat: no-repeat;
+	clear: both;
+}
+
+.helpMeBox {
+	display: none;
+	@media #{$notportrait} {
+		display: block;
+	}
+}
+
+a.helpMeBox {
+	color: white;
+}
+
+.personalProduct {
+	background-image: url('../images/icon_product_personal.png') no-repeat 0 0;
+}
+
+.guarantee {
+	padding:20px;
+	padding-right:10px;
+	padding-bottom: 0;
+	
+	p {
+		font-size: 12px;
+		font-family: "psLight", "psRegular", Helvetica, Arial, sans-serif;
+		color: #444444;
+		strong {
+			color: $brand-blue;
+			font-family: $font-sans-serif;
+		}
+	}
+	
+	h2 {
+		font-size: 20px;
+		color:#281360;
+		font-family: "psLight", "psRegular", Helvetica, Arial, sans-serif;
+	}
+
+	.guaranteeIcon {
+		float:right;
+		width:98px;
+		height:64px;
+		background: transparent url('../images/badge-satisfaction-guaranteed-2x.jpg') no-repeat 0 0;
+		background-size: 90px 59px;
+		display:block;
+	}
+}
+
+.modal {
+	ol, ul {
+		li {
+			font-size: 12px;
+		}
+	}
+}
+
+.modal#product_business, .modal#product_personal {
+	ul {
+		float: left;
+		width:100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		
+		a {
+			color: white;
+		}
+		
+		span {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;      
+			padding-left:5px;
+			padding-right: 5px;
+		}
+	}
+	
+	li {
+		width:50%;
+		float: left;
+		border:0;
+		border-style:solid;
+		border-bottom:1px solid white;
+		height:76px;
+		padding: 0;
+		margin: 0;
+		font-size:15px;		
+		@media #{$notportrait} {
+			height:51px;
+			width: 33.3%;
+		}		
+		.inner {
+			height:76px;
+			vertical-align: middle;
+			line-height: 76px;
+			text-align: center;
+			color:white;
+			border:0px;
+			
+			@media #{$notportrait} {
+				height:51px;
+				line-height: 51px;
+			}
+		}		
+		.right {
+			border:0px;
+			border-style:solid;
+			border-left:1px solid white;
+		}		
+		&.large {
+			font-size: 28px;
+		}
+		.second {
+			@media #{$notportrait} {
+				border:0px;
+				border-style:solid;
+				border-left:1px solid white;
+			}	
+		}
+		.first {
+			@media #{$notportrait} {
+				// border-right:1px solid white;
+			}
+		}		
+		.third {	
+			@media #{$notportrait} {
+				// border-right:1px solid white;
+			}		
+		}
+	}
+	
+	.orangeGradient {
+		background: #ff9e00; /* Old browsers */
+		background: -moz-linear-gradient(top, #ff9e00 0%, #ffb000 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff9e00), color-stop(100%,#ffb000)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #ff9e00 0%,#ffb000 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #ff9e00 0%,#ffb000 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #ff9e00 0%,#ffb000 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #ff9e00 0%,#ffb000 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9e00', endColorstr='#ffb000',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.blueGradient {
+		background: #3972c3; /* Old browsers */
+		background: -moz-linear-gradient(top, #3972c3 0%, #59a4d9 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3972c3), color-stop(100%,#59a4d9)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #3972c3 0%,#59a4d9 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #3972c3 0%,#59a4d9 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #3972c3 0%,#59a4d9 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #3972c3 0%,#59a4d9 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3972c3', endColorstr='#59a4d9',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.text {
+		width:290px;
+		margin-right: 290px;
+		margin-left:0;
+		top:50px;
+		width: 90%;
+		position: fixed;
+		left: 50%;
+		margin: 0 0 0 -45%;
+		top:30px;
+	}
+	
+	h2 {
+		margin:0;
+		line-height: 42px;
+	}
+	
+	.modalHeader {
+		height: 42px;
+		line-height: 42px;
+		vertical-align: middle;
+		padding-left: 16px;
+		margin-right: 16px;
+	}
+	
+	.modalHeader {
+		font-size: 12px;
+		
+		a {
+			text-decoration: underline;
+		}
+		
+		div {
+			float:right;position: absolute;top:0;right:0;
+			padding-right:16px;
+			padding-top:2px;
+		}
+	}
+	
+	.content {
+		-moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.35);
+		-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.35);
+	}
+}
+
+.modalButtonDiv {
+	text-align:center;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.legalAdvice {
+	height:30px;
+}
+
+.helpMeDecidePortraitIcon {
+	display: inline;
+	float:right;
+	width:100px;
+	height:123px;
+	background: transparent url('../images/bg_llc@2x.png') no-repeat 0 0;
+	background-size: 82px 123px;
+	@media #{$notportrait} {
+		display: none;
+	}
+}
+
+.helpMeDecideLandscapeIcon {
+	display: none;
+	float:right;
+	width:87px;
+	height:123px;
+	background: transparent url('../images/bg_llc.png') no-repeat 0 0;
+	@media #{$notportrait} {
+		display: inline;
+	}
+}
+
+.homebg {
+	background-image: url('../images/bg_home_photo_portrait.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	@media #{$notportrait} {
+		background-image: url('../images/bg_home_photo_landscape.jpg');
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: cover;
+	}
+}
+
+.helpMeButton {
+	top:20px;
+	@media #{$notportrait} {
+		display: none;
+	}
+}
+

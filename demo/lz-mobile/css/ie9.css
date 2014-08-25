@@ -1,0 +1,8 @@
+/* ie 9 and below style fixes */
+/* button icon positioning fixes */
+.button {
+  box-shadow: none; }
+  .button .button-right .button-icon {
+    margin: 7px 0 0 0; }
+  .button .button-left .button-icon {
+    margin: 7px 0 0 0; }

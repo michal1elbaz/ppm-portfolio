@@ -1,0 +1,223 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title BANKRUPTCY | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+		
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/swipe.min.js"
+		script type="text/javascript" src="js/5n5.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+	
+		javascript:
+			$(function() {
+				    
+				    $('.commonQuestions h4').each(function() {
+						var tis = $(this), state = false, answer = tis.next('div').hide().css('height','auto').slideUp();
+						tis.click(function() {
+							state = !state;
+							answer.slideToggle(state);
+							tis.toggleClass('active',state);
+						});
+					});
+				});
+		
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+			
+			.bg-product.bankruptcy
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.producrHeaderBox
+					h3.small.center BANKRUPTCY
+					h2.blue Relieve your burden of debt
+					
+					.productButton
+						a.button.has-right href="get_started.html"
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Get Started
+						br
+					
+					.priceBox.white
+						| starting at
+						br
+						span.price
+							| $
+							span.big 99
+						| + state filing fee
+						br
+						br
+					.clear
+			.clear
+
+			/.boaBanner
+			/	span.title Plus get up to $150
+			/	|  with a Bank of American Business Checking Account
+			/	br
+			/	a href="javascript:openModalID('boaModal');" See details
+
+			.productBox
+				h3 The legalZoom advantage
+				.features
+					ul
+						li
+							.icon
+								img src="images/icon_order_checked-2x.gif" width="31" height="27"
+							| Your LLC will be 
+							a href="javascript:openModalID('pomModal');" filed correctly
+							|  – guaranteed.
+						li
+							.icon
+								img src="images/icon_calendar-2x.gif" width="31" height="25"
+							| We typically send documents for filing within 2 business days.
+						li
+							.icon
+								img src="images/icon_guarantee-2x.gif" width="43" height="29"
+							| Lifetime customer support and 
+							a href="javascript:openModalID('guaranteeModal');" 100% satisfaction guarantee
+
+
+	  		.pageDivider
+	   		
+	  		.productBox
+	   			h3 Common questions
+	   			.commonQuestions
+	   				h4 What is a limited liability company?
+	   				div
+	   					p LegalZoom was founded by attorneys with experience at some of the best corporate law firms in the country. That's why we can offer the following guarantee.
+	   					
+	   				h4 What are the main differences between an LLC and S-corporation?
+	   				div
+	   					p This is the answer
+	   					
+	   				h4 Is an LLC right for me?
+	   				div
+	   					p This is the answer
+	   					
+	   					
+	  		div class="pageDivider"
+	   		
+	 
+	  		.content-container.texture-stripes.swipe-quotes
+				.shadow-strip
+				.container
+					h2 What people are saying about LegalZoom
+					.slide-control
+						a.arrow.previous onclick='mySwipe.prev();return false;'
+						a.arrow.next onclick='mySwipe.next();return false;'
+					#slider.swipe
+						.swipe-wrap
+							.slides
+								.content
+									blockquote
+										.open &#8220;
+										.quote
+											| And a big thank you to <a>@LegalZoom</a> for hosting this great platform - a true friend to small business! <a>#legalzoomstartup</a>
+											span.close &#8221;
+									.twitter-persona
+										.avatar.steve-strauss
+										.name Steve Strauss
+
+							.slides.huffpost
+								.content
+									blockquote
+										.open &#8220;
+										.quote
+											| Get top quality legal documents without paying top dollar.
+											span.close &#8221;
+										.from
+											.from-huffpost
+							.slides
+								.content
+									blockquote
+										.open &#8220;
+										.quote
+											| Great service. I could not be more pleased with the service I received.
+											span.close &#8221;
+										.from Gary O., Williamsburg, VA
+							.slides.wrightway
+								.content
+									.col-small
+										.module-image.small.framed.video
+											.shadow 
+											.container
+												.youtube-thumb
+													iframe(class='youtube-player' data-src='http://www.youtube.com/embed/jKNBcCy0T78?HD=1;rel=0;showinfo=0;' src='about:blank' type='text/html' width='100%' height='100%' allowfullscreen frameborder='0')
+												a onclick="openModalYoutube('%3Ciframe%20class%3D%22youtube-player%22%20type%3D%22text%2Fhtml%22%20width%3D%22800%22%20height%3D%22481%22%20src%3D%22http%3A%2F%2Fwww.youtube.com%2Fembed%2FjKNBcCy0T78%22%20allowfullscreen%20frameborder%3D%220%22%3E%3C%2Fiframe%3E')"
+													image src='images/5n5-home-swipe-video-wrightway-thumbnail.jpg' 
+													.button-play.small
+
+									.col-large
+										| Mason and Chelsea Wright started Wright Way Painting in 2009 on LegalZoom
+									.clear
+							.slides.nine-out-of-ten
+								.content
+									.col-small
+										.people
+									.col-large
+										| <strong>9 out of 10</strong> customers would recommend us to friends and family.
+										p.disclaimer Number of customers who would recommend LegalZoom is based on surveys conducted in 2012.
+									.clear
+	  		
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.socialIcons
+					ul
+						li.socialIconFacebook
+							a href="http://www.facebook.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconTwitter
+							a href="http://twitter.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconLinkedIn
+							a href="http://www.linkedin.com/company/legalzoom" rel="external" data-transition="slide"
+						li.socialIconGPlus
+							a href="https://plus.google.com/+legalzoom" rel="external" data-transition="slide"
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.
+
+  		
+  		.modal-overlay.dark
+			
+  		.modal.text.noBorder#boaModal
+			.container
+  				a.close.inside
+  				.overlay
+  				.content
+  					h1 Bank of America Offer Terms of Service
+  					p Content here
+  				
+  		.modal.text.noBorder#guaranteeModal
+			.container
+  				a.close.inside
+  				.overlay
+  				.content
+  					h1 The LegalZoom Satisfaction Guarantee
+  					p Content here
+  				
+  		.modal.text.noBorder#pomModal
+			.container
+  				a.close.inside
+  				.overlay
+  				.content
+  					h1 LegalZoom $50,000 Peace of Mind Guarantee
+  					p Content here

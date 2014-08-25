@@ -1,0 +1,156 @@
+doctype html
+html
+	head
+		meta charset='utf-8'
+		meta name='viewport' content='width=device-width, minimum-scale=1, maximum-scale=1'
+
+		title Creating your Power of Attorney | LegalZoom.com
+		link type='text/css' rel='stylesheet' href='css/core-mobile.css'
+
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+
+	body
+		.sidemneu-container#sidemneu_container
+
+		a.menu-overlay
+
+		.viewport
+
+			.bgSignin
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.progress-bar
+					.completed
+						.text
+							span 25
+							| % complete
+						.arrow
+
+				.pageBody
+					.page-questionnaire
+
+						.pageHeader
+							 h2.leftAlign Payment method
+						
+						p.light We accept all major credit cards and also accept debit cards that carry a Visa or MasterCard logo
+
+						form
+							.form-group
+								label Credit card number
+								input type='tel'
+								.badge-creditcards
+							.form-group.select
+								label Credit card type
+								.select-field
+									.select-arrow-container
+										.select-arrow
+									select
+										optgroup
+											option Visa
+											option Mastercard
+											option American Express
+											option Discover
+							.form-group.select
+								label Expiration date
+								.select-field.month
+									.select-arrow-container
+										.select-arrow
+									select
+										optgroup
+											option Month
+								.select-field.year
+									.select-arrow-container
+										.select-arrow
+									select
+										optgroup
+											option Year
+							.form-group
+								label
+									| CVV (
+									a.help#help_cvv what is this?
+									| )
+								input type='tel'
+							.form-group
+								label Billing Zip Code
+								input type='tel'
+							.form-group
+								label First name
+								input type='text'
+							.form-group
+								label Last name
+								input type='text'
+							.form-group
+								label Special instructions
+								textarea
+
+						br
+						hr
+						p.disclaimer
+							| By clicking the button, I agree to the 
+							a Terms of Service
+							| , 
+							a Contact Terms
+							|  and 
+							a Legal Plan Contract
+							| .
+
+						/! questionnaire navigation links
+						nav.nav-questionnaire
+							a.link-previous href='q_checkout_02_payment_info.html'
+								i.icon.icon-caret-left
+								|  Previous
+						
+							a.button.flex.has-right.button-next href='#'
+								.button-right
+									.inner
+										i.icon.button-icon.arrow-large
+								.button-center Next
+
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.
+
+			.modal-overlay
+
+			.tooltip-container
+
+				.tooltip#help_cvv_tooltip
+					.arrow.left
+					a.close
+						i.icon.icon-tooltip-close
+					.container
+						h2 Where is the CVV number?
+						strong Visa &amp; Mastercard
+						p This number is printed on your MasterCard & Visa cards in the signature area of the back of the card. (it is the last 3 digits AFTER the credit card number in the signature area of the card).
+						strong American Express
+						p You can find your four-digit card verification number on the front of your American Express credit card above the credit card number on either the right or the left side of your credit card.
+
+						h2 What is the CVV Number?
+						p CARD VERIFICATION VALUE CODE (CVV) 
+
+						p CVV is a new authentication procedure established by credit card companies to further efforts towards reducing fraud for internet transactions. It consists of requiring a card holder to enter the CVV number in at transaction time to verify that the card is on hand.The CVV code is a security feature for "card not present" transactions (e.g., Internet transactions), and now appears on most (but not all) major credit and debit cards. This new feature is a three- or four-digit code which provides a cryptographic check of the information embossed on the card. Therefore, the CVV code is not part of the card number itself. 
+
+						p The CVV code helps ascertain that the customer placing the order actually possesses the credit/debit card and that the card account is legitimate. Each credit card company has its own name for the CVV code, but it functions the same for all major card types. (VISA refers to the code as CVV2, MasterCard calls it CVC2, and American Express calls it CID.) 
+
+						p
+							| The back panel of most Visa/MasterCard cards contain the full 16-digit account number, followed by the CVV/CVC code. Some banks, though, only show the last four digits of the account number followed by the code. 
+							strong To aid in the prevention of fraudulent credit card use, we now require the 3 or 4 digit code on the back of your credit card.
+							|  When you submit your credit card information your data is protected by Secure Socket Layer (SSL) technology certified by a digital certificate
+
+
+	

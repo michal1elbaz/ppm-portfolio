@@ -1,0 +1,438 @@
+/* 
+	questionnaire layouts - this includes all miscellaneous layout needed for the qaire pages
+	imported from 'qaire-layout.scss'
+*/
+
+/* questionnaire header */
+
+.qaire-header {
+	position: relative;
+	margin: 0 0 10px 0;
+	.lz-logo {
+		margin: 4px 0 0 14px;
+	}
+	h1 {
+		position: absolute;
+		top: 8px;
+		left: 180px;
+		font-size: 24px;
+	}
+}
+
+/* content containers */
+.content-main {
+	width: 600px;
+	padding-right: 30px;
+	margin: 0 10px 0 0;
+	float: left;
+	h1 {
+		margin-top: 20px;
+	}
+}
+
+.content-sidebar {
+	width: 300px;
+	float: left;
+}
+
+
+/* page layout */
+
+h1 {
+	margin-bottom: 0.2em;
+}
+
+h3 {
+	margin-bottom: 0.1em;
+	line-height: 1.3;
+}
+
+.steps-solid {
+	margin-bottom: 20px;
+}
+
+.map {
+	display: block;
+	background: transparent url(../images/../images/blue-us-map.jpg) no-repeat 0 0;
+	width: 600px;
+	height: 320px;
+	margin-bottom: 80px;
+}
+
+.qaire-sidebar {
+	position: relative;
+	&.fixed {
+		position: fixed;
+		top: 14px;
+	}
+}
+
+.customer-service {
+	width: 300px;
+	height: 130px;
+	background: transparent url(../images/../images/customer-service-large-8557730880.jpg) no-repeat 0 0;
+}
+
+.form-group {
+	.columns {
+		width: 280px;
+		float: left;
+		margin-right: 10px;
+		&.small {
+			width: 190px;
+		}
+	}
+}
+
+.page-nav {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	li {
+		float: left;
+		display: block;
+		width: 50%;
+		.button {
+			float: right;
+		}
+	}
+	.link-back {
+		margin-top: 5px;
+	}
+}
+
+/* owner and management pages */
+
+.owner-info {
+	position: relative;
+	.link-remove {
+		position: absolute;
+		top: 6px;
+		right: 4px;
+		font-size: 12px;
+	}
+	h3 {
+		margin-bottom: 0.5em;
+	}
+	hr {
+		margin-bottom: 8px;
+	}
+}
+
+.header-owners {
+	margin-bottom: -10px;
+}
+
+.owner-addmore {
+	padding: 8px;
+	margin-bottom: 40px;
+}
+
+
+/* blockquote adjustments */
+
+.qaire-sidebar {
+	blockquote {
+		width: 280px;
+		margin-top: 40px;
+		.quote {
+			font-size: 18px;
+		}
+		.open {
+			font-size: 32px;
+			top: -4px;
+		}
+		.close {
+				font-size: 32px;
+				margin-top: -18px;
+				height: 22px;
+		}
+	}
+}
+
+
+/* offer selection with images */
+.offer-selection-with-image {
+	list-style: none;
+	margin: 15px 0 15px 0;
+	li {
+		color: $color-text;
+		display: block;
+		float: left;
+		margin: 0 8px 10px 0;
+		line-height: 1.3;
+		&.text {
+			width: 380px;
+		}
+		&.checkbox {
+			width: 22px;
+		}
+	}
+}
+
+.image-amex-gold-rewards {
+	display: block;
+	width: 160px;
+	height: 101px;
+	overflow: hidden;
+	background: transparent url(../images/../images/image-amex-gold-rewards.jpg) no-repeat 0 0;
+}
+
+.image-amex-simply-cash {
+	display: block;
+	width: 160px;
+	height: 101px;
+	overflow: hidden;
+	background: transparent url(../images/../images/image-amex-simply-cash.jpg) no-repeat 0 0;
+}
+
+/* California-only compliance package */
+
+.california-compliance-package {
+	cursor: pointer;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	padding: 16px 10px 10px 10px;
+	border-bottom: 1px solid $color-border-gray;
+	border-right: 1px solid $color-border-gray;
+	border-left: 1px solid $color-border-gray;
+	&:first-child {
+		border-top: 1px solid $color-border-gray;
+	}
+	&.last {
+		border: none;
+		padding: 11px;
+	}
+	.best {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 128px;
+		height: 130px;
+		background: transparent url(../images/../images/banner-california-compliance-package-best.png) no-repeat 0 0;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+	li {
+		color: $color-text;
+		float: left;
+		margin: 0 8px 10px 0;
+		line-height: 1.3;
+		position: relative;
+		&.text {
+			width: 530px;
+			.heading {
+				font-family: $font-medium;
+				font-size: 14px;
+				em {
+					font-size: 18px;
+					color: $brand-blue;
+					text-transform: uppercase;
+				}
+			}
+		}
+		&.checkbox {
+			width: 22px;
+		}
+	}
+	ul {
+		margin: 10px 0 10px 14px;
+		list-style: disc;
+		li {
+			margin-bottom: 10px;
+			font-size: 13px;
+		}
+	}
+	.expandable {
+		list-style: none;
+		margin-left: -10px;
+		ul {
+			list-style: disc;
+			margin-left: 4px;
+			li {
+				font-size: 13px;
+				margin-left: 14px;
+			}
+		}
+	}
+}
+
+.compliance-package-statement {
+	font-size: 13px;
+	em {
+		font-style: italic;
+		font-family: psRegularItalic, psRegular, Arial, sans-serif;
+	}
+}
+
+/* save your work */
+.form-group {
+	&.save-your-work {
+		h3 {
+			font-size: 16px;
+		}
+	}
+}
+
+/* email address/save your work on the sidebar */
+
+.email-sidebar {
+	margin: 24px 0 10px 0;
+	border-bottom: 1px solid $color-border-gray;
+	h3 {
+		font-size: 14px;
+	}
+	p {
+		font-size: 12px;
+	}
+	.form-group {
+		padding-bottom: 10px;
+		input[type=text] {
+			font-size: 12px;
+			height: 28px;
+			width: 160px;
+			margin-right: 4px;
+			margin-top: -2px;
+		}
+		.sign-in-link {
+			font-size: 10px;
+		}
+	}
+}
+
+/* modal help styles */
+
+.modal {
+	.columns {
+		width: 280px;
+		float: left;
+		margin-right: 10px;
+		&.small {
+			width: 190px;
+		}
+	}
+}
+
+
+/* Bank of America offer block */
+
+.offer-bofa {
+	width: 527px;
+	position: relative;
+	margin: 4px 0 0 36px;
+	&.no-margin {
+		margin: 4px 0 0 0;
+		width: 580px;
+		.disclaimer {
+			padding: 0 0 10px 0;
+		}
+	}
+	.offer-bofa-top {
+		width: 527px;
+		height: 346px;
+		position: relative;
+		background: transparent url(../images/../images/offer-bofa-top.jpg) no-repeat 0 0;
+		h1 {
+			position: absolute;
+			top: 40px;
+			left: 50px;
+			font-size: 18px;
+			color: $color-text;
+			em {
+				font-size: 80px;
+				font-family: $font-medium;
+				font-style: normal;
+				sup {
+					font-size: 40px;
+					top: -16px;
+					position: relative;
+				}
+			}
+		}
+		h2 {
+			position: absolute;
+			top: 154px;
+			left: 50px;
+			color: $color-text;
+		}
+		p {
+			position: absolute;
+			top: 184px;
+			left: 50px;
+			width: 430px;
+			font-size: 12px;
+			strong {
+				font-family: $font-medium;
+				color: $brand-blue;
+			}
+		}
+		.button {
+			position: absolute;
+			top: 280px;
+			left: 50%;
+			margin-left: -110px;
+		}
+	}
+	.offer-bofa-bottom {
+		width: 507px;
+		padding: 10px;
+		background: #d64b48 url(../images/../images/offer-bofa-bottom.jpg) repeat-x bottom center;
+		border-bottom-right-radius: 6px;
+		border-bottom-left-radius: 6px;
+		p {
+			text-align: center;
+			width: 490px;
+			margin: 0 auto;
+			color: #fff;
+			font-size: 12px;
+			font-family: $font-medium;
+		}
+		.form-group {
+			padding: 10px 0 8px 0;
+			.select-field.wide {
+				margin-left: 23px;
+				width: 460px;
+				select {
+					width: 500px;
+				}
+			}
+		}
+	}
+	.disclaimer {
+		padding: 10px;
+		p {
+			font-size: 12px;
+			color: #9e9e9e;
+			&.dark {
+				color: $brand-dark-gray;
+			}
+		}
+	}
+	.tos {
+		padding: 10px;
+		border: 1px solid $color-border-gray;
+		height: 60px;
+		overflow: auto;
+		p {
+			font-size: 12px;
+			color: #9e9e9e;
+		}
+		a {
+			color: $color-text;
+		}
+	}
+}
+
+/* Bank of America Offer in a modal display */
+.modal.text.offer-bofa-modal {
+	width: 586px;
+	margin-left: -293px;
+	.offer-bofa {
+		margin: 0;
+	}
+	.overlay {
+		width: 570px;
+	}
+}

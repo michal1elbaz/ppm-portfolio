@@ -1,0 +1,407 @@
+/* import responsive size variables */
+@import 'variables';
+
+/* real styles starts here */
+
+.modal-body {
+	overflow: hidden;
+	@media #{$iphone-portrait-only}, #{$iphone-landscape} {
+		margin: 0;
+		overflow: auto;
+		-webkit-text-size-adjust: none;
+	}
+	a {
+		color:#0068d3;
+		text-decoration:none;
+		&:hover {
+			color:#0068d3;
+			text-decoration:underline;
+		}
+	}
+	b {
+		font-weight: bold;
+	}
+	i {
+		font-style: italic;
+	}
+	h1, h2, h3, h4 {
+		margin:7px 0 10px 0;
+		color:#333384;
+		font-weight:bold;
+	}
+	h1 {
+		font-size:21px;
+		line-height:22px;
+	}
+	h2 {
+		font-size:17px;
+		line-height:20px;
+		margin-top:25px;
+	}
+	h3 {
+		font-size:16px;
+		line-height:18px;
+	}
+	h4 {
+		font-size:14px;
+		line-height:16px;
+	}
+	p {
+		margin:10px 0;
+		font-family:Arial;
+	}
+	strong {
+		color: #333384;
+		font-weight: bold;
+	}
+	hr {
+		height:0;
+		border-style:solid;
+		border-color:#ccc;
+		border-width:1px 0 0 0;
+		margin:30px 0;
+		clear:both;		
+	}
+	label:hover, input[type=checkbox], select {
+		cursor: pointer;
+	}
+	ul {
+		list-style-type:square;
+		color:#0068d3;
+		margin-left:1.5em;
+		@media #{$iphone-portrait-only}, #{$iphone-landscape} {
+			margin-left: -8px;
+		}
+	}
+	ol {
+		list-style-type:decimal;
+		color:#333384;
+		margin-left:2em;
+	}
+	li {
+		border-bottom:1px dashed #bfbfbf;
+		padding:7px 0;
+		position:relative;
+		display:list-item;
+		@media #{$iphone-portrait-only}, #{$iphone-landscape} {
+			padding: 6px 0;
+		}
+		&.last-child, &:last-child {
+			border-bottom: none;
+		}
+		.text-color {
+			color: #7a7a7a;
+		}
+	}
+	ul li ul, ul li ol {
+		margin-top: 5px;
+	}
+	ul li ul li, ul li ol li {
+		border: none;
+		padding: 2px 0;
+	}
+	table {
+		position: relative;
+	}
+	th {
+		text-align:left;
+		position:relative;
+	}
+	td {
+		position:relative;
+		vertical-align:top;
+	}
+}
+
+.modal {
+	width:722px;
+	color:#7a7a7a;
+	font-size:13px;
+	line-height:17px;
+	@media #{$iphone-portrait-only}, #{$iphone-landscape} {
+		width: 100%
+	}
+	.disclaimer {
+		color: #7a7a7a;
+	}
+}
+.modal-inner {
+	padding:30px;
+	@media #{$iphone-portrait-only}, #{$iphone-landscape} {
+		padding: 0;
+	}
+}
+/*#modal-load {display:none;}*/
+
+.modal-main-title {
+	font-family:'UniversLTW01-67BoldCn';
+	font-size:21pt;
+	color:#1c3583;
+	padding-bottom:10px;
+}
+
+.modal-guest-choice {
+	width:700px;
+	color:#7a7a7a;
+	font-size:13px;
+	line-height:15px;
+	overflow:hidden;
+	.disclaimer {
+		color:#7a7a7a;
+	}
+	.button-medium {
+		margin: 15px auto 10px auto;
+	}
+	.button-guest {
+		width: 200px;
+	}
+	.button-new-existing {
+		width: 300px;
+	}
+	.button-medium {
+		img {
+			margin: 11px 0 2px 0;
+		}
+	}
+	#stopwatch {
+		position:absolute;
+		right:25px;
+		top:-45px;
+	}
+}
+
+.modal-guest-choice-header {
+	background:url('/assets/images/modal-guest-choice-header-bk.gif');
+	background-repeat:repeat-x;
+	background-color:#3673cc;
+	overflow:hidden;
+	position:relative;
+	img {
+		margin:15px 0 7px 15px;
+	}
+}
+
+.modal-guest-choice-inner {
+	padding:20px;
+}
+
+.modal-guest-choice-column {
+	border-right:1px solid #ccc;
+	float:left;
+	width:318px;
+	margin:0 20px 0 0;
+	&:last-child {
+		border-right:none;margin-right:0;
+	}
+}
+
+.modal-guest-choice-column-last-child {
+	border-right:none;
+	margin-right:0;
+}
+
+.modal-pointer {
+	position:absolute;
+	width:495px;
+	left:-525px;
+	top:0;
+	background:#fff;
+	display:none;
+	color:#7a7a7a;
+	font-size:13px;
+	line-height:18px;
+	-webkit-box-shadow: 0 4px 16px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 4px 16px rgba(0,0,0,.5);
+	box-shadow: 0 4px 16px rgba(0,0,0,.5);
+	h2 {
+		margin-top: 0;
+	}
+	h3 {
+		margin: 15px 0 10px 0;
+	}
+	p {
+		margin: 15px 0 0 0 !important;
+	}
+	li {
+		padding:5px 0;
+		line-height:15px;
+		.text-color {
+			width:400px !important;
+			color:#444;
+		}
+	}
+}
+.modal-pointer-inner {
+	padding:20px 25px;
+}
+.modal-pointer-close-button {
+	position:absolute;
+	top:-14px;
+	right:-15px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.modal-pointer-tip {
+	position:absolute;
+	right:-14px;
+}
+.modal-pointer-shadow {
+	width:485px;
+	height:15px;
+	position:absolute;
+	left:5px;
+	bottom:-15px;
+}
+
+.modal-kit-image {
+	margin:auto;
+}
+
+#satisfactionLogo {
+	border:0;
+	clear:right;
+	margin-bottom:10px;
+}
+
+/* toggle these depdning on whether we display the extended BSI hours */
+#bsi-hours {
+	display:inline-block;
+}
+#bsi-hours-ext {
+	display:none;
+}
+#modal-national-business, #modal-national-business ul {
+	color:#333;
+	font-size:15px;
+	line-height:19px;
+}
+#modal-national-business {
+	a {
+		text-decoration:underline;
+	}
+	li {
+		border-bottom:none;
+		padding:3px 0;
+	}
+	h1, h2 {
+		text-align:center;
+	}
+	h1 {
+		font-size:23px;
+		line-height:26px;
+		color:#095C2E;
+	}
+	h2 {
+		margin-top:5px;
+		font-size:18px;
+		line-height:21px;
+		color:#000;
+	}
+} 
+
+/* Flat fee products modals */
+.modal-ldr-price {
+	h1 {
+		position:relative;
+		top:-20px;
+		text-align:center;
+	}
+}
+#modal-ldr-price-box {
+	background-color:#ededed;
+	border:1px solid #e0e0e0;
+	padding:0 20px 20px 20px;
+	div {
+		padding-top:10px;
+		text-align:center;
+		color:#fff;
+		font-family:"UniversLTW01-67BoldCnOb";
+		background-image:url(/assets/images/bk-orange-parallelogram.png);
+		background-repeat:no-repeat;
+		width:353px;
+		height:36px;
+		margin:0 auto;
+		position:relative;
+		top:-20px;
+	}
+	p {
+		font-size:13px;
+		color:#000;
+	}
+}
+
+.modal-tmoar-price {
+	h1 {
+		position:relative;
+		top:-20px;
+		text-align:center;
+	}
+}
+#modal-tmoar-price-box {
+	background-color:#ededed;
+	border:1px solid #e0e0e0;
+	padding:0 20px 20px 20px;
+	#modal-tmoar-headline {
+		padding-top:10px;
+		text-align:center;
+		color:#fff;
+		font-family:"UniversLTW01-67BoldCnOb";
+		background-image:url(/assets/images/bk-orange-parallelogram-long.png);
+		background-repeat:no-repeat;
+		width:453px;
+		height:36px;
+		margin:0 auto;
+		position:relative;
+		top:-20px;
+		font-size:15px;
+	}
+	p {
+		font-size: 13px;
+		color: #000;
+	}
+}
+
+.modal-pricebox-elipse {
+	background-image:url(/assets/images/backgrounds/period.png);
+	background-repeat:repeat-x;
+	background-position:0 11px;
+}
+
+.level1, .level2, .level3, .level4 {
+	position: relative;
+	display: block;
+}
+.level1 {
+	width:575px;
+	left:20px;
+}
+.level2 {
+	width:555px;
+	left:40px;
+}
+.level3 {
+	width:535px;
+	left:60px;
+}
+.level4 {
+	width:515px;
+	left:80px;
+}
+.line-item {
+	clear:left;
+	background-color:#ededed;
+}
+.line-item-price {
+	float:right;
+	clear:right;
+	background-color:#ededed;
+}
+.clear {
+	clear:both;
+}
+
+#oStateSel{
+	padding-top:4px;
+	padding-bottom:12px;
+}

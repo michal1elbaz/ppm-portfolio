@@ -1,0 +1,227 @@
+/*
+	variables for legalzoom:
+	colors
+	background
+	border
+	fonts
+	text colors
+	responsive screen sizes
+	imported from 'variables.scss'
+*/
+/* branding colors */
+/* background colors */
+/* border colors */
+/* fonts */
+/* text colors */
+/* responsive screen sizes */
+/* side menu container */
+.sidemenu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #f2f2f2;
+  color: #333;
+  z-index: 1;
+  width: 280px;
+  display: none; }
+  .sidemenu-container.active {
+    display: block; }
+
+body.noscroll {
+  overflow: hidden; }
+
+.menu-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+  display: none; }
+  .menu-overlay.active {
+    display: block; }
+
+/* Slide menu css */
+.sidr {
+  display: none;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 999999;
+  width: 260px;
+  overflow-x: none;
+  overflow-y: auto;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size: 15px;
+  background: #f2f2f2;
+  color: #333333;
+  	/*-webkit-box-shadow: inset 0 0 5px 5px #ebebeb;
+  	-moz-box-shadow: inset 0 0 5px 5px #ebebeb;
+  	box-shadow: inset 0 0 5px 5px #ebebeb;
+      -webkit-overflow-scrolling:auto;
+      -webkit-transform:translate3d(0,0,0);*/
+  overflow: scroll; }
+  @media only screen and (min-width: 460px) {
+    .sidr {
+      width: 430px; } }
+
+.sideShadow {
+  position: fixed;
+  top: 0;
+  width: 9px;
+  left: 271px;
+  height: 100%;
+  background-image: url("../images/backgrounds/bg_sidemenu_shadow.png");
+  background-size: 9px auto;
+  background-repeat: repeat-y;
+  background-position: right top; }
+
+.sidr.right {
+  left: auto;
+  right: -270px; }
+
+.sidr.left {
+  left: -270px;
+  right: auto; }
+
+.sidr-trap {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 888888;
+  -webkit-tap-highlight-color: transparent; }
+
+/* LZ Menu Style */
+.sideMenu #myAccount {
+  background-image: url("../images/icons/icon_menu_myaccount-2x.gif");
+  background-size: 20px 17px; }
+.sideMenu #businessProducts {
+  background-image: url("../images/icons/icon_menu_business-2x.gif");
+  background-size: 18px 15px; }
+.sideMenu #personalProducts {
+  background-image: url("../images/icons/icon_menu_personal-2x.gif");
+  background-size: 18px 15px; }
+.sideMenu #findAttorney {
+  background-image: url("../images/icons/icon_menu_attorney-2x.gif");
+  background-size: 18px 21px; }
+.sideMenu #taxAdvice {
+  background-image: url("../images/icons/icon_menu_tax-2x.gif");
+  background-size: 18px 18px; }
+.sideMenu #legalForms {
+  background-image: url("../images/icons/icon_menu_legalForms-2x.gif");
+  background-size: 14px 17px; }
+.sideMenu #helpMe {
+  background-image: url("../images/icons/icon_menu_helpme-2x.gif");
+  background-size: 18px 18px; }
+.sideMenu #getApp {
+  background-image: url("../images/icons/icon_menu_app-2x.gif");
+  background-size: 12px 19px; }
+.sideMenu .accountName {
+  font-family: "psLight", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  color: #281360; }
+.sideMenu .accountInfoCell {
+  height: auto;
+  padding-left: 20px;
+  padding-bottom: 10px; }
+.sideMenu ul {
+  padding: 0;
+  margin: 0; }
+.sideMenu li {
+  border: 0;
+  margin: 0;
+  border-style: solid;
+  border-bottom: 1px solid #dcdcdb;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-color: #f2f2f2; }
+  .sideMenu li a.main {
+    display: block;
+    padding-left: 44px; }
+.sideMenu .topLinks {
+  padding: 0px; }
+.sideMenu .myAccountButton {
+  padding-right: 10px;
+  float: left; }
+
+nav#menu {
+  height: 100%;
+  width: 280px;
+  background: #f2f2f2; }
+  nav#menu a {
+    font-family: "psLight", "psRegular", Helvetica, Arial, sans-serif; }
+  nav#menu .accountInfoCell a {
+    font-family: "psMedium","psRegular",Helvetica,Arial,sans-serif; }
+
+ul.sideMenu a {
+  color: #281360;
+  font-size: 13px; }
+
+ul.sideMenu {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+ul.menuFooter {
+  font-size: 10px;
+  list-style: none;
+  padding-left: 20px;
+  height: 40px; }
+
+.menuFooter {
+  background: #f2f2f2;
+  margin-left: 0; }
+  .menuFooter li {
+    display: inline;
+    float: left;
+    padding-right: 10px;
+    line-height: 40px;
+    height: 40px;
+    vertical-align: middle; }
+  .menuFooter a {
+    font-size: 10px;
+    color: #281360; }
+
+nav#menu a .menuFooter {
+  font-size: 6px;
+  color: red; }
+
+#contactwrapper {
+  float: left;
+  width: 100%;
+  background-image: url("../images/icons/icon_menu_signin-2x.gif");
+  background-repeat: no-repeat;
+  background-position: 150px 9px;
+  background-size: 21px 21px; }
+
+#messageswrapper {
+  float: left;
+  width: 100%; }
+
+#contactcolumn {
+  margin-left: 180px; }
+
+#messagescolumn {
+  margin-left: 160px; }
+
+#siginColumn {
+  float: left;
+  width: 95px;
+  margin-left: -100%;
+  border: 0;
+  border-style: solid;
+  border-right: 1px solid #dcdcdb;
+  padding-left: 44px;
+  background-image: url("../images/icons/icon_menu_phone-2x.gif");
+  background-repeat: no-repeat;
+  background-position: 20px 9px;
+  background-size: 19px 19px; }

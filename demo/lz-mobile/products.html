@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport" />
+    <title>
+      Our products & services | LegalZoom.com
+    </title>
+    <link href="css/core-mobile.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/modernizr-2.6.2.min.js" type="text/javascript"></script>
+    <script src="js/app.min.js" type="text/javascript"></script>
+    <script src="js/mobile-sidemenu.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function() {				    
+      
+              // Cat/AZ Segmented Control
+              $( "#azButton" ).click(function() {
+                displayTypeTap('az');
+              });
+      
+              $( "#catButton" ).click(function() {
+                displayTypeTap('categories');
+              });
+      
+              $(window).on('hashchange', function() {
+                  if(window.location.hash){
+                      changeContent(window.location.hash);
+                  } else {
+                      changeContent('');
+                  }
+      
+                  $.sidr('close', 'sidr-remote-content');
+              });
+      
+              if(window.location.hash){
+                  changeContent(window.location.hash);
+              }
+          });
+      
+          function changeContent(hash) {
+              if(hash) {
+                  var hashStripped = hash.substring(1);
+      
+                  if(hashStripped=='personal')
+                  {	
+                      $( "#segmentBusiness" ).removeClass( "selected" );
+                      $( "#segmentPersonal" ).addClass( "selected" );
+      
+                      $( "#segmentMenu" ).addClass( "orange" );
+                      $( "#roundedSegmentMenu" ).addClass( "orange" );
+      
+                  } else if(hashStripped=='business') {
+                      $( "#segmentPersonal" ).removeClass( "selected" );
+                      $( "#segmentBusiness" ).addClass( "selected" );
+      
+                      $( "#segmentMenu" ).removeClass("orange");
+                      $( "#roundedSegmentMenu" ).removeClass("orange");
+                  }
+      
+      
+                  if($( "#catButton" ).hasClass("selected")){
+                      displayTypeTap('categories');
+                  } else {
+                      displayTypeTap('az');
+                  }
+              }
+          }
+      
+          function displayTypeTap(type) {
+              if(type == 'categories') {
+                  $( "#catButton" ).addClass( "selected" );
+                  $( "#azButton" ).removeClass( "selected" );
+      
+                  $('#productsBusinessCategorized').hide();
+                  $('#productsBusinessAZ').hide();
+                  $('#productsPersonalCategorized').hide();
+                  $('#productsPersonalAZ').hide();
+      
+                  if($( "#segmentBusiness" ).hasClass("selected")){
+                      $('#productsBusinessCategorized').show();
+                  } else {
+                      $('#productsPersonalCategorized').show();
+                  }
+              } else {
+                  $( "#catButton" ).removeClass( "selected" );
+                  $( "#azButton" ).addClass( "selected" );
+      
+      
+                  $('#productsBusinessCategorized').hide();
+                  $('#productsBusinessAZ').hide();
+                  $('#productsPersonalCategorized').hide();
+                  $('#productsPersonalAZ').hide();
+      
+                  if($( "#segmentBusiness" ).hasClass("selected")){
+                      $('#productsBusinessAZ').show();
+                  } else {
+                      $('#productsPersonalAZ').show();
+                  }
+              }
+          }
+    </script>
+  </head>
+  <body>
+    <div class="sidemenu-container" id="sidemenu_container"></div>
+    <a class="menu-overlay"></a>
+    <div class="viewport">
+      <div>
+        <div class="siteHeader">
+          <a class="leftNavButton" href="#remote-content-menu" id="remote-content-menu"><span class="badge hamburgerBadge">12</span></a>
+          <div class="lz-logo">
+            <a href="index.html">LegalZoom</a>
+          </div>
+          <a class="rightNavButton" href="tel:800-773-0888"></a>
+        </div>
+        <div class="pageHeader">
+          <h2>
+            Our products & services
+          </h2>
+        </div>
+        <div class="pageBody">
+          <div>
+            <div class="segmentMenu" id="segmentMenu">
+              <ul>
+                <li class="selected" id="segmentBusiness">
+                  <a href="#business" id="butTypeBusiness">Business</a>
+                </li>
+                <li id="segmentPersonal">
+                  <a href="#personal" id="butTypePersonal">Personal</a>
+                </li>
+              </ul>
+            </div>
+            <br />
+            <div class="menuPadding">
+              <div class="roundedSegmentMenu" id="roundedSegmentMenu">
+                <ul>
+                  <li class="selected" id="catButton">
+                    Categories
+                  </li>
+                  <li id="azButton">
+                    A-Z
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br /><br />
+            <div class="hidden" id="productsBusinessAZ">
+              <div class="productList">
+                <dl>
+                  <dd>
+                    <a href="find_attorney_business.html">Business Legal Plan</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Business Plan Nondisclosure Agreement</a>
+                  </dd>
+                  <dd>
+                    <a href="product_copyright.html">Copyright Registration</a>
+                  </dd>
+                  <dd>
+                    <a href="product_dba.html">DBA ("doing business as")</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Employment Agreement</a>
+                  </dd>
+                  <dd>
+                    <a href="#">General Agreement</a>
+                  </dd>
+                  <dd>
+                    <a href="product_incorporation.html">Incorporation (S Corp., C Corp.)</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Independent Contractor Agreement</a>
+                  </dd>
+                  <dd>
+                    <a href="product_llc.html">LLC (Limited Liability Company)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_nonprofit.html">Nonprofit</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Promissory Note (Secured / Amortized)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_patent.html">Provisional Application for Patent</a>
+                  </dd>
+                  <dd>
+                    <a href="product_real_estate_transfer.html">Real Estate Deed Transfer</a>
+                  </dd>
+                  <dd>
+                    <a href="product_real_estate_lease.html">Real Estate Lease</a>
+                  </dd>
+                  <dd>
+                    <a href="product_dba.html">Sole Proprietorship / DBA</a>
+                  </dd>
+                  <dd>
+                    <a href="product_trademark.html">Trademark Registration</a>
+                  </dd>
+                  <dd>
+                    <a href="product_immigration.html">Work Visa</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div id="productsBusinessCategorized">
+              <div class="productList">
+                <dl>
+                  <dt>
+                    Most Popular
+                  </dt>
+                  <dd>
+                    <a href="product_llc.html">LLC (Limited Liability Company)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_incorporation.html">Incorporation (S Corp, C Corp)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_trademark.html">Trademark</a>
+                  </dd>
+                  <dd>
+                    <a href="product_dba.html">Sole Proprietorship / DBA</a>
+                  </dd>
+                </dl>
+              </div>
+              <div class="helpMeDecideProduct">
+                <div id="inner">
+                  <h3>
+                    Not sure which product you need?
+                  </h3>
+                  <a class="button flex mobile" href="#"><span class="button-center">Help me decide</span></a><br /><br />
+                </div>
+              </div>
+              <div class="productList">
+                <dl>
+                  <dt>
+                    Forming Your Business
+                  </dt>
+                  <dd>
+                    <a href="product_llc.html">LLC (Limited Liability Company)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_incorporation.html">Incorporation (S Corp., C Corp.)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_nonprofit.html">Nonprofit</a>
+                  </dd>
+                  <dd>
+                    <a href="product_dba.html">Sole Proprietorship / DBA</a>
+                  </dd>
+                  <dt>
+                    Trademarks
+                  </dt>
+                  <dd>
+                    <a href="product_trademark.html">Trademark Registration</a>
+                  </dd>
+                  <dt>
+                    Patents and Copyrights
+                  </dt>
+                  <dd>
+                    <a href="product_patent.html">Provisional Application for Patent</a>
+                  </dd>
+                  <dd>
+                    <a href="product_copyright.html">Copyright Registration</a>
+                  </dd>
+                  <dt>
+                    Real Estate
+                  </dt>
+                  <dd>
+                    <a href="product_real_estate_lease.html">Real Estate Lease</a>
+                  </dd>
+                  <dd>
+                    <a href="product_real_estate_transfer.html">Real Estate Deed Transfer</a>
+                  </dd>
+                  <dt>
+                    Additional Business Services
+                  </dt>
+                  <dd>
+                    <a href="find_attorney_business.html">Business Legal Plan</a>
+                  </dd>
+                  <dd>
+                    <a href="product_immigration.html">Work Visa</a>
+                  </dd>
+                  <dt>
+                    Legal Forms and Agreements
+                  </dt>
+                  <dd>
+                    <a href="#">Business Plan Nondisclosure Agreement</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Employment Agreement</a>
+                  </dd>
+                  <dd>
+                    <a href="#">General Agreement</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Independent Contractor Agreement</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Promissory Note (Secured / Amortized)</a>
+                  </dd>
+                  <dd>
+                    <a href="legal_forms.html">More...</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="hidden" id="productsPersonalAZ">
+              <div class="productList">
+                <dl>
+                  <dd>
+                    <a href="product_bankruptcy.html">Bankruptcy</a>
+                  </dd>
+                  <dd>
+                    <a href="product_divorce.html">Divorce</a>
+                  </dd>
+                  <dd>
+                    <a href="product_copyright.html">Copyright Registration</a>
+                  </dd>
+                  <dd>
+                    <a href="product_immigration.html">Green Card</a>
+                  </dd>
+                  <dd>
+                    <a href="product_living_will.html">Health Care Power of Attorney</a>
+                  </dd>
+                  <dd>
+                    <a href="product_last_will_and_testament.html">Last Will and Testament</a>
+                  </dd>
+                  <dd>
+                    <a href="product_living_trust.html">Living Trust</a>
+                  </dd>
+                  <dd>
+                    <a href="product_living_will.html">Living Will (Advance Directive)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_personal_injury.html">Personal Injury</a>
+                  </dd>
+                  <dd>
+                    <a href="find_attorney_personal.html">Personal Legal Plan</a>
+                  </dd>
+                  <dd>
+                    <a href="product_power_of_attorney.html">Power of Attorney (Financial)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_prenuptial_agreement.html">Prenuptial Agreement</a>
+                  </dd>
+                  <dd>
+                    <a href="product_real_estate_transfer.html">Real Estate Deed Transfer</a>
+                  </dd>
+                  <dd>
+                    <a href="product_real_estate_lease.html">Real Estate Lease</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="hidden" id="productsPersonalCategorized">
+              <div class="productList orange">
+                <dl>
+                  <dt>
+                    Most Popular
+                  </dt>
+                  <dd>
+                    <a href="product_last_will_and_testament.html">Last Will and Testament</a>
+                  </dd>
+                  <dd>
+                    <a href="product_living_will.html">Living Will (Advance Directive)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_power_of_attorney.html">Power of Attorney (Financial)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_living_trust.html">Living Trust</a>
+                  </dd>
+                </dl>
+              </div>
+              <div class="helpMeDecideProduct personal">
+                <div id="inner">
+                  <h3>
+                    Not sure which product you need?
+                  </h3>
+                  <a class="button flex mobile" href="#"><span class="button-center">Help me decide</span></a><br /><br />
+                </div>
+              </div>
+              <div class="productList orange">
+                <dl>
+                  <dt>
+                    Wills & Trusts
+                  </dt>
+                  <dd>
+                    <a href="product_last_will_and_testament.html">Last Will and Testament</a>
+                  </dd>
+                  <dd>
+                    <a href="product_living_trust.html">Living Trust</a>
+                  </dd>
+                  <dd>
+                    <a href="product_living_will.html">Living Will (Advance Directive)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_power_of_attorney.html">Power of Attorney (Financial)</a>
+                  </dd>
+                  <dd>
+                    <a href="product_living_will.html">Health Care Power of Attorney</a>
+                  </dd>
+                  <dt>
+                    Personal Services
+                  </dt>
+                  <dd>
+                    <a href="product_bankruptcy.html">Bankruptcy</a>
+                  </dd>
+                  <dd>
+                    <a href="product_divorce.html">Divorce</a>
+                  </dd>
+                  <dd>
+                    <a href="product_immigration.html">Green Card</a>
+                  </dd>
+                  <dd>
+                    <a href="product_personal_injury.html">Personal Injury</a>
+                  </dd>
+                  <dd>
+                    <a href="product_prenuptial_agreement.html">Prenuptial Agreement</a>
+                  </dd>
+                  <dt>
+                    Real Estate
+                  </dt>
+                  <dd>
+                    <a href="product_real_estate_lease.html">Real Estate Lease</a>
+                  </dd>
+                  <dd>
+                    <a href="product_real_estate_transfer.html">Real Estate Deed Transfer</a>
+                  </dd>
+                  <dt>
+                    Additional Personal Services
+                  </dt>
+                  <dd>
+                    <a href="find_attorney_personal.html">Personal Legal Plan</a>
+                  </dd>
+                  <dd>
+                    <a href="product_copyright.html">Copyright Registration</a>
+                  </dd>
+                  <dd>
+                    <a href="legal_forms.html">Legal Forms and Agreements</a>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a class="viistFullWebsite" href="http://www.legalzoom.com">
+            <p>
+              Visit our <span class="underline">full website</span> to see all of our products.
+            </p>
+            <div class="visitfullWebsiteIcon"></div>
+          </a>
+        </div>
+      </div>
+      <div class="pageDivider"></div>
+      <div class="clear siteFooter">
+        <br />
+        <div class="footerLinks">
+          <a href="disclaimer.html">Disclaimer</a> | <a href="privacy_policy.html">Privacy Policy</a>
+        </div>
+        <div class="socialIcons">
+          <ul>
+            <li class="socialIconFacebook">
+              <a data-transition="slide" href="http://www.facebook.com/LegalZoom" rel="external"></a>
+            </li>
+            <li class="socialIconTwitter">
+              <a data-transition="slide" href="http://twitter.com/LegalZoom" rel="external"></a>
+            </li>
+            <li class="socialIconLinkedIn">
+              <a data-transition="slide" href="http://www.linkedin.com/company/legalzoom" rel="external"></a>
+            </li>
+            <li class="socialIconGPlus">
+              <a data-transition="slide" href="https://plus.google.com/+legalzoom" rel="external"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="legalAdvice">
+          The information provided on this site is not legal advice.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

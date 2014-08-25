@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport" />
+    <title>Guide | LegalZoom.com</title>
+    <link href="css/core-mobile.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/modernizr-2.6.2.min.js" type="text/javascript"></script>
+    <script src="js/app.min.js" type="text/javascript"></script>
+    <script src="js/guide.js" type="text/javascript"></script>
+    <style type="text/css">
+      .guidePages {
+          width: 100%;
+          overflow: hidden;
+      }
+      
+      .page {
+          color: white;
+          width: 100%;
+          overflow: hidden;
+          float: left;
+      }
+      
+      .guideContainer
+      {
+          width: 100%;
+          overflow: hidden;
+      }
+      
+      .content {
+          position:relative;
+      }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          setPageWidth();
+      
+          $("li").on("mousedown mouseup", function(e){
+              $(this).toggleClass( "active", e.type === "mousedown" );
+          });
+      
+          buildPagesWithJSON('[{"question":"What do you need help with?","type":"options","percentage":"10","options":[{"question":"What would you like to do?","type":"options","value":"My business","icon":"icon_briefcase","percentage":"20","options":[{"question":"Do you know what kind of business you would like to form?","type":"options","value":"Form a new business","icon":"icon_new","percentage":"70","options":[{"type":"results","value":"Not sure, help me decide","icon":"icon_arrow","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"LLC (Limited liability company)","icon":"icon_shop","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"C or S corporation","icon":"icon_buildings","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Nonprofit","icon":"icon_heart","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Sole proprietorship (DBA)","icon":"icon_person","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"}]},{"question":"What do you want to protect?","type":"options","value":"Protect my intellectual property","icon":"icon_lock","percentage":"80","options":[{"type":"results","value":"Not sure, help me decide","icon":"icon_arrow","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Name, logo, slogan or tagline","icon":"icon_trademark","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Art, music or literature","icon":"icon_photo","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Idea, invention or design","icon":"icon_bulb","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"}]},{"type":"results","value":"Rent or lease property","icon":"icon_keys","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Find a legal form","icon":"icon_legal_form","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"}]},{"question":"What would you like to do?","type":"options","value":"Myself or my family","icon":"icon_home","percentage":"20","options":[{"question":"Do you know which document you would like to create?","type":"options","value":"Create a will or other estate planning document","icon":"icon_home","percentage":"70","options":[{"type":"results","value":"Not sure, help me decide","icon":"icon_arrow","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Will","icon":"icon_will","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Trust","icon":"icon_trust","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Living Will (healthcare power of attorney)","icon":"icon_living_will","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Durable (financial) power of attorney","icon":"icon_bankruptcy","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"}]},{"question":"Are you getting married or divorced?","type":"options","value":"Get married or divorced","icon":"icon_heart","percentage":"50","options":[{"type":"results","value":"Married","icon":"icon_heart","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Divorced","icon":"icon_heart_broken","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"}]},{"type":"results","value":"Find a legal form","icon":"icon_legal_form","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"question":"Do you need help with any of the following?","type":"options","value":"Other","icon":"icon_arrow","percentage":"90","options":[{"question":"What kind of real estate help?","type":"options","value":"Real estate","icon":"icon_real_estate","percentage":"80","options":[{"type":"results","value":"Transfer title or ownership","icon":"icon_transfer","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Rent or lease property","icon":"icon_keys","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Find a real estate legal form","icon":"icon_legal_form","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"}]},{"type":"results","value":"Bankruptcy","icon":"icon_bankruptcy","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Personal Injury","icon":"icon_injury","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"question":"What type of immigration?","type":"options","value":"Immigration","icon":"icon_immigration","percentage":"80","options":[{"type":"results","value":"Temporary worker visa","icon":"icon_id_badge","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"},{"type":"results","value":"Personal or family immigration","icon":"icon_family","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"}]},{"type":"results","value":"Other","icon":"icon_arrow","title":"LLCs are becoming the most popular way to start a business due to their ease and flexibility.","description":"An LLC is a business entity created under state law that can shield you from personal liability.","link":"product.html","percentage":"100","button":"Limited Liability Company"}]}]}]}]');
+      
+          if(window.location.hash){
+              var hashStripped = window.location.hash.substring(1);
+      
+              selectOption(hashStripped);
+          }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="bgGuide">
+      <div class="siteHeader">
+        <a class="leftBackButton" href="javascript:back();">« Back</a>
+        <div class="lz-logo">
+          <a href="index.html">LegalZoom</a>
+        </div>
+        <a class="rightNavButton" href="tel:800-773-0888"></a>
+      </div>
+      <div class="smallProgressBar">
+        <div class="bar hasEnd" id="guideProgressBar" style="width:10%"></div>
+      </div>
+      <div class="guideBody">
+        <div class="guideContainer">
+          <div class="guidePages"></div>
+        </div>
+      </div>
+    </div>
+    <div class="clear siteFooter" style="background-color:white;">
+      <div class="footerLinks">
+        <a href="disclaimer.html">Disclaimer</a> | <a href="privacy_policy.html">Privacy Policy</a>
+      </div>
+      <div class="clear"></div>
+      <div class="legalAdvice">
+        " The information provided on this site is not legal advice.
+      </div>
+    </div>
+  </body>
+</html>

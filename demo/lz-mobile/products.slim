@@ -1,0 +1,352 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title Our products & services | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+		
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+		
+		javascript:
+			$(function() {				    
+				    
+				    // Cat/AZ Segmented Control
+				    $( "#azButton" ).click(function() {
+					  displayTypeTap('az');
+					});
+					
+				    $( "#catButton" ).click(function() {
+					  displayTypeTap('categories');
+					});
+					
+					$(window).on('hashchange', function() {
+						if(window.location.hash){
+							changeContent(window.location.hash);
+						} else {
+							changeContent('');
+						}
+						
+						$.sidr('close', 'sidr-remote-content');
+					});
+					
+					if(window.location.hash){
+						changeContent(window.location.hash);
+					}
+				});
+				
+				function changeContent(hash) {
+					if(hash) {
+						var hashStripped = hash.substring(1);
+						
+						if(hashStripped=='personal')
+						{	
+							$( "#segmentBusiness" ).removeClass( "selected" );
+							$( "#segmentPersonal" ).addClass( "selected" );
+							
+							$( "#segmentMenu" ).addClass( "orange" );
+							$( "#roundedSegmentMenu" ).addClass( "orange" );
+							
+						} else if(hashStripped=='business') {
+							$( "#segmentPersonal" ).removeClass( "selected" );
+							$( "#segmentBusiness" ).addClass( "selected" );
+							
+							$( "#segmentMenu" ).removeClass("orange");
+							$( "#roundedSegmentMenu" ).removeClass("orange");
+						}
+						
+						
+						if($( "#catButton" ).hasClass("selected")){
+							displayTypeTap('categories');
+						} else {
+							displayTypeTap('az');
+						}
+					}
+				}
+				
+				function displayTypeTap(type) {
+					if(type == 'categories') {
+						$( "#catButton" ).addClass( "selected" );
+						$( "#azButton" ).removeClass( "selected" );
+
+						$('#productsBusinessCategorized').hide();
+						$('#productsBusinessAZ').hide();
+						$('#productsPersonalCategorized').hide();
+						$('#productsPersonalAZ').hide();
+					  
+						if($( "#segmentBusiness" ).hasClass("selected")){
+							$('#productsBusinessCategorized').show();
+						} else {
+							$('#productsPersonalCategorized').show();
+						}
+					} else {
+						$( "#catButton" ).removeClass( "selected" );
+						$( "#azButton" ).addClass( "selected" );
+						  
+						  
+						$('#productsBusinessCategorized').hide();
+						$('#productsBusinessAZ').hide();
+						$('#productsPersonalCategorized').hide();
+						$('#productsPersonalAZ').hide();
+						  
+						if($( "#segmentBusiness" ).hasClass("selected")){
+							$('#productsBusinessAZ').show();
+						} else {
+							$('#productsPersonalAZ').show();
+						}
+					}
+				}
+		
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+			
+			div
+				.siteHeader
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.pageHeader
+					h2 Our products & services
+
+				.pageBody
+					div
+						.segmentMenu#segmentMenu
+							ul
+								li#segmentBusiness.selected
+									a#butTypeBusiness href="#business" Business
+								li#segmentPersonal
+									a#butTypePersonal href="#personal" Personal
+						br
+						.menuPadding
+							.roundedSegmentMenu#roundedSegmentMenu
+								ul
+									li#catButton.selected Categories
+									li#azButton A-Z
+						br
+						br
+						#productsBusinessAZ.hidden
+							.productList
+								dl						  
+									dd
+										a href='find_attorney_business.html' Business Legal Plan
+									dd
+										a href='#' Business Plan Nondisclosure Agreement
+									dd
+										a href='product_copyright.html' Copyright Registration
+									dd
+										a href='product_dba.html'
+											| DBA ("doing business as")
+									dd
+										a href='#' Employment Agreement
+									dd
+										a href='#' General Agreement
+									dd
+										a href='product_incorporation.html' Incorporation (S Corp., C Corp.)
+									dd
+										a href='#' Independent Contractor Agreement
+									dd
+										a href='product_llc.html' LLC (Limited Liability Company)
+									dd
+										a href='product_nonprofit.html' Nonprofit
+									dd
+										a href='#' Promissory Note (Secured / Amortized)
+									dd
+										a href='product_patent.html' Provisional Application for Patent
+									dd
+										a href='product_real_estate_transfer.html' Real Estate Deed Transfer
+									dd
+										a href='product_real_estate_lease.html' Real Estate Lease
+									dd
+										a href='product_dba.html' Sole Proprietorship / DBA
+									dd
+										a href='product_trademark.html' Trademark Registration
+									dd
+										a href='product_immigration.html' Work Visa
+						#productsBusinessCategorized
+							.productList
+								dl
+									dt Most Popular
+									dd
+										a href="product_llc.html" LLC (Limited Liability Company)
+									dd
+										a href="product_incorporation.html" Incorporation (S Corp, C Corp)
+									dd
+										a href="product_trademark.html" Trademark
+									dd
+										a href="product_dba.html" Sole Proprietorship / DBA
+							.helpMeDecideProduct
+								div id="inner"
+									h3 Not sure which product you need?
+									a.button.flex.mobile href="#"
+										span.button-center Help me decide
+									br
+									br
+							.productList
+								dl
+									dt Forming Your Business
+									dd
+										a href='product_llc.html' LLC (Limited Liability Company)
+									dd
+										a href='product_incorporation.html' Incorporation (S Corp., C Corp.)
+									dd
+										a href='product_nonprofit.html' Nonprofit
+									dd
+										a href='product_dba.html' Sole Proprietorship / DBA
+									dt Trademarks
+									dd
+										a href='product_trademark.html' Trademark Registration
+									dt Patents and Copyrights
+									dd
+										a href='product_patent.html' Provisional Application for Patent
+									dd
+										a href='product_copyright.html' Copyright Registration
+									dt Real Estate
+									dd
+										a href='product_real_estate_lease.html' Real Estate Lease
+									dd
+										a href='product_real_estate_transfer.html' Real Estate Deed Transfer
+									dt Additional Business Services
+									dd
+										a href='find_attorney_business.html' Business Legal Plan
+									dd
+										a href='product_immigration.html' Work Visa
+									dt Legal Forms and Agreements
+									dd
+										a href='#' Business Plan Nondisclosure Agreement
+									dd
+										a href='#' Employment Agreement
+									dd
+										a href='#' General Agreement
+									dd
+										a href='#' Independent Contractor Agreement
+									dd
+										a href='#' Promissory Note (Secured / Amortized)
+									dd
+										a href='legal_forms.html' More...
+ 
+
+						#productsPersonalAZ.hidden
+							.productList
+								dl
+									dd
+										a href='product_bankruptcy.html' Bankruptcy
+									dd
+										a href='product_divorce.html' Divorce
+									dd
+										a href='product_copyright.html' Copyright Registration
+									dd
+										a href='product_immigration.html' Green Card
+									dd
+										a href='product_living_will.html' Health Care Power of Attorney
+									dd
+										a href='product_last_will_and_testament.html' Last Will and Testament
+									dd
+										a href='product_living_trust.html' Living Trust
+									dd
+										a href='product_living_will.html' Living Will (Advance Directive)
+									dd
+										a href='product_personal_injury.html' Personal Injury
+									dd
+										a href='find_attorney_personal.html' Personal Legal Plan
+									dd
+										a href='product_power_of_attorney.html' Power of Attorney (Financial)
+									dd
+										a href='product_prenuptial_agreement.html' Prenuptial Agreement
+									dd
+										a href='product_real_estate_transfer.html' Real Estate Deed Transfer
+									dd
+										a href='product_real_estate_lease.html' Real Estate Lease
+						#productsPersonalCategorized.hidden	
+							.productList.orange
+								dl
+									dt Most Popular
+									dd
+										a href='product_last_will_and_testament.html' Last Will and Testament
+									dd
+										a href='product_living_will.html' Living Will (Advance Directive)
+									dd
+										a href='product_power_of_attorney.html' Power of Attorney (Financial)
+									dd
+										a href='product_living_trust.html' Living Trust
+							.helpMeDecideProduct.personal
+								#inner
+									h3 Not sure which product you need?
+									a.button.flex.mobile href="#"
+										span.button-center Help me decide
+									br
+									br
+							.productList.orange
+								dl
+									dt Wills & Trusts
+									dd
+										a href='product_last_will_and_testament.html' Last Will and Testament
+									dd
+										a href='product_living_trust.html' Living Trust
+									dd
+										a href='product_living_will.html' Living Will (Advance Directive)
+									dd
+										a href='product_power_of_attorney.html' Power of Attorney (Financial)
+									dd
+										a href='product_living_will.html' Health Care Power of Attorney
+									dt Personal Services
+									dd
+										a href='product_bankruptcy.html' Bankruptcy
+									dd
+										a href='product_divorce.html' Divorce
+									dd
+										a href='product_immigration.html' Green Card
+									dd
+										a href='product_personal_injury.html' Personal Injury
+									dd
+										a href='product_prenuptial_agreement.html' Prenuptial Agreement
+									dt Real Estate
+									dd
+										a href='product_real_estate_lease.html' Real Estate Lease
+									dd
+										a href='product_real_estate_transfer.html' Real Estate Deed Transfer
+									dt Additional Personal Services
+									dd
+										a href='find_attorney_personal.html' Personal Legal Plan
+									dd
+										a href='product_copyright.html' Copyright Registration
+									dd
+										a href='legal_forms.html' Legal Forms and Agreements
+
+				div
+					a.viistFullWebsite href="http://www.legalzoom.com"
+						p
+							| Visit our 
+							span.underline full website
+							|  to see all of our products.
+						.visitfullWebsiteIcon
+			
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.socialIcons
+					ul
+						li.socialIconFacebook
+							a href="http://www.facebook.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconTwitter
+							a href="http://twitter.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconLinkedIn
+							a href="http://www.linkedin.com/company/legalzoom" rel="external" data-transition="slide"
+						li.socialIconGPlus
+							a href="https://plus.google.com/+legalzoom" rel="external" data-transition="slide"
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.

@@ -1,0 +1,121 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"
+		
+		title Find an Attorney | LegalZoom.com
+		link type="text/css" rel="stylesheet" href="css/core-mobile.css"
+	
+		script type="text/javascript" src="js/jquery-1.10.1.min.js"	
+		script type="text/javascript" src="js/modernizr-2.6.2.min.js"
+		script type="text/javascript" src="js/app.min.js"
+		script type="text/javascript" src="js/mobile-sidemenu.js"
+	
+		javascript:
+			$(function() {				
+				    
+				    // Videos
+					$("#playButton").click(function() {
+							$( "div.videoContainer" ).replaceWith( "<div class=\"howWeWorkVideoPlaying\"><video width=\"100%\" height=\"170\" controls autoplay><source src=\"http://www.willus.com/video_example/2010b/video.mp4\" type=\"video/mp4\"><source src=\"http://www.willus.com/video_example/2010b/video.webm\">Your browser does not support the video tag.</video></div>" );
+					});
+					
+					$("#playLink").click(function() {
+							$( "div.videoContainer" ).replaceWith( "<div class=\"howWeWorkVideoPlaying\"><video width=\"100%\" height=\"170\" controls autoplay><source src=\"http://www.willus.com/video_example/2010b/video.mp4\" type=\"video/mp4\"><source src=\"http://www.willus.com/video_example/2010b/video.webm\">Your browser does not support the video tag.</video></div>" );
+					});
+				});
+		
+	body
+		.sidemenu-container#sidemenu_container
+
+		a.menu-overlay
+
+		.viewport
+			.woodBG
+				.siteHeader.gradient
+					a#remote-content-menu.leftNavButton href="#remote-content-menu"
+						span.badge.hamburgerBadge 12
+					.lz-logo
+						a href="index.html" LegalZoom
+					a.rightNavButton href="tel:800-773-0888"
+
+				.pageHeader
+					h2.small FIND AN ATTORNEY
+					h3.center.attorney Find a licensed attorney<br> without hourly fees
+				
+				.videoContainer.findAttorney#attorneyVideo
+					a#playButton.playButton href="#playVideo"
+					.videoContent
+						h2 How it works
+						p
+							a#playLink href="#playVideo" Watch our short video »
+
+		 		.productPriceBoxes
+					.productPriceBox.blue
+						.photo.findAttorneyBusiness
+						.content
+							.title For your business
+							span.term from 
+							span.price $23.99
+							.term per month
+							br
+							span.text
+								| Protect yourself and your business from expensive errors and lawsuits.
+							br
+							br
+							a.button.small.flex.has-right href="find_attorney_business.html" data-transition="slide"
+								span.button-right
+									span.inner
+										i.icon.button-icon.arrow-large
+								span.button-center See details
+
+					.productPriceBox.gray
+						.photo.findAttorneyPersonal
+						.content
+							.title For your family
+							span.term from 
+							span.price $11.99
+							.term per month
+							br
+							span.text
+								| Protect yourself and your loved ones with a lawyer licensed in your state.
+							br
+							br
+							a.button.small.flex.has-right.orange href="find_attorney_personal.html" data-transition="slide"
+								span.button-right
+									span.inner
+										i.icon.button-icon.arrow-large
+								span.button-center See details
+
+				.clear
+				.pageBody.pagePadded
+					br
+					h3.small Already a legal plan member?
+					p.pageInfo Log in to request a consultation with a LegalZoom plan attorney.
+					.loginButton
+						a.button.has-right href="signin.html" data-transition="slide"
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Log in to continue
+					br
+
+			.pageDivider
+			.clear.siteFooter
+				br
+				.footerLinks
+					a href="disclaimer.html" Disclaimer
+					|  | 
+					a href="privacy_policy.html" Privacy Policy
+				.socialIcons
+					ul
+						li.socialIconFacebook
+							a href="http://www.facebook.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconTwitter
+							a href="http://twitter.com/LegalZoom" rel="external" data-transition="slide"
+						li.socialIconLinkedIn
+							a href="http://www.linkedin.com/company/legalzoom" rel="external" data-transition="slide"
+						li.socialIconGPlus
+							a href="https://plus.google.com/+legalzoom" rel="external" data-transition="slide"
+				.clear
+				.legalAdvice The information provided on this site is not legal advice.
