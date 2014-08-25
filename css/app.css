@@ -1953,7 +1953,7 @@ input[type=checkbox]:checked + label .icon {
     z-index: 100;
     display: block;
     padding: 8px 10px 8px 10px;
-    background: black;
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
     transition: 300ms;
     -moz-transition: 300ms;
@@ -1965,9 +1965,9 @@ input[type=checkbox]:checked + label .icon {
       -moz-transition: 300ms;
       -webkit-transition: 300ms; }
     .no-touch .modal-fullscreen .close:hover {
-      background: #fff; }
+      background: #8b0041; }
       .no-touch .modal-fullscreen .close:hover .fa {
-        color: #000; }
+        color: #fff; }
   .modal-fullscreen .content-image {
     margin: 20px auto 80px auto; }
   .modal-fullscreen .content-description {
@@ -1982,6 +1982,33 @@ input[type=checkbox]:checked + label .icon {
       color: #fff; }
     .modal-fullscreen .content-description p {
       font-size: 14px; }
+  .modal-fullscreen .expand {
+    position: fixed;
+    top: 12px;
+    right: 64px;
+    z-index: 100;
+    padding: 12px 10px 9px 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms; }
+    .modal-fullscreen .expand span {
+      position: relative;
+      top: -3px;
+      margin: 0 4px 0 0; }
+    .modal-fullscreen .expand .fa {
+      font-size: 24px;
+      color: #fff;
+      transition: 300ms;
+      -moz-transition: 300ms;
+      -webkit-transition: 300ms; }
+    .no-touch .modal-fullscreen .expand:hover {
+      background: #8b0041;
+      color: #fff; }
+      .no-touch .modal-fullscreen .expand:hover .fa {
+        color: #fff; }
 
 /*
 	tooltips - standard "help content" tooltips
@@ -2362,7 +2389,7 @@ input[type=checkbox]:checked + label .icon {
             float: left;
             margin: 12px 0 0 8px; }
 
-.panel.legalzoom h1, .panel.legalzoom h2, .panel.legalzoom p {
+.panel.legalzoom h1, .panel.legalzoom h2, .panel.legalzoom p, .panel.shopsy h1, .panel.shopsy h2, .panel.shopsy p {
   color: #fff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.8); }
 .panel.reflect h1, .panel.reflect h2, .panel.reflect p {

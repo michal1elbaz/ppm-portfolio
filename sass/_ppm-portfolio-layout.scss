@@ -279,7 +279,7 @@
 }
 
 .panel {
-	&.legalzoom {
+	&.legalzoom, &.shopsy {
 		h1, h2, p {
 			color: #fff;
 			text-shadow: 0 1px rgba(0,0,0,0.8);
