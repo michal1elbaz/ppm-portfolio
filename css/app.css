@@ -2389,7 +2389,7 @@ input[type=checkbox]:checked + label .icon {
             float: left;
             margin: 12px 0 0 8px; }
 
-.panel.legalzoom h1, .panel.legalzoom h2, .panel.legalzoom p, .panel.shopsy h1, .panel.shopsy h2, .panel.shopsy p {
+.panel.legalzoom h1, .panel.legalzoom h2, .panel.legalzoom p, .panel.shopsy h1, .panel.shopsy h2, .panel.shopsy p, .panel.zenbe h1, .panel.zenbe h2, .panel.zenbe p {
   color: #fff;
   text-shadow: 0 1px rgba(0, 0, 0, 0.8); }
 .panel.reflect h1, .panel.reflect h2, .panel.reflect p {
