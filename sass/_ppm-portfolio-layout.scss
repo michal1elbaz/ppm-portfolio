@@ -295,6 +295,15 @@
 			color: #9f4b16;
 		}
 	}
+	&.fixya {
+		h1, h2, p {
+			color: #091973;
+		}
+		.gallery {
+			background: rgba(0,0,0,0.1);
+			width: 740px;
+		}
+	}
 }
 
 /* skills icon */

@@ -2396,6 +2396,11 @@ input[type=checkbox]:checked + label .icon {
   color: #4a8b6f; }
 .panel.mokafive h1, .panel.mokafive h2, .panel.mokafive p {
   color: #9f4b16; }
+.panel.fixya h1, .panel.fixya h2, .panel.fixya p {
+  color: #091973; }
+.panel.fixya .gallery {
+  background: rgba(0, 0, 0, 0.1);
+  width: 740px; }
 
 /* skills icon */
 .skills-icon {
