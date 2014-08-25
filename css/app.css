@@ -1969,7 +1969,7 @@ input[type=checkbox]:checked + label .icon {
       .no-touch .modal-fullscreen .close:hover .fa {
         color: #fff; }
   .modal-fullscreen .content-image {
-    margin: 20px auto 80px auto; }
+    margin: 30px auto 80px auto; }
   .modal-fullscreen .content-description {
     position: fixed;
     bottom: 0;
