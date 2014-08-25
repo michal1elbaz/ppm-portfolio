@@ -2394,6 +2394,8 @@ input[type=checkbox]:checked + label .icon {
   text-shadow: 0 1px rgba(0, 0, 0, 0.8); }
 .panel.reflect h1, .panel.reflect h2, .panel.reflect p {
   color: #4a8b6f; }
+.panel.mokafive h1, .panel.mokafive h2, .panel.mokafive p {
+  color: #9f4b16; }
 
 /* skills icon */
 .skills-icon {
