@@ -114,6 +114,7 @@ $(function(){
 		modalFullScreenClear = function() {
 			$('body').removeClass('noscroll');
 			$('.modal-fullscreen').removeClass('active');
+			$('.modal-fullscreen .content').empty();
 		},
 
 		resize = function() {
