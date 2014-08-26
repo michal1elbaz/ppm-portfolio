@@ -2272,6 +2272,9 @@ input[type=checkbox]:checked + label .icon {
   padding: 10px; }
   .panel .content .desc {
     padding-top: 40px; }
+    @media only screen and (min-width: 1279px) {
+      .panel .content .desc {
+        padding-top: 80px; } }
     .panel .content .desc .col {
       float: left;
       width: 50%;
@@ -2288,6 +2291,9 @@ input[type=checkbox]:checked + label .icon {
   background: rgba(255, 255, 255, 0.5);
   width: 860px;
   margin: 20px auto 20px auto; }
+  @media only screen and (min-width: 1279px) {
+    .panel .gallery {
+      margin-top: 40px; } }
   .panel .gallery li {
     float: left;
     margin: 10px; }
