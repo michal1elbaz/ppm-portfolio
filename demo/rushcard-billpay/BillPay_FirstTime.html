@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	<title>
+		Manage My Rushcard : Pay My Bills
+	</title>
+	<link href="css/html5reset-1.6.1.css" rel="stylesheet" type="text/css" />
+	<link href="css/common.css" rel="stylesheet" type="text/css" />
+	<link href="css/billpay.css" rel="stylesheet" type="text/css" />
+	<link href="css/jCal/jCal.css" rel="stylesheet" type="text/css" />
+	<link href="css/smoothness/jquery-ui-1.8.20.custom.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/modernizr-2.5.3.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+	<script type="text/javascript" src="js/knockout-2.1.0.js"></script>
+	<script type="text/javascript" src="js/jCal.min.js"></script>
+	<script type="text/javascript" src="js/rc-site-function.min.js"></script>
+	<script type="text/javascript" src="js/rc-billpay-function.min.js"></script>
+
+</head>
+<body>
+	
+	<!-- header area for the site -->
+	<div class="header-site">
+		<div class="container">
+			<!-- logo -->
+			<a href="#" class="logo">Rushcard</a>
+			
+			<!-- nav for user related links, login and etc -->
+			<nav class="nav-user">
+				<ul>
+					<li><a href="#">Customer Care</a></li>
+					<li>|</li>
+					<li><a href="#">Setup Profile</a></li>
+					<li>|</li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</nav>
+			
+		</div>
+	</div>
+	
+	<!-- nav for the site -->
+	<nav class="nav-site">
+		<ul>
+			<li><a class="selected" href="#">My Money<span class="arrow"></span></a></li>
+			<li><a href="#">My Health<span class="arrow"></span><span class="new"></span></a></li>
+			<li><a href="#">My Community<span class="arrow"></span></a></li>
+		</ul>
+	</nav>
+
+	<!-- site content container -->
+	<div class="content-container">
+		
+		<!-- breadcrumb trail -->
+		<nav class="nav-breadcrumb">
+			<ul>
+				<li><a class="home" href="/">Home<span></span></a></li>
+				<li>&gt;</li>
+				<li><a href="BillPay.html">Pay My Bills</a></li>
+			</ul>
+		</nav>
+		
+		<div class="clear"></div>
+
+		<!-- sidebar -->
+		<div class="content-user-profile">
+		
+			<!-- user profile -->
+			<div class="user-profile">
+				<p class="message-welcome">Welcome back, <span class="username">username</span></p>
+				<div class="user-profile-pic">
+					<img src="images/profilepic_guest.gif" alt="profilepic_guest" width="60" height="60" />
+				</div>
+				<nav class="user-profile-links">
+					<ul>
+						<li><a class="dark" href="#">Setup Profile</a></li>
+						<li><a class="dark" href="#">Logout</a></li> 
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			</div>
+			
+			<!-- card/account selection -->
+			<div class="cards selected">
+				<input type="image" class="card-image" src="images/BPP_card_shadow.gif" />
+				<span class="arrow-selected"></span>
+				<nav class="card-info">
+					<ul>
+						<li class="available-balance">$1,496.03</li>
+						<li class="expiration-date">Exp: 10/14</li>
+						<li class="account-name">Acct: xx1956</li>
+						<li class="enroll"><a href="#">Enroll in Direct Deposit</a></li>
+					</ul>
+				</nav>
+
+				<div class="clear"></div>
+				
+				<nav class="card-detail">
+					<ul class="detail-links">
+						<li class="plan">My Plan: <a href="#">Pay as you go</a></li>
+						<li class="card-status">Card Status: <a href="#">Inactive</a></li>
+						<li><a href="#">View Transcations</a></li>
+						<li><a href="#">Transfer Money</a></li>
+					</ul>
+					<ul>
+						<li class="view-detail"><a class="closed" href="#"><span class="float-left"></span>View Details<span class="float-right"></span></a></li>
+					</ul>
+				</nav>
+				
+				<div class="clear"></div>
+			</div>
+			
+			<div class="cards">
+				<input type="image" class="card-image" src="images/BPP_card_shadow.gif" />
+				<span class="arrow-selected"></span>
+				<nav class="card-info">
+					<ul>
+						<li class="available-balance">$40.03</li>
+						<li class="expiration-date">Exp: 6/13</li>
+						<li class="account-name">Acct: xx4241</li>
+						<li class="enroll"><a href="#">Enroll in Direct Deposit</a></li>
+					</ul>
+				</nav>
+
+				<div class="clear"></div>
+				
+				<nav class="card-detail">
+					<ul class="detail-links">
+						<li class="plan">My Plan: <a href="#">Pay as you go</a></li>
+						<li class="card-status">Card Status: <a href="#">Inactive</a></li>
+						<li><a href="#">View Transcations</a></li>
+						<li><a href="#">Transfer Money</a></li>
+					</ul>
+					<ul>
+						<li class="view-detail"><a class="closed" href="#"><span class="float-left"></span>View Details<span class="float-right"></span></a></li>
+					</ul>
+				</nav>
+				
+				<div class="clear"></div>
+			</div>
+			
+			<!-- add/remove accounts -->
+			<div class="accounts-add-remove">
+				<span class="icon"></span><a class="account-add" href="#">Add</a>/<a class="account-remove" href="#">Remove</a> Acct.
+			</div>
+			
+			<!-- nav menu in the sidebar -->
+			<nav class="nav-menu">
+				<ul class="level1">
+					<li><a href="#">My money</a>
+						<ul class="level2">
+							<li><a href="#">View My Account<span class="carrot"></span></a>
+								<ul class="flyout">
+									<li><a href="#">See My Transations</a></li>
+									<li><a href="#">See My Monthly Statements</a></li>
+									<li><a href="#">See My Spending</a></li>
+									<li><a href="#">See My Balance Trends</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Manage My Money<span class="carrot"></span></a>
+								<ul class="flyout">
+									<li><a class="highlight" href="#">Set and Track My Budget<span>Create</span></a></li>
+									<li><a class="highlight" href="#">Go Paperless with eSign<span>Enroll</span></a></li>
+									<li><a class="highlight" href="#">Pay My Bills<span>Enroll</span></a></li>
+									<li><a href="#">Change My Future Direct Deposits</a></li>
+									<li><a class="highlight" href="#">Transfer Money<span>Enroll</span></a></li>
+									<li><a href="#">Change My Plan</a></li>
+									<li><a href="#">View Promotions & Shopping Offers</a></li>
+									<li><a class="highlight" href="#">Rush Text and Email Alerts<span>Enroll</span></a></li>
+									<li><a class="highlight" href="#">Create My RushGoals<span>Setup</span></a></li>
+								</ul>
+							</li>
+							<li><a href="#">Add Money<span class="carrot"></span></a>
+								<ul class="flyout">
+									<li><a href="#">Direct Deposit/Tax Refund</a></li>
+									<li><a href="#">Federal Benefits</a></li>
+									<li><a href="#">Add Cash</a></li>
+									<li><a href="#">Other Ways to Add Money</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Manage My Profile<span class="carrot"></span></a>
+								<ul class="flyout">
+									<li><a href="#">Rush Text and Email Alerts</a></li>
+									<li><a href="#">Edit My Profile</a></li>
+									<li><a href="#">Add Account</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">My health</a></li>
+					<li><a href="#">My community</a></li>
+				</ul>
+			</nav>
+			
+			<nav class="nav-social">
+				<ul>
+					<li><a class="social-icons facebook" href="#">Facebook</a></li>
+					<li><a class="social-icons myspace" href="#">My Space</a></li>
+					<li><a class="social-icons twitter" href="#">Twitter</a></li>
+				</ul>
+				<div class="clear"></div>
+			</nav>
+			
+		</div>
+
+		<!-- main content area -->
+		<div class="content-main">
+		
+			<!-- content for first time bill pay user -->
+			<div class="content-billpay-firsttime rounded8">
+				<h1>Start Paying Your Bills Today with Rushcard!</h1>
+				<p>Rushcard is the best way to pay your bills:</p>
+				<p>With Rushcard you can:</p>
+				<ul>
+					<li>Bullet point 1</li>
+					<li>Bullet point 2</li>
+					<li>Bullet point 3</li>
+					<li>Bullet point 4</li>
+				</ul>
+	
+				<nav class="get-started">
+					<a class="button" onclick="openPanel('paymentPanel');event.preventDefault();">Get Started Today</a>
+					<div class="clear"></div>
+				</nav>
+			</div>
+	
+			<div class="clear"></div>
+
+		</div>
+
+		<div class="clear"></div>
+		
+		<!-- site footer -->
+		<div class="footer-site">
+			<p>The Prepaid Visa RushCard is issued by The Bancorp Bank pursuant to a license from Visa U.S.A. Inc. and can be used wherever Visa debit cards are accepted.
+The Bancorp Bank; Member FDIC.</p>
+			<p>The USA PATRIOT Act is a federal law that requires all financial institutions to obtain, verify, and record information that identifies each person who opens a Card Account. What this means for you: When you open a Card Account, we will ask for your name, address, date of birth, and other information that will allow us to reasonably identify you. We may also ask to see your driver's license or other identifying documents at any time.</p>
+			<p>**Deposit limits may apply. Faster access to funds is based on comparison of traditional banking policies versus electronic direct deposit. Early deposit is contingent upon payer's support of this feature.</p> 	
+		</div>
+
+	</div>
+
+	<!-- white overlay for when panel activates -->
+	<div class="paneloverlay"></div>
+	
+	<!-- payment panel -->
+	<div id="paymentPanel" class="panel">
+		<div class="container">
+			<nav class="close-button">
+				<a class="panel-close" href="#">Close</a>
+			</nav>
+			
+			<nav class="close-grip">
+				<a class="panel-close-grip" href="#">Close</a>
+			</nav>
+			
+			<h2>Pay My Bills</h2> 		
+
+			<div class="payee-selection box active">
+				<h3>Find A Payee</h3>
+				
+				<div class="add-payee">
+								
+					<!-- auto complete search box -->
+					<div class="auto-complete-search active">
+						<ul class="form-fields">
+							<li class="field-label"><label for="search">Search by name:</label></li>
+							<li class="field-input"><input class="text" type="text" id="search" /></li>
+							<li><a class="button gray search" href="#" onclick="payeeSearchSubmit();event.preventDefault();">search</a></li>
+						</ul>
+						<div class="clear"></div>
+						
+						<!-- search results -->
+						<div class="search-results">
+							<p>These are the Payees that matches your search:</p>
+							<ul>
+								<li><a href="#" onclick="payeeSelect();event.preventDefault();">Pacific Gas & Electric</a></li>
+								<li><a href="#" onclick="payeeSelect();event.preventDefault();">Pacific Bell</a></li>
+								<li><a href="#" onclick="payeeSelect();event.preventDefault();">Result 3</a></li>
+								<li><a href="#" onclick="payeeSelect();event.preventDefault();">Result 4</a></li>
+							</ul>
+							
+							<p>Can't find the Payee you're looking for? Try:</p>
+							<ul class="options">
+								<li><a href="#" onclick="payeeList();event.preventDefault();">Browse our complete list of Payees</a></li>
+								<li><a href="#" onclick="payeeSelect();event.preventDefault();">Add your custom Payee</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<!-- complete payee list -->
+					<div class="payee-list">
+						<a href="#" onclick="payeeReset();event.preventDefault();">Back to search</a>
+						
+						<!-- alphabetical navigation list -->
+						<nav class="payee-list-nav">
+							<ul>
+								<li><a href="#">All</a></li>
+								<li><a href="#listA">A</a></li>
+								<li><a href="#listB">B</a></li>
+								<li><a href="#listC">C</a></li>
+								<li><a href="#listD">D</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">F</a></li>
+								<li><a href="#">G</a></li>
+								<li><a href="#">H</a></li>
+								<li><a href="#">I</a></li>
+								<li><a href="#">J</a></li>
+								<li><a href="#">K</a></li>
+								<li><a href="#">L</a></li>
+								<li><a href="#">M</a></li>
+								<li><a href="#">N</a></li>
+								<li><a href="#">O</a></li>
+								<li><a href="#">P</a></li>
+								<li><a href="#">Q</a></li>
+								<li><a href="#">R</a></li>
+								<li><a href="#">S</a></li>
+								<li><a href="#">T</a></li>
+								<li><a href="#">U</a></li>
+								<li><a href="#">V</a></li>
+								<li><a href="#">W</a></li>
+								<li><a href="#">X</a></li>
+								<li><a href="#">Y</a></li>
+								<li><a href="#">Z</a></li>
+							</ul>
+							<div class="clear"></div>
+						</nav>
+						
+						<div class="payee-list-display">
+							<div class="content">
+								<h3 id="listA">A</h3>
+								<ul>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 1</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 2</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 3</a></li>
+								</ul>
+								<div class="clear"></div>
+								
+								<h3 id="listB">B</h3>
+								<ul>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 1</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 2</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 3</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 4</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 5</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 6</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 7</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 1</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 2</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 3</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 4</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 5</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 6</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 7</a></li>
+								</ul>
+								<div class="clear"></div>
+								
+								<h3 id="listC">C</h3>
+								<ul>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 1</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 2</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 3</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 4</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 5</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 6</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 7</a></li>
+								</ul>
+								<div class="clear"></div>
+								
+								<h3 id="listD">D</h3>
+								<ul>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 1</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 2</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 3</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 4</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 5</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 6</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 7</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 1</a></li>
+									<li><a href="#" onclick="payeeSelect();event.preventDefault();">Company 2</a></li>
+								</ul>
+								<div class="clear"></div>
+								
+							</div>
+						</div>
+						
+					</div>
+
+					<!-- variable fields based on payee information -->
+					<div class="payee-info">
+						<p class="backlink"><a href="#" onclick="payeeReset();event.preventDefault();">Start over</a> &nbsp;|&nbsp; <a href="#" onclick="payeeList();event.preventDefault();">View all Payee</a></p>
+						
+						<ul class="form-fields">
+							<li class="field-label"><label for="name">Name of Payee:</label></li>
+							<li class="field-input"><input class="text" type="text" id="name" placeholder="Name Of the Payee" /></li>
+							<li class="errortext">Error text here</li>
+						</ul>
+						
+						<ul class="form-fields">
+							<li class="field-label nomargin"><label for="accountnumber">Account Number:</label></li>
+							<li class="field-input nomargin"><input class="text" type="text" id="accountnumber" placeholder="Your account number" /></li>
+							<li class="errortext"></li>
+							<li class="clear"></li>
+							<li class="field-label"></li>
+							<li class="field-input"><input type="checkbox" id="noaccount" /><label class="small" for="noaccount">This account doesn't require an account number</label></li>
+						</ul>
+						
+						<ul class="form-fields">
+							<li class="field-label"><label for="address">Address:</label></li>
+							<li class="field-input">
+								<input class="text address" type="text" id="address" placeholder="Address Line 1"/><br />
+								<input class="text" type="text" id="address2" placeholder="Address Line 2"/>
+							</li>
+							<li class="errortext"></li>
+						</ul>
+						
+						<ul class="form-fields">
+							<li class="field-label"><label for="state">State:</label></li>
+							<li class="field-input">
+								<select id="state">
+									<option>California</option>
+									<option>Missouri</option>
+									<option>Texas</option>
+								</select>
+							</li>
+						</ul>
+						
+						<ul class="form-fields">
+							<li class="field-label"><label for="zipcode">Zip Code:</label></li>
+							<li class="field-input"><input class="text zip1" type="text" id="zipcode" maxlength="5"> - <input class="text zip2" type="text" id="zipcode2" maxlength="4"></li>
+							<li class="errortext"></li>
+						</ul>
+						
+						<div class="clear"></div>
+						
+						<nav class="button-continue">
+							<a class="button" href="#">Continue</a>
+							<div class="clear"></div>
+						</nav>
+						
+					</div>										
+				</div>
+				
+			</div>
+			
+			<div class="payment-selection">
+			<!-- payment selection -->
+				<div class="box">
+				
+					<nav class="back-link">
+						<a href="#">&lt;- Back to Payee Selection</a>
+					</nav>
+					
+					<h3>Select A Payment Source</h3>
+					
+					<nav class="payment-source">
+						<ul>
+							<li class="selected"><a class="payment-cards test">$2284.78<br /><span>xxxxxxxxxxxx1234</span></a></li>
+							<li><a class="payment-cards">$1234.99<br/><span>xxxxxxxxxxxx3446</span></a></li>
+							<li><a class="payment-cards">$78.99<br/><span>xxxxxxxxxxxx7236</span></a></li>
+							<li><a class="payment-cards">$243.00<br/><span>xxxxxxxxxxxx7113</span></a></li>
+						</ul>
+						
+						<div class="clear"></div>
+					</nav>
+				</div>	
+				
+				<!-- payment options -->
+				<div class="box">
+					<h3>Payment Options</h3>
+					
+					<div class="payment-options">
+						
+						<p>Enter Payment Amount:</p>
+						<p class="fields"><strong>$</strong> <input type="text" class="text" placeholder="00.00" /></p>
+						
+						<nav class="payment-schedule">
+							<ul>
+								<li><a class="selected single" href="#">Schedule a single payment</a></li>
+								<li><a class="recurring" href="#">Schedule recurring payments</a></li>
+							</ul>
+							<div class="clear"></div>
+						</nav>
+						
+						<div class="payment-schedule-single active">
+							<div class="payment-date-picker"></div>
+							<div class="clear"></div>
+							<p class="payment-date-text">The payment you scheduled on <strong>5/21/2012</strong> will be received by your payee on <strong>5/23/2012</strong></p>
+						</div>
+						
+						<div class="payment-schedule-recurring">
+							<ul class="form-fields">
+								<li class="field-label">Every:</li>
+								<li class="field-input">
+									<select name="recurrence">
+										<option selected>Month</option>
+										<option>Week</option>
+									</select>
+								</li>
+							</ul>
+							<div class="clear"></div>
+							
+							<ul class="form-fields">
+								<li class="field-label">On the:</li>
+								<li class="field-input">
+									<select name="time">
+										<option>1st</option>
+										<option>2nd</option>
+										<option>3rd</option>
+										<option>4th</option>
+										<option>5th</option>
+										<option>6th</option>
+										<option>7th</option>
+										<option>8th</option>
+										<option>9th</option>
+									</select>
+									of the month.
+								</li>
+							</ul>
+							<div class="clear"></div>
+							
+							<p class="payment-date-text">The payment you scheduled for <strong>the 15th</strong> of every month will be received by your payee on <strong>the 18th</strong> of the same month</p>
+						</div>
+						
+					</div>
+					
+					<nav class="button-submit">
+						<a class="button" href="#">Submit Payment</a>
+						<div class="clear"></div>
+					</nav>
+					
+				</div>
+			</div>
+			
+			<div class="payment-confirmation box">
+				<h3>Payment Scheduled!</h3>
+				<p>Your payment of $XX.XX has been scheduled for: XX/XX/XX</p>
+				<p>It will be received by your payee on XX/XX/XX</p>
+				<p>To see your upcoming and past payments, go to the <a href="#">overview page</a>
+				<nav class="button-close">
+					<a class="button" onclick="panelClose();" href="BillPay.html">Close</a>
+					<div class="clear"></div>
+				</nav>
+				
+			</div>						
+			
+		</div>
+	</div>
+
+	
+</body>
+</html>
