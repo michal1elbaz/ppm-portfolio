@@ -1,0 +1,22 @@
+/*
+	simple footer - used on the checkout and questionaire pages
+	imported from 'footer-simple.scss'
+*/
+
+.footer {
+	position: relative;
+	width: 940px;
+	padding: 10px 10px 30px 10px;
+	margin: 0 auto;
+	margin-top: 10px;
+	.divider {
+		width: 100%;
+		height: 10px;
+		background: $brand-blue;
+		margin-bottom: 10px;
+	}
+	.legal {
+		margin: 0 0 10px 0;
+		font-size: 10px;
+	}
+}

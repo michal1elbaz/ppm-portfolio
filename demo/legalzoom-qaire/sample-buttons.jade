@@ -1,0 +1,115 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+		meta(http-equiv='X-UA-compatible', content='chrome=1')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/app.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+
+	body
+
+		// fixed size button (standard)
+		a.button.standard(href='#')
+			span.button-center Get started
+
+		br
+
+		// flexbile size button (inline-block)
+		a.button.flex(href='#')
+			span.button-center Get started
+
+		br
+		br
+		
+		// orange button with icon on right
+		a.button.orange.standard.has-right(href='#')
+			span.button-right
+				span.inner
+					i.icon.button-icon.arrow-large
+			span.button-center Get started
+
+		br
+		
+		// button with icon on right
+		a.button.standard.has-right(href='#')
+			span.button-right
+				span.inner
+					i.icon.button-icon.print
+			span.button-center Print results
+
+		br
+
+		// button with icon on left
+		a.button.orange.standard.has-left(href='#')
+			span.button-left
+				span.inner
+					i.icon.button-icon.chat
+			span.button-center Chat now
+
+		br
+
+		// button that stretched all the way across (block)
+		a.button.has-right(href='#')
+			span.button-right
+				span.inner
+					i.icon.button-icon.arrow
+			span.button-center Go now
+
+		br
+
+		// button with flex size and right icon
+		a.button.flex.has-right(href='#')
+			span.button-right
+				span.inner
+					i.icon.button-icon.arrow
+			span.button-center Go now
+
+		br
+		br
+
+		// button with flexbile size and left icon
+		a.button.orange.flex.has-left(href='#')
+			span.button-left
+				span.inner
+					i.icon.button-icon.print
+			span.button-center Print results
+
+		br
+		br
+
+		// button that stretches all the way with icon on both sides
+		a.button.has-both(href='#')
+			span.button-left
+				span.inner
+					i.icon.button-icon.print
+			span.button-right
+				span.inner
+					i.icon.button-icon.printd
+			span.button-center Print results
+
+		br
+
+		// fixed sized button with icons on both sides
+		a.button.standard.has-both(href='#')
+			span.button-left
+				span.inner
+					i.icon.button-icon.print
+			span.button-right
+				span.inner
+					i.icon.button-icon.printd
+			span.button-center Print results
+
+		br
+		br
+		br
+		br

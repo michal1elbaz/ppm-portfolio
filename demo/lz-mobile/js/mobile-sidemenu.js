@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
 	// loading the site menu into the proper div
-	$('#sidemenu_container').load('/sidemenu.html');
+	$('#sidemenu_container').load('sidemenu.html');
 
 	// click action to invoke the menu
 	$(document).on('click', '#remote-content-menu, .menu-overlay', function(e){

@@ -1,0 +1,250 @@
+doctype html
+html
+	head
+		meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+		meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+		meta(content='chrome=1', http-equiv='X-UA-compatible')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/qaire.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		script(src='js/qaire.min.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+	body
+		// 960px site container 
+		.site-container
+			
+			// header and logo for questionnaire 
+			.qaire-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+			
+			// steps nav 
+			ul.steps-solid
+				li.completed
+					a
+						span.link About your business
+						span.arrow
+				li.completed
+					a
+						span.link Name & address
+						span.arrow
+				li.completed
+					a
+						span.link Owners & Mgmt
+						span.arrow
+				li.completed
+					a
+						span.link Tax setup
+						span.arrow
+				li.active
+					a
+						span.link Business setup
+						span.arrow
+				li.inactive.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+			
+			// main content 
+			.content-main
+				h1 Start marketing your business
+				p
+					| Many new businesses want to find new customers and grow their business as affordably and quickly as possible. We’ve negotiated exclusive services with leading providers of small business solutions to help you market your new business.
+				h3 Get a free web marketing consultation
+				p
+					| We have partnered with one of the best companies in the industry, Web.com, for website design, e-commerce, and online marketing to help you establish an online presence.
+				p
+					| We have set up a free consultation to give you an opportunity to learn more about building a website and getting new customers by promoting your services on search engines like Google, Bing, and Yahoo. To learn more, 
+					a#help_webconsult.help click here
+					| .
+				.form-group
+					.form-fields.select
+						.select-field.wide
+							.select-arrow-container
+								.select-arrow
+							select#bas_offer(name='bas')
+								optgroup
+									option(selected='selected') Yes, I would like a free website consultation with Web.com
+									option No, I decline this offer
+				h3 Get a free web domain name
+				p
+					| We have negotiated an offer with Web.com where LegalZoom customers can get a domain name for their business for free for one full year and 50% off annual renewals thereafter. To learn more, 
+					a#help_webdomain.help click here
+					| .
+				.form-group
+					.form-fields
+						input#webdomain_01(name='webdomain', type='checkbox')
+						label(for='webdomain_01')
+							strong Yes, I would a free web domain name for my business
+				h3 Create a professional logo
+				p
+					| We have partnered with LogoYes so our customers can make affordable, professional-looking logo and branding in just a few simple step.
+				p
+					| LogoYes offers over 20,000 professional design elements that let you personalize your new logo and make it unique to your company. To learn more, 
+					a#help_logo.help click here
+					| .
+				.form-group
+					.form-fields
+						input#logo_01(name='logo', type='checkbox')
+						label(for='logo_01')
+							strong Yes, I would like to create a logo with LogoYes for $49.00
+				h3 Get 500 professional business cards
+				p
+					| We have partnered with PrintRunner to provide our customers with 500 full-color business cards printed on premium card stock. Through this offer, you can bring your business to life with top-quality, professionally printed business cards. To learn more, 
+					a#help_bizcards.help click here
+					| .
+				.form-group
+					.form-fields
+						input#bizcards_01(name='bizcards', type='checkbox')
+						label(for='bizcards_01')
+							strong Yes, I would like 500 business cards from PrintRunner for $19.99
+			
+				hr.top-space
+				
+				// page navigation 
+				ul.page-nav
+					li
+						a.link-back(href='qaire-28.html')
+							i.icon.lz-icon-blue.arrow-back
+							span Back
+					li
+						// orange button with icon on right 
+						a.button.orange.flex.has-right(href='checkout-01.html')
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Save & continue
+				.clear
+				br
+				br
+			
+			// sidebar 
+			.content-sidebar
+				.qaire-sidebar
+					.customer-service
+					blockquote
+						.open &#8220; 
+						p.quote
+							| You have made the process of starting a business a wonderful experience when it would have been a nightmare! Thanks.
+							span.close  &#8221;
+						.from - David C., Lehi, UT
+			.clear
+		
+		// site footer 
+		.footer
+			.divider
+			p.legal &copy; LegalZoom.com, Inc. All rights reserved.
+			p.legal
+				| Disclaimer: Communications between you and LegalZoom are protected by our 
+				a(href='#') Privacy Policy
+				| but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our 
+				a(href='#') Terms of Use
+				| . LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).
+		
+		// tooltip container 
+		.tooltip-container
+			#help_webconsult_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p
+					| Did you know that over 82% of your potential customers are looking for your products or services online? If you are not online, you could be missing out on over ¾ of your audience! By creating a professional web site and online advertising campaign, you are starting your new business on the right track or can finally take your existing business to the next level.
+				p
+					| If you select this option and complete your order, a representative from Web.com will contact you to set up a web marketing consultation. If you have questions, please call us at (855) 773-0880.
+			#help_webdomain_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p OGet a Free Domain Name for One Year*
+				p
+					| Having a website is often the key to building a successful business. Give your business the power to grow online, starting with a domain name.
+				p A website domain name can:
+				ul
+					li Establish your brand and business on the web
+					li Distinguish your company from others on the web
+					li Increase online visibility when people search for your website
+					li Show professionalism by hosting a website under your own domain name
+				p
+					| As a LegalZoom customer, you can take advantage of a domain name for your business--free for an entire year. After the first year, you will receive 50% off the retail price (for a one-year renewal, you would pay only $18.50 for a $37 value), which will be billed automatically. You can cancel anytime through your online account or by phone.
+				p
+					| If you select this option and complete your order, a representative from Web.com will contact you to establish your free domain name.
+				p
+					i
+						| *After the first year, you get a 50% discount on annual renewals, which will be billed automatically.
+			#help_logo_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p Create a professional business logo for just $49—you save $20!
+				p
+					| LogoYes pioneered Do-It-Yourself logo creation to make professional-looking branding affordable and accessible for small businesses in just a few simple steps. They offer over 20,000 professional design elements that let you personalize your new logo and make it unique to your company.
+				p Some of the reasons LogoYes is good for business:
+				ul
+					li
+						| Huge selection of artwork. You have more than 20,000 icons and images to use for your logo
+					li
+						| Easy and fast to create a logo. You don't need design experience and can create a logo in minutes
+					li
+						| Easy to put your logo to work. They make it easy to create business cards and more
+					li
+						| Get logos in various formats. You receive a .zip file that contains your logo in several file formats
+				p
+					| With LogoYes, you start by selecting the right icon for your business. From there, you can add your company name, colors, fonts and more. You can create different designs using the icon and combinations of your company name, and experiment with different sizing. Before you even place your logo order, you can save them to your account and get feedback from your peers. After you design the logo you want, you will have access to all the necessary file types and sizes for both print and online use.
+				p
+					| And if you need help personalizing your logo, LogoYes can design it for you (a one-time charge of $289 would apply).
+				p
+					| If you select this option and complete your order, you'll receive an email from LogoYes with an account and log-in instructions to get started on creating your logo.
+				p
+					i
+						| Any statements, claims and figures provided by third-party partners have not been independently verified by LegalZoom.
+			#help_bizcards_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p
+					| Exclusive offer for LegalZoom customers: $19.99 – you save up to 40% off the retail price
+				p
+					| PrintRunner.com is one of the foremost quality printers in Southern California. Focused on providing the best value in high-quality, full-color printing, you can expect affordable, low prices, superior print quality and excellent service. Through this special offer brought to you by LegalZoom, you can bring your business to life with top-quality, professionally printed business cards.
+				p Here's what you get:
+				ul
+					li
+						| 500 full-color business cards printed on premium card stock with a choice of water-resistant UV coating or silky matte finish
+					li Choose from thousands of professional designs
+					li
+						| With the Online Business Card Designer, you get to view your business cards online instantly
+					li
+						| Unlimited access to professional and friendly customer service staff to answer all of your questions
+					li Free shipping
+				p
+					| If you select this option and complete your order, you will receive an email with a code and instructions from PrintRunner on how to access the Online Business Card Designer and order your business cards.
+				p Regular price: $32.95. LegalZoom price: $19.99.
+			#help_dissolution_answer_tooltip.tooltip
+				.close
+					i.icon.icon-tooltip-close
+				.arrow.left
+				p Our customers answered...
+				p
+					| Yes - 0.1%
+					br
+					| No - 99.9%
+				p Based on a sample of more than 40,000 LLC customers in 2013.
+		
+		// modals 
+		.modal
+			.container
+				a.close
+				.shadow
+				//[lf lte IE 8]
+					img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+				.overlay
+				.content
+
+		.modal-overlay

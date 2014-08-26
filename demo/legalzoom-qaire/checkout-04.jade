@@ -1,0 +1,398 @@
+doctype html
+html
+	head
+		meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+		meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+		meta(content='chrome=1', http-equiv='X-UA-compatible')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/checkout.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		script(src='js/checkout.min.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+	body
+
+		// 960px site container 
+		.site-container
+			
+			// header and logo for questionnaire 
+			.checkout-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+			
+			// small customer service image 
+			.customer-service-small
+			
+			// steps nav 
+			ul.steps-solid.last-step
+				li.completed
+					a
+						span.link About your business
+						span.arrow
+				li.completed
+					a
+						span.link Name & address
+						span.arrow
+				li.completed
+					a
+						span.link Owners & Mgmt
+						span.arrow
+				li.completed
+					a
+						span.link Tax setup
+						span.arrow
+				li.completed
+					a
+						span.link Business setup
+						span.arrow
+				li.active.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+			
+			// main content 
+			.content-main
+				h1 Please complete your order for My Company LLC
+				p
+					| Please enter your payment information and where we should deliver your personalized LegalZoom LLC Packet. If you have questions or would prefer to complete your order over the phone, please call us at (855) 773-0887 (M-F 7AM-8PM PT. S/S 7AM-4PM PT).
+				.content-complete-order
+					h3.tight Contact Information
+					p
+						| Please let us know how to contact you if we have any questions or status updates related to your order.
+					
+					.form-group	
+						// contact information form 
+						ul.contact-information-forms
+							li
+								.form-fields
+									label First name
+									br
+									input.short(placeholder='First name', type='text')
+									br
+									.error-text test error text
+							li
+								.form-fields
+									label Last name
+									br
+									input.short(placeholder='Last name', type='text')
+									br
+									.error-text
+							li.clear
+							li
+								.form-fields
+									label Phone number
+									br
+									input.short(placeholder='(___)___-_____', type='text')
+									br
+									.error-text
+							li
+								.form-fields
+									label Contact email
+									br
+									input.short(placeholder='Your email address', type='text')
+									br
+									.error-text
+							li.clear
+							li
+								.form-fields
+									label Address line 1
+									br
+									input.address(placeholder=' ', type='text')
+									br
+									.error-text
+							li.clear
+							li
+								.form-fields
+									label Address line 2
+									br
+									input.address(placeholder=' ', type='text')
+									br
+									.error-text
+							li.clear
+							li
+								.form-fields
+									label City
+									br
+									input.address(placeholder=' ', type='text')
+									br
+									.error-text
+							li.clear
+							li
+								.form-fields.select
+									label State
+									.select-field.state
+										.select-arrow-container
+											.select-arrow
+										select#param_interest(name='interest')
+											optgroup
+												option -- Select state --
+												option Alabama
+												option Alaska
+												option Arizona
+												option Arkansas
+												option California
+												option Colorado
+												option Connecticut
+												option Delaware
+												option District of Columbia
+												option Florida
+												option Georgia
+												option Hawaii
+												option Idaho
+												option Illinois
+												option Indiana
+												option Iowa
+												option Kansas
+												option Kentucky
+												option Louisiana
+												option Maine
+												option Maryland
+												option Massachusetts
+												option Michigan
+												option Minnesota
+												option Mississippi
+												option Missouri
+												option Montana
+												option Nebraska
+												option Nevada
+												option New Hampshire
+												option New Jersey
+												option New Mexico
+												option New York
+												option North Carolina
+												option North Dakota
+												option Ohio
+												option Oklahoma
+												option Oregon
+												option Pennsylvania
+												option Rhode Island
+												option South Carolina
+												option South Dakota
+												option Tennessee
+												option Texas
+												option Utah
+												option Vermont
+												option Virginia
+												option Virgin Islands
+												option Washington
+												option West Virginia
+												option Wisconsin
+												option Wyoming
+							li
+								.form-fields
+									label Zipcode
+									br
+									input.zip(placeholder=' ', type='text')
+									br
+									.error-text
+						.clear
+					hr
+					h3.tight Shipping information
+					.form-group
+						.form-fields
+							input#shipping(type='checkbox')
+							label(for='shipping') Click here if your shipping address is different than your contact information.
+					hr
+					h3.tight Payment information
+					p
+						| We accept all major credit cards and also accept debit cards that carry a Visa or MasterCard logo. To pay by check,
+						a(href='checkout-04a.html') click here
+						| .
+					.form-group
+						ul.payment-information-form
+							li
+								.form-fields.select
+									label Credit card type
+									.select-field.credit-cards
+										.select-arrow-container
+											.select-arrow
+										select#param_cc_type(name='cc_type')
+											optgroup
+												option -- select --
+												option American Express
+												option MasterCard
+												option Visa
+												option Discover
+							li.image-credit-cards
+							li.clear
+							li
+								.form-fields
+									label Credit card number
+									br
+									input.short(placeholder=' ', type='text')
+									br
+									.error-text
+							li
+								.form-fields.select
+									label Expiration date
+									.select-field.month
+										.select-arrow-container
+											.select-arrow
+										select#param_cc_exp_month(name='cc_exp_month')
+											optgroup
+												option -- Month --
+												option January
+												option February
+												option March
+												option April
+												option May
+												option June
+												option July
+												option August
+												option September
+												option October
+												option November
+												option December
+									.select-field.year
+										.select-arrow-container
+											.select-arrow
+										select#param_cc_exp_year(name='cc_exp_year')
+											optgroup
+												option Year
+												option 2013
+												option 2014
+												option 2015
+												option 2016
+												option 2017
+												option 2018
+												option 2019
+												option 2020
+							li.clear
+							li
+								.form-fields
+									label Billing zip code
+									br
+									input.short(placeholder='5 digit zip', type='text')
+									br
+									.error-text
+							li
+								.form-fields
+									label CCV
+									br
+									input.ccv(placeholder='3 digits', type='text')
+									br
+									.error-text
+							li.link-cvv
+								a What is this?
+							li.clear
+							li
+								.form-fields
+									label First name
+									br
+									input.short(placeholder='First name on card', type='text')
+									br
+									.error-text
+							li
+								.form-fields
+									label Last name
+									br
+									input.short(placeholder='Last name on card', type='text')
+									br
+									.error-text
+							li.clear
+							li
+								.form-fields
+									label Special instructions
+									br
+									textarea.special-instructions
+									br
+							.clear
+					p.disclaimer
+						| By clicking the button I agree to the 
+						a(href='#') Terms of Service
+						| , 
+						a(href='#') User Agreement
+						| , 
+						a(href='#') Advantage Terms of Service
+						|  and 
+						a(href='#') Corporate Center Terms of Service
+						| .
+					
+					// page navigation 
+					ul.page-nav
+						li
+							a.link-back(href='checkout-03.html')
+								i.icon.lz-icon-blue.arrow-back
+								span Back
+						li
+							// orange button with icon on right 
+							a.button.orange.flex.has-right(href='checkout-04a.html')
+								span.button-right
+									span.inner
+										i.icon.button-icon.arrow-large
+								span.button-center Agree & place order
+					.clear
+				
+				// sidebar 
+				.content-sidebar-order
+					.sidebar-order-summary
+						.container
+							h3 Order Summary
+							a.link-edit edit order
+							.module-image.framed
+								img.shadow(src='images/shadow-curved-photo-md.png')
+								.container
+									img(height='188', src='images/image-sidebar-order-summary.jpg', width='254')
+							ul.items
+								li Express Gold Package
+								li $289.00
+							.clear
+							ul.items
+								li California State Filing Fee (required)
+								li $89.00
+							.clear
+							ul.items
+								li LegalZoom California Registered Agent
+								li (included)
+							.clear
+							ul.items
+								li Federal Tax ID (EIN) Obtainment
+								li $79.00
+							.clear
+							ul.items
+								li California Statement of Information
+								li $55.00
+							.clear
+							ul.items
+								li California State Tax Identification
+								li $35.00
+							.clear
+							ul.items
+								li Standard Shipping
+								li $9.95
+							.clear
+							ul.items.discount
+								li Discount Code
+								li -$10.00
+							.clear
+						.total-price
+							ul
+								li Your payment:
+								li $422.95
+							.clear
+					.sidebar-saving
+						h5 You save $601.00 with LegalZoom
+						p
+							| Savings based on comparing the average lawyer price for an LLC, provided by AttorneyFee.com, to LegalZoom's base package. (LegalZoom is not a law firm or a substitute for an attorney or law firm.)
+				.clear
+				hr
+				br
+				br
+		
+		// site footer 
+		.footer
+			.divider
+			p.legal © LegalZoom.com, Inc. All rights reserved.
+			p.legal
+				| Disclaimer: Communications between you and LegalZoom are protected by our
+				a(href='#') Privacy Policy
+				| but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our
+				a(href='#') Terms of Use
+				| . LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).

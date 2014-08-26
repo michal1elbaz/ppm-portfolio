@@ -1,0 +1,109 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+		meta(http-equiv='X-UA-compatible', content='chrome=1')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/app.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		//[if lte IE 8]
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//[if lte IE 9]
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+
+	body
+
+		.comparison-chart
+			.shadow
+			//[lf lte IE 8]				
+				img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+			.container
+				ul.header
+					li
+						.container
+						ul
+							li.best.checked
+								h3 Express Gold
+								p.price
+									$359<br>
+									span plus sate fees
+								.banner-folded
+									.container
+										em Express Delivery
+										br
+										span 7-10 business days
+										.banner-fold-bottom
+										//[lf lte IE 8]
+											img.banner-fold-bottom(src='images/shadow-banner-fold-bottom.png')
+										.banner-bottom-corner
+								.banner-bg
+							li.checked
+								h3 Standard
+								p.price
+									$289<br>
+									span plus sate fees
+							li.checked.last
+								h3 Economy
+								p.price
+									$99<br>
+									span plus sate fees
+				ul.section
+					li
+						.container
+							Basic features
+				ul
+					li
+						.container
+							h5 LLC Name Clearance
+							| We'll find out if your name is available.
+						ul
+							li.best.checked
+								i.chart-icon-checkmark 
+							li.checked
+								i.chart-icon-checkmark
+							li.checked
+								i.chart-icon-checkmark
+				ul
+					li
+						.container
+							h5 Articles of Organization
+							| We’ll complete your Articles of Organization and file them with the Secretary of State.
+						ul
+							li.best.checked
+								i.chart-icon-checkmark 
+							li.checked
+								i.chart-icon-checkmark
+							li.checked
+								i.chart-icon-checkmark
+				ul
+					li
+						.container
+							h5 Operating Agreement
+							| We provide a state-specific Operating Agreement including important provisions. (<a>More</a>)
+						ul
+							li.best.checked
+								i.chart-icon-checkmark 
+							li.checked
+								i.chart-icon-checkmark
+							li
+								i.chart-icon-checkmark
+								p.desc Some descriptive text here for more detail
+				ul
+					li
+						.container
+							h5 Indemnification Clause
+							| Protects an LLC if its members, managers or officers are sued when they are acting on behalf of the company.
+							.banner-diagonal
+								img(src='images/fpo/banner-diagonal-chart.png', width='65', height='66')
+						ul
+							li.best.checked
+								i.chart-icon-checkmark 
+							li
+								i.chart-icon-checkmark
+							li
+								i.chart-icon-checkmark

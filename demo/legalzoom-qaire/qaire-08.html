@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="chrome=1" http-equiv="X-UA-compatible">
+    <title>Legalzoom</title>
+    <link href="css/html5-doctor-reset-stylesheet.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/qaire.css" rel="stylesheet" type="text/css">
+    <script src="js/modernizr-2.6.2.js" type="text/javascript"></script>
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/app.min.js" type="text/javascript"></script>
+    <script src="js/qaire.js" type="text/javascript"></script><!--[if lte IE 8]>
+    <link href="css/ie8.css" rel="stylesheet" type="text/css"><![endif]--><!--[if lte IE 9]>
+    <link href="css/ie9.css" rel="stylesheet" type="text/css"><![endif]-->
+  </head>
+  <body>
+    <!-- 960px site container -->
+    <div class="site-container">
+      <!-- header and logo for questionnaire -->
+      <div class="qaire-header"><a href="#" class="lz-logo">LegalZoom</a>
+        <h1>Creating Your LLC</h1>
+      </div>
+      <!-- steps nav -->
+      <ul class="steps-solid">
+        <li class="completed"><a><span class="link">About your business</span><span class="arrow"></span></a></li>
+        <li class="active"><a><span class="link">Name & address</span><span class="arrow"></span></a></li>
+        <li class="inactive"><a><span class="link">Owners & Mgmt</span><span class="arrow"></span></a></li>
+        <li class="inactive"><a><span class="link">Tax setup</span><span class="arrow"></span></a></li>
+        <li class="inactive"><a><span class="link">Business setup</span><span class="arrow"></span></a></li>
+        <li class="inactive last"><a><span class="link">Place order</span><span class="arrow"></span></a></li>
+      </ul>
+      <div class="clear"></div>
+      <!-- main content -->
+      <div class="content-main">
+        <h1>What is the name of your business?</h1>
+        <p class="tight">In California, the business name must contain: "Limited Liability Company" , "LLC" or "L.L.C.".</p>
+        <div class="form-group">
+          <div class="form-fields">
+            <input placeholder="enter business name here" type="text">
+          </div>
+          <p class="notes">Please note: If this name is unavailable in California, we will contact you to ask for an alternate name.</p>
+        </div>
+        <h3>Will you be doing business under any other name?</h3>
+        <p class="tight">California allows businesses to use multiple names. For example, a business formed with the name Smith & Jones LLC could also do business under the name “Super Steakhouse”. To learn more, <a id="help_other_names" class="help">click here</a>.</p>
+        <div class="form-group">
+          <div class="form-fields">
+            <input id="othernames_yes" name="othernames" type="radio">
+            <label for="othernames_yes">Yes</label>
+          </div>
+          <div class="form-fields">
+            <input id="othernames_no" checked="checked" name="othernames" type="radio">
+            <label for="othernames_no">No</label>
+          </div>
+          <div class="form-fields">
+            <input id="othernames_notsure" name="othernames" type="radio">
+            <label for="othernames_notsure">I'm not sure</label>
+          </div><a id="help_other_names_answer" class="help icon lz-icon-help orange small desc">How did most people answer this question?</a>
+        </div><!--
+        <div class="form-group"> </div>%h3 What other business name will you be using? 
+        %form-fields 
+        %input{:type => 'text', :placeholder => 'Other business name'} -->
+        <hr class="top-space">
+        <!-- page navigation -->
+        <ul class="page-nav">
+          <li><a href="qaire-07.html" class="link-back"><i class="icon lz-icon-blue arrow-back"></i><span>Back</span></a></li>
+          <li>
+            <!-- orange button with icon on right --><a href="qaire-09s.html" class="button orange flex has-right"><span class="button-right"><span class="inner"><i class="icon button-icon arrow-large"></i></span></span><span class="button-center">Save & continue</span></a>
+          </li>
+        </ul>
+        <div class="clear"></div><br><br>
+      </div>
+      <!-- sidebar -->
+      <div class="content-sidebar">
+        <div class="qaire-sidebar">
+          <div class="customer-service"></div>
+          <blockquote>
+            <div class="open">&#8220;</div>
+            <p class="quote">The entire process was so easy and you offered absolutely wonderful customer service! Congratulations for an excellent product!<span class="close"> &#8221;</span></p>
+            <div class="from">- Robin F., Falls Church, VA</div>
+          </blockquote>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- site footer -->
+    <div class="footer">
+      <div class="divider"></div>
+      <p class="legal">&copy; LegalZoom.com, Inc. All rights reserved.</p>
+      <p class="legal">Disclaimer: Communications between you and LegalZoom are protected by our <a href="#">Privacy Policy</a>but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our <a href="#">Terms of Use</a>. LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).</p>
+    </div>
+    <!-- tooltip container -->
+    <div class="tooltip-container">
+      <div id="help_other_names_tooltip" class="tooltip wide">
+        <div class="arrow left"></div>
+        <div class="close"><i class="icon icon-tooltip-close"></i></div>
+        <p>The majority of our customers do not do business under another name. Some examples of businesses that use multiple names are:</p>
+        <ul>
+          <li>“Educational Solutions L.L.C.” could do business under the name “Math Made Simple”</li>
+          <li>“Jones Restaurants L.L.C.” could do business under the name “Bobby’s Burgers”</li>
+        </ul>
+        <p>If you have more questions about business owners, please call us at (855) 773-0880.</p>
+      </div>
+      <div id="help_other_names_answer_tooltip" class="tooltip">
+        <div class="arrow left"></div>
+        <div class="close"><i class="icon icon-tooltip-close"></i></div>
+        <p>Our customers answered...</p>
+        <p>Yes - 11%<br>No - 89%</p>
+        <p>Based on a sample of more than 40,000 LLC customers in 2013.</p>
+      </div>
+    </div>
+    <!-- modals -->
+    <div class="modal text">
+      <div class="container"><a class="close"></a>
+        <div class="shadow"></div><!--[lf lte IE 8]<img src="images/shadow-curved-photo-md.png" class="shadow-ie8">-->
+        <div class="overlay"></div>
+        <div class="content"></div>
+      </div>
+    </div>
+    <div class="modal-overlay"></div>
+  </body>
+</html>

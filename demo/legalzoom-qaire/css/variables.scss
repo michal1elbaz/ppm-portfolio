@@ -1,0 +1,68 @@
+/*
+	variables for legalzoom:
+	colors
+	background
+	border
+	fonts
+	text colors
+	responsive screen sizes
+	imported from 'variables.scss'
+*/
+
+/* branding colors */
+
+$brand-indigo: #281360;
+$brand-blue: #498bce;
+$brand-orange: #ffa700;
+$brand-yellow: #ffd700;
+$brand-gray: #c4c4c3;
+$brand-dark-gray: #666767;
+$brand-brown: #754900;
+$brand-dark-orange: #ff6400;
+$brand-white: #fff;
+
+/* background colors */
+
+$color-html-bg: #fff;
+$color-body-bg: #fff;
+
+/* border colors */
+
+$color-border-gray: #ccc;
+
+/* fonts */
+
+$font-sans-serif: "psRegular", Helvetica, Arial, sans-serif;
+$font-light: "psLight", "psRegular", Helvetica, Arial, sans-serif;
+$font-light-italic: "psLight-Italic", "psRegular", Helvetica, Arial, sans-serif;
+$font-medium: "psMedium", "psRegular", Helvetica, Arial, sans-serif;
+$font-medium-italic: "psMedium-Italic", "psRegular", Helvetica, Arial, sans-serif;
+$font-condensed: "psCondMedium", "psRegular", Helvetica, Arial, sans-serif;
+$font-condensed-italic: "psCondMedium-Italic", "psRegular", Helvetica, sans-serif;
+$font-header: "psRegular", Helvetica, Arial, sans-serif;
+$font-serif: Georgia, "Times New Roman", Times, serif;
+
+
+/* text colors */
+
+$color-text: #444444;
+$color-link: #247bd3;
+$color-link-hover: #281360;
+
+$color-h1: $brand-indigo;
+$color-h2: $brand-blue;
+$color-h3: $brand-indigo;
+$color-h4: #222222;
+
+$color-list-bullet: #c4c4c3;
+$color-list-text: #444444;
+
+
+/* responsive screen sizes */
+
+$iphone-portrait: "only screen and (max-width: 330px)";
+$iphone4-landscape: "only screen and (min-width: 331px) and (max-width: 500px)";
+$iphone5-landscape: "only screen and (min-width: 501px) and (max-width: 760px)";
+$ipad-portrait: "only screen and (min-width: 761px) and (max-width: 955px)";
+$retina-display: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx)";
+$normal-screen: "only screen and (min-width: 956px)";

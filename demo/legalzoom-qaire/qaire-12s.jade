@@ -1,0 +1,154 @@
+doctype html
+html
+	head
+		meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+		meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+		meta(content='chrome=1', http-equiv='X-UA-compatible')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/qaire.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		script(src='js/qaire.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+	body
+		// 960px site container 
+		.site-container
+			
+			// header and logo for questionnaire 
+			.qaire-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+			
+			// steps nav 
+			ul.steps-solid
+				li.completed
+					a
+						span.link About your business
+						span.arrow
+				li.completed
+					a
+						span.link Name & address
+						span.arrow
+				li.active
+					a
+						span.link Owners & Mgmt
+						span.arrow
+				li.inactive
+					a
+						span.link Tax setup
+						span.arrow
+				li.inactive
+					a
+						span.link Business setup
+						span.arrow
+				li.inactive.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+			
+			// main content 
+			.content-main
+				h1 Who will manage your business?
+				p
+					| In [STATE], you can give other people or companies (called Managers) the authority to manage your business (e.g., open bank accounts, write checks, sign contracts, etc.). To learn more, 
+					a#help.help click here
+					| .
+				h3 Please tell us how your business will be managed:
+				.form-group
+					.form-fields
+						input#manage_1(name='manage', type='radio')
+						label(for='manage_1') Solely by the owner (Member-managed)
+					.form-fields
+						input#manage_2(name='manage', type='radio')
+						label(for='manage_2') By the owner and other managers (Manager-managed)
+					.form-fields
+						input#manage_3(name='manage', type='radio')
+						label(for='manage_3') By other managers only (Manager-managed)
+					a#help_answer.help.icon.lz-icon-help.orange.small.desc
+						| How did most people answer this question?
+				
+				hr.top-space
+				
+				// page navigation 
+				ul.page-nav
+					li
+						a.link-back(href='qaire-10s.html')
+							i.icon.lz-icon-blue.arrow-back
+							span Back
+					li
+						// orange button with icon on right 
+						a.button.orange.flex.has-right(href='qaire-13.html')
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Save & continue
+				.clear
+				br
+				br
+			
+			// sidebar 
+			.content-sidebar
+				.qaire-sidebar
+					.customer-service
+					blockquote
+						.open &#8220;
+						p.quote
+							| LegalZoom does an amazing job!  Highly impressed with the professionalism and promptness from the business.
+							span.close  &#8221;
+						.from - Randy B., McKinney, TX
+			.clear
+		
+		// site footer 
+		.footer
+			.divider
+			p.legal &copy; LegalZoom.com, Inc. All rights reserved.
+			p.legal
+				| Disclaimer: Communications between you and LegalZoom are protected by our
+				a(href='#') Privacy Policy
+				| but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our
+				a(href='#') Terms of Use
+				| . LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).
+		
+		// tooltip container 
+		.tooltip-container
+			#help_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p
+					| Over 90% of our customers want their business to be solely managed by the owner, which in legal terms is called “member-managed”. In some cases, our customers want their business to be managed in a different way, which is legally called “manager-managed”. Examples include:
+				ul
+					li The owner wants to manage the business with someone else
+					li
+						| The owner doesn’t want to manage the business and wants someone else to do it for them
+				p
+					| If you have more questions about business owners, please call us at (855) 773-0880.
+			#help_answer_tooltip.tooltip
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p Our customers answered...
+				p
+					| Solely by the owner - 95%
+					br
+					| Other two options (combined) - 5%
+				p Based on a sample of more than 40,000 LLC customers in 2013.
+		
+		// modals 
+		.modal
+			.container
+				a.close
+				.shadow
+				//[lf lte IE 8]
+					img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+				.overlay
+				.content
+
+		.modal-overlay

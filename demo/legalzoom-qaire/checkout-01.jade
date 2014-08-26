@@ -1,0 +1,362 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+		meta(http-equiv='X-UA-compatible', content='chrome=1')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/checkout.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')/
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')/
+
+	body
+		// 960px site container
+		.site-container
+			
+			// header and logo for questionnaire
+			.checkout-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+
+			// small customer service image
+			.customer-service-small
+
+			// steps nav
+			ul.steps-solid.last-step
+				li.completed
+					a
+						span.link About your business
+						span.arrow
+				li.completed
+					a
+						span.link Name &amp; address
+						span.arrow
+				li.completed
+					a
+						span.link Owners &amp; Mgmt
+						span.arrow
+				li.completed
+					a
+						span.link Tax setup
+						span.arrow
+				li.completed
+					a
+						span.link Business setup
+						span.arrow
+				li.active.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+
+			// main content
+			.content-main
+				h1 Please review the details of My Company LLC
+				p You've given us all of the details we need to form My Company LLC in California. Please review this information and make sure everything is correct. Don't worry though, if we have any questions during our review of your order, we'll contact you.
+				
+				// review detail starts here
+				.review-your-detail
+					.section
+						.question Where are you forming your business?
+						.answer California
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question What will your business be doing?
+						.answer Consulting
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question Do you want to form a Professional LLC?
+						.answer No
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question How many owners will your business have?
+						.answer 2 Owners
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Are you forming a new business?
+						.answer	Yes, I am forming a new business
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Will your business have employees at any point in the next 12 months?
+						.answer	Yes
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Business street address
+						.answer
+							.form-group
+								.form-fields
+									input(type='text', placeholder='Address', value='101 N. Brand Blvd.')
+								.form-fields
+									input(type='text', placeholder='City', value='Glendale')
+								.form-fields
+									input(type='text', placeholder='County')
+								.form-fields.select
+									.select-field
+										.select-arrow-container
+											.select-arrow
+										select(id='param_interest', name='interest')
+											optgroup
+												option Alabama
+												option Alaska
+												option Arizona
+												option Arkansas
+												option(selected) California
+												option Colorado
+												option Connecticut
+												option Delaware
+												option District of Columbia
+												option Florida
+												option Georgia
+												option Hawaii
+												option Idaho
+												option Illinois
+												option Indiana
+												option Iowa
+												option Kansas
+												option Kentucky
+												option Louisiana
+												option Maine
+												option Maryland
+												option Massachusetts
+												option Michigan
+												option Minnesota
+												option Mississippi
+												option Missouri
+												option Montana
+												option Nebraska
+												option Nevada
+												option New Hampshire
+												option New Jersey
+												option New Mexico
+												option New York
+												option North Carolina
+												option North Dakota
+												option Ohio
+												option Oklahoma
+												option Oregon
+												option Pennsylvania
+												option Rhode Island
+												option South Carolina
+												option South Dakota
+												option Tennessee
+												option Texas
+												option Utah
+												option Vermont
+												option Virginia
+												option Virgin Islands
+												option Washington
+												option West Virginia
+												option Wisconsin
+												option Wyoming
+								.form-fields
+									input(type='text', placeholder='Zip', value='91203')
+								.form-fields
+									input(type='text', placeholder='Phone number', value='323-555-0987')
+						.link-edit
+						.clear
+					.section
+						.question	What is the name of your business?
+						.answer	My Company LLC
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Will you be doing business under another name?
+						.answer	I'm not sure
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Who are the owners of your business?
+						.answer
+							| Owner #1
+							.form-group
+								.form-fields
+									input(type='text', placeholder='Name of owner', value='Bob Jones')
+								.form-fields
+									input(type='text', placeholder='Title of owner', value='Principal')
+							| Owner #2
+							.form-group
+								.form-fields
+									input(type='text', placeholder='Name of owner', value='Dave Smith')
+								.form-fields
+									input(type='text', placeholder='Title of owner', value='Principal')
+							a.link-add add another
+						.link-edit
+						.clear
+					.section
+						.question	How is ownership divided?
+						.answer
+							| Bob Jones
+							.form-group
+								.form-fields
+									input(type='text', placeholder='In  or units', value='50')
+							| Dave Smith
+							.form-group
+								.form-fields
+									input(type='text', placeholder='In  or units', value='50')
+						.link-edit
+						.clear
+					.section
+						.question	What are the rules regarding transfer of ownership?
+						.answer	Consent is required by all owners
+						.link-edit
+							a edit
+						.clear
+
+					.section
+						.question	Who will manage your business?
+						.answer
+							| Manager #1
+							.form-group
+								.form-fields
+									input(type='text', placeholder='Name of manager', value='Bob Jones')
+							| Manager #2
+							.form-group
+								.form-fields
+									input(type='text', placeholder='Name of manager', value='Jim Brown')
+							a.link-add add another
+						.link-edit
+						.clear
+					.section
+						.question	Who will be the legal registered agent?
+						.answer	LegalZoom will serve as my registered agent
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Do you want us to help get a federal tax ID (EIN) for your business?
+						.answer Yes, please obtain a tax identification number for my business
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Would you like a free consultation on reducing your tax expenses?
+						.answer	Yes, I would like to learn about reducing my tax expenses
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Will your business own a vehicle that weighs more than 55,000 pounds and is designed to transport loads on the highway?
+						.answer	No
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Will your business operate a casino or otherwise be involved with gambling or wagering?
+						.answer	No
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Does your business make or sell alcohol, tobacco, or firearms?
+						.answer	No
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Will your business sell goods subject to an excise tax?
+						.answer	No
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	Please enter contact information for the IRS
+						.answer
+							.form-group
+								.form-fields
+									label Full name
+									br
+									input(type='text', placeholder='Full Name', value='Bob Jones')
+								.form-fields
+									label Title
+									br
+									input(type='text', placeholder='Title')
+								.form-fields
+									label Phone number
+									br
+									input(type='text', placeholder='xxx-xxx-xxxx', value='323-555-8888')
+								.form-fields
+									label Fax number
+									br
+									input(type='text', placeholder='xxx-xxx-xxxx')
+								.form-fields
+									label Social security number (optional)
+									br
+									input(type='text', placeholder='xxx-xx-xxxx', value='555-555-5555')
+						.link-edit
+						.clear
+					.section
+						.question	Will the company hire employee in the next 12 months?
+						.answer	Yes
+							.form-group
+								.form-fields
+									label Number of nonagricultural employees
+									input(type='text', placeholder='Number of nonagricultural employees')
+								.form-fields
+									label Number of agricultural employees
+									input(type='text', placeholder='Number of agricultural employees')
+								.form-fields
+									label Number of household employees
+									input(type='text', placeholder='Number of household employees')
+						.link-edit
+							a edit
+						.clear
+					.section
+						.question	The first day the company will pay wages
+						.answer
+							.form-group
+								.form-fields
+									input(type='text', placeholder='MM/DD/YYYY')
+						.link-edit
+						.clear
+					.section
+						.question	Do you epxect less than $1,000 in employment tax liability this year?
+						.answer	No
+						.link-edit
+							a edit
+						.clear
+
+				hr
+				
+				// page navigation
+				ul.page-nav
+					li
+						a.link-back(href='qaire-07.html') <i class="icon lz-icon-blue arrow-back"></i><span>Back</span>
+					li
+						// orange button with icon on right
+						a.button.orange.flex.has-right(href='checkout-02.html')
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Save &amp; continue
+				.clear
+
+				br
+				br
+
+
+		// site footer
+		.footer
+			.divider
+			p.legal &copy; LegalZoom.com, Inc. All rights reserved.
+			p.legal Disclaimer: Communications between you and LegalZoom are protected by our <a href="#">Privacy Policy</a> but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our <a href="#">Terms of Use</a>. LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).

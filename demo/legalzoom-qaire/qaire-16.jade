@@ -1,0 +1,222 @@
+doctype html
+html
+	head
+		meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+		meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+		meta(content='chrome=1', http-equiv='X-UA-compatible')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/qaire.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		script(src='js/qaire.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+	body
+		// 960px site container 
+		.site-container
+			
+			// header and logo for questionnaire 
+			.qaire-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+			
+			// steps nav 
+			ul.steps-solid
+				li.completed
+					a
+						span.link About your business
+						span.arrow
+				li.completed
+					a
+						span.link Name & address
+						span.arrow
+				li.completed
+					a
+						span.link Owners & Mgmt
+						span.arrow
+				li.active
+					a
+						span.link Tax setup
+						span.arrow
+				li.inactive
+					a
+						span.link Business setup
+						span.arrow
+				li.inactive.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+			
+			// main content 
+			.content-main
+				h1 Business details required by the IRS
+				p
+					| This information is required by the IRS on the EIN application. To save you time, we’ve preselected the most common answers.
+				h3
+					| Will your business own a vehicle that weighs more than 55,000 pounds and is designed to transport loads on the highway?
+				.form-group
+					.form-fields
+						input#irs1_01(name='irs1', type='radio')
+						label(for='irs1_01') Yes
+					.form-fields
+						input#irs1_02(checked='checked', name='irs1', type='radio')
+						label(for='irs1_02') No
+					a#help_irs1_answer.help.icon.lz-icon-help.orange.small.desc
+						| How did most people answer this question?
+				h3
+					| Will your business operate a casino or otherwise be involved with gambling or wagering?
+				.form-group
+					.form-fields
+						input#irs2_01(name='irs2', type='radio')
+						label(for='irs2_01') Yes
+					.form-fields
+						input#irs2_02(checked='checked', name='irs2', type='radio')
+						label(for='irs2_02') No
+					a#help_irs2_answer.help.icon.lz-icon-help.orange.small.desc
+						| How did most people answer this question?
+				h3 Will your business make or sell alcohol, tobacco or firearms?
+				.form-group
+					.form-fields
+						input#irs3_01(name='irs3', type='radio')
+						label(for='irs3_01') Yes
+					.form-fields
+						input#irs3_02(checked='checked', name='irs3', type='radio')
+						label(for='irs3_02') No
+					a#help_irs3_answer.help.icon.lz-icon-help.orange.small.desc
+						| How did most people answer this question?
+				h3 Will your business sell goods subject to an excise tax?
+				p.tight
+					| This is not common. Goods subject to excise tax include items such as fuel, tires, and fishing equipment. To see the full list of goods subject to this tax, 
+					a#help_irs4.help click here
+					| .
+				.form-group
+					.form-fields
+						input#irs4_01(name='irs4', type='radio')
+						label(for='irs4_01') Yes
+					.form-fields
+						input#irs4_02(checked='checked', name='irs4', type='radio')
+						label(for='irs4_02') No
+					a#help_irs4_answer.help.icon.lz-icon-help.orange.small.desc
+						| How did most people answer this question?
+				
+				hr.top-space
+				
+				// page navigation 
+				ul.page-nav
+					li
+						a.link-back(href='qaire-15.html')
+							i.icon.lz-icon-blue.arrow-back
+							span Back
+					li
+						// orange button with icon on right 
+						a.button.orange.flex.has-right(href='qaire-20s.html')
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Save & continue
+				.clear
+				br
+				br
+			
+			// sidebar 
+			.content-sidebar
+				.qaire-sidebar
+					.customer-service
+					blockquote
+						.open &#8220;
+						p.quote
+							| 3 Words. Simple, Fast, Accurate.
+							span.close  &#8221;
+						.from - Alan R., Dallas, TX
+			.clear
+		
+		// site footer 
+		.footer
+			.divider
+			p.legal &copy; LegalZoom.com, Inc. All rights reserved.
+			p.legal
+				| Disclaimer: Communications between you and LegalZoom are protected by our 
+				a(href='#') Privacy Policy
+				| but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our 
+				a(href='#') Terms of Use
+				| . LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).
+		
+		// tooltip container 
+		.tooltip-container
+			#help_irs1_answer_tooltip.tooltip
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p Our customers answered...
+				p
+					| Yes - 2%
+					br
+					| No - 98%
+				p Based on a sample of more than 40,000 LLC customers in 2013.
+			#help_irs2_answer_tooltip.tooltip
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p Our customers answered...
+				p
+					| Yes - 0.1%
+					br
+					| No - 99.9%
+				p Based on a sample of more than 40,000 LLC customers in 2013.
+			#help_irs3_answer_tooltip.tooltip
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p Our customers answered...
+				p
+					| Yes - 3%
+					br
+					| No - 97%
+				p Based on a sample of more than 40,000 LLC customers in 2013.
+			#help_irs4_answer_tooltip.tooltip
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p Our customers answered...
+				p
+					| Yes - 0.4%
+					br
+					| No - 99.6%
+				p Based on a sample of more than 40,000 LLC customers in 2013.
+			#help_irs4_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p
+					| Over 98% of our customers answer No to this question. Typically, the only businesses that need to report federal excise taxes are selling items such as:
+				ul
+					li Gas and other fuel;
+					li Tractors;
+					li Air or ship transportation services;
+					li Insurance policies issued by foreign companies;
+					li Fishing equipment;
+					li Electric outdoor motors; or
+					li Bows and arrows.
+				p
+					| For the full list of goods that require federal excise tax, visit
+					a(href='http://www.irs.gov/pub/irs-pdf/f720.pdf', target='_blank') http://www.irs.gov/pub/irs-pdf/f720.pdf
+				p
+					| If you have more questions about business owners, please call us at (855) 773-0880.
+		
+		// modals 
+		.modal
+			.container
+				a.close
+				.shadow
+				//[lf lte IE 8]
+					img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+				.overlay
+				.content
+
+		.modal-overlay

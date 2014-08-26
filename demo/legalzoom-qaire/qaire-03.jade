@@ -1,0 +1,230 @@
+doctype html
+html
+	head
+		meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+		meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+		meta(content='chrome=1', http-equiv='X-UA-compatible')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/qaire.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		script(src='js/qaire.min.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+	body
+		// 960px site container 
+		.site-container
+			
+			// header and logo for questionnaire 
+			.qaire-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+			
+			// steps nav 
+			ul.steps-solid
+				li.active
+					a
+						span.link About your business
+						span.arrow
+				li.inactive
+					a
+						span.link Name & address
+						span.arrow
+				li.inactive
+					a
+						span.link Owners & Mgmt
+						span.arrow
+				li.inactive
+					a
+						span.link Tax setup
+						span.arrow
+				li.inactive
+					a
+						span.link Business setup
+						span.arrow
+				li.inactive.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+			
+			// main content 
+			.content-main
+				h1 What will you do in real estate?
+				p
+					| Please choose the options that best describe your business. Your answer helps us personalize your legal documents to the needs of your business.
+				h3 Which of the following best describes your real estate business?
+				.form-group
+					.form-fields
+						input#activity_01(checked='checked', name='activity', type='radio')
+						label(for='activity_01') Renting or leasing property I own
+					.form-fields
+						input#activity_02(name='activity', type='radio')
+						label(for='activity_02') Property development
+					.form-fields
+						input#activity_03(name='activity', type='radio')
+						label(for='activity_03') Selling property for others
+					.form-fields
+						input#activity_04(name='activity', type='radio')
+						label(for='activity_04') Managing real estate for others
+					.form-fields
+						input#activity_05(name='activity', type='radio')
+						label(for='activity_05') Other
+				h3 Does your business require a professional license in real estate?
+				p.tight
+					| Specifically, are you required to take a test to obtain a professional license from a state board or department in California? 
+				.form-group
+					.form-fields
+						input#license_yes(name='pro_license', type='radio')
+						label(for='license_yes') Yes
+					.form-fields
+						input#license_no(checked='checked', name='pro_license', type='radio')
+						label(for='license_no') No
+					a#help_license_answer.help.icon.lz-icon-help.orange.small.desc
+						| How did most people answer this question?
+				hr.top-space
+				
+				// page navigation 
+				ul.page-nav
+					li
+						a.link-back(href='qaire-02.html')
+							i.icon.lz-icon-blue.arrow-back
+							span Back
+					li
+						// orange button with icon on right 
+						a.button.orange.flex.has-right(href='qaire-04.html')
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Save & continue
+				.clear
+				br
+				br
+			
+			// sidebar 
+			.content-sidebar.email
+				.email-sidebar
+					h3 Your email address (optional)
+					p.tight We'll email you a link to your saved answers
+					.form-group
+						.form-fields
+							input(placeholder='you@example.com', type='text')
+							a.button.flex.small(href='#')
+								span.button-center Submit
+						p.sign-in-link
+							| Already a member? 
+							a(onclick='openModalID(\'signin\');') Sign in here 
+				.qaire-sidebar
+					.customer-service
+					blockquote
+						.open &#8220;
+						p.quote
+							| Wonderfully simple, efficient, and thorough. Thank you for making my first business experience so exciting and stress free!
+							span.close  &#8221;
+						.from - April M., Plano, TX
+			.clear
+		
+		// site footer 
+		.footer
+			.divider
+			p.legal &copy; LegalZoom.com, Inc. All rights reserved.
+			p.legal
+				| Disclaimer: Communications between you and LegalZoom are protected by our 
+				a(href='#') Privacy Policy
+				| but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our 
+				a(href='#') Terms of Use
+				| . LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).
+		
+		// tooltip container 
+		.tooltip-container
+			#help_license_answer_tooltip.tooltip
+				.close
+					i.icon.icon-tooltip-close
+				.arrow.left
+				p Our customers answered...
+				p
+					| Yes - 94%
+					br
+					| No - 6%
+				p Based on a sample of more than 40,000 LLC customers in 2013.
+		
+		// modals 
+		#signin.modal.text.sign-in-modal
+			.container
+				a.close
+				.shadow
+				//[lf lte IE 8]
+					img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+				.overlay
+				.content
+					h1 Sign In
+					p
+						| Save your work by entering your email address below. Your 
+						a personal information will remain private
+						| .
+					h2 New account
+					.form-group
+						.form-field
+							label Email address
+							br
+							input.short(type='text')
+							.error-text
+						.form-field
+							label Password
+							br
+							input.shortest(type='password')
+							.error-text
+						.form-field
+							label Confirm password
+							br
+							input.shortest(type='password')
+							.error-text
+						a.button.flex.has-right
+							span.button-right
+								i.icon.button-icon.arrow
+							span.button-center New account
+						.clear
+					h2 Existing account
+					.form-group
+						.form-field
+							label Email address
+							br
+							input.short(type='text')
+							.error-text
+						.form-field
+							label Password
+							br
+							input.shortest(type='password')
+							.error-text
+						a.button.flex.has-right
+							span.button-right
+								i.icon.button-icon.arrow
+							span.button-center Existing account
+						.clear
+						a.forgot-password-link Forgot your password? Click here
+					.forgot-password
+						h2 Forgot password
+						p.tight
+							| Enter your email address below and we will email you instructions on how to reset your password.
+						.form-group
+							.form-field
+								label Email address
+								br
+								input.short(type='text')
+								.error-text
+							.form-field
+								label Re-enter email address
+								br
+								input.short(type='text')
+								.error-text
+							a.button.flex.has-right
+								span.button-right
+									i.icon.button-icon.arrow
+								span.button-center Reset password
+							.clear
+		.modal-overlay

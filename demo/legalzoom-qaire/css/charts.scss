@@ -1,0 +1,264 @@
+/*
+	comparison chart - this is the new comparison chart styles with the new brand guideline applied
+	imported from 'charts.scss'
+*/
+
+.comparison-chart {
+	width: 960px;
+	position: relative;
+	margin: 60px 0 40px 0;
+	ul {
+		margin: 0;
+		list-style: none;
+		border-left: 1px solid #dedede;
+		border-right: 1px solid #dedede;
+		border-bottom: 1px solid #dedede;
+		&:first-child {
+			border-top: 1px solid #dedede;
+			border-top-right-radius: 10px;
+			border-top-left-radius: 10px;
+		}
+		&:last-child {
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			ul {
+				li:last-child {
+					border-bottom-right-radius: 10px;
+				}
+			}
+		}
+		li {
+			display: block;
+			width: 958px;
+			position: relative;
+			font-size: 12px;
+			color: #777;
+			margin: 0;
+			> .container {
+				padding: 20px;
+				width: 436px;
+				line-height: 1.4;
+			}
+			.banner-diagonal {
+				width: 65px;
+				height: 66px;
+				right: -3px;
+			}
+		}
+		&.header {
+			li {
+				> .container {
+					height: 80px;
+				}
+			}
+			ul {
+				li {
+					text-align: center;
+					h3 {
+						font-size: 17px;
+						color: $brand-indigo;
+						font-family: $font-sans-serif;
+						margin-top: 14px;
+					}
+					.price {
+						font-size: 17px;
+						font-weight: bold;
+						color: $brand-dark-gray;
+						line-height: 1;
+						position: absolute;
+						top: 80px;
+						width: 100%;
+						span {
+							font-size: 11px;
+							font-weight: normal;
+						}
+					}
+					.desc {
+						position: absolute;
+						top: 40px;
+						text-align: center;
+						padding: 0 30px 0 30px;
+					}
+					&.best {
+						h3 {
+							font-family: $font-medium;
+							font-size: 20px;
+							color: #fff;
+							text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+						}
+						.price {
+							color: #fff;
+							span {color: #fff;}
+						}
+						.desc {
+							color: #fff;
+						}
+					}
+					&.last {
+						border-top-right-radius: 10px;
+					}
+					.banner-bg {
+						display: block;
+						position: absolute;
+						z-index: 5;
+						top: -80px;
+						width: 159px;
+						height: 80px;
+						background: $brand-dark-orange;
+					}
+					.banner-folded {
+						position: absolute;
+						z-index: 10;
+						top: -55px;
+						width: 190px;
+						background: $brand-yellow;
+					}
+				}
+			}
+		}
+		&.section {
+			padding: 0;
+			border-right: 1px solid $brand-blue;
+			border-left: 1px solid $brand-blue;
+			border-bottom: none;
+			li {
+				background: $brand-blue;
+				color: #fff;
+				font-family: $font-medium;
+				font-size: 13px;
+				text-transform: uppercase;
+				.container {
+					padding: 10px 20px 10px 20px;
+				}
+			}
+		}
+		ul {
+			height: 100%;
+			clear: both;
+			position: absolute;
+			top: 0;
+			right: 0;
+			border: none;
+			li {
+				display: block;
+				position: relative;
+				width: 159px;
+				float: left;
+				height: 100%;
+				border-left: 1px solid #dedede;
+				.chart-icon-checkmark {
+					display: none;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin: -8px 0 0 -9px;
+				}
+				&.checked {
+					background: #f6faff;
+					.chart-icon-checkmark {
+						display: block;
+					}
+				}
+				&.best.checked, &.best {
+					background: #ff6400;
+				}
+				.desc {
+					font-size: 12px;
+					line-height: 1.2;
+					padding: 20px;
+				}
+				.callout {
+					font-size: 18px;
+					text-align: center;
+					top: 40%;
+					position: relative;
+					&.small {
+						font-size: 14px;
+						top: 30%;
+					}
+				}
+				&.best {
+					.callout {
+						color: #fff;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	h5 {
+		font-size: 15px;
+		font-family: $font-sans-serif;
+		color: $brand-indigo;
+	}
+	.shadow {
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		width: 100%;
+		height: 10px;
+		background: transparent url(../images/shadow-curved-photo-md.png) no-repeat center top;
+		background-size: 100% 10px;
+	}
+	.shadow-ie8 {
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		width: 100%;
+		height: 10px;
+	}
+	&.package-selection {
+		margin-top: -10px;
+		border: none;
+		ul {
+			border: none;
+			li {
+				> .container {
+					color: $brand-indigo;
+					font-weight: bold;
+					font-size: 18px;
+					text-align: right;
+				}
+				ul {
+					li {
+						border: none;
+						text-align: center;
+						font-size: 14px;
+						font-weight: bold;
+						.package-label {
+							color: $brand-blue;
+							display: block;
+							margin-bottom: 8px;
+						}
+						.price-difference {
+							color: #9d9d9d;
+							font-size: 12px;
+							margin-top: -2px;
+							display: block;
+						}
+						&.best {
+							.package-label {
+								color: $brand-dark-orange;
+							}
+							background: transparent;
+							color: $brand-dark-orange;
+						}
+						.form-fields {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.chart-icon-checkmark {
+	width: 18px;
+	height: 16px;
+	display: block;
+	background: transparent url(../images/sprite-chart-icons.png) no-repeat 0 -30px;
+	.best & {
+		background-position: 0 0;
+	}
+}

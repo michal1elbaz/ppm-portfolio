@@ -1,0 +1,660 @@
+doctype html
+html
+	head
+		meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+		meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+		meta(content='chrome=1', http-equiv='X-UA-compatible')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/checkout.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+	body
+		
+		// 960px site container 
+		
+		.site-container
+			
+			// header and logo for questionnaire 
+			.checkout-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+			
+			// small customer service image 
+			.customer-service-small
+			
+			// steps nav 
+			ul.steps-solid.last-step
+				li.completed
+					a
+						span.link About your business
+						span.arrow
+				li.completed
+					a
+						span.link Name & address
+						span.arrow
+				li.completed
+					a
+						span.link Owners & Mgmt
+						span.arrow
+				li.completed
+					a
+						span.link Tax setup
+						span.arrow
+				li.completed
+					a
+						span.link Business setup
+						span.arrow
+				li.active.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+			
+			// main content 
+			.content-main
+				h1 Please choose a package for My Company LLC
+				p Now that you've given us all the details about your business, please let us know what you'd like us to include with you order by selecting a package. If you have any questions, please call us at (855) 773-0887 (M-F 7AM-8PM PT. S/S 7AM-4PM PT).
+				.comparison-chart
+					table
+						thead
+							tr
+								th.direction-text
+									| Scroll over to learn more
+								th.best
+									.relative
+										h3 Express Gold
+										p.desc All-Inclusive Rush Package
+										p.price
+											| $359
+											br
+											span plus state fees
+										.banner-folded
+											.container
+												em Best Value and Fastest Package
+												.banner-fold-bottom
+												//[lf lte IE 8]
+													img.banner-fold-bottom-ie8(src='images/shadow-banner-fold-bottom.png')
+												.banner-bottom-corner
+										.banner-bg
+								th.second
+									h3 Standard
+									p.desc Complete LLC Formation
+									p.price
+										| $289
+										br
+										span plus state fees
+								th.last
+									h3 Economy
+									p.desc Basic LLC Formation
+									p.price
+										| $99
+										br
+										span plus state fees
+						tbody
+							tr
+								td.flyout
+									.relative
+										h5 LegalZoom Rush Processing
+										.flyout-content
+											.arrow
+											h3 Express Gold Rush Processing (7-10 Business Days or Less)
+											p
+												| Once you submit your order, our work begins. We complete tasks before, during, and after your LLC is formed in order to create your personlized LegalZoom LLC Packet for your new business.
+											p
+												| If timing is important to you, with our Express Gold Package, you can have your LLC set up in 7-10 business days or less (vs. 20-35 business days for our regular service). When you order Express Gold, we:
+											ul
+												li
+													span Immediately mark your order as a priority for our business formation team
+												li
+													span Select a expedited business formation option with your state of formation
+												li
+													span Prioritize the completion of all documents and forms in your LegalZoom LLC Packet
+												li
+													span Ship your personalized LegalZoom LLC Packet to you via 2-day delivery
+											p
+												| * NOTE: Due to government budget cuts, California is experiencing significant delays which affects all business formations. For faster service, California offers expedited filing for an additional $350 state fee and we can process your order in 3-4 business days. To choose this option, call us at (855) 773-0880.
+								td.best.checked
+									p.callout Fastest Service
+								td.second.checked
+									p.callout Regular Service
+								td.last.checked
+									p.callout Regular Service
+							tr
+								td.flyout
+									.relative
+										h5 California Name Check and Business Filing
+										.flyout-content
+											.arrow
+											h3 California Name Check and Business Filing
+											img(height='240', src='images/image-package-filing.jpg', width='380')
+											p
+												| As a first step in forming your LLC, we will conduct a preliminary check with your state's official database to find out whether the name you want is available. If we run into any issues, we'll contact you so you can choose a business name that fits your needs.
+											p
+												| Next, we'll complete your personalized legal documents and file them with your state. Once your state has approved your new business, you'll receive email notification from us.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last.checked
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 Personalized Operating Agreement
+										.flyout-content
+											.arrow
+											h3 Personalized Operating Agreement
+											p
+												| Every LLC should adopt a personalized operating agreement to govern its operations. We provide your business with a personalized, state-specific operating agreement that includes important provisions covering:
+											p
+												strong Company Record-Keeping and Formalities
+												br
+												| Clearly states that regular meetings of managers or members are NOT required
+											p
+												strong Ownership and Profit Sharing
+												br
+												| Governs how profits are distributed to the members and provides the method for admitting new members into the LLC
+											p
+												strong Withdrawal and Dissolution
+												br
+												| Provides a method for how members may withdraw and how the company may be dissolved
+											p
+												strong Restrictions on Transfer
+												br
+												| This provision in the Operating Agreement specifies when and how a member of the LLC is allowed to sell his or her interest to a third party. During our online questionnaire, you can decide whether or not to include any transfer restrictions.
+											p
+												strong Bank Account Provision
+												br
+												| Authorizes the company to open a business bank account. Many banks require that the company adopt such a provision before opening an account
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last.checked
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 Indemnification Clause
+										.flyout-content
+											.arrow
+											h3 Indemnification Clause
+											p
+												| This document allows the LLC to indemnify its members, managers and officers and cover legal expenses when they are acting on behalf of the company.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last.checked
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 California LLC Next Steps Guide
+										.flyout-content
+											.arrow
+											h3 California LLC Next Steps Guide
+											p
+												| We create a personalized, state specific guide with easy to follow, step-by-step instructions for reviewing your new business documents. We also include specific best practices to consider when getting a new business up and running.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last.checked
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 LegalZoom Peace of Mind Review
+										.flyout-content
+											.arrow
+											h3 LegalZoom Peace of Mind Review
+											p
+												| Unlike simple do-it-yourself forms, we include a personal review of your work after you create your document through the LegalZip® system.* Along with hundreds of automated checks, our document scriveners review the answers you provide for the following:
+											ul
+												li
+													span
+														| Complete information. We'll contact you by phone and email regarding any missing information.
+												li
+													span
+														| Spelling, grammar and punctuation. We do not rely solely on software spell checkers.
+												li
+													span Correct capitalization and lowercasing where required.
+												li
+													span Proper pagination and blank space elimination.
+												li
+													span Complete words. We spell out abbreviations or symbols in English.
+												li
+													span
+														| Correct residency information. Indicating the proper state is critical to ensure the document conforms to your state's requirements.
+												li
+													span
+														| Full names. We verify that full names are given (first and last) and that all names appear consistently throughout the document.
+												li
+													span Correct shipping addresses and email addresses to ensure timely delivery.
+											p
+												i *Not available in Missouri
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last.checked
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 Lifetime Customer Support
+										.flyout-content
+											.arrow
+											h3 Lifetime Customer Support
+											p
+												| We know that many questions and needs arise when forming a new business and it is nice to just be able to talk with a real person. Our business formation team members are available 7 days a week over the phone or by email to answer questions about your personalized LLC packet, new business documents, and related LegalZoom products and services.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last.checked
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 LegalZoom Business Newsletter
+										.flyout-content
+											.arrow
+											h3 LegalZoom Business Newsletter
+											p
+												| Our LegalZoom Business Newsletter is reserved for customers who have formed a business through LegalZoom. In addition to getting first insight into new products and special member-only discounts, the newsletter contains important notifications of changes in the law that could affect your LLC.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last.checked
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 LegalZoom Deluxe Organizer
+										.flyout-content
+											.arrow
+											h3 LegalZoom Deluxe Organizer
+											img(height='240', src='images/image-package-deluxe-organizer.jpg', width='380')
+											p
+												| Our organizer allows you to easily store and organize all of your LLC's critical legal documents. It is personalized and embossed with the name of your business.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 Official Certificates and Seal
+										.flyout-content
+											.arrow
+											h3 Official Certificates and Seal
+											img(height='240', src='images/image-package-certificate.jpg', width='380')
+											p
+												| We include certificates printed on high-quality bond paper to give the members of your LLC evidence of their ownership stake. We include a company seal which is used to stamp or emboss documents with your company's name, year of organization, and state of organization. Although a business is not legally required to use a company seal, many choose to use one on official documents, such as membership certificates, contracts, and deeds.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 PR and Social Media Suite (A $179 value)
+										.flyout-content
+											.arrow
+											h3 PR and Social Media Suite (A $179 value)
+											p
+												| Promote your business with a free PR and Social Media Suite from MyPRGenie.com to announce your business and generate buzz and leads.
+											p
+												| You receive a 1-year subscription to MyPRGenie's Basic PR and social media package (worth $179) absolutely free. You simply create an online business profile, write a story announcing your new business, and upload photos and videos. From there, MyPRGenie will help you generate visibility, awareness and publicity by getting your information on all the leading search engines, including Yahoo, Google and Bing, and in front of millions of people searching the Internet for businesses like yours.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second.checked
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 Essential Business Forms
+										.flyout-content
+											.arrow
+											h3 40 Essential Business Forms on CD-ROM
+											p
+												| LegalZoom has compiled a CD of many commonly used business forms to help you run your company more smoothly. Each form is fully customizable and available in a variety of formats. Sample forms include:
+											ul
+												li
+													span Employment Agreements
+												li
+													span Independent Contractor Agreements
+												li
+													span Bills of Sale
+												li
+													span Confidentiality Agreements
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 QuickBooks Online 3 Months Free (a $119 value)
+										.flyout-content
+											.arrow
+											h3 QuickBooks Online 3 Months Free (a $119 value)
+											p
+												| As a LegalZoom customer, you'll get a 3-month free subscription to QuickBooks Online, the #1 ranked accounting software.* With QuickBooks Online, you'll be in control of your finances, your time, your business—and where you work.
+											p You'll:
+											ul
+												li
+													span Simplify: with easy-to-use tools to get you started and free live support
+												li
+													span Save time: by automating time-consuming accounting tasks
+												li
+													span Organize: all your finances into one place to get the information you need fast
+												li
+													span Analyze: your business using in-depth tools to see where you stand
+												li
+													span Access: your data safely and securely from any Internet connection
+											p
+												| Redeem this exclusive offer from LegalZoom and your first 90 days are completely free—no credit card required—and you can cancel at any time.
+											p
+												| * Leader in cloud-based accounting based on 1.3 million number of paying customers as of August 2012. Any statements, claims and figures provided by third-party partners have not been independently verified by LegalZoom.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 Federal Tax ID (EIN) Prepration (A $30 value)
+										.flyout-content
+											.arrow
+											h3 Federal Tax ID (EIN) Prepration (A $30 value)
+											p
+												| LegalZoom will complete IRS Form SS-4 and send it to you, along with simple instructions on how to sign and submit the form to the IRS.
+											p
+												| Alternatively, if you'd rather have LegalZoom obtain your Federal Tax ID number, you'll save $30 on our EIN Obtainment service.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 Legal and Tax Advice, Business Forms and More
+										p.detail
+											| Get personalized advice from attorneys and tax specialists, unlimited access to our extensive library of downloadable forms, plus additional benefits with a 30-day free trial of our Business Advantage Pro plan.
+										p.detail
+											| After the 30-day trial period, benefits will continue automatically for $29.99 permonth until canceled. You can cancel any time with no further obligation by calling us.
+										.flyout-content
+											.arrow
+											h3 Legal and Tax Advice, Business Forms & More
+											p
+												| You want to spend your time running your new business, not worrying about legal or tax issues that could arise in the course of business. The LegalZoom Business Advantage Pro plan gives you the competitive edge you need to succeed in your new business. The plan is free to join and includes:
+											ul
+												li
+													span Advice from a licensed attorney to maximize your legal protection.
+												li
+													span Advice from a tax specialist to maximize your tax savings
+												li
+													span Free attorney drafted letters on behalf of your business
+												li
+													span Unlimited access to hundreds of critical business forms
+												li
+													span CreditAlert&#8482; Plus from Dun & Bradstreet Credibility Corp.
+												li
+													span 25% discount on an attorney follow up work (if applicable)
+												li
+													span 10% off any subsequent LegalZoom product purchases
+											a Learn more
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout.sub-item
+									.relative
+										h5 - Attorney Advice For Your Business
+										.flyout-content
+											.arrow
+											h3 LegalZoom Business Advantage Pro Membership
+											p
+												| Attorney advice on your business: shares and stock, liability, employees and hiring, trademarks, copyrights and other legal issues:
+											ul
+												li
+													span
+														| Free, unlimited 30-minute consultations with an attorney about new business or legal matters
+												li
+													span
+														| Get the one or two pieces of advice you need from an attorney, without paying a large retainer or being billed for hours you didn't use
+												li
+													span
+														| Attorney consultations over the phone – no need to leave the comfort of your home or office
+												li
+													span Coverage includes your spouse and dependents
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout.sub-item
+									.relative
+										h5 - Tax Advice For Your Business
+										.flyout-content
+											.arrow
+											h3 LegalZoom Business Advantage Pro Membership
+											p Tax advice from tax professionals at Corporate Tax Network*
+											p
+												| As a legal plan member, you have access to tax advice from tax professionals through our business partner, Corporate Tax Network.
+											ul
+												li
+													span
+														| Ask questions and get tax advice on an unlimited number of new tax-related matters for up to 30 minutes each phone call
+												li
+													span
+														| For additional work, you get an exclusive 20% discount on services including tax planning and preparation, bookkeeping and payroll services
+											p
+												| *LegalZoom does not provide tax advice or services. Tax professionals made available through Corporate Tax Network (CTN) are third-party independent contractors who agree to provide tax services directly to you, not through LegalZoom. LegalZoom makes no guarantees as to the substance of accountants' advice. CTN is not affiliated with attorneys made available through the legal plans.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 - Legal Document Review (up to 10 pages)
+										.flyout-content
+											.arrow
+											h3 LegalZoom Business Advantage Pro Membership
+											p
+												| Have your legal plan attorney review any contracts or legal documents up to 10 pages. For documents longer than 10 pages, you get a 25% discount on the attorney's regular hourly rate.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 - Credit Alert(TM) Plus from D&BCC
+										.flyout-content
+											.arrow
+											h3 LegalZoom Business Advantage Pro Membership
+											p With CreditAlert&#8482; Plus from Dun & Bradstreet Credibility Corp., you get:
+											p A D&B D-U-N-S® Number
+											ul
+												li
+													span
+														| A D&B D-U-N-S® Number is used by industries and organizations around the world as a global standard for business identification and tracking
+												li
+													span
+														| You receive the D&B D-U-N-S® Number 4-6 weeks after your business is officially formed
+											p CreditAlert&#8482;
+											ul
+												li
+													span Email alerts 24/7 when your company's D&B® scores and ratings go up or down
+												li
+													span Notifications of new major company events like lawsuits, liens and judgments
+												li
+													span
+														| A monthly summary of activity in your company's D&B credit file, including how many inquiries your business credit file received
+											p Credibility Review
+											ul
+												li
+													span A customizable profile in the D&B Credibility Review&#8482; online business directory
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 - LegalZoom Downloadable Forms
+										.flyout-content
+											.arrow
+											h3 LegalZoom Business Advantage Pro Membership
+											p You get access to hundreds of critical business forms.
+											ul
+												li
+													span
+														| Unlimited access to LegalZoom's extensive library of
+														u downloadable forms
+												li
+													span Forms are frequently updated by attorneys
+												li
+													span Many come with a detailed user guide that will help you complete the form
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr
+								td.flyout
+									.relative
+										h5 - Exclusive Member-Only Discounts
+										.flyout-content
+											.arrow
+											h3 LegalZoom Business Advantage Pro Membership
+											p Exclusive members-only discounts
+											p
+												| Whenever you need advice or additional services from an attorney or tax advisor that is outside of the legal plan, you get exclusive discounts. Plus, you save on any LegalZoom document service.
+											ul
+												li
+													span
+														| 25% off attorney's standard hourly rate on any other service provided by your plan attorney, including advice beyond the standard 30-minute consultation, complex legal matters, legal representation, and review of documents longer than 10 pages
+												li
+													span
+														| 20% off tax services, including tax planning and preparation, bookkeeping and payroll services
+												li
+													span
+														| 10% off all LegalZoom documents, including an LLC, C or S corporation, trademark, living trust, last will and more*
+											p
+												| *Some restrictions apply. See our
+												u Legal Plan Contract
+												| and
+												u Advantage Terms of Service
+												| for details. Any product discounts are applied at checkout.
+								td.best.checked
+									i.chart-icon-checkmark
+								td.second
+									i.chart-icon-checkmark
+								td.last
+									i.chart-icon-checkmark
+							tr.last
+								td.flyout
+									.relative
+										h5 LegalZoom LLC Packet Delivery
+										p.detail
+											| Once we create your personalized LegalZoom LLC Packet, we'll ship it directly to you.
+										.flyout-content
+											.arrow
+											h3 LegalZoom LLC Packet Delivery
+											p
+												| Once your new business is formed, we assemble all of your personalized, state-specific documents, certificates and guides into your LegalZoom LLC Packet. We deliver your personalized packet based on the shipping speed you select
+								td.best.checked
+									p.shipping 2-Days Shipping Free
+								td.second
+									p.shipping Standard Shipping $9.95
+								td.last
+									p.shipping Standard Shipping $9.95
+						tfoot
+							tr
+								td
+									| Select your package:
+								td.best
+									.package-label Express Gold
+									.package-price $359
+									.form-fields
+										input#express_gold(name='package_selection', type='radio')
+										label(for='express_gold')
+								td.second
+									.package-label Standard
+									.package-price $289
+									.form-fields
+										input#standard(name='package_selection', type='radio')
+										label(for='standard')
+								td.last
+									.package-label Economy
+									.package-price $99
+									.form-fields
+										input#economy(name='package_selection', type='radio')
+										label(for='economy')
+				hr
+
+				// page navigation 
+				ul.page-nav
+					li
+						a.link-back(href='checkout-01.html')
+							i.icon.lz-icon-blue.arrow-back
+							span Back
+					li
+						// orange button with icon on right 
+						a.button.orange.flex.has-right(href='checkout-03.html')
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Continue to summary
+				.clear
+				br
+				br
+
+		// site footer 
+		.footer
+			.divider
+			p.legal &copy; LegalZoom.com, Inc. All rights reserved.
+			p.legal
+				| Disclaimer: Communications between you and LegalZoom are protected by our 
+				a(href='#') Privacy Policy
+				|  but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our 
+				a(href='#') Terms of Use
+				| . LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).

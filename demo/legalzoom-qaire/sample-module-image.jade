@@ -1,0 +1,50 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+		meta(http-equiv='X-UA-compatible', content='chrome=1')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/app.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		//[if lte IE 8]
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//[if lte IE 9]
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+
+	body
+
+		// image module
+		.module-image
+			.shadow
+			//[lf lte IE 8]
+				img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+			.container
+				img(src='images/fpo/image-style-noframe.jpg')
+
+		// image module with frames
+		.module-image.framed
+			.shadow
+			//[lf lte IE 8]
+				img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+			.container
+				img(src='images/fpo/image-style-noframe.jpg')
+
+		// marquee image modules
+		.module-marquee
+			.module-image.main
+				.shadow
+				//[lf lte IE 8]
+					img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+				.container
+					img(src='images/fpo/image-marquee-1.jpg')
+			.module-image.support
+				.shadow
+				//[lf lte IE 8]
+					img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+				.container
+					img(src='images/fpo/image-marquee-2.jpg')

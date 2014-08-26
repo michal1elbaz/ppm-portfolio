@@ -1,0 +1,43 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+		meta(http-equiv='X-UA-compatible', content='chrome=1')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/app.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+
+	body
+
+		// diagonal banner with callout
+		.banner-diagonal
+			img(src='images/fpo/banner-diagonal.png', width='128', height='130')
+
+		// banner with folded corner
+		.banner-folded
+			.container
+				em Express Delivery
+				br
+				span 7-10 business days
+				.banner-fold-bottom
+				//[lf lte IE 8]
+					img.banner-fold-bottom-ie8(src='images/shadow-banner-fold-bottom.png')
+				.banner-bottom-corner
+		
+		// banner with skewed edges
+		.banner-skewed
+			.banner-left
+			.banner-right
+			.banner-center
+				em BEST VALUE
+				br
+				span Express filing, hand-delivered

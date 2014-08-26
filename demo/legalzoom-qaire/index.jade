@@ -1,0 +1,432 @@
+doctype html
+html
+	head
+		meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+		meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+		meta(content='chrome=1', http-equiv='X-UA-compatible')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/qaire.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		script(src='js/qaire.min.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+	body
+		// 960px site container 
+		.site-container
+			// header and logo for questionnaire 
+			.qaire-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+			
+			// steps nav 
+			ul.steps-solid
+				li.active
+					a
+						span.link About your business
+						span.arrow
+				li.inactive
+					a
+						span.link Name & address
+						span.arrow
+				li.inactive
+					a
+						span.link Owners & Mgmt
+						span.arrow
+				li.inactive
+					a
+						span.link Tax setup
+						span.arrow
+				li.inactive
+					a
+						span.link Business setup
+						span.arrow
+				li.inactive.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+			
+			// main content 
+			.content-main
+				h1 Where are you forming your business?
+				p We personalize all legal documents to the laws of the state you select. Many business owners form in the state where their business will be located.<br/>To learn more, <a href="#" class="help" id="learn_more">click here</a>.
+
+				
+				// state selection 
+				.form-group
+					.columns.small
+						.form-fields
+							input#Alabama(checked='checked', name='state', type='radio')
+							label(for='Alabama') Alabama
+						.form-fields
+							input#Alaska(name='state', type='radio')
+							label(for='Alaska') Alaska
+						.form-fields
+							input#Arizona(name='state', type='radio')
+							label(for='Arizona') Arizona
+						.form-fields
+							input#Arkansas(name='state', type='radio')
+							label(for='Arkansas') Arkansas
+						.form-fields
+							input#California(name='state', type='radio')
+							label(for='California') California
+						.form-fields
+							input#Colorado(name='state', type='radio')
+							label(for='Colorado') Colorado
+						.form-fields
+							input#Connecticut(name='state', type='radio')
+							label(for='Connecticut') Connecticut
+						.form-fields
+							input#Delaware(name='state', type='radio')
+							label(for='Delaware') Delaware
+						.form-fields
+							input#District_of_Columbia(name='state', type='radio')
+							label(for='District_of_Columbia') District of Columbia
+						.form-fields
+							input#Florida(name='state', type='radio')
+							label(for='Florida') Florida
+						.form-fields
+							input#Georgia(name='state', type='radio')
+							label(for='Georgia') Georgia
+						.form-fields
+							input#Hawaii(name='state', type='radio')
+							label(for='Hawaii') Hawaii
+						.form-fields
+							input#Idaho(name='state', type='radio')
+							label(for='Idaho') Idaho
+						.form-fields
+							input#Illinois(name='state', type='radio')
+							label(for='Illinois') Illinois
+						.form-fields
+							input#Indiana(name='state', type='radio')
+							label(for='Indiana') Indiana
+						.form-fields
+							input#Iowa(name='state', type='radio')
+							label(for='Iowa') Iowa
+						.form-fields
+							input#Kansas(name='state', type='radio')
+							label(for='Kansas') Kansas
+					.columns.small
+						.form-fields
+							input#Kentucky(name='state', type='radio')
+							label(for='Kentucky') Kentucky
+						.form-fields
+							input#Louisiana(name='state', type='radio')
+							label(for='Louisiana') Louisiana
+						.form-fields
+							input#Maine(name='state', type='radio')
+							label(for='Maine') Maine
+						.form-fields
+							input#Maryland(name='state', type='radio')
+							label(for='Maryland') Maryland
+						.form-fields
+							input#Massachusetts(name='state', type='radio')
+							label(for='Massachusetts') Massachusetts
+						.form-fields
+							input#Michigan(name='state', type='radio')
+							label(for='Michigan') Michigan
+						.form-fields
+							input#Minnesota(name='state', type='radio')
+							label(for='Minnesota') Minnesota
+						.form-fields
+							input#Mississippi(name='state', type='radio')
+							label(for='Mississippi') Mississippi
+						.form-fields
+							input#Missouri(name='state', type='radio')
+							label(for='Missouri') Missouri
+						.form-fields
+							input#Montana(name='state', type='radio')
+							label(for='Montana') Montana
+						.form-fields
+							input#Nebraska(name='state', type='radio')
+							label(for='Nebraska') Nebraska
+						.form-fields
+							input#Nevada(name='state', type='radio')
+							label(for='Nevada') Nevada
+						.form-fields
+							input#New_Hampshire(name='state', type='radio')
+							label(for='New_Hampshire') New Hampshire
+						.form-fields
+							input#New_Jersey(name='state', type='radio')
+							label(for='New_Jersey') New Jersey
+						.form-fields
+							input#New_Mexico(name='state', type='radio')
+							label(for='New_Mexico') New Mexico
+						.form-fields
+							input#New_York(name='state', type='radio')
+							label(for='New_York') New York
+						.form-fields
+							input#North_Carolina(name='state', type='radio')
+							label(for='North_Carolina') North Carolina
+					.columns.small
+						.form-fields
+							input#North_Dakota(name='state', type='radio')
+							label(for='North_Dakota') North Dakota
+						.form-fields
+							input#Ohio(name='state', type='radio')
+							label(for='Ohio') Ohio
+						.form-fields
+							input#Oklahoma(name='state', type='radio')
+							label(for='Oklahoma') Oklahoma
+						.form-fields
+							input#Oregon(name='state', type='radio')
+							label(for='Oregon') Oregon
+						.form-fields
+							input#Pennsylvania(name='state', type='radio')
+							label(for='Pennsylvania') Pennsylvania
+						.form-fields
+							input#Rhode_Island(name='state', type='radio')
+							label(for='Rhode_Island') Rhode Island
+						.form-fields
+							input#South_Carolina(name='state', type='radio')
+							label(for='South_Carolina') South Carolina
+						.form-fields
+							input#South_Dakota(name='state', type='radio')
+							label(for='South_Dakota') South Dakota
+						.form-fields
+							input#Tennessee(name='state', type='radio')
+							label(for='Tennessee') Tennessee
+						.form-fields
+							input#Texas(name='state', type='radio')
+							label(for='Texas') Texas
+						.form-fields
+							input#Utah(name='state', type='radio')
+							label(for='Utah') Utah
+						.form-fields
+							input#Vermont(name='state', type='radio')
+							label(for='Vermont') Vermont
+						.form-fields
+							input#Virginia(name='state', type='radio')
+							label(for='Virginia') Virginia
+						.form-fields
+							input#Washington(name='state', type='radio')
+							label(for='Washington') Washington
+						.form-fields
+							input#West_Virginia(name='state', type='radio')
+							label(for='West_Virginia') West Virginia
+						.form-fields
+							input#Wisconsin(name='state', type='radio')
+							label(for='Wisconsin') Wisconsin
+						.form-fields
+							input#Wyoming(name='state', type='radio')
+							label(for='Wyoming') Wyoming
+					.clear
+				.form-group.save-your-work
+					h3 Your email address (optional)
+					p.tight We'll email you a link to your saved answers
+					.form-fields
+						input(placeholder='Your email address', type='text')
+					p.sign-in-link.tight
+						| Already a member? 
+						a(onclick='openModalID(\'signin\');') Sign in here
+				hr.top-space
+				
+				// orange button with icon on right 
+				a.button.orange.flex.has-right(href='qaire-02.html')
+					span.button-right
+						span.inner
+							i.icon.button-icon.arrow-large
+					span.button-center Save and continue
+				br
+				br
+			
+			// sidebar 
+			.content-sidebar
+				.qaire-sidebar
+					.customer-service
+					blockquote
+						.open &#8220;
+						p.quote Easy. Efficient. Wonderful experience starting my LLC. Went to the bank today and all my paperwork was ready and professionally presented. Thank you Legal Zoom!!!
+							span.close  &#8221;
+						.from - Christopher W., Phoenixville, PA
+			.clear
+		
+		// site footer 
+		.footer
+			.divider
+			p.legal &copy; LegalZoom.com, Inc. All rights reserved.
+			p.legal
+				| Disclaimer: Communications between you and LegalZoom are protected by our 
+				a(href='#') Privacy Policy
+				| but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our 
+				a(href='#') Terms of Use
+				| . LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).
+		
+		// tooltip container 
+		.tooltip-container
+			#learn_more_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p
+					| The majority of our customers form their LLC in the state where they plan to locate and run their business. However, the following types of businesses often choose to form their business in Delaware:
+				ul
+					li Businesses seeking investments from venture capital groups
+					li Businesses with plans for an initial public offering (IPO) in the next few years
+				p
+					| If you form your business in a state other than where it will be located, your business will most likely have to file additional paperwork and pay additional fees to "foreign qualify" in the state where the business is located.
+				p
+					| If you have more questions about business formation or foreign qualification, please call us at 
+					a (855) 773-0880
+					| .
+				p
+					a(onclick='openModalID(\'sample_documents\');') Click here for sample
+		
+		// modals 
+		#sample_documents.modal.text
+			.container
+				a.close
+				img.shadow(src='images/shadow-curved-photo-md.png')
+				.overlay
+				.content
+					h2 Sample Documents
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet placerat sagittis. Proin porta dui in erat tincidunt nec placerat libero elementum.
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet placerat sagittis. Proin porta dui in erat tincidunt nec placerat libero elementum. Donec semper, turpis ultrices interdum mattis, ante augue sollicitudin enim, ut vehicula lacus dolor vitae sapien. Etiam lectus arcu, vestibulum ullamcorper porttitor sed, faucibus et leo. Donec ac enim in ipsum rutrum tincidunt. Praesent sapien sapien, imperdiet ut varius vel, euismod pharetra quam. Nam consectetur, est tincidunt sagittis ultricies, arcu nibh elementum sapien, id porta urna turpis mollis massa. Fusce sodales diam sit amet dui vehicula mollis a eget neque.
+					.columns.small
+						ul
+							li
+								a Alabama
+							li
+								a Alaska
+							li
+								a Arizona
+							li
+								a Arkansas
+							li
+								a California
+							li
+								a Colorado
+							li
+								a Connecticut
+							li
+								a Delaware
+							li
+								a District of Columbia
+							li
+								a Florida
+							li
+								a Georgia
+					.columns.small
+						ul
+							li
+								a Louisiana
+							li
+								a Maine
+							li
+								a Maryland
+							li
+								a Massachusetts
+							li
+								a Michigan
+							li
+								a Minnesota
+							li
+								a Mississippi
+							li
+								a Missouri
+							li
+								a Montana
+					.columns.small
+						ul
+							li
+								a Oklahoma
+							li
+								a Oregon
+							li
+								a Pennsylvania
+							li
+								a Rhode Island
+							li
+								a South Carolina
+							li
+								a South Dakota
+							li
+								a Tennessee
+		#signin.modal.text.sign-in-modal
+			.container
+				a.close
+				img.shadow(src='images/shadow-curved-photo-md.png')
+				.overlay
+				.content
+					h1 Sign In
+					p
+						| Save your work by entering your email address below. Your 
+						a personal information will remain private
+						| .
+					h2 New account
+					.form-group
+						.form-field
+							label Email address
+							br
+							input.short(type='text')
+							.error-text
+						.form-field
+							label Password
+							br
+							input.shortest(type='password')
+							.error-text
+						.form-field
+							label Confirm password
+							br
+							input.shortest(type='password')
+							.error-text
+						a.button.flex.has-right
+							span.button-right
+								i.icon.button-icon.arrow
+							span.button-center New account
+						.clear
+					h2 Existing account
+					.form-group
+						.form-field
+							label Email address
+							br
+							input.short(type='text')
+							.error-text
+						.form-field
+							label Password
+							br
+							input.shortest(type='password')
+							.error-text
+						a.button.flex.has-right
+							span.button-right
+								i.icon.button-icon.arrow
+							span.button-center Existing account
+						.clear
+						a.forgot-password-link Forgot your password? Click here
+					.forgot-password
+						h2 Forgot password
+						p.tight
+							| Enter your email address below and we will email you instructions on how to reset your password.
+						.form-group
+							.form-field
+								label Email address
+								br
+								input.short(type='text')
+								.error-text
+							.form-field
+								label Re-enter email address
+								br
+								input.short(type='text')
+								.error-text
+							a.button.flex.has-right
+								span.button-right
+									i.icon.button-icon.arrow
+								span.button-center Reset password
+							.clear
+		.modal.external
+			.container
+				a.close
+				.shadow
+				//[lf lte IE 8]
+					img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+				.overlay
+				.content
+		.modal-overlay

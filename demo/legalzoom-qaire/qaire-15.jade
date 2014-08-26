@@ -1,0 +1,192 @@
+doctype html
+html
+	head
+		meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+		meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+		meta(content='chrome=1', http-equiv='X-UA-compatible')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/qaire.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		script(src='js/qaire.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+	body
+		// 960px site container 
+		.site-container
+			
+			// header and logo for questionnaire 
+			.qaire-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+			
+			// steps nav 
+			ul.steps-solid
+				li.completed
+					a
+						span.link About your business
+						span.arrow
+				li.completed
+					a
+						span.link Name & address
+						span.arrow
+				li.completed
+					a
+						span.link Owners & Mgmt
+						span.arrow
+				li.active
+					a
+						span.link Tax setup
+						span.arrow
+				li.inactive
+					a
+						span.link Business setup
+						span.arrow
+				li.inactive.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+			
+			// main content 
+			.content-main
+				h1 Now, on to your business tax setup
+				p
+					| We can help your business get a federal tax identification number as well as a consultation on best practices to maximize your tax savings.
+				h3 Do you want help getting a federal tax ID (EIN)?
+				p
+					| Most businesses are required to obtain a federal tax identification number (also known as an EIN) from the IRS. This number is used when filing tax returns, opening business bank accounts, or paying employees (if applicable). Additionally, an EIN keeps your personal social security number private in business transactions.
+				p
+					| We can do all of the work to obtain the tax identification number for you or just prepare your paperwork for you to file yourself. (
+					a#help_ein.help see fee details
+					| ).
+				.form-group
+					.form-fields
+						input#ein_01(checked='checked', name='ein', type='radio')
+						label(for='ein_01') Yes, please obtain a tax identification number for my business
+					.form-fields
+						input#ein_02(name='ein', type='radio')
+						label(for='ein_02') Yes, please prepare the paperwork and I will file on my own
+					.form-fields
+						input#ein_03(name='ein', type='radio')
+						label(for='ein_03') No
+					a#help_ein_answer.help.icon.lz-icon-help.orange.small.desc
+						| How did most people answer this question?
+				h3 Do you want a free consultation on reducing your taxes?
+				p
+					| Taxes can be one of the biggest expenses for your business every year. We have partnered with Corporate Tax Network to provide a webinar and a free consultation with a tax professional focused on reducing tax expenses for your business ($199 value). To learn more, 
+					a#help_ctn.help click here
+					| .
+				.form-group
+					.form-fields
+						input#ctn_01(checked='checked', name='ctn', type='radio')
+						label(for='ctn_01') Yes, I would like to learn about reducing my tax expenses
+					.form-fields
+						input#ctn_02(name='ctn', type='radio')
+						label(for='ctn_02') No thanks
+				hr.top-space
+				
+				// page navigation 
+				ul.page-nav
+					li
+						a.link-back(href='qaire-13.html')
+							i.icon.lz-icon-blue.arrow-back
+							span Back
+					li
+						// orange button with icon on right 
+						a.button.orange.flex.has-right(href='qaire-16.html')
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Save & continue
+				.clear
+				br
+				br
+			
+			// sidebar 
+			.content-sidebar
+				.qaire-sidebar
+					.customer-service
+					blockquote
+						.open &#8220;
+						p.quote
+							| Excellent experience. Very smooth and extremely reasonable on the cost.
+							span.close  &#8221; 
+						.from - Creed N., Tuscola, TX
+			.clear
+		
+		// site footer 
+		.footer
+			.divider
+			p.legal &copy; LegalZoom.com, Inc. All rights reserved.
+			p.legal
+				| Disclaimer: Communications between you and LegalZoom are protected by our 
+				a(href='#') Privacy Policy
+				| but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our 
+				a(href='#') Terms of Use
+				| . LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).
+		
+		// tooltip container 
+		.tooltip-container
+			#help_ein_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p
+					| Over 70% of our customers choose to have LegalZoom obtain an EIN for their business. A much smaller number choose to have us complete their paperwork so they can file it with the IRS on your own. The fee of each option is based on the package you select at checkout.
+				p Our fee to obtain a tax identification for your business:
+				ul
+					li $49 with the Express Gold package
+					li $79 with the Economy or Standard package
+				p Our fee to create the paperwork for your business:
+				ul
+					li Included with the Express Gold package
+					li $30 with the Economy or Standard package
+				p
+					| If you have more questions about business owners, please call us at (855) 773-0880.
+			#help_ein_answer_tooltip.tooltip
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p Our customers answered...
+				p
+					| Yes, obtain tax identification - 76%
+					br
+					| Yes, prepare the IRS form only - 6%
+					br
+					| No - 21%
+				p Based on a sample of more than 40,000 LLC customers in 2013.
+			#help_ctn_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p During your free one hour webinar and consultation, you'll learn:
+				ul
+					li How your business is taxed
+					li How to stay in compliance with IRS requirements
+					li Recent tax law changes that affect your business
+					li Commonly missed deductions
+					li The right way to pay yourself
+					li What happens when you have a loss or profit
+					li Using proper bank accounts
+					li Tax strategies of the wealthy
+					li And more
+				p
+					| The tax information can save you time and money. There's no risk or obligation on your part to continue to use the service after the free webinar and consultation. If you have more questions about business owners, please call us at (855) 773-0880.
+		
+		// modals 
+		.modal
+			.container
+				a.close
+				.shadow
+				//[lf lte IE 8]
+					img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+				.overlay
+				.content
+
+		.modal-overlay

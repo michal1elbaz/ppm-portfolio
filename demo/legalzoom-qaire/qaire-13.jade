@@ -1,0 +1,192 @@
+doctype html
+html
+	head
+		meta(content='text/html; charset=utf-8', http-equiv='Content-Type')
+		meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+		meta(content='chrome=1', http-equiv='X-UA-compatible')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/qaire.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		script(src='js/qaire.min.js', type='text/javascript')
+		//if lte IE 8
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//if lte IE 9
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+	body
+		// 960px site container 
+		.site-container
+			
+			// header and logo for questionnaire 
+			.qaire-header
+				a.lz-logo(href='#') LegalZoom
+				h1 Creating Your LLC
+			
+			// steps nav 
+			ul.steps-solid
+				li.completed
+					a
+						span.link About your business
+						span.arrow
+				li.completed
+					a
+						span.link Name & address
+						span.arrow
+				li.active
+					a
+						span.link Owners & Mgmt
+						span.arrow
+				li.inactive
+					a
+						span.link Tax setup
+						span.arrow
+				li.inactive
+					a
+						span.link Business setup
+						span.arrow
+				li.inactive.last
+					a
+						span.link Place order
+						span.arrow
+			.clear
+			
+			// main content 
+			.content-main
+				h1 Who will be the registered agent?
+				p
+					| Selecting a registered agent for your company is smart business, it's required by law. LegalZoom can help protect your privacy as well as keep you in good legal standing by providing reliable and affordable registered agent services.
+				h3 LegalZoom Registered Agent Service
+				ul.expandable
+					li
+						i.icon.icon-caret-right
+						a Business Compliance
+						ul
+							li
+								| We help keep your business in good legal standing with monthly email alerts of important state and federal filing requirements and deadlines
+							li
+								| We meet all registered agent legal requirements, and provide you with access to our Compliance Calendar, as well as customer support to answer your questions
+					li
+						i.icon.icon-caret-right
+						a Privacy
+						ul
+							li
+								| Our information, rather than yours, becomes public on state records and websites so your privacy is better protected
+							li
+								| You'll be less likely to be notified of a lawsuit in front of customers, employees, or guests because we accept service of process on your behalf
+							li
+								| We promptly and discreetly forward all legal documents, official state correspondence and other important mail that we receive on your behalf
+					li
+						i.icon.icon-caret-right
+						a Convenience
+						ul
+							li
+								| We maintain normal business hours, so you can rest assured that we'll receive your important documents even while you're on vacation or out of the office
+							li
+								| We archive and securely store copies of all important mail that we receive on your behalf and can send you replacement copies if yours are lost or misplaced
+							li
+								| We help save you time by filtering out unnecessary "junk" mail for you
+				p
+					| Since our registered agent service only starts when your LLC is legally effective, there is no immediate charge.
+					b
+						| When we receive official notification that your LLC has been registered, your card will automatically be charged $159.
+					| The service renews automatically each year thereafter for the same price, billed to your card, but you may cancel by calling us. To learn more, 
+					a#help_ra.help click here
+					| .
+				.form-group
+					.form-fields.select
+						.select-field.wide
+							.select-arrow-container
+								.select-arrow
+							select#param_ra(name='ra')
+								optgroup
+									option LegalZoom will serve as my registered agent
+									option I will enter the name of my registered agent
+				
+				hr.top-space
+				
+				// page navigation 
+				ul.page-nav
+					li
+						a.link-back(href='qaire-12s.html')
+							i.icon.lz-icon-blue.arrow-back
+							span Back
+					li
+						// orange button with icon on right 
+						a.button.orange.flex.has-right(href='qaire-15.html')
+							span.button-right
+								span.inner
+									i.icon.button-icon.arrow-large
+							span.button-center Save & continue
+				.clear
+				br
+				br
+			
+			// sidebar 
+			.content-sidebar
+				.qaire-sidebar
+					.customer-service
+					blockquote
+						.open &#8220;
+						p.quote
+							| I was astonished by how easy it was to work with LegalZoom. I was able to quickly and easily complete all the necessary work. The level of personalized customer service was unusual and I have been very, very happy with my experience. I have already referred 2 people to LegalZoom.
+							span.close  &#8221;
+						.from - Leah P., Pittsford, NY
+			.clear
+		
+		// site footer 
+		.footer
+			.divider
+			p.legal &copy; LegalZoom.com, Inc. All rights reserved.
+			p.legal
+				| Disclaimer: Communications between you and LegalZoom are protected by our 
+				a(href='#') Privacy Policy
+				| but not by the attorney-client privilege or as work product. LegalZoom provides access to independent attorneys and self-help services at your specific direction. We are not a law firm or a substitute for an attorney or law firm. We cannot provide any kind of advice, explanation, opinion, or recommendation about possible legal rights, remedies, defenses, options, selection of forms or strategies. Your access to the website is subject to our 
+				a(href='#') Terms of Use
+				| . LegalZoom.com, Inc., 101 N Brand Blvd, 11th Floor, Glendale, CA 91203 is a registered and bonded legal document assistant, #0104, Los Angeles County (exp. 12/13).
+		
+		// tooltip container 
+		.tooltip-container
+			#help_ra_tooltip.tooltip.wide
+				.arrow.left
+				.close
+					i.icon.icon-tooltip-close
+				p
+					| A Registered Agent may also be called a "Statutory Agent," "Resident Agent," "Clerk," or "Agent for Service of Process," depending on the state in which you are forming your entity.
+				p
+					| When specifying a registered agent for your business, the agent must either be (1) an adult individual living in the state of formation with a valid street address (no P.O. boxes), or (2) a company, such as LegalZoom, authorized to serve as an agent.
+				p If you choose your own registered agent:
+				ul
+					li
+						| The agent must have a PHYSICAL address (no P.O. boxes) in the state of formation, and the name and address will become PUBLIC information on state records
+					li The agent will receive "junk” mail solicitations on your behalf
+					li
+						| Process servers will visit the address listed by the agent to deliver service of process
+				p If you choose LegalZoom as your registered agent:
+				ul
+					li
+						| Our information becomes public on state records and websites so your privacy is better protected
+					li
+						| We send you monthly email alerts of important state and federal filing requirements and deadlines
+					li
+						| You'll have unlimited access to the LegalZoom Corporate Center and you can call us with any questions you may have about state and federal filing requirements
+					li
+						| We accept service of process, and promptly and discreetly forward all legal documents and official state correspondence that we receive on your behalf
+					li
+						| We archive and securely store copies of all important mail that we receive on your behalf and can send you replacement copies if yours are lost or misplaced
+				p
+					| LegalZoom's registered agent service only starts when your LLC is legally effective. The cost is $159 per year, but there is no immediate charge. At the time we receive official notification that your LLC has been registered, your card will automatically be charged $159. The service renews annually thereafter for the same fee, billed to your card. You may cancel the service at any time by calling us at (866) 698-0052, or service will continue.
+		
+		// modals 
+		.modal
+			.container
+				a.close
+				.shadow
+				//[lf lte IE 8]
+					img.shadow-ie8(src='images/shadow-curved-photo-md.png')
+				.overlay
+				.content
+
+		.modal-overlay

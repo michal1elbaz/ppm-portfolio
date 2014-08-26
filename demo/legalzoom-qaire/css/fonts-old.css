@@ -1,0 +1,176 @@
+/***
+	Pluto Sans font styles
+	imported from 'fonts.css'
+***/
+
+/* Pluto Sans Regular */
+
+@font-face {
+	font-family: 'psRegular';
+	src: url('../fonts/2753F5_13_0.eot');
+	src: url('../fonts/2753F5_13_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_13_0.svg#wf') format('svg'),url('../fonts/2753F5_13_0.woff') format('woff'),url('../fonts/2753F5_13_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'psRegular';
+	src: url('../fonts/2753F5_6_0.eot');
+	src: url('../fonts/2753F5_6_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_6_0.svg#wf') format('svg'),url('../fonts/2753F5_6_0.woff') format('woff'),url('../fonts/2753F5_6_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* subsituting psMedium as the bold font for psRegular, because the regular bold font is too heavy */
+@font-face {
+	font-family: 'psRegular';
+	src: url('../fonts/2753F5_1F_0.eot');
+	src: url('../fonts/2753F5_1F_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_1F_0.svg#wf') format('svg'),url('../fonts/2753F5_1F_0.woff') format('woff'),url('../fonts/2753F5_1F_0.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* leaving the regular bold font as an extra bold font we'll use in special cases */
+@font-face {
+	font-family: 'psRegular-Bold';
+	src: url('../fonts/2753F5_14_0.eot');
+	src: url('../fonts/2753F5_14_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_14_0.svg#wf') format('svg'),url('../fonts/2753F5_14_0.woff') format('woff'),url('../fonts/2753F5_14_0.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'psRegular';
+	src: url('../fonts/2753F5_1_0.eot');
+	src: url('../fonts/2753F5_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_1_0.svg#wf') format('svg'),url('../fonts/2753F5_1_0.woff') format('woff'),url('../fonts/2753F5_1_0.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+/* Pluto Sans Thin */
+/*
+@font-face {font-family: 'psThinItalic';src: url('../fonts/2753F5_7_0.eot');src: url('../fonts/2753F5_7_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_7_0.svg#wf') format('svg'),url('../fonts/2753F5_7_0.woff') format('woff'),url('../fonts/2753F5_7_0.ttf') format('truetype');}
+@font-face {font-family: 'psThin';src: url('../fonts/2753F5_11_0.eot');src: url('../fonts/2753F5_11_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_11_0.svg#wf') format('svg'),url('../fonts/2753F5_11_0.woff') format('woff'),url('../fonts/2753F5_11_0.ttf') format('truetype');}
+*/
+
+/* Pluto Sans Medium */
+
+@font-face {
+	font-family: 'psMedium';
+	src: url('../fonts/2753F5_1F_0.eot');
+	src: url('../fonts/2753F5_1F_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_1F_0.svg#wf') format('svg'),url('../fonts/2753F5_1F_0.woff') format('woff'),url('../fonts/2753F5_1F_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'psMedium';
+	src: url('../fonts/2753F5_5_0.eot');
+	src: url('../fonts/2753F5_5_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_5_0.svg#wf') format('svg'),url('../fonts/2753F5_5_0.woff') format('woff'),url('../fonts/2753F5_5_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+
+/* Pluto Sans Black */
+/*
+@font-face {font-family: 'psBlackItalic';src: url('../fonts/2753F5_0_0.eot');src: url('../fonts/2753F5_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_0_0.svg#wf') format('svg'),url('../fonts/2753F5_0_0.woff') format('woff'),url('../fonts/2753F5_0_0.ttf') format('truetype');}
+@font-face {font-family: 'psBlack';src: url('../fonts/2753F5_10_0.eot');src: url('../fonts/2753F5_10_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_10_0.svg#wf') format('svg'),url('../fonts/2753F5_10_0.woff') format('woff'),url('../fonts/2753F5_10_0.ttf') format('truetype');}
+*/
+
+/* Pluto Sans Heavy */
+/*
+@font-face {font-family: 'psHeavyItalic';src: url('../fonts/2753F5_3_0.eot');src: url('../fonts/2753F5_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_3_0.svg#wf') format('svg'),url('../fonts/2753F5_3_0.woff') format('woff'),url('../fonts/2753F5_3_0.ttf') format('truetype');}
+@font-face {font-family: 'psHeavy';src: url('../fonts/2753F5_1D_0.eot');src: url('../fonts/2753F5_1D_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_1D_0.svg#wf') format('svg'),url('../fonts/2753F5_1D_0.woff') format('woff'),url('../fonts/2753F5_1D_0.ttf') format('truetype');}
+*/
+
+/* Pluto Sans Light */
+
+@font-face {
+	font-family: 'psLight';
+	src: url('../fonts/2753F5_1E_0.eot');
+	src: url('../fonts/2753F5_1E_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_1E_0.svg#wf') format('svg'),url('../fonts/2753F5_1E_0.woff') format('woff'),url('../fonts/2753F5_1E_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'psLight';
+	src: url('../fonts/2753F5_4_0.eot');
+	src: url('../fonts/2753F5_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_4_0.svg#wf') format('svg'),url('../fonts/2753F5_4_0.woff') format('woff'),url('../fonts/2753F5_4_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+/* Pluto Sans Extra Light */
+/*
+@font-face {font-family: 'psExtraLightItalic';src: url('../fonts/2753F5_2_0.eot');src: url('../fonts/2753F5_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_2_0.svg#wf') format('svg'),url('../fonts/2753F5_2_0.woff') format('woff'),url('../fonts/2753F5_2_0.ttf') format('truetype');}
+@font-face {font-family: 'psExtraLight';src: url('../fonts/2753F5_1C_0.eot');src: url('../fonts/2753F5_1C_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_1C_0.svg#wf') format('svg'),url('../fonts/2753F5_1C_0.woff') format('woff'),url('../fonts/2753F5_1C_0.ttf') format('truetype');}
+*/
+
+/*** Pluto Sans Condensed font styles starts here ***/
+
+/* Pluto Sans Condensed */
+/*
+@font-face {font-family: 'psCondBoldItalic';src: url('../fonts/2753F5_9_0.eot');src: url('../fonts/2753F5_9_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_9_0.svg#wf') format('svg'),url('../fonts/2753F5_9_0.woff') format('woff'),url('../fonts/2753F5_9_0.ttf') format('truetype');}
+@font-face {font-family: 'psCondRegularItalic';src: url('../fonts/2753F5_E_0.eot');src: url('../fonts/2753F5_E_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_E_0.svg#wf') format('svg'),url('../fonts/2753F5_E_0.woff') format('woff'),url('../fonts/2753F5_E_0.ttf') format('truetype');}
+@font-face {font-family: 'psCondBold';src: url('../fonts/2753F5_16_0.eot');src: url('../fonts/2753F5_16_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_16_0.svg#wf') format('svg'),url('../fonts/2753F5_16_0.woff') format('woff'),url('../fonts/2753F5_16_0.ttf') format('truetype');}
+@font-face {font-family: 'psCondRegular';src: url('../fonts/2753F5_1B_0.eot');src: url('../fonts/2753F5_1B_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_1B_0.svg#wf') format('svg'),url('../fonts/2753F5_1B_0.woff') format('woff'),url('../fonts/2753F5_1B_0.ttf') format('truetype');}
+*/
+
+/* Pluto Sans Condensed Thin */
+/*
+@font-face {font-family: 'psCondThinItalic';src: url('../fonts/2753F5_F_0.eot');src: url('../fonts/2753F5_F_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_F_0.svg#wf') format('svg'),url('../fonts/2753F5_F_0.woff') format('woff'),url('../fonts/2753F5_F_0.ttf') format('truetype');}
+@font-face {font-family: 'psCondThin';src: url('../fonts/2753F5_12_0.eot');src: url('../fonts/2753F5_12_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_12_0.svg#wf') format('svg'),url('../fonts/2753F5_12_0.woff') format('woff'),url('../fonts/2753F5_12_0.ttf') format('truetype');}
+*/
+
+/* Pluto Sans Condensed Medium */
+
+@font-face {
+	font-family: 'psCondMedium';
+	src: url('../fonts/2753F5_1A_0.eot');
+	src: url('../fonts/2753F5_1A_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_1A_0.svg#wf') format('svg'),url('../fonts/2753F5_1A_0.woff') format('woff'),url('../fonts/2753F5_1A_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'psCondMedium';
+	src: url('../fonts/2753F5_D_0.eot');
+	src: url('../fonts/2753F5_D_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_D_0.svg#wf') format('svg'),url('../fonts/2753F5_D_0.woff') format('woff'),url('../fonts/2753F5_D_0.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+/* Pluto Sans Condensed Black */
+/*
+@font-face {font-family: 'psCondBlack';src: url('../fonts/2753F5_15_0.eot');src: url('../fonts/2753F5_15_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_15_0.svg#wf') format('svg'),url('../fonts/2753F5_15_0.woff') format('woff'),url('../fonts/2753F5_15_0.ttf') format('truetype');}
+*/
+
+/* Pluto Sans Condensed Heavy */
+/*
+@font-face {font-family: 'psCondHeavyItalic';src: url('../fonts/2753F5_B_0.eot');src: url('../fonts/2753F5_B_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_B_0.svg#wf') format('svg'),url('../fonts/2753F5_B_0.woff') format('woff'),url('../fonts/2753F5_B_0.ttf') format('truetype');}
+@font-face {font-family: 'psCondHeavy';src: url('../fonts/2753F5_18_0.eot');src: url('../fonts/2753F5_18_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_18_0.svg#wf') format('svg'),url('../fonts/2753F5_18_0.woff') format('woff'),url('../fonts/2753F5_18_0.ttf') format('truetype');}
+*/
+
+/* Pluto Sans Condensed Light */
+/*
+@font-face {font-family: 'psCondLightItalic';src: url('../fonts/2753F5_C_0.eot');src: url('../fonts/2753F5_C_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_C_0.svg#wf') format('svg'),url('../fonts/2753F5_C_0.woff') format('woff'),url('../fonts/2753F5_C_0.ttf') format('truetype');}
+@font-face {font-family: 'psCondLight';src: url('../fonts/2753F5_19_0.eot');src: url('../fonts/2753F5_19_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_19_0.svg#wf') format('svg'),url('../fonts/2753F5_19_0.woff') format('woff'),url('../fonts/2753F5_19_0.ttf') format('truetype');}
+*/
+
+/* Pluto Sans Condensed Extra Light */
+/*
+@font-face {font-family: 'psCondExLightItalic';src: url('../fonts/2753F5_A_0.eot');src: url('../fonts/2753F5_A_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_A_0.svg#wf') format('svg'),url('../fonts/2753F5_A_0.woff') format('woff'),url('../fonts/2753F5_A_0.ttf') format('truetype');}
+@font-face {font-family: 'psCondExLight';src: url('../fonts/2753F5_17_0.eot');src: url('../fonts/2753F5_17_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_17_0.svg#wf') format('svg'),url('../fonts/2753F5_17_0.woff') format('woff'),url('../fonts/2753F5_17_0.ttf') format('truetype');}
+*/
+
+/* Pluto Sans Condensed Black */
+/*
+@font-face {font-family: 'psCondBlackItalic';src: url('../fonts/2753F5_8_0.eot');src: url('../fonts/2753F5_8_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2753F5_8_0.svg#wf') format('svg'),url('../fonts/2753F5_8_0.woff') format('woff'),url('../fonts/2753F5_8_0.ttf') format('truetype');}
+*/
+

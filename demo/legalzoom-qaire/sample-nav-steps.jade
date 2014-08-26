@@ -1,0 +1,81 @@
+doctype html
+html
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+		meta(http-equiv='X-UA-compatible', content='chrome=1')
+		title Legalzoom
+		link(href='css/html5-doctor-reset-stylesheet.min.css', rel='stylesheet', type='text/css')
+		link(href='css/font-awesome.css', rel='stylesheet', type='text/css')
+		link(href='css/app.css', rel='stylesheet', type='text/css')
+		script(src='js/modernizr-2.6.2.js', type='text/javascript')
+		script(src='js/jquery-1.10.1.min.js', type='text/javascript')
+		script(src='js/app.min.js', type='text/javascript')
+		//[if lte IE 8]
+			link(href='css/ie8.css', rel='stylesheet', type='text/css')
+		//[if lte IE 9]
+			link(href='css/ie9.css', rel='stylesheet', type='text/css')
+
+	body
+		ul.steps-solid
+			li.completed
+				a(href='#')
+					span.link 1. Start
+					span.arrow
+			li.active
+				a(href='#')
+					span.link 2. Info
+					span.arrow
+			li
+				a(href='#')
+					span.link 3. Your
+					span.arrow
+			li
+				a(href='#')
+					span.link 4. Tax
+					span.arrow
+			li
+				a(href='#')
+					span.link 5. Step
+					span.arrow
+			li.inactive
+				a(href='#')
+					span.link 6. End
+					span.arrow
+		.clear
+
+		br
+
+		ul.steps-normal
+			li.completed
+				a(href='#')
+					span.arrow
+					span.number 1
+					span.link Start
+			li.active
+				a(href='#')
+					span.arrow
+					span.number 2
+					span.link Info
+			li
+				a(href='#')
+					span.arrow
+					span.number 3
+					span.link Your
+			li
+				a(href='#')
+					span.arrow
+					span.number 4
+					span.link Tax
+			li
+				a(href='#')
+					span.arrow
+					span.number 5
+					span.link Step
+			li.inactive
+				a(href='#')
+					span.arrow
+					span.number 6
+					span.link End
+		.clear
+	

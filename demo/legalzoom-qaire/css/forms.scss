@@ -1,0 +1,301 @@
+/*
+	form style and layout - basic input, checkbox, radio box, textarea, select dropdown styling
+	imported from 'forms.scss'
+*/
+
+.form-group {
+	padding: 0 0 30px 0;
+	&.tight {
+		padding-bottom: 10px;
+	}
+	h4 {
+		margin: 1em 0 0.2em 0;
+	}
+	p {
+		&.sign-in-link {
+			font-size: 12px;
+			margin-left: 4px;
+		}
+		&.notes {
+			font-size: 11px;
+		}
+	}
+	label {
+		font-size: 12px;
+		padding: 0 0 0 3px;
+		position: relative;
+		line-height: 1;
+		font-weight: normal;
+		&.column {
+			display: inline-block;
+			width: 110px;
+			margin-right: 4px;
+			font-size: 14px;
+		}
+	}
+	.form-fields {
+		list-style: none;
+		margin: 0 0 8px 0;
+		&.select {
+			.lz-icon-help {
+				top: -8px;
+			}
+			label.column {
+				margin: 17px 7px 0 0;
+				float: left;
+			}
+			label {
+				padding-top: 4px;
+				padding-bottom: 2px;
+				display: block;
+			}
+		}
+	}
+	.lz-icon-help {
+		top: 5px;
+		margin: 0 0 0 4px;
+		position: relative;
+	}
+	.error-text {
+		color: #e10b00;
+		font-size: 12px;
+		position: relative;
+		margin-left: 2px;
+		margin-top: 2px;
+		font-weight: normal;
+	}
+}
+
+/* select field replacement styles */
+.select-field {
+	display: inline-block;
+	width: 300px;
+	height: 40px;
+	margin: 3px 0 0 0;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	background: #f1f1f1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f1f1f1 0%, #e6e6e6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f1f1f1 0%,#e6e6e6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+	.no-touch &:hover {
+		.select-arrow-container {
+			.select-arrow {
+				background-position: 0 -20px;
+			}
+		}
+	}
+	&.column {
+		float: left;
+	}
+	select {
+		font-size: 14px;
+		font-family: $font-sans-serif;
+		line-height: 1;
+		color: #222222;
+		background: transparent;
+		-webkit-appearance: none;
+		border: 0;
+		padding: 12px 0 10px 12px;
+		width: 340px;
+		outline: none;
+		cursor: pointer;
+		z-index: 10;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.select-arrow-container {
+		position: absolute;
+		z-index: 3;
+		pointer-events: none;
+		top: 0;
+		right: 0;
+		width: 34px;
+		height: 40px;
+		background: #f1f1f1; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f1f1f1 0%, #e6e6e6 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f1f1f1 0%,#e6e6e6 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f1f1f1 0%,#e6e6e6 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+	}
+	.select-arrow {
+		position: absolute;
+		width: 14px;
+		height: 11px;
+		background: transparent url(../images/sprite-form-select.png) no-repeat 0 0;
+		margin: 15px 0 0 8px;
+		z-index: 3;
+		pointer-events: none;
+	}
+	&.short {
+		width: 140px;
+		select {
+			width: 180px;
+		}
+	}
+	&.shortest {
+		width: 77px;
+		select {
+			width: 117px;
+		}
+	}
+	&.month {
+		width: 130px;
+		select {
+			width: 170px;
+		}
+	}
+	&.year {
+		width: 87px;
+		select {
+			width: 127px;
+		}
+	}
+	&.state {
+		width: 340px;
+		select {
+			width: 380px;
+		}
+	}
+	&.wide {
+		width: 520px;
+		select {
+			width: 560px;
+		}
+	}
+	&.credit-cards {
+		width: 220px;
+		select {
+			width: 260px;
+		}
+	}
+	optgroup {
+		font-family: Helvetica, Arial, sans-serif;
+	}
+}
+
+/* text, radio, and checkbox input replacement */
+input[type=text], input[type=password] {
+	font-family: $font-sans-serif;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	font-size: 14px;
+	height: 42px;
+	padding: 0 10px 0 10px;
+	margin: 3px 0 0 0;
+	width: 280px;
+	display: inline-block;
+	box-shadow: inset 0 2px 0 0 rgba(0,0,0,0.2);
+	background: #fff;
+	&.short {
+		width: 180px;
+	}
+	&.shortest {
+		width: 80px;
+	}
+	&.error {
+		background: #ffe1e2;
+	}
+}
+
+textarea {
+	font-family: $font-sans-serif;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px;
+	font-size: 14px;
+	padding: 10px;
+	width: 400px;
+	height: 140px;
+	display: inline-block;
+	box-shadow: inset 0 2px 0 0 rgba(0,0,0,0.2);
+	background: #fff;
+	&.short {
+		width: 180px;
+	}
+	&.error {
+		background: #ffe1e2;
+	}
+}
+
+
+input[type=radio] {
+	display: none;
+	+ label {
+		background: transparent url(../images/sprite-form-radio.png) no-repeat 0 0;
+		height: 22px;
+		display:inline-block;
+		padding: 4px 0 0 28px;
+		font-size: 14px;
+		margin: 0 0 -4px 0;
+		cursor: pointer;
+		&:hover {
+			background-position: 0 -160px;
+		}
+	}
+	&:checked {
+		+ label {
+			background-position: 0 -80px ;
+		}
+	}
+}
+
+input[type=checkbox] {
+	display: none;
+	+ label {
+		background: transparent url(../images/sprite-form-checkbox.png) no-repeat 0 0;
+		height: 22px;
+		display:inline-block;
+		padding: 2px 0 0 28px;
+		font-size: 14px;
+		margin: 0 0 4px 0;
+		cursor: pointer;
+		line-height: 1.3;
+		&:hover {
+			background-position: 0 -160px;
+		}
+	}
+	&:checked {
+		+ label {
+			background-position: 0 -80px ;
+		}
+	}
+	&.disclaimer {
+		+ label {
+			font-size: 12px;
+			padding: 2px 0 0 28px;
+			line-height: 1.3;
+		}
+	}
+}
+
+/* input form placeholder text styles */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: #c4c4c3;
+	font-family: $font-sans-serif;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+	color: #c4c4c3;
+	font-family: $font-sans-serif;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+	color: #c4c4c3;
+	font-family: $font-sans-serif;
+}
+input:-ms-placeholder, textarea:-ms-placeholder {
+	color: #c4c4c3;
+	font-family: $font-sans-serif;
+}
+
+
