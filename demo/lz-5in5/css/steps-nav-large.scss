@@ -1,0 +1,234 @@
+/* steps navigation bars */
+
+@import 'variables';
+
+/* steps navigation - solid */
+.steps-solid {
+	position: relative;
+	list-style: none;
+	margin: 0 0 10px 0;
+	height: 40px;
+	font-family: $font-medium;
+	width: 100%;
+	border-radius: 10px;
+	background: #bababa;
+	display: block;
+	a {
+		cursor: default;
+	}
+	&.last-step {
+		background: transparent url(../images/bg-steps-nav-blue.png) repeat-x 0 0;
+	}
+	&.completed {
+		background: $brand-indigo;
+	}
+	li {
+		line-height: 1;
+		float: left;
+		position: relative;
+		margin-left: -20px;
+		&:first-child {
+			margin-left: 0;
+			z-index: 15;
+			a {
+				.link {
+					padding-left: 18px;
+					border-top-left-radius: 10px;
+					border-bottom-left-radius: 10px;
+				}
+			}
+		}
+		&.last {
+			a {
+				padding-right: 0;
+				.link {
+					border-top-right-radius: 10px;
+					border-bottom-right-radius: 10px;
+					display: block;
+				}
+				.arrow {
+					display: none;
+				}
+			}
+		}
+		& + li {z-index: 14;}
+		& + li + li {z-index: 13;}
+		& + li + li + li {z-index: 12;}
+		& + li + li + li + li {z-index: 11;}
+		& + li + li + li + li + li {z-index: 10;}
+		& + li + li + li + li + li + li {z-index: 9;}
+		& + li + li + li + li + li + li + li {z-index: 8;}
+		& + li + li + li + li + li + li + li + li {z-index: 7;}
+		& + li + li + li + li + li + li + li + li + li {z-index: 6;}
+		& + li + li + li + li + li + li + li + li + li + li {z-index: 5;}
+		& + li + li + li + li + li + li + li + li + li + li + li {z-index: 4;}
+		& + li + li + li + li + li + li + li + li + li + li + li + li {z-index: 3;}
+		& + li + li + li + li + li + li + li + li + li + li + li + li + li {z-index: 2;}
+		& + li + li + li + li + li + li + li + li + li + li + li + li + li + li {z-index: 1;}
+		a {
+			display: block;
+			height: 39px;
+			text-decoration: none;
+			color: #fff;
+			text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+			font-family: $font-medium;
+			font-size: 14px;
+			padding: 0 20px 0 0;
+			.link {
+				padding: 13px 16px 0 30px;
+				height: 26px;
+				display: block;
+				background: #bababa;
+				color: #fff;
+				text-decoration: none;
+				float: left;
+			}
+			.arrow {
+				display: block;
+				width: 19px;
+				height: 39px;
+				margin-right: -19px;
+				background: transparent url(../images/sprite-steps-nav-solid.png) no-repeat 0 0;
+				float: left;
+			}
+			/*.no-touch &:hover {
+				color: #fff;
+				.link {background-color: #b3b3b3;}
+				.arrow {
+					background-position: 0 -41px;
+				}
+			}*/
+		}
+		&.active {
+			a {
+				.link {
+					background: transparent url(../images/bg-steps-nav-blue.png) repeat-x 0 0;
+				}
+				.arrow {
+					background-position: 0 -82px;
+				}
+				/*.no-touch &:hover {
+					.link {
+						background-position: 0 -41px;
+						background-color: transparent;
+					}
+					.arrow {
+						background-position: 0 -123px;
+					}
+				}*/
+			}
+		}
+		&.inactive {
+			a {
+				cursor: default;
+				/*.no-touch &:hover {
+					.link {background: #bababa;}
+					.arrow {background-position: 0 0;}
+				}*/
+			}
+		}
+		&.completed {
+			a {
+				.link {
+					background: $brand-indigo;
+				}
+				.arrow {
+					background-position: 0 -164px;
+				}
+				/*.no-touch &:hover {
+					.link {background: #200d53;}
+					.arrow {background-position: 0 -205px;}
+				}*/
+			}
+		}
+	}
+}
+
+/* steps nav normal */
+.steps-normal {
+	list-style: none;
+	height: 30px;
+	font-family: $font-sans-serif;
+	li {
+		line-height: 1;
+		float: left;
+		margin: 0 0 10px 0;
+		&:first-child {
+			a {
+				padding: 0 0 0 10px;
+				.arrow {display: none;}
+			}
+		}
+		&.active {
+			a {
+				.number {
+					background-position: 0 -120px;
+				}
+				.link {
+					color: #222222;
+				}
+				&:hover {
+					.link {
+						color: #222222;
+					}
+				}
+			}
+		}
+		&.inactive {
+			a {
+				cursor: default;
+				.no-touch &:hover .link {
+					color: #a4a4a4;
+				}
+			}
+		}
+		&.completed {
+			a {
+				.number {
+					background-position: 0 -180px;
+				}
+				.link {
+					color: $brand-indigo;
+				}
+				.no-touch &:hover .link {
+					color: $color-link;
+				}
+			}
+		}
+		a {
+			display: block;
+			padding: 0 0 0 50px;
+			font-size: 14px;
+			color: #a4a4a4;
+			text-decoration: none;
+			.number {
+				background: transparent url(../images/sprite-steps-nav-normal.png) no-repeat 0 -60px;
+				display: block;
+				float: left;
+				width: 24px;
+				height: 18px;
+				color: #fff;
+				padding: 6px 0 0 0;
+				text-align: center;
+				font-size: 13px;
+				margin-left: -20px;
+			}
+			.arrow {
+				display: block;
+				float: left;
+				background: transparent url(../images/sprite-steps-nav-normal.png) no-repeat 0 0;
+				width: 10px;
+				height: 16px;
+				margin-top: 4px;
+				margin-left: -42px;
+			}
+			.link {
+				display: block;
+				padding: 5px 0 0 10px;
+			}
+			.no-touch &:hover .link {
+				color: $color-link;
+			}
+		}
+	}
+}

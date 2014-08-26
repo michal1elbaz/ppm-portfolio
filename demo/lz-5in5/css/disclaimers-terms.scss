@@ -1,0 +1,48 @@
+/*
+	disclaimers and terms styles
+	imported from 'disclaimers-terms.scss'
+*/
+
+@import 'variables';
+
+.warning {
+	color: #de0019;
+}
+
+.user-agreement-item-list {
+	color: $color-text;
+	list-style: none;
+	margin: 0;
+	li {
+		color: $color-text;
+		float: left;
+		margin-bottom: 0;
+		font-size: 13px;
+		&.item {
+			width: 70%;
+		}
+		&.data {
+			width: 30%;
+			text-align: right;
+		}
+	}
+}
+
+.signature-block {
+	.signature {
+		float: left;
+		width: 40%;
+		margin-right: 20%;
+		border-bottom: 1px solid $color-text;
+		font-weight: bold;
+		padding-top: 20px;
+	}
+	.date {
+		float: left;
+		width: 40%;
+		padding-top: 20px;
+	}
+	.printed-name {
+		font-size: 13px;
+	}
+}

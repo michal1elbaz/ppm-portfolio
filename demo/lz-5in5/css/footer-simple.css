@@ -1,0 +1,34 @@
+/*
+	simple footer - used on the checkout and questionaire pages
+	imported from 'footer-simple.scss'
+*/
+/*
+	variables for legalzoom:
+	colors
+	background
+	border
+	fonts
+	text colors
+	responsive screen sizes
+	imported from 'variables.scss'
+*/
+/* branding colors */
+/* background colors */
+/* border colors */
+/* fonts */
+/* text colors */
+/* responsive screen sizes */
+.footer {
+  position: relative;
+  width: 940px;
+  padding: 10px 10px 30px 10px;
+  margin: 0 auto;
+  margin-top: 10px; }
+  .footer .divider {
+    width: 100%;
+    height: 10px;
+    background: #498bce;
+    margin-bottom: 10px; }
+  .footer .legal {
+    margin: 0 0 10px 0;
+    font-size: 10px; }

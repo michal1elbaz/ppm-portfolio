@@ -1,0 +1,211 @@
+/*
+	comparison chart - this is the new comparison chart styles with the new brand guideline applied
+	imported from 'charts.scss'
+*/
+/*
+	variables for legalzoom:
+	colors
+	background
+	border
+	fonts
+	text colors
+	responsive screen sizes
+	imported from 'variables.scss'
+*/
+/* branding colors */
+/* background colors */
+/* border colors */
+/* fonts */
+/* text colors */
+/* responsive screen sizes */
+.comparison-chart {
+  width: 960px;
+  position: relative;
+  margin: 60px 0 40px 0; }
+  .comparison-chart ul {
+    margin: 0;
+    list-style: none;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede; }
+    .comparison-chart ul:first-child {
+      border-top: 1px solid #dedede;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px; }
+    .comparison-chart ul:last-child {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px; }
+      .comparison-chart ul:last-child ul li:last-child {
+        border-bottom-right-radius: 10px; }
+    .comparison-chart ul li {
+      display: block;
+      width: 958px;
+      position: relative;
+      font-size: 12px;
+      color: #777;
+      margin: 0; }
+      .comparison-chart ul li > .container {
+        padding: 20px;
+        width: 436px;
+        line-height: 1.4; }
+      .comparison-chart ul li .banner-diagonal {
+        width: 65px;
+        height: 66px;
+        right: -3px; }
+    .comparison-chart ul.header li > .container {
+      height: 80px; }
+    .comparison-chart ul.header ul li {
+      text-align: center; }
+      .comparison-chart ul.header ul li h3 {
+        font-size: 17px;
+        color: #281360;
+        font-family: "psRegular", Helvetica, Arial, sans-serif;
+        margin-top: 14px; }
+      .comparison-chart ul.header ul li .price {
+        font-size: 17px;
+        font-weight: bold;
+        color: #666767;
+        line-height: 1;
+        position: absolute;
+        top: 80px;
+        width: 100%; }
+        .comparison-chart ul.header ul li .price span {
+          font-size: 11px;
+          font-weight: normal; }
+      .comparison-chart ul.header ul li .desc {
+        position: absolute;
+        top: 40px;
+        text-align: center;
+        padding: 0 30px 0 30px; }
+      .comparison-chart ul.header ul li.best h3 {
+        font-family: "psMedium", "psRegular", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        color: #fff;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
+      .comparison-chart ul.header ul li.best .price {
+        color: #fff; }
+        .comparison-chart ul.header ul li.best .price span {
+          color: #fff; }
+      .comparison-chart ul.header ul li.best .desc {
+        color: #fff; }
+      .comparison-chart ul.header ul li.last {
+        border-top-right-radius: 10px; }
+      .comparison-chart ul.header ul li .banner-bg {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        top: -80px;
+        width: 159px;
+        height: 80px;
+        background: #ff6400; }
+      .comparison-chart ul.header ul li .banner-folded {
+        position: absolute;
+        z-index: 10;
+        top: -55px;
+        width: 190px;
+        background: gold; }
+    .comparison-chart ul.section {
+      padding: 0;
+      border-right: 1px solid #498bce;
+      border-left: 1px solid #498bce;
+      border-bottom: none; }
+      .comparison-chart ul.section li {
+        background: #498bce;
+        color: #fff;
+        font-family: "psMedium", "psRegular", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        text-transform: uppercase; }
+        .comparison-chart ul.section li .container {
+          padding: 10px 20px 10px 20px; }
+    .comparison-chart ul ul {
+      height: 100%;
+      clear: both;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: none; }
+      .comparison-chart ul ul li {
+        display: block;
+        position: relative;
+        width: 159px;
+        float: left;
+        height: 100%;
+        border-left: 1px solid #dedede; }
+        .comparison-chart ul ul li .chart-icon-checkmark {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -8px 0 0 -9px; }
+        .comparison-chart ul ul li.checked {
+          background: #f6faff; }
+          .comparison-chart ul ul li.checked .chart-icon-checkmark {
+            display: block; }
+        .comparison-chart ul ul li.best.checked, .comparison-chart ul ul li.best {
+          background: #ff6400; }
+        .comparison-chart ul ul li .desc {
+          font-size: 12px;
+          line-height: 1.2;
+          padding: 20px; }
+        .comparison-chart ul ul li .callout {
+          font-size: 18px;
+          text-align: center;
+          top: 40%;
+          position: relative; }
+          .comparison-chart ul ul li .callout.small {
+            font-size: 14px;
+            top: 30%; }
+        .comparison-chart ul ul li.best .callout {
+          color: #fff;
+          font-weight: bold; }
+  .comparison-chart h5 {
+    font-size: 15px;
+    font-family: "psRegular", Helvetica, Arial, sans-serif;
+    color: #281360; }
+  .comparison-chart .shadow {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: transparent url(../images/shadow-curved-photo-md.png) no-repeat center top;
+    background-size: 100% 10px; }
+  .comparison-chart.package-selection {
+    margin-top: -10px;
+    border: none; }
+    .comparison-chart.package-selection ul {
+      border: none; }
+      .comparison-chart.package-selection ul li > .container {
+        color: #281360;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: right; }
+      .comparison-chart.package-selection ul li ul li {
+        border: none;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold; }
+        .comparison-chart.package-selection ul li ul li .package-label {
+          color: #498bce;
+          display: block;
+          margin-bottom: 8px; }
+        .comparison-chart.package-selection ul li ul li .price-difference {
+          color: #9d9d9d;
+          font-size: 12px;
+          margin-top: -2px;
+          display: block; }
+        .comparison-chart.package-selection ul li ul li.best {
+          background: transparent;
+          color: #ff6400; }
+          .comparison-chart.package-selection ul li ul li.best .package-label {
+            color: #ff6400; }
+        .comparison-chart.package-selection ul li ul li .form-fields {
+          margin-bottom: 0; }
+
+.chart-icon-checkmark {
+  width: 18px;
+  height: 16px;
+  display: block;
+  background: transparent url(../images/sprite-chart-icons.png) no-repeat 0 -30px; }
+  .best .chart-icon-checkmark {
+    background-position: 0 0; }

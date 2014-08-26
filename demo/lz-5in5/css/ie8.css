@@ -1,0 +1,246 @@
+/* ie 8 and below style fixes */
+/* font rendering fixes - kinda horrible, not using it, but leaving code in here as a reference */
+/*h1, h2, h3, h4 {
+	letter-spacing: 0;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=images/hIEfix.png,sizingMethod=crop);
+	zoom: 1;
+}*/
+/*
+	variables for legalzoom:
+	colors
+	background
+	border
+	fonts
+	text colors
+	responsive screen sizes
+	imported from 'variables.scss'
+*/
+/* branding colors */
+/* background colors */
+/* border colors */
+/* fonts */
+/* text colors */
+/* responsive screen sizes */
+/* text input reset */
+input[type=text], input[type=password] {
+  height: 16px;
+  padding: 2px; }
+
+input[type=password] {
+  font-family: Helvetica, Arial, sans-serif; }
+
+/* text input reset for 'save your work' on the sidebar in the qaire */
+.email-sidebar .form-group input[type=text] {
+  height: 16px;
+  padding: 2px; }
+.email-sidebar .button.small {
+  height: 22px; }
+  .email-sidebar .button.small .button-center {
+    padding: 4px 0 0 0; }
+
+/* form radio and checkbox reset */
+input[type=radio] {
+  display: inline-block;
+  margin-top: -3px; }
+  input[type=radio] + label {
+    background: none;
+    height: auto;
+    padding: 0 0 4px 0; }
+    input[type=radio] + label:hover {
+      background: none; }
+
+input[type=checkbox] {
+  display: inline-block;
+  height: auto;
+  float: left;
+  padding: 0; }
+  input[type=checkbox] + label {
+    background: none;
+    margin: 0 0 0 4px;
+    display: inline-block;
+    width: 90%;
+    padding: 0; }
+    input[type=checkbox] + label:hover {
+      background: none; }
+  input[type=checkbox].disclaimer + label {
+    padding: 0; }
+
+.iconic input[type=radio], .iconic input[type=checkbox] {
+  display: block;
+  float: left;
+  margin: 2px 0 0 0; }
+  .iconic input[type=radio] + label, .iconic input[type=checkbox] + label {
+    background: transparent;
+    display: block;
+    font-size: 13px;
+    height: auto;
+    width: auto;
+    font-family: "psRegular", Helvetica, Arial, sans-serif;
+    font-style: none;
+    border: none;
+    text-align: left; }
+  .iconic input[type=radio]:checked + label, .iconic input[type=checkbox]:checked + label {
+    box-shadow: none; }
+.iconic.rectangular-buttons input[type=radio], .iconic.rectangular-buttons input[type=checkbox], .iconic.square input[type=radio], .iconic.square input[type=checkbox], .iconic.standard-buttons input[type=radio], .iconic.standard-buttons input[type=checkbox] {
+  height: auto;
+  width: auto;
+  padding: 3px 3px 0 4px;
+  text-align: left; }
+  .iconic.rectangular-buttons input[type=radio] + label, .iconic.rectangular-buttons input[type=checkbox] + label, .iconic.square input[type=radio] + label, .iconic.square input[type=checkbox] + label, .iconic.standard-buttons input[type=radio] + label, .iconic.standard-buttons input[type=checkbox] + label {
+    padding: 3px 0 0 4px;
+    height: auto;
+    width: auto;
+    text-align: left; }
+    .iconic.rectangular-buttons input[type=radio] + label .text, .iconic.rectangular-buttons input[type=checkbox] + label .text, .iconic.square input[type=radio] + label .text, .iconic.square input[type=checkbox] + label .text, .iconic.standard-buttons input[type=radio] + label .text, .iconic.standard-buttons input[type=checkbox] + label .text {
+      margin: 0;
+      width: auto;
+      position: static; }
+      .iconic.rectangular-buttons input[type=radio] + label .text .container, .iconic.rectangular-buttons input[type=checkbox] + label .text .container, .iconic.square input[type=radio] + label .text .container, .iconic.square input[type=checkbox] + label .text .container, .iconic.standard-buttons input[type=radio] + label .text .container, .iconic.standard-buttons input[type=checkbox] + label .text .container {
+        display: block;
+        height: auto;
+        text-align: left; }
+  .iconic.rectangular-buttons input[type=radio]:checked + label, .iconic.rectangular-buttons input[type=checkbox]:checked + label, .iconic.square input[type=radio]:checked + label, .iconic.square input[type=checkbox]:checked + label, .iconic.standard-buttons input[type=radio]:checked + label, .iconic.standard-buttons input[type=checkbox]:checked + label {
+    color: #444444; }
+    .iconic.rectangular-buttons input[type=radio]:checked + label .icon-checkmark, .iconic.rectangular-buttons input[type=checkbox]:checked + label .icon-checkmark, .iconic.square input[type=radio]:checked + label .icon-checkmark, .iconic.square input[type=checkbox]:checked + label .icon-checkmark, .iconic.standard-buttons input[type=radio]:checked + label .icon-checkmark, .iconic.standard-buttons input[type=checkbox]:checked + label .icon-checkmark {
+      display: none; }
+
+.icon-checkmark {
+  display: none; }
+
+.icon-business {
+  display: none; }
+
+.icon-owners {
+  display: none; }
+
+/* form select box reset */
+.select-field {
+  display: block;
+  width: 250px;
+  height: auto;
+  overflow: visible;
+  box-shadow: none;
+  background: none;
+  border: none;
+  float: left;
+  padding: 0; }
+  .select-field select {
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 250px;
+    -webkit-appearance: menulist;
+    padding: 0;
+    position: relative;
+    font-family: Arial, sans-serif; }
+  .select-field .select-arrow-container {
+    display: none;
+    background: none; }
+  .select-field .select-arrow {
+    display: none;
+    background: none; }
+  .select-field + .help.icon {
+    margin-top: 7px; }
+  .select-field.short {
+    width: 140px; }
+    .select-field.short select {
+      width: 140px; }
+  .select-field.shortest {
+    width: 80px; }
+    .select-field.shortest select {
+      width: 80px; }
+  .select-field.month {
+    width: 130px; }
+    .select-field.month select {
+      width: 130px; }
+  .select-field.year {
+    width: 87px; }
+    .select-field.year select {
+      width: 87px; }
+  .select-field.wide {
+    width: 520px; }
+    .select-field.wide select {
+      width: 520px; }
+  .select-field.state {
+    width: 340px; }
+    .select-field.state select {
+      width: 340px; }
+    .select-field.state.short {
+      width: 80px; }
+      .select-field.state.short select {
+        width: 80px; }
+  .select-field.credit-cards {
+    width: 220px; }
+    .select-field.credit-cards select {
+      width: 220px; }
+  .select-field.micro {
+    width: 40px; }
+    .select-field.micro select {
+      width: 40px; }
+  .select-field.review-date {
+    width: 190px; }
+    .select-field.review-date select {
+      width: 190px; }
+  .select-field.review-time {
+    width: 110px; }
+    .select-field.review-time select {
+      width: 110px; }
+
+.form-group.select label.column {
+  margin: 4px 4px 0 0; }
+
+/* select field reset for ie8 questionnaire only */
+.questionnaire .select-field {
+  width: auto; }
+  .questionnaire .select-field select {
+    width: auto;
+    -webkit-appearance: menulist;
+    padding: 0;
+    position: relative;
+    font-family: Arial, sans-serif; }
+
+/* Bank of America offer in the qaire */
+.offer-bofa .offer-bofa-bottom {
+  padding: 10px 10px 30px 10px; }
+  .offer-bofa .offer-bofa-bottom .form-group {
+    padding: 10px 0 8px 0; }
+    .offer-bofa .offer-bofa-bottom .form-group .select-field.wide {
+      margin-left: 23px;
+      width: 460px; }
+      .offer-bofa .offer-bofa-bottom .form-group .select-field.wide select {
+        width: 460px; }
+
+/* comparison chart fly-out content text for IE 8 */
+.flyout-content p {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  margin-bottom: 1em; }
+.flyout-content li {
+  font-family: Arial, sans-serif;
+  font-size: 12px; }
+
+/* hiding normal shadows for floating-modules and showing IE compatible shadow images */
+.texture-stripes .shadow-strip {
+  display: none; }
+
+.module-floating .shadow {
+  display: none; }
+.module-floating.has-shadow .shadow {
+  display: none; }
+
+.module-image .shadow {
+  display: none; }
+
+.banner-folded .banner-fold-bottom {
+  display: none; }
+
+.comparison-chart .shadow {
+  display: none; }
+
+/* 5n5 specific overrides */
+.business-purpose-col {
+  width: 240px;
+  float: left; }
+
+/* small changes for 5n5 top nav */
+.site-nav {
+  border-bottom: 1px solid #cccccc; }

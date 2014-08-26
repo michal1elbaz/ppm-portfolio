@@ -1,0 +1,232 @@
+/*
+	layout for legalzoom 5n5 project - checkout
+	imported from 5n5-checkout.scss
+*/
+
+@import 'variables';
+
+/* checkout text content */
+p {
+	&.checkout-top {
+		margin-top: 20px;
+		font-family: $font-light;
+		font-size: 13px;
+		line-height: 1.5;
+		span {
+			color: $brand-blue;
+			font-family: $font-medium;
+		}
+		.csr {
+			float: left;
+			margin: 0 20px 10px 0;
+			top: -8px;
+			position: relative; 
+		}
+	}
+}
+
+/* satisfaction guaranteed badge */
+.badge-satisfaction-guaranteed {
+	display: block;
+	width: 112px;
+	height: 76px;
+	background: transparent url(../images/5n5-badge-satisfaction-guaranteed.png) no-repeat 0 0;
+}
+
+.help-content, .tooltip{
+	.badge-satisfaction-guaranteed {
+		float: right;
+	}
+}
+
+/* order summary */
+.order-summary {
+	font-size: 13px;
+	margin: 10px 0 30px 0;
+	.heading {
+		font-family: $font-sans-serif;
+		font-weight: normal;
+		font-size: 13px;
+		color: $brand-indigo;
+		border-bottom: 1px solid #e5e5e5;
+		padding: 0 0 8px 0;
+	}
+	ul {
+		list-style: none;
+		position: relative;
+		margin: 0;
+		width: 100%;
+		li {
+			color: $color-text;
+		}
+		&.item-list {
+			background: transparent url(../images/bg-dotted-line.png) repeat-x 0 24px;
+			height: 25px;
+			li {
+				position: absolute;
+				line-height: 1;
+				margin: 0;
+				&.item {
+					left: 0;
+					bottom: -1px;
+					background: #fff;
+					padding: 0 2px 1px 0;
+					&.package-name {
+						span {
+							font-family: $font-medium;
+							color: $brand-indigo;
+						}
+					}
+					a {
+						text-decoration: underline;
+					}
+				}
+				&.price {
+					right: 0;
+					bottom: -1px;
+					background: #fff;
+					padding: 0 0 1px 2px;
+				}
+			}
+		}
+		&.total {
+			height: 25px;
+			li {
+				line-height: 1;
+				margin: 0;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				font-family: $font-medium;
+				span {
+					margin: 0 12px 0 0;
+				}
+			}
+		}
+		&.rebate {
+			li {
+				line-height: 1;
+				margin: 8px 0 0 0;
+				text-align: right;
+				width: 100%;
+				span {
+					color: #218e0f;
+					@media #{$iphone-portrait} {
+						width: 100%;
+						display: block;
+					}
+				}
+				a {
+					font-size: 11px;
+					font-family: $font-sans-serif;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+/* credit card badge */
+.payment-info {
+	.badge-creditcards {
+		display: inline-block;
+		position: relative;
+		top: 6px;
+		left: 4px;
+		@media #{$ipad-portrait} {
+			left: 280px;
+		}
+		@media #{$iphone-landscape}, #{$iphone-portrait} {
+			left: 130px;
+		}
+	}
+}
+.badge-creditcards {
+	width: 142px;
+	height: 20px;
+	overflow: hidden;
+	background: transparent url(../images/badge-creditcards.png) no-repeat 0 0;
+	@media #{$retina-display} {
+		background-image: url(../images/badge-creditcards-2x.png);
+		background-size: 142px 20px;
+	}
+}
+
+/* texst changes for the schedule page */
+.schedule-review {
+	h3 {
+		font-size: 13px;
+		font-weight: normal;
+		font-family: $font-sans-serif;
+		color: $brand-indigo;
+		border-bottom: 1px solid $color-border-gray;
+		padding-bottom: 6px;
+	}
+	.timezone {
+		position: relative;
+		top: -11px;
+		margin: 0 0 0 5px;
+	}
+}
+
+.order-processed {
+	margin: 0 0 30px 0;
+	p {
+		font-family: $font-light;
+		font-size: 13px;
+		line-height: 1.5;
+		em {
+			font-family: $font-sans-serif;
+			font-style: normal;
+			color: $brand-blue;
+		}
+		.error {
+			font-family: $font-sans-serif;
+			font-style: normal;
+			color: #ff5252;
+		}
+	}
+	.csr {
+		float: right;
+		margin: -8px 0px 24px 14px;
+	}
+	ul {
+		li {
+			font-family: $font-light;
+			font-size: 13px;
+			line-height: 1.5;
+			strong {
+				font-family: $font-medium;
+				color: $brand-blue;
+				font-weight: normal;
+			}
+		}
+	}
+}
+
+/* form field changes for the schedule page */
+.schedule-review {
+	label {
+		&.column {
+			@media #{$ipad-portrait} {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.select-field {
+	&.review-date {
+		width: 190px;
+		margin: 0 10px 0 0;
+		select {
+			width: 220px;
+		}
+	}
+	&.review-time {
+		width: 110px;
+		select {
+			width: 140px;
+		}
+	}
+}

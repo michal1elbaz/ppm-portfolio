@@ -1,0 +1,262 @@
+/*
+	variables for legalzoom:
+	colors
+	background
+	border
+	fonts
+	text colors
+	responsive screen sizes
+	imported from 'variables.scss'
+*/
+/* branding colors */
+/* background colors */
+/* border colors */
+/* fonts */
+/* text colors */
+/* responsive screen sizes */
+/* steps navigation bar */
+.steps-nav {
+  width: 100%;
+  height: 35px;
+  position: relative;
+  /* steps and arrows in the full size steps nav */
+  /* changes the color of the steps nav background at different steps */ }
+  @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+    .steps-nav {
+      background: #2c96dd;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2c96dd), color-stop(100%, #1c61cb));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, #2c96dd 0%, #1c61cb 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c96dd', endColorstr='#1c61cb',GradientType=0 );
+      /* IE6-9 */
+      width: 100%;
+      height: 50px; } }
+  .steps-nav .bg-left {
+    width: 30%;
+    height: 100%;
+    background: transparent url(../images/steps-nav-bg.png) repeat-x 0 -100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+    @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+      .steps-nav .bg-left {
+        display: none; } }
+  .steps-nav .bg-right {
+    width: 70%;
+    height: 100%;
+    background: #bababa;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    z-index: 2; }
+    @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+      .steps-nav .bg-right {
+        display: none; } }
+  .steps-nav .current-step {
+    padding: 9px 0 2px 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+    display: none; }
+    @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+      .steps-nav .current-step {
+        display: block; } }
+  .steps-nav .container {
+    width: 960px;
+    height: 100%;
+    top: 0;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    text-align: center; }
+    @media only screen and (min-width: 761px) and (max-width: 955px) {
+      .steps-nav .container {
+        width: 768px; } }
+    @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+      .steps-nav .container {
+        width: 100%; } }
+  .steps-nav .steps {
+    position: relative;
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block; }
+    .steps-nav .steps li {
+      line-height: 1;
+      height: 35px;
+      display: block;
+      float: left;
+      position: relative;
+      margin-left: -20px;
+      /* link and arrow elements are for the full sized step nav */
+      /* bar-white, selected, and selected-bar elements are for the mobile nav bar */ }
+      @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+        .steps-nav .steps li {
+          margin: 0 6px 0 0;
+          width: 12px;
+          height: 12px;
+          background: #fff;
+          border-radius: 12px;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.7) inset; } }
+      .steps-nav .steps li:first-child {
+        margin: 0;
+        z-index: 15; }
+        @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+          .steps-nav .steps li:first-child {
+            margin: 0 6px 0 0; } }
+        .steps-nav .steps li:first-child a .link {
+          padding-left: 20px; }
+      .steps-nav .steps li a {
+        display: block;
+        cursor: default; }
+      .steps-nav .steps li .link {
+        color: #fff;
+        padding: 10px 10px 0 32px;
+        height: 25px;
+        display: block;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+        float: left;
+        text-align: center;
+        background: #bababa; }
+        @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+          .steps-nav .steps li .link {
+            display: none; } }
+      .steps-nav .steps li .arrow {
+        display: block;
+        width: 18px;
+        height: 35px;
+        background: transparent url(../images/steps-nav-arrows.png) no-repeat 0 -200px;
+        float: left; }
+        @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+          .steps-nav .steps li .arrow {
+            display: none; } }
+      .steps-nav .steps li .bar-white {
+        display: none;
+        position: absolute;
+        background: #fff;
+        height: 7px;
+        width: 10px;
+        top: 3px;
+        right: -8px;
+        z-index: 10;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) inset; }
+        @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+          .steps-nav .steps li .bar-white {
+            display: block; } }
+      .steps-nav .steps li .selected {
+        display: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 7px;
+        background: #498bce;
+        z-index: 15;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+        background: #2c96dd;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2c96dd), color-stop(100%, #1c61cb));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #2c96dd 0%, #1c61cb 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c96dd', endColorstr='#1c61cb',GradientType=0 );
+        /* IE6-9 */ }
+      .steps-nav .steps li .selected-bar {
+        display: none;
+        width: 12px;
+        height: 3px;
+        z-index: 20;
+        position: absolute;
+        top: 5px;
+        right: -9px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+        background: #2c96dd;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2c96dd), color-stop(100%, #1c61cb));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #2c96dd 0%, #1c61cb 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #2c96dd 0%, #1c61cb 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c96dd', endColorstr='#1c61cb',GradientType=0 );
+        /* IE6-9 */ }
+      .steps-nav .steps li.completed .link {
+        background: transparent url(../images/steps-nav-bg.png) repeat-x 0 -100px; }
+      .steps-nav .steps li.completed .arrow {
+        background-position: 0 -100px; }
+      @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+        .steps-nav .steps li.completed .selected {
+          display: block; }
+        .steps-nav .steps li.completed .selected-bar {
+          display: block; } }
+      .steps-nav .steps li.active .link {
+        background: transparent url(../images/steps-nav-bg.png) repeat-x 0 0; }
+      .steps-nav .steps li.active .arrow {
+        background-position: 0 0; }
+      @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+        .steps-nav .steps li.active .selected {
+          display: block; } }
+      .steps-nav .steps li.last .arrow {
+        display: none; }
+      .steps-nav .steps li.last .bar-white {
+        display: none; }
+      @media only screen and (min-width: 460px) and (max-width: 760px), only screen and (max-width: 459px) {
+        .steps-nav .steps li.last {
+          margin: 0; } }
+      .steps-nav .steps li + li {
+        z-index: 14; }
+      .steps-nav .steps li + li + li {
+        z-index: 13; }
+      .steps-nav .steps li + li + li + li {
+        z-index: 12; }
+      .steps-nav .steps li + li + li + li + li {
+        z-index: 11; }
+      .steps-nav .steps li + li + li + li + li + li {
+        z-index: 10; }
+      .steps-nav .steps li + li + li + li + li + li + li {
+        z-index: 9; }
+      .steps-nav .steps li + li + li + li + li + li + li + li {
+        z-index: 8; }
+      .steps-nav .steps li + li + li + li + li + li + li + li + li {
+        z-index: 7; }
+      .steps-nav .steps li + li + li + li + li + li + li + li + li + li {
+        z-index: 6; }
+      .steps-nav .steps li + li + li + li + li + li + li + li + li + li + li {
+        z-index: 5; }
+      .steps-nav .steps li + li + li + li + li + li + li + li + li + li + li + li {
+        z-index: 4; }
+      .steps-nav .steps li + li + li + li + li + li + li + li + li + li + li + li + li {
+        z-index: 3; }
+      .steps-nav .steps li + li + li + li + li + li + li + li + li + li + li + li + li + li {
+        z-index: 2; }
+      .steps-nav .steps li + li + li + li + li + li + li + li + li + li + li + li + li + li + li {
+        z-index: 1; }
+  .steps-nav.first .bg-left {
+    background-position: 0 0; }
+  .steps-nav.last .bg-right {
+    background: transparent url(../images/steps-nav-bg.png) repeat-x 0 0; }

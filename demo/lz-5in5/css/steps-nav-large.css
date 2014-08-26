@@ -1,0 +1,202 @@
+/* steps navigation bars */
+/*
+	variables for legalzoom:
+	colors
+	background
+	border
+	fonts
+	text colors
+	responsive screen sizes
+	imported from 'variables.scss'
+*/
+/* branding colors */
+/* background colors */
+/* border colors */
+/* fonts */
+/* text colors */
+/* responsive screen sizes */
+/* steps navigation - solid */
+.steps-solid {
+  position: relative;
+  list-style: none;
+  margin: 0 0 10px 0;
+  height: 40px;
+  font-family: "psMedium", "psRegular", Helvetica, Arial, sans-serif;
+  width: 100%;
+  border-radius: 10px;
+  background: #bababa;
+  display: block; }
+  .steps-solid a {
+    cursor: default; }
+  .steps-solid.last-step {
+    background: transparent url(../images/bg-steps-nav-blue.png) repeat-x 0 0; }
+  .steps-solid.completed {
+    background: #281360; }
+  .steps-solid li {
+    line-height: 1;
+    float: left;
+    position: relative;
+    margin-left: -20px; }
+    .steps-solid li:first-child {
+      margin-left: 0;
+      z-index: 15; }
+      .steps-solid li:first-child a .link {
+        padding-left: 18px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; }
+    .steps-solid li.last a {
+      padding-right: 0; }
+      .steps-solid li.last a .link {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: block; }
+      .steps-solid li.last a .arrow {
+        display: none; }
+    .steps-solid li + li {
+      z-index: 14; }
+    .steps-solid li + li + li {
+      z-index: 13; }
+    .steps-solid li + li + li + li {
+      z-index: 12; }
+    .steps-solid li + li + li + li + li {
+      z-index: 11; }
+    .steps-solid li + li + li + li + li + li {
+      z-index: 10; }
+    .steps-solid li + li + li + li + li + li + li {
+      z-index: 9; }
+    .steps-solid li + li + li + li + li + li + li + li {
+      z-index: 8; }
+    .steps-solid li + li + li + li + li + li + li + li + li {
+      z-index: 7; }
+    .steps-solid li + li + li + li + li + li + li + li + li + li {
+      z-index: 6; }
+    .steps-solid li + li + li + li + li + li + li + li + li + li + li {
+      z-index: 5; }
+    .steps-solid li + li + li + li + li + li + li + li + li + li + li + li {
+      z-index: 4; }
+    .steps-solid li + li + li + li + li + li + li + li + li + li + li + li + li {
+      z-index: 3; }
+    .steps-solid li + li + li + li + li + li + li + li + li + li + li + li + li + li {
+      z-index: 2; }
+    .steps-solid li + li + li + li + li + li + li + li + li + li + li + li + li + li + li {
+      z-index: 1; }
+    .steps-solid li a {
+      display: block;
+      height: 39px;
+      text-decoration: none;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+      font-family: "psMedium", "psRegular", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      padding: 0 20px 0 0;
+      /*.no-touch &:hover {
+      	color: #fff;
+      	.link {background-color: #b3b3b3;}
+      	.arrow {
+      		background-position: 0 -41px;
+      	}
+      }*/ }
+      .steps-solid li a .link {
+        padding: 13px 16px 0 30px;
+        height: 26px;
+        display: block;
+        background: #bababa;
+        color: #fff;
+        text-decoration: none;
+        float: left; }
+      .steps-solid li a .arrow {
+        display: block;
+        width: 19px;
+        height: 39px;
+        margin-right: -19px;
+        background: transparent url(../images/sprite-steps-nav-solid.png) no-repeat 0 0;
+        float: left; }
+    .steps-solid li.active a {
+      /*.no-touch &:hover {
+      	.link {
+      		background-position: 0 -41px;
+      		background-color: transparent;
+      	}
+      	.arrow {
+      		background-position: 0 -123px;
+      	}
+      }*/ }
+      .steps-solid li.active a .link {
+        background: transparent url(../images/bg-steps-nav-blue.png) repeat-x 0 0; }
+      .steps-solid li.active a .arrow {
+        background-position: 0 -82px; }
+    .steps-solid li.inactive a {
+      cursor: default;
+      /*.no-touch &:hover {
+      	.link {background: #bababa;}
+      	.arrow {background-position: 0 0;}
+      }*/ }
+    .steps-solid li.completed a {
+      /*.no-touch &:hover {
+      	.link {background: #200d53;}
+      	.arrow {background-position: 0 -205px;}
+      }*/ }
+      .steps-solid li.completed a .link {
+        background: #281360; }
+      .steps-solid li.completed a .arrow {
+        background-position: 0 -164px; }
+
+/* steps nav normal */
+.steps-normal {
+  list-style: none;
+  height: 30px;
+  font-family: "psRegular", Helvetica, Arial, sans-serif; }
+  .steps-normal li {
+    line-height: 1;
+    float: left;
+    margin: 0 0 10px 0; }
+    .steps-normal li:first-child a {
+      padding: 0 0 0 10px; }
+      .steps-normal li:first-child a .arrow {
+        display: none; }
+    .steps-normal li.active a .number {
+      background-position: 0 -120px; }
+    .steps-normal li.active a .link {
+      color: #222222; }
+    .steps-normal li.active a:hover .link {
+      color: #222222; }
+    .steps-normal li.inactive a {
+      cursor: default; }
+      .no-touch .steps-normal li.inactive a:hover .link {
+        color: #a4a4a4; }
+    .steps-normal li.completed a .number {
+      background-position: 0 -180px; }
+    .steps-normal li.completed a .link {
+      color: #281360; }
+    .no-touch .steps-normal li.completed a:hover .link {
+      color: #247bd3; }
+    .steps-normal li a {
+      display: block;
+      padding: 0 0 0 50px;
+      font-size: 14px;
+      color: #a4a4a4;
+      text-decoration: none; }
+      .steps-normal li a .number {
+        background: transparent url(../images/sprite-steps-nav-normal.png) no-repeat 0 -60px;
+        display: block;
+        float: left;
+        width: 24px;
+        height: 18px;
+        color: #fff;
+        padding: 6px 0 0 0;
+        text-align: center;
+        font-size: 13px;
+        margin-left: -20px; }
+      .steps-normal li a .arrow {
+        display: block;
+        float: left;
+        background: transparent url(../images/sprite-steps-nav-normal.png) no-repeat 0 0;
+        width: 10px;
+        height: 16px;
+        margin-top: 4px;
+        margin-left: -42px; }
+      .steps-normal li a .link {
+        display: block;
+        padding: 5px 0 0 10px; }
+      .no-touch .steps-normal li a:hover .link {
+        color: #247bd3; }

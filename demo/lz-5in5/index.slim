@@ -1,0 +1,609 @@
+doctype html
+html
+	head
+		meta http-equiv='Content-Type' content='text/html; charset=utf-8'
+		meta http-equiv='X-UA-Compatible' content='IE=Edge'
+		meta http-equiv='X-UA-compatible' content='chrome=1'
+		meta name='viewport' content='width=device-width; initial-scale=1; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;'
+		title LegalZoom Quick Start LLC
+		link rel='icon' href='images/favicon.ico' type='image/x-icon'
+		link rel='stylesheet' type='text/css' media='all' href='css/core.css'
+
+		/[if lte IE 8]
+			link rel='stylesheet' type='text/css' media='all' href='css/ie8.css'
+		/[if lte IE 9]
+			link rel='stylesheet' type='text/css' media='all' href='css/ie9.css'
+
+		script type='text/javascript' src='js/jquery-1.10.1.min.js'
+		script type='text/javascript' src='js/modernizr-2.6.2.js'
+		script type='text/javascript' src='js/appGlobal.js'
+		script type='text/javascript' src='js/swipe.js'
+
+		script type='text/javascript' src='js/jquery.scrollTo.min.js'
+		script type='text/javascript' src='js/jquery.localScroll.min.js'
+		script type='text/javascript' src='js/overview.js'
+		
+	body
+
+		/! top nav
+		nav.site-nav
+			.container
+				.lz-logo
+				ul.nav-menu-overview
+					li.menu-button
+						a
+							i.icon.icon-reorder
+						ul.menu-list
+							li
+								a href='#how_it_works' How it works
+							li
+								a href='#start_your_llc' Start your LLC
+							li
+								a href='#FAQs' FAQs
+							li
+								a href='#testimonials' Testimonials
+							li
+								a href='#contact_us' Call us
+				
+
+
+		/! top content container for 5n5 overview page
+		.content-container.home
+
+
+			/! background layer
+
+			.background
+
+				.container
+					/ We used to have various components here that lays on the background layer. It's been simplified now to just the background
+										
+			/! foreground layer
+			.foreground
+				
+				.container
+					
+					.content
+						h1 We helped Derek get started with his dream 
+						h2#state_headline We've helped over 1 million businesses get started.
+
+					/! hero info text
+					.hero-info
+						p 
+							em Derek Rohlffs
+							br
+							| Bravium Winery, LLC
+							br
+							| LegalZoom Customer
+
+			.shadow-strip-inverted
+
+		/! content container for package selection
+		.content-container.package-selection#start_your_llc
+			.header-band
+				.container
+					h2 Select an LLC package to get started
+
+			.container
+
+				/! silver package
+				.package.silver.featured
+					.heading
+						h2 Silver LLC
+						p.desc
+							| Best value
+						.banner
+					
+					.detail
+							
+						.price-detail
+							ul
+								li.col
+									| State of LLC formation:
+								li.price
+									/! select drop downs
+									.form-group
+										.form-fields.select
+											.select-field.micro
+												.select-arrow-container
+													.select-arrow
+												select
+													optgroup label='states'
+														option CA
+														option TX
+														option WA
+												
+								/! legalzoom one-time fee
+								li.col LegalZoom one-time fee
+								li.price
+									| $349
+								/! state required fee display
+								li.col.state_required_fee_text
+									| CA - state required fee
+									br
+									| (
+									a onclick=="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');" what is this?
+									| )
+								li.price.state_fee_amount
+									| $85
+
+							.clear
+						  
+							p.price-total
+								| $434
+							
+							.rebate-div
+								p
+									| $150 Bank of America Cash Back offer available (
+									a onclick=="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');" see detail
+									|)*
+
+						.get-started
+							/! button with icon on right
+							a.button.orange.flex.has-right.home-state-selection#get_started_silver data-pkg='silver' 
+								span.button-right
+									span.inner
+										i.icon.button-icon.arrow-large
+								span.button-center Get started
+							p.package-disclaimer
+								span <sup>*</sup> For those who qualify
+
+					.package-includes
+						h4 The Silver LLC package includes:
+						.package-header
+							| The Basics
+						ul
+							li Everything in the Bronze LLC package
+						.package-header
+							| New Business Starter
+						ul#nbs_list
+							li 
+								strong Over $400 in value for only $50 more than the Bronze LLC package.
+							#insert-nbs_list
+							li
+								| LLC deluxe kit ($70 value) – keep official documents organized.
+								ul
+									li Customized membership certificates 
+									li Company seal for embossing membership certificates
+									li CD with over 40 useful business forms
+							li Federal Tax ID (EIN) obtainment ($79 value) – a unique identifier for your business assigned by the IRS.
+							li QuickBooks Online ($119 value) – 3 free months of top accounting software to organize your business finances.
+							li MyPRGenie ($179 value) – 1 free year of online PR and social media promotion.
+
+				/! gold package
+				.package.gold.secondary
+					.heading
+						h2 Gold LLC
+						p.desc
+							| Fastest turnaround
+					.detail
+
+						.price-detail
+							ul
+								li.col
+									| State of LLC formation:
+								li.price
+									/! select drop downs
+									.form-group
+										.form-fields.select
+											.select-field.micro
+												.select-arrow-container
+													.select-arrow
+												select
+													optgroup label='states'
+														option CA
+														option TX
+														option WA
+												
+								/! legalzoom one-time fee
+								li.col LegalZoom one-time fee
+								li.price
+									| $399
+								/! state required fee display
+								li.col.state_required_fee_text
+									| CA - state required fee
+									br
+									| (
+									a onclick=="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');" what is this?
+									| )
+								li.price.state_fee_amount
+									| $85
+
+							.clear
+						  
+							p.price-total
+								| $484
+							
+							.rebate-div
+								p
+									| $150 Bank of America Cash Back offer available (
+									a onclick=="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');" see detail
+									|)*
+						
+
+						.get-started
+							/! button with icon on right
+							a.button.flex.has-right.home-state-selection#get_started_gold data-pkg='gold' 
+								span.button-right
+									span.inner
+										i.icon.button-icon.arrow-large
+								span.button-center Get started
+
+							p.package-disclaimer
+								span <sup>**</sup> Not including mandatory business filing fees.
+					.package-includes
+						h4 The Gold LLC package includes:
+						.package-header
+							| The Basics
+						ul
+							li Everything in the Bronze LLC package
+						.package-header
+							| New Business Starter
+						ul
+							li Everything in the Silver LLC package
+						.package-header
+							| Expedited Processing
+						ul
+							li We rush process your order.
+							li We hand-deliver your documents to the state for the fastest processing time.
+							li We ship your final package via overnight delivery.
+							li Receive your LLC in 7-10 business days instead of 20-35 (for most states).
+
+				/! bronze package
+				.package.bronze			
+					.heading
+						h2 Bronze LLC
+						p.desc
+							| Basic
+					
+					.detail
+
+						.price-detail
+							ul
+								li.col
+									| State of LLC formation:
+								li.price
+									/! select drop downs
+									.form-group
+										.form-fields.select
+											.select-field.micro
+												.select-arrow-container
+													.select-arrow
+												select
+													optgroup label='states'
+														option CA
+														option TX
+														option WA
+												
+								/! legalzoom one-time fee
+								li.col LegalZoom one-time fee
+								li.price
+									| $299
+								/! state required fee display
+								li.col.state_required_fee_text
+									| CA - state required fee
+									br
+									| (
+									a onclick=="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');" what is this?
+									| )
+								li.price.state_fee_amount
+									| $85
+
+							.clear
+						  
+							p.price-total
+								| $384
+							
+							.rebate-div
+								p
+									| $150 Bank of America Cash Back offer available (
+									a onclick=="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');" see detail
+									|)*
+
+						.get-started
+							/! button with icon on right
+							a.button.flex.has-right.home-state-selection#get_started_bronze data-pkg='bronze'
+								span.button-right
+									span.inner
+										i.icon.button-icon.arrow-large
+								span.button-center Get started
+							p.package-disclaimer
+								span <sup>**</sup> Not including mandatory business filing fees.
+					.package-includes
+						h4 The Bronze LLC package includes:
+						.package-header
+							| The Basics
+						ul
+							li We check to see if your LLC name is available with the state.
+							li We file your LLC with the appropriate state agency. 
+							li We create state-specific, personalized documents for your business.
+							li We send you your filed documents and other personalized paperwork, such as your LLC’s operating agreement.
+							li Every order includes free lifetime customer support.
+
+				.clear
+
+			.shadow-strip-band
+				.shadow-strip
+				p.package-disclaimer
+					span <sup>**</sup> Not including mandatory business filing fees.
+
+		/! content container for how it works
+		.content-container.how-it-works#how_it_works
+			.container
+				h2 How LegalZoom works for you
+				a.logo-bbb href='http://www.bbb.org/council/overview-of-bbb-grade/' target='_blank'
+
+				.content-main
+					.content-howitworks
+						.icon-howitworks.step-1
+						.text
+							h3 Complete our short online questionnaire.
+							p
+								| Select the package that's right for you. Then, 
+								strong answer a few simple questions online
+								| . When you're done, 
+								strong schedule a call
+								|  with our dedicated LLC team.
+						.clear
+					.content-howitworks
+						.icon-howitworks.step-2
+						.text
+							h3 Speak with our dedicated LLC team.
+							p
+								| At the time you selected, we call you. 
+								strong We review your answers
+								|  and ask additional questions needed to complete your order. While these questions can be complicated, we talk you through them and make sure you understand your choices.
+						.clear
+					.content-howitworks
+						.icon-howitworks.step-3
+						.text
+							h3 We file the paperwork & you receive your completed LLC.
+							p
+								| Using the information you provided, 
+								strong we file your LLC
+								|  with the state and personalize documents for your business. Once we get your filed documents back from the state, 
+								strong we ship your final package
+								| . If you have any questions, we're always here to help with 
+								strong lifetime customer support
+								| .
+						.clear
+
+				.content-sidebar
+					/! video module for how it works
+					.module-image.small.framed.video
+						.shadow
+						.container
+							.youtube-thumb
+								iframe class='youtube-player' src='https://www.youtube.com/embed/Qm1SFYz5HSc?HD=1;rel=0;showinfo=0;' type='text/html' width='100%' height='100%' allowfullscreen frameborder='0'
+							a onclick="AppGlobal.openModalExternal('video', '/modals/video_what_to_expect');"
+								img src='images/5n5-contact-video-thumbnail.jpg' width='258' height='158' class='thumb-image'
+								.timing
+									| 90 sec.
+								.button-play.small
+					a.link-video onclick="AppGlobal.openModalExternal('video', '/modals/video_what_to_expect');" See how we help you start your LLC
+				.clear
+
+		/! common questions content
+		.content-container.questions#FAQs
+
+			.container
+
+				.content-main
+					h2 Common questions about LLCs
+					ul.faqs
+						li.active
+							a What is a limited liability company (LLC)?
+							ul
+								li
+									p A limited liability company, or LLC, is a business entity created under state law that combines characteristics of both a corporation and a partnership. Like a corporation, the owners of an LLC are generally not personally liable for company debts. Like a sole proprietorship or a partnership, an LLC has operating flexibility and is, by default, a "pass through" entity for tax purposes. This means the LLC does not pay taxes on its profits, but instead, profits and losses are "passed through" to the owners, who must then pay tax on their share of LLC income.
+						li
+							a LLC vs. S corporation - which one is right for me?
+							ul
+								li
+									p Although an S corporation shares many of the same tax characteristics as an LLC, an LLC has more flexibility and fewer restrictions on ownership than does an S corporation. An S corporation must not have more than 100 shareholders, all of whom must be U.S. citizens or legal residents. An S corporation is also subject to more formalities, such as holding annual meetings and keeping corporate minutes. On the other hand, LLCs generally are not required to hold formal meetings, but an LLC owner may be subject to higher self-employment taxes than a comparable S corporation owner. That is because an S corporation owner is required to pay self-employment tax only on salary, but not on dividends from the corporation.
+						li
+							a How do I form an LLC?
+							ul
+								li
+									p You can prepare the legal paperwork and file it yourself, or you can use a service, such as LegalZoom. If you choose to form your LLC through LegalZoom, you will just answer a few simple questions online. We will take care of all the paperwork, file the necessary documents with the state, and even send you an LLC kit with seals and certificates as part of your final package.
+						li
+							a Who can form an LLC?
+							ul
+								li
+									p Almost anyone can form an LLC as there is typically no residency or legal restriction. However, a few states do require LLC owners to be at least 18.
+						li
+							a Can I form an LLC in a state other than the one in which my business will operate?
+							ul
+								li
+									p You can form an LLC in any state, but many people choose to form LLCs in their home state. This may save you money because the LLC will not need to register as a "foreign LLC" if it does business in its home state. If your home state has high annual LLC fees or income taxes, and your LLC does not do business in that state, it may be wise to form your LLC elsewhere. LegalZoom can help you form an LLC in any state you choose.
+						li
+							a What documents are required to start a limited liability company?
+							ul
+								li
+									p To create an LLC, Articles of Organization must be filed with the Secretary of State or appropriate state agency. Next, the LLC members should enter into an operating agreement, which sets forth the rights of the members and the rules for running the company. An LLC may also need to apply for a tax identification number with the IRS. LegalZoom prepares all of the required documents for you and takes care of government filings.
+						li
+							a How is a limited liability company (LLC) taxed?
+							ul
+								li
+									p By default, LLCs do not pay income tax at the entity level. Instead, the LLC's income is “passed through” to the owners who pay tax on their share of the LLC’s income on their personal tax returns. For an LLC with one owner, income is reported on the individual owner's Form 1040, Schedule C.
+						li
+							a Does my LLC need a registered agent?
+							ul
+								li
+									p Having a registered agent (or statutory agent) for your LLC is required by law. The agent must be either (1.) an adult individual living in the state of LLC formation with a valid street address (no P.O. boxes), or (2.) a company, such as LegalZoom, authorized to serve as an agent. The registered agent is designated to accept service of process on the LLC’s behalf. In addition, the registered agent’s name and address is public information on state records. LegalZoom can serve as your LLC’s registered agent.
+						li
+							a Does my LLC need an operating agreement?
+							ul
+								li
+									p All LegalZoom LLCs include a personalized, state-specific operating agreement. The operating agreement governs the LLC’s operations and includes provisions about managing the LLC and transferring ownership.
+
+
+				.content-sidebar
+					.module-image.framed.video.small
+						.shadow
+						.container
+							.youtube-thumb
+								iframe class='youtube-player' src='https://www.youtube.com/embed/Npan-mq7gbc?HD=1;rel=0;showinfo=0;' type='text/html' width='100%' height='100%' allowfullscreen frameborder='0'
+							a onclick=="AppGlobal.openModalExternal('video', '/modals/video_where_llc');"
+								img src='images/5n5-home-video-whyllc-thumbnail.jpg' width='258' height='158' class='thumb-image'
+								.button-play.small
+					a.link-video onclick=="AppGlobal.openModalExternal('video','/modals/video_where_llc')"
+						| Where should you form your LLC or corporation?
+				.clear
+
+		/! quotes and testimonials
+		.content-container.texture-stripes.swipe-quotes#testimonials
+			.shadow-strip
+			.container
+				h2 What people are saying about LegalZoom
+				.slide-control
+					a.arrow.previous onclick=='mySwipe.prev();'
+					a.arrow.next onclick=='mySwipe.next();'
+				#slider.swipe
+					.swipe-wrap
+						.slides
+							.content
+								blockquote
+									.open &#8220;
+									.quote
+										| And a big thank you to 
+										span.highlight @LegalZoom 
+										| for hosting this great platform - a true friend to small business! 
+										span.highlight #legalzoomstartup
+										span.close &#8221;
+								.twitter-persona
+									.avatar.steve-strauss
+									.name Steve Strauss
+
+						.slides.huffpost
+							.content
+								blockquote
+									.open &#8220;
+									.quote
+										| Get top quality legal documents without paying top dollar.
+										span.close &#8221;
+									.from
+										.from-huffpost
+						.slides
+							.content
+								blockquote
+									.open &#8220;
+									.quote
+										strong Best feature: 
+										| Fast customer service response.
+										span.close &#8221;
+									.from
+										.from-wsj
+						.slides.wrightway
+							.content
+								.col-small
+									.module-image.small.framed.video
+										.shadow
+										.container
+											.youtube-thumb
+												iframe class='youtube-player' data-src='https://www.youtube.com/embed/jKNBcCy0T78?HD=1;rel=0;showinfo=0;' src='about:blank' type='text/html' width='100%' height='100%' allowfullscreen frameborder='0'
+											a onclick=="AppGlobal.openModalExternal('video','/modals/video_mason_chelsea');"
+												img src='images/5n5-home-swipe-video-wrightway-thumbnail.jpg'
+												.button-play.small
+
+								.col-large
+									| Mason and Chelsea Wright started Wright Way Painting in 2009 on LegalZoom
+								.clear
+						.slides.nine-out-of-ten
+							.content
+								.col-small
+									.people
+								.col-large
+									strong 9 out of 10
+									|  customers would recommend us to friends and family.
+									p.disclaimer Number of customers who would recommend LegalZoom is based on surveys conducted in 2012.
+								.clear
+
+		/! sample document and help
+		.content-container.help-footer#contact_us
+			.container
+				.sample-document
+					.wrapper.bordered
+						.icon-sample-document
+						.text
+							h3 Sample document
+							p
+								a onclick=="AppGlobal.openModalExternal('text','/modals/sample_documents');" View a sample LLC document
+							p Your final forms, documents and filings may differ depending on your state.
+						.clear
+				.help-contact-us
+					.wrapper
+						.csr.left
+						.text
+							h3 Call Us
+							p.phone
+								| (800) 555-5555
+							p
+								| M–F 8:00am – 8:00pm central time
+								
+						.clear
+				.clear
+
+
+		/! site footer
+		.content-container.site-footer
+			.container
+				nav.social
+					ul
+						li
+							a href='https://www.facebook.com/LegalZoom' target='_blank' 
+								i.icon.icon-facebook-sign
+						li
+							a href='http://twitter.com/LegalZoom' target='_blank' 
+								i.icon.icon-twitter-sign
+						li
+							a href='http://www.linkedin.com/company/legalzoom' target='_blank' 
+								i.icon.icon-linkedin-sign
+						li
+							a href='https://plus.google.com/+legalzoom/posts' target='_blank' 
+								i.icon.icon-google-plus-sign
+					.clear
+					a.logo-bbb href='http://www.bbb.org/council/overview-of-bbb-grade/' target='_blank'
+					
+				nav.legal
+					ul
+						li
+
+							a name='disclaimer_overview' onclick="AppGlobal.popUps('https://mobile.legalzoom.com/Disclaimer','400','400');" Disclaimer
+						li
+							a name='privacy_policy' onclick="AppGlobal.popUps('https://www.legalzoom.com/legal/general-terms/privacy-policy#midLeft','730','400');" Privacy Policy
+						li
+							a name='terms_of_use' onclick="AppGlobal.popUps('https://www.legalzoom.com/legal/general-terms/terms-of-use#midLeft','730','400');" Terms of Use					
+
+					.clear
+
+
+				p.disclaimer The information provided on this site is not legal advice. 
+				
+		/! modal content
+
+		/! modal for loading external content
+		.modal.external
+			.container
+				a.close
+				.shadow
+				.overlay
+				.content
+
+
+		/! modal overlay (used by all modals)
+		a.modal-overlay
+
+		/! tooltip container
+		.tooltip-container
+
+			/! tooltip for when no state has been selected
+			.state-not-selected.narrow#state_selection_error_tooltip
+				.arrow.down
+				a.close
+				p Select the state where you want to form your LLC.
+
+
+
+
+

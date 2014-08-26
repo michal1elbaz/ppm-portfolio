@@ -1,0 +1,29 @@
+/*
+	core css file for all modules and components
+*/
+
+/* external stylesheets for HTML 5 reset and fonts */
+@import 'html5-doctor-reset-stylesheet.min.css';
+@import 'font-awesome.css';
+@import 'fonts.css';
+
+/* scss files for modules and components */
+@import 'variables';
+@import 'common';
+@import 'forms';
+@import 'buttons';
+@import 'progress-bar';
+@import 'tooltips';
+@import 'modal';
+@import 'module-image';
+@import 'module-floating';
+@import 'banners';
+@import 'steps-nav';
+
+/* import 5n5 layout */
+@import '5n5';
+@import '5n5-qaire';
+@import '5n5-checkout';
+
+/* legal disclaimers and terms in modals */
+@import 'disclaimers-terms';

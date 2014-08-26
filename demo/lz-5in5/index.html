@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <meta content="chrome=1" http-equiv="X-UA-compatible" />
+    <meta content="width=device-width; initial-scale=1; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" name="viewport" />
+    <title>LegalZoom Quick Start LLC</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="css/core.css" media="all" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 8]>
+    <link href="css/ie8.css" media="all" rel="stylesheet" type="text/css" />
+    <![endif]--><!--[if lte IE 9]>
+    <link href="css/ie9.css" media="all" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="js/modernizr-2.6.2.js" type="text/javascript"></script>
+    <script src="js/appGlobal.js" type="text/javascript"></script>
+    <script src="js/swipe.js" type="text/javascript"></script>
+    <script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+    <script src="js/jquery.localScroll.min.js" type="text/javascript"></script>
+    <script src="js/overview.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!--top nav-->
+    <nav class="site-nav">
+      <div class="container">
+        <div class="lz-logo"></div>
+        <ul class="nav-menu-overview">
+          <li class="menu-button">
+            <a><i class="icon icon-reorder"></i></a>
+            <ul class="menu-list">
+              <li>
+                <a href="#how_it_works">How it works</a>
+              </li>
+              <li>
+                <a href="#start_your_llc">Start your LLC</a>
+              </li>
+              <li>
+                <a href="#FAQs">FAQs</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="#contact_us">Call us</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--top content container for 5n5 overview page-->
+    <div class="content-container home">
+      <!--background layer-->
+      <div class="background">
+        <div class="container"></div>
+      </div>
+      <!--foreground layer-->
+      <div class="foreground">
+        <div class="container">
+          <div class="content">
+            <h1>
+              We helped Derek get started with his dream 
+            </h1>
+            <h2 id="state_headline">
+              We've helped over 1 million businesses get started.
+            </h2>
+          </div>
+          <!--hero info text-->
+          <div class="hero-info">
+            <p>
+              <em>Derek Rohlffs</em><br />Bravium Winery, LLC<br />LegalZoom Customer
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="shadow-strip-inverted"></div>
+    </div>
+    <!--content container for package selection-->
+    <div class="content-container package-selection" id="start_your_llc">
+      <div class="header-band">
+        <div class="container">
+          <h2>
+            Select an LLC package to get started
+          </h2>
+        </div>
+      </div>
+      <div class="container">
+        <!--silver package-->
+        <div class="package silver featured">
+          <div class="heading">
+            <h2>
+              Silver LLC
+            </h2>
+            <p class="desc">
+              Best value
+            </p>
+            <div class="banner"></div>
+          </div>
+          <div class="detail">
+            <div class="price-detail">
+              <ul>
+                <li class="col">
+                  State of LLC formation:
+                </li>
+                <li class="price">
+                  <!--select drop downs-->
+                  <div class="form-group">
+                    <div class="form-fields select">
+                      <div class="select-field micro">
+                        <div class="select-arrow-container">
+                          <div class="select-arrow"></div>
+                        </div>
+                        <select><optgroup label="states">
+                            <option>
+                              CA
+                            </option>
+                            <option>
+                              TX
+                            </option>
+                            <option>
+                              WA
+                            </option>
+                          </optgroup></select>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--legalzoom one-time fee-->
+                <li class="col">
+                  LegalZoom one-time fee
+                </li>
+                <li class="price">
+                  $349
+                </li>
+                <!--state required fee display-->
+                <li class="col state_required_fee_text">
+                  CA - state required fee<br />(<a onclick="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');">what is this?</a>)
+                </li>
+                <li class="price state_fee_amount">
+                  $85
+                </li>
+              </ul>
+              <div class="clear"></div>
+              <p class="price-total">
+                $434
+              </p>
+              <div class="rebate-div">
+                <p>
+                  $150 Bank of America Cash Back offer available (<a onclick="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');">see detail</a>)*
+                </p>
+              </div>
+            </div>
+            <div class="get-started">
+              <!--button with icon on right--><a class="button orange flex has-right home-state-selection" data-pkg="silver" id="get_started_silver"><span class="button-right"><span class="inner"><i class="icon button-icon arrow-large"></i></span></span><span class="button-center">Get started</span></a>
+              <p class="package-disclaimer">
+                <span><sup>*</sup> For those who qualify</span>
+              </p>
+            </div>
+          </div>
+          <div class="package-includes">
+            <h4>
+              The Silver LLC package includes:
+            </h4>
+            <div class="package-header">
+              The Basics
+            </div>
+            <ul>
+              <li>
+                Everything in the Bronze LLC package
+              </li>
+            </ul>
+            <div class="package-header">
+              New Business Starter
+            </div>
+            <ul id="nbs_list">
+              <li>
+                <strong>Over $400 in value for only $50 more than the Bronze LLC package.</strong>
+              </li>
+              <div id="insert-nbs_list"></div>
+              <li>
+                LLC deluxe kit ($70 value) – keep official documents organized.
+                <ul>
+                  <li>
+                    Customized membership certificates 
+                  </li>
+                  <li>
+                    Company seal for embossing membership certificates
+                  </li>
+                  <li>
+                    CD with over 40 useful business forms
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Federal Tax ID (EIN) obtainment ($79 value) – a unique identifier for your business assigned by the IRS.
+              </li>
+              <li>
+                QuickBooks Online ($119 value) – 3 free months of top accounting software to organize your business finances.
+              </li>
+              <li>
+                MyPRGenie ($179 value) – 1 free year of online PR and social media promotion.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--gold package-->
+        <div class="package gold secondary">
+          <div class="heading">
+            <h2>
+              Gold LLC
+            </h2>
+            <p class="desc">
+              Fastest turnaround
+            </p>
+          </div>
+          <div class="detail">
+            <div class="price-detail">
+              <ul>
+                <li class="col">
+                  State of LLC formation:
+                </li>
+                <li class="price">
+                  <!--select drop downs-->
+                  <div class="form-group">
+                    <div class="form-fields select">
+                      <div class="select-field micro">
+                        <div class="select-arrow-container">
+                          <div class="select-arrow"></div>
+                        </div>
+                        <select><optgroup label="states">
+                            <option>
+                              CA
+                            </option>
+                            <option>
+                              TX
+                            </option>
+                            <option>
+                              WA
+                            </option>
+                          </optgroup></select>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--legalzoom one-time fee-->
+                <li class="col">
+                  LegalZoom one-time fee
+                </li>
+                <li class="price">
+                  $399
+                </li>
+                <!--state required fee display-->
+                <li class="col state_required_fee_text">
+                  CA - state required fee<br />(<a onclick="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');">what is this?</a>)
+                </li>
+                <li class="price state_fee_amount">
+                  $85
+                </li>
+              </ul>
+              <div class="clear"></div>
+              <p class="price-total">
+                $484
+              </p>
+              <div class="rebate-div">
+                <p>
+                  $150 Bank of America Cash Back offer available (<a onclick="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');">see detail</a>)*
+                </p>
+              </div>
+            </div>
+            <div class="get-started">
+              <!--button with icon on right--><a class="button flex has-right home-state-selection" data-pkg="gold" id="get_started_gold"><span class="button-right"><span class="inner"><i class="icon button-icon arrow-large"></i></span></span><span class="button-center">Get started</span></a>
+              <p class="package-disclaimer">
+                <span><sup>**</sup> Not including mandatory business filing fees.</span>
+              </p>
+            </div>
+          </div>
+          <div class="package-includes">
+            <h4>
+              The Gold LLC package includes:
+            </h4>
+            <div class="package-header">
+              The Basics
+            </div>
+            <ul>
+              <li>
+                Everything in the Bronze LLC package
+              </li>
+            </ul>
+            <div class="package-header">
+              New Business Starter
+            </div>
+            <ul>
+              <li>
+                Everything in the Silver LLC package
+              </li>
+            </ul>
+            <div class="package-header">
+              Expedited Processing
+            </div>
+            <ul>
+              <li>
+                We rush process your order.
+              </li>
+              <li>
+                We hand-deliver your documents to the state for the fastest processing time.
+              </li>
+              <li>
+                We ship your final package via overnight delivery.
+              </li>
+              <li>
+                Receive your LLC in 7-10 business days instead of 20-35 (for most states).
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--bronze package-->
+        <div class="package bronze">
+          <div class="heading">
+            <h2>
+              Bronze LLC
+            </h2>
+            <p class="desc">
+              Basic
+            </p>
+          </div>
+          <div class="detail">
+            <div class="price-detail">
+              <ul>
+                <li class="col">
+                  State of LLC formation:
+                </li>
+                <li class="price">
+                  <!--select drop downs-->
+                  <div class="form-group">
+                    <div class="form-fields select">
+                      <div class="select-field micro">
+                        <div class="select-arrow-container">
+                          <div class="select-arrow"></div>
+                        </div>
+                        <select><optgroup label="states">
+                            <option>
+                              CA
+                            </option>
+                            <option>
+                              TX
+                            </option>
+                            <option>
+                              WA
+                            </option>
+                          </optgroup></select>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!--legalzoom one-time fee-->
+                <li class="col">
+                  LegalZoom one-time fee
+                </li>
+                <li class="price">
+                  $299
+                </li>
+                <!--state required fee display-->
+                <li class="col state_required_fee_text">
+                  CA - state required fee<br />(<a onclick="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');">what is this?</a>)
+                </li>
+                <li class="price state_fee_amount">
+                  $85
+                </li>
+              </ul>
+              <div class="clear"></div>
+              <p class="price-total">
+                $384
+              </p>
+              <div class="rebate-div">
+                <p>
+                  $150 Bank of America Cash Back offer available (<a onclick="AppGlobal.openModalExternal('text','/modals/bofa_disclaimer');">see detail</a>)*
+                </p>
+              </div>
+            </div>
+            <div class="get-started">
+              <!--button with icon on right--><a class="button flex has-right home-state-selection" data-pkg="bronze" id="get_started_bronze"><span class="button-right"><span class="inner"><i class="icon button-icon arrow-large"></i></span></span><span class="button-center">Get started</span></a>
+              <p class="package-disclaimer">
+                <span><sup>**</sup> Not including mandatory business filing fees.</span>
+              </p>
+            </div>
+          </div>
+          <div class="package-includes">
+            <h4>
+              The Bronze LLC package includes:
+            </h4>
+            <div class="package-header">
+              The Basics
+            </div>
+            <ul>
+              <li>
+                We check to see if your LLC name is available with the state.
+              </li>
+              <li>
+                We file your LLC with the appropriate state agency. 
+              </li>
+              <li>
+                We create state-specific, personalized documents for your business.
+              </li>
+              <li>
+                We send you your filed documents and other personalized paperwork, such as your LLC’s operating agreement.
+              </li>
+              <li>
+                Every order includes free lifetime customer support.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="shadow-strip-band">
+        <div class="shadow-strip"></div>
+        <p class="package-disclaimer">
+          <span><sup>**</sup> Not including mandatory business filing fees.</span>
+        </p>
+      </div>
+    </div>
+    <!--content container for how it works-->
+    <div class="content-container how-it-works" id="how_it_works">
+      <div class="container">
+        <h2>
+          How LegalZoom works for you
+        </h2>
+        <a class="logo-bbb" href="http://www.bbb.org/council/overview-of-bbb-grade/" target="_blank"></a>
+        <div class="content-main">
+          <div class="content-howitworks">
+            <div class="icon-howitworks step-1"></div>
+            <div class="text">
+              <h3>
+                Complete our short online questionnaire.
+              </h3>
+              <p>
+                Select the package that's right for you. Then, <strong>answer a few simple questions online</strong>. When you're done, <strong>schedule a call</strong> with our dedicated LLC team.
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="content-howitworks">
+            <div class="icon-howitworks step-2"></div>
+            <div class="text">
+              <h3>
+                Speak with our dedicated LLC team.
+              </h3>
+              <p>
+                At the time you selected, we call you. <strong>We review your answers</strong> and ask additional questions needed to complete your order. While these questions can be complicated, we talk you through them and make sure you understand your choices.
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="content-howitworks">
+            <div class="icon-howitworks step-3"></div>
+            <div class="text">
+              <h3>
+                We file the paperwork & you receive your completed LLC.
+              </h3>
+              <p>
+                Using the information you provided, <strong>we file your LLC</strong> with the state and personalize documents for your business. Once we get your filed documents back from the state, <strong>we ship your final package</strong>. If you have any questions, we're always here to help with <strong>lifetime customer support</strong>.
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="content-sidebar">
+          <!--video module for how it works-->
+          <div class="module-image small framed video">
+            <div class="shadow"></div>
+            <div class="container">
+              <div class="youtube-thumb">
+                <iframe class="youtube-player" height="100%" src="https://www.youtube.com/embed/Qm1SFYz5HSc?HD=1;rel=0;showinfo=0;" type="text/html" width="100%">allowfullscreen frameborder='0'</iframe>
+              </div>
+              <a onclick="AppGlobal.openModalExternal(&#39;video&#39;, &#39;/modals/video_what_to_expect&#39;);"><img class="thumb-image" height="158" src="images/5n5-contact-video-thumbnail.jpg" width="258" />
+                <div class="timing">
+                  90 sec.
+                </div>
+                <div class="button-play small"></div>
+              </a>
+            </div>
+          </div>
+          <a class="link-video" onclick="AppGlobal.openModalExternal(&#39;video&#39;, &#39;/modals/video_what_to_expect&#39;);">See how we help you start your LLC</a>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--common questions content-->
+    <div class="content-container questions" id="FAQs">
+      <div class="container">
+        <div class="content-main">
+          <h2>
+            Common questions about LLCs
+          </h2>
+          <ul class="faqs">
+            <li class="active">
+              <a>What is a limited liability company (LLC)?</a>
+              <ul>
+                <li>
+                  <p>
+                    A limited liability company, or LLC, is a business entity created under state law that combines characteristics of both a corporation and a partnership. Like a corporation, the owners of an LLC are generally not personally liable for company debts. Like a sole proprietorship or a partnership, an LLC has operating flexibility and is, by default, a "pass through" entity for tax purposes. This means the LLC does not pay taxes on its profits, but instead, profits and losses are "passed through" to the owners, who must then pay tax on their share of LLC income.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>LLC vs. S corporation - which one is right for me?</a>
+              <ul>
+                <li>
+                  <p>
+                    Although an S corporation shares many of the same tax characteristics as an LLC, an LLC has more flexibility and fewer restrictions on ownership than does an S corporation. An S corporation must not have more than 100 shareholders, all of whom must be U.S. citizens or legal residents. An S corporation is also subject to more formalities, such as holding annual meetings and keeping corporate minutes. On the other hand, LLCs generally are not required to hold formal meetings, but an LLC owner may be subject to higher self-employment taxes than a comparable S corporation owner. That is because an S corporation owner is required to pay self-employment tax only on salary, but not on dividends from the corporation.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>How do I form an LLC?</a>
+              <ul>
+                <li>
+                  <p>
+                    You can prepare the legal paperwork and file it yourself, or you can use a service, such as LegalZoom. If you choose to form your LLC through LegalZoom, you will just answer a few simple questions online. We will take care of all the paperwork, file the necessary documents with the state, and even send you an LLC kit with seals and certificates as part of your final package.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>Who can form an LLC?</a>
+              <ul>
+                <li>
+                  <p>
+                    Almost anyone can form an LLC as there is typically no residency or legal restriction. However, a few states do require LLC owners to be at least 18.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>Can I form an LLC in a state other than the one in which my business will operate?</a>
+              <ul>
+                <li>
+                  <p>
+                    You can form an LLC in any state, but many people choose to form LLCs in their home state. This may save you money because the LLC will not need to register as a "foreign LLC" if it does business in its home state. If your home state has high annual LLC fees or income taxes, and your LLC does not do business in that state, it may be wise to form your LLC elsewhere. LegalZoom can help you form an LLC in any state you choose.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>What documents are required to start a limited liability company?</a>
+              <ul>
+                <li>
+                  <p>
+                    To create an LLC, Articles of Organization must be filed with the Secretary of State or appropriate state agency. Next, the LLC members should enter into an operating agreement, which sets forth the rights of the members and the rules for running the company. An LLC may also need to apply for a tax identification number with the IRS. LegalZoom prepares all of the required documents for you and takes care of government filings.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>How is a limited liability company (LLC) taxed?</a>
+              <ul>
+                <li>
+                  <p>
+                    By default, LLCs do not pay income tax at the entity level. Instead, the LLC's income is “passed through” to the owners who pay tax on their share of the LLC’s income on their personal tax returns. For an LLC with one owner, income is reported on the individual owner's Form 1040, Schedule C.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>Does my LLC need a registered agent?</a>
+              <ul>
+                <li>
+                  <p>
+                    Having a registered agent (or statutory agent) for your LLC is required by law. The agent must be either (1.) an adult individual living in the state of LLC formation with a valid street address (no P.O. boxes), or (2.) a company, such as LegalZoom, authorized to serve as an agent. The registered agent is designated to accept service of process on the LLC’s behalf. In addition, the registered agent’s name and address is public information on state records. LegalZoom can serve as your LLC’s registered agent.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a>Does my LLC need an operating agreement?</a>
+              <ul>
+                <li>
+                  <p>
+                    All LegalZoom LLCs include a personalized, state-specific operating agreement. The operating agreement governs the LLC’s operations and includes provisions about managing the LLC and transferring ownership.
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="content-sidebar">
+          <div class="module-image framed video small">
+            <div class="shadow"></div>
+            <div class="container">
+              <div class="youtube-thumb">
+                <iframe class="youtube-player" height="100%" src="https://www.youtube.com/embed/Npan-mq7gbc?HD=1;rel=0;showinfo=0;" type="text/html" width="100%">allowfullscreen frameborder='0'</iframe>
+              </div>
+              <a onclick="AppGlobal.openModalExternal('video', '/modals/video_where_llc');"><img class="thumb-image" height="158" src="images/5n5-home-video-whyllc-thumbnail.jpg" width="258" />
+                <div class="button-play small"></div>
+              </a>
+            </div>
+          </div>
+          <a class="link-video" onclick="AppGlobal.openModalExternal('video','/modals/video_where_llc')">Where should you form your LLC or corporation?</a>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--quotes and testimonials-->
+    <div class="content-container texture-stripes swipe-quotes" id="testimonials">
+      <div class="shadow-strip"></div>
+      <div class="container">
+        <h2>
+          What people are saying about LegalZoom
+        </h2>
+        <div class="slide-control">
+          <a class="arrow previous" onclick="mySwipe.prev();"></a><a class="arrow next" onclick="mySwipe.next();"></a>
+        </div>
+        <div class="swipe" id="slider">
+          <div class="swipe-wrap">
+            <div class="slides">
+              <div class="content">
+                <blockquote>
+                  <div class="open">
+                    &#8220;
+                  </div>
+                  <div class="quote">
+                    And a big thank you to <span class="highlight">@LegalZoom </span>for hosting this great platform - a true friend to small business! <span class="highlight">#legalzoomstartup</span><span class="close">&#8221;</span>
+                  </div>
+                </blockquote>
+                <div class="twitter-persona">
+                  <div class="avatar steve-strauss"></div>
+                  <div class="name">
+                    Steve Strauss
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slides huffpost">
+              <div class="content">
+                <blockquote>
+                  <div class="open">
+                    &#8220;
+                  </div>
+                  <div class="quote">
+                    Get top quality legal documents without paying top dollar.<span class="close">&#8221;</span>
+                  </div>
+                  <div class="from">
+                    <div class="from-huffpost"></div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="slides">
+              <div class="content">
+                <blockquote>
+                  <div class="open">
+                    &#8220;
+                  </div>
+                  <div class="quote">
+                    <strong>Best feature: </strong>Fast customer service response.<span class="close">&#8221;</span>
+                  </div>
+                  <div class="from">
+                    <div class="from-wsj"></div>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="slides wrightway">
+              <div class="content">
+                <div class="col-small">
+                  <div class="module-image small framed video">
+                    <div class="shadow"></div>
+                    <div class="container">
+                      <div class="youtube-thumb">
+                        <iframe class="youtube-player" data-src="https://www.youtube.com/embed/jKNBcCy0T78?HD=1;rel=0;showinfo=0;" height="100%" src="about:blank" type="text/html" width="100%">allowfullscreen frameborder='0'</iframe>
+                      </div>
+                      <a onclick="AppGlobal.openModalExternal('video','/modals/video_mason_chelsea');"><img src="images/5n5-home-swipe-video-wrightway-thumbnail.jpg" />
+                        <div class="button-play small"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-large">
+                  Mason and Chelsea Wright started Wright Way Painting in 2009 on LegalZoom
+                </div>
+                <div class="clear"></div>
+              </div>
+            </div>
+            <div class="slides nine-out-of-ten">
+              <div class="content">
+                <div class="col-small">
+                  <div class="people"></div>
+                </div>
+                <div class="col-large">
+                  <strong>9 out of 10</strong> customers would recommend us to friends and family.
+                  <p class="disclaimer">
+                    Number of customers who would recommend LegalZoom is based on surveys conducted in 2012.
+                  </p>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--sample document and help-->
+    <div class="content-container help-footer" id="contact_us">
+      <div class="container">
+        <div class="sample-document">
+          <div class="wrapper bordered">
+            <div class="icon-sample-document"></div>
+            <div class="text">
+              <h3>
+                Sample document
+              </h3>
+              <p>
+                <a onclick="AppGlobal.openModalExternal('text','/modals/sample_documents');">View a sample LLC document</a>
+              </p>
+              <p>
+                Your final forms, documents and filings may differ depending on your state.
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="help-contact-us">
+          <div class="wrapper">
+            <div class="csr left"></div>
+            <div class="text">
+              <h3>
+                Call Us
+              </h3>
+              <p class="phone">
+                (800) 555-5555
+              </p>
+              <p>
+                M–F 8:00am – 8:00pm central time
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--site footer-->
+    <div class="content-container site-footer">
+      <div class="container">
+        <nav class="social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/LegalZoom" target="_blank"><i class="icon icon-facebook-sign"></i></a>
+            </li>
+            <li>
+              <a href="http://twitter.com/LegalZoom" target="_blank"><i class="icon icon-twitter-sign"></i></a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/company/legalzoom" target="_blank"><i class="icon icon-linkedin-sign"></i></a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/+legalzoom/posts" target="_blank"><i class="icon icon-google-plus-sign"></i></a>
+            </li>
+          </ul>
+          <div class="clear"></div>
+          <a class="logo-bbb" href="http://www.bbb.org/council/overview-of-bbb-grade/" target="_blank"></a>
+        </nav>
+        <nav class="legal">
+          <ul>
+            <li>
+              <a name="disclaimer_overview" onclick="AppGlobal.popUps(&#39;https://mobile.legalzoom.com/Disclaimer&#39;,&#39;400&#39;,&#39;400&#39;);">Disclaimer</a>
+            </li>
+            <li>
+              <a name="privacy_policy" onclick="AppGlobal.popUps(&#39;https://www.legalzoom.com/legal/general-terms/privacy-policy#midLeft&#39;,&#39;730&#39;,&#39;400&#39;);">Privacy Policy</a>
+            </li>
+            <li>
+              <a name="terms_of_use" onclick="AppGlobal.popUps(&#39;https://www.legalzoom.com/legal/general-terms/terms-of-use#midLeft&#39;,&#39;730&#39;,&#39;400&#39;);">Terms of Use					</a>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </nav>
+        <p class="disclaimer">
+          The information provided on this site is not legal advice. 
+        </p>
+      </div>
+    </div>
+    <!--modal content--><!--modal for loading external content-->
+    <div class="modal external">
+      <div class="container">
+        <a class="close"></a>
+        <div class="shadow"></div>
+        <div class="overlay"></div>
+        <div class="content"></div>
+      </div>
+    </div>
+    <!--modal overlay (used by all modals)--><a class="modal-overlay"></a><!--tooltip container-->
+    <div class="tooltip-container">
+      <!--tooltip for when no state has been selected-->
+      <div class="state-not-selected narrow" id="state_selection_error_tooltip">
+        <div class="arrow down"></div>
+        <a class="close"></a>
+        <p>
+          Select the state where you want to form your LLC.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

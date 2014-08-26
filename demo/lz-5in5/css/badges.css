@@ -1,0 +1,33 @@
+/*
+	badge styles
+	imported from 'badges.scss'
+*/
+/*
+	variables for legalzoom:
+	colors
+	background
+	border
+	fonts
+	text colors
+	responsive screen sizes
+	imported from 'variables.scss'
+*/
+/* branding colors */
+/* background colors */
+/* border colors */
+/* fonts */
+/* text colors */
+/* responsive screen sizes */
+.badge-bbb {
+  display: block;
+  width: 108px;
+  height: 42px;
+  overflow: hidden;
+  background: transparent url(../images/badge-bbb.png) no-repeat 0 0; }
+
+.badge-satisfaction-guaranteed {
+  display: block;
+  width: 98px;
+  height: 64px;
+  overflow: hidden;
+  background: transparent url(../images/badge-satisfaction-guaranteed.png) no-repeat 0 0; }

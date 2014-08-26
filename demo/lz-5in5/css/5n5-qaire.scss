@@ -1,0 +1,487 @@
+/*
+	layout for legalzoom 5n5 project - questionnaire and forms
+	imported from 5n5-qaire.scss
+*/
+
+@import 'variables';
+
+/* site nav for the 5n5 questionnaire */
+.site-nav {
+	&.qaire {
+		position: relative;
+		height: 56px;
+		background: transparent url(../images/5n5-qaire-bg-gradient-navbar.png) repeat-x 0 0;
+		@media #{$iphone-landscape}, #{$iphone-portrait} {
+			height: 44px;
+			background-image: url(../images/5n5-qaire-bg-gradient-navbar-iphone.png);
+		}
+		.container {
+			width: 960px;
+			margin: 0 auto;
+			@media #{$ipad-portrait} {
+				width: 768px;
+			}
+			@media #{$iphone-landscape}, #{$iphone-portrait} {
+				width: 100%;
+			}
+			.lz-logo {
+				position: absolute;
+				left: 0;
+				top: 12px;
+				margin: 0;
+				z-index: 10;
+				@media #{$ipad-portrait} {
+					left: 10px;
+				}
+				@media #{$iphone-landscape}, #{$iphone-portrait} {
+					left: 12px;
+					top: 10px;
+				}
+			}
+			.header {
+				position: absolute;
+				top: 14px;
+				margin-left: 140px;
+				z-index: 15;
+				@media #{$ipad-portrait} {
+					margin-left: 150px;
+				}
+				@media #{$iphone-landscape}, #{$iphone-portrait} {
+					margin: 0;
+					right: 14px;
+					top: 13px;
+				}
+				h1 {
+					font-size: 28px;
+					color: #fff;
+					font-family: $font-light;
+					@media #{$iphone-landscape}, #{$iphone-portrait} {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		.bg {
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: block;
+			width: 809px;
+			height: 100%;
+			background: transparent url(../images/5n5-qaire-bg-navbar.jpg) no-repeat top right;
+			z-index: 1;
+			@media #{$ipad-portrait} {
+				width: 768px;
+			}
+			@media #{$iphone-landscape} {
+				width: 420px;
+				background-image: url(../images/5n5-qaire-bg-navbar-iphone.jpg);
+				@media #{$retina-display} {
+					background-image: url(../images/5n5-qaire-bg-navbar-iphone-2x.jpg);
+					background-size: 420px 64px;
+				}
+			}
+			@media #{$iphone-portrait} {
+				width: 320px;
+				background-image: url(../images/5n5-qaire-bg-navbar-iphone.jpg);
+				@media #{$retina-display} {
+					background-image: url(../images/5n5-qaire-bg-navbar-iphone-2x.jpg);
+					background-size: 420px 64px;
+				}
+			}
+		}
+		.shadow {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 4px;
+			z-index: 10;
+			box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.2) inset;
+		}
+	}
+}
+
+/* steps nav customization */
+.steps-nav {
+	z-index: 20;
+	.full-size {
+		.steps {
+			li {
+				.link {
+					width: 140px;
+					@media #{$ipad-portrait} {
+						width: 110px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* qaire content container */
+.qaire-content {
+	width: 580px;
+	padding: 30px;
+	margin: 20px 10px 30px 0; 
+	background: #fff;
+	box-shadow: 1px 2px 1px 0px rgba(0,0,0,0.2);
+	border-radius: 12px;
+	position: relative;
+	@media #{$ipad-portrait} {
+		width: 430px;
+	}
+	@media #{$iphone-landscape} {
+		width: 440px;
+		margin: 20px 0 30px 0;
+		padding: 0 10px 0 10px;
+		box-shadow: none;
+		border-radius: 0;
+	}
+	@media #{$iphone-portrait} {
+		width: 280px;
+		padding: 0 10px 0 10px;
+		margin: 0 20px 0 30px 0;
+		box-shadow: none;
+		border-radius: 0;
+	}
+	/* heading section */
+	h1 {
+		font-size: 22px;
+		font-family: $font-light;
+		line-height: 1.3;
+		@media #{$iphone-landscape} {
+			font-size: 18px;
+			width: 410px;
+		}
+		@media #{$iphone-portrait} {
+			font-size: 18px;
+			width: 250px;
+		}
+	}
+	.heading {
+		position: relative;
+		width: 100%;
+		height: auto;
+		.help {
+			display: none;
+			@media #{$iphone-landscape}, #{$iphone-portrait} {
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+
+	/* "next" button size */
+	.button.next {
+		.button-center {
+			width: 90px;
+			@media #{$iphone-portrait} {
+				width: 80px;
+			}
+		}
+	}
+
+	/* qaire next/previous nav unit */
+	.qaire-nav {
+		width: 100%;
+		height: 50px;
+		position: relative;
+		.button.next, .button.next-large {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		.link-previous {
+			font-size: 12px;
+			position: absolute;
+			left: 4px;
+			top: 26px;
+		}
+	}
+
+	/* content for contact page */
+	.contact-content {
+		margin: 0 0 10px 10px;
+		@media #{$iphone-portrait}, #{$iphone-landscape} {
+			margin: 0 0 20px 0;
+		}
+		.csr {
+			float: left;
+		}
+		.text {
+			float: left;
+			width: 270px;
+			margin: 10px 10px 0 14px;
+			@media #{$ipad-portrait} {
+				width: 154px;
+				margin: 4px 10px 0 14px;
+			}
+			@media #{$iphone-landscape} {
+				width: 350px;
+				margin: 4px 0 0 10px;
+			}
+			@media #{$iphone-portrait} {
+				width: 190px;
+				margin: 4px 0 0 10px;
+			}
+			p {
+				font-size: 13px;
+				font-family: $font-light;
+				@media #{$ipad-portrait} {
+					font-size: 11px;
+				}
+				@media #{$iphone-portrait} {
+					font-size: 12px;
+				}
+				strong {
+					font-family: $font-medium;
+					color: $brand-blue;
+					font-weight: normal;
+				}
+			}
+		}
+		.video-frame {
+			float: left;
+			width: 174px;
+			@media #{$ipad-portrait} {
+				width: 160px;
+			}
+			@media #{$iphone-landscape}, #{$iphone-portrait} {
+				display: none;
+			}
+			.module-image.small.video {
+				width: 163px;
+				height: 98px;
+				@media #{$ipad-portrait} {
+					width: 143px;
+					height: 83px;
+					a img {
+						width: 143px;
+						height: 83px;
+					}
+				}
+				.time {
+					position: absolute;
+					z-index: 2;
+					color: $brand-indigo;
+					font-size: 12px;
+					bottom: 4px;
+					right: 4px;
+				}
+			}
+			.video-link {
+				text-align: center;
+				position: relative;
+				display: block;
+				line-height: 1.3em;
+				top: -10px;
+				font-size: 13px;
+				color: $brand-indigo;
+				@media #{$ipad-portrait} {
+					font-size: 12px;
+				}
+				.no-touch &:hover {
+					color: $brand-blue;
+				}
+			}
+		}
+		.video-play {
+			display: none;
+			position: relative;
+			margin: -14px 0 0 74px;
+			@media #{$iphone-landscape}, #{$iphone-portrait} {
+				display: block;
+			}
+			@media #{$iphone-portrait} {
+				margin: 0 0 0 74px;
+			}
+			a {
+				.text {
+					width: 250px;
+					padding: 10px 0 0 0;
+					float: left;
+					font-size: 13px;
+					line-height: 1.3em;
+					color: $brand-indigo;
+					@media #{$iphone-portrait} {
+						width: 134px;
+						padding: 2px 0 0 0;
+					}
+				}
+				.button-play {
+					float: left;
+					width: 45px;
+					height: 45px;
+					background-size: 125px 128px;
+					background-position: 0 0;
+				}
+				.no-touch &:hover {
+					.button-play {
+						background-position: 0 -65px;
+					}
+				}
+			}
+			
+		}
+	}
+
+	/* help content */
+	.help-content {
+		width: 260px;
+		height: auto;
+		position: absolute;
+		right: -314px;
+		top: 0;
+		display: block;
+		opacity: 1;
+		@media #{$ipad-portrait} {
+			width: 220px;
+			right: -270px;
+		}
+		@media #{$iphone-portrait}, #{$iphone-landscape} {
+			display: none;
+		}
+		h2 {
+			font-size: 14px;
+			color: $brand-indigo;
+			margin-bottom: 0.8em;
+		}
+		p {
+			font-size: 13px;
+			font-family: $font-light;
+			color: #444;
+			strong {
+				font-family: $font-medium;
+				font-weight: normal;
+			}
+		}
+		.help-phone-number {
+			margin-top: 20px;
+			h2 {
+				margin-bottom: 2px;
+			}
+			.phone {
+				font-family: $font-medium;
+				color: $brand-blue;
+				font-size: 17px;
+				margin-bottom: 4px;
+			}
+			.hours {
+				font-size: 11px;
+				line-height: 1.5;
+			}
+		}
+	}
+}
+
+.content-container {
+	&.qaire {
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+		background: transparent url(../images/bg-paper-tile-pattern.jpg) repeat;
+		@media #{$iphone-landscape}, #{$iphone-portrait} {
+			background: #fff;
+		}
+	}
+}
+
+/* qaire footer adjustment (without social icons) */
+
+.content-container.site-footer {
+	.container {
+		.disclaimer {
+			width: 800px;
+			@media #{$ipad-portrait} {
+				width: 600px;
+			}
+			@media #{$iphone-landscape} {
+				width: 330px;
+			}
+			@media #{$iphone-portrait} {
+				width: 180px;
+			}
+		}
+		.logo-bbb {
+			top: 20px;
+			@media #{$iphone-landscape} {
+				right: 0;
+			}
+			@media #{$iphone-portrait} {
+				right: 0;
+			}
+		}
+		.help-phone-number {
+			display: none;
+			width: 100%;
+			margin-bottom: 20px;
+			@media #{$iphone-portrait}, #{$iphone-landscape} {
+				display: block;
+			}
+			@media #{$iphone-portrait} {
+				margin-bottom: 10px;
+			}
+			p {
+				margin-bottom: 2px;
+				font-size: 16px;
+				color: $brand-indigo;
+				.phone {
+					color: $brand-blue;
+				}
+				@media #{$iphone-portrait} {
+					font-size: 14px;
+				}
+			}
+			.hours {
+				color: $brand-dark-gray;
+				font-family: $font-light;
+				font-size: 12px;
+				@media #{$iphone-portrait} {
+					font-size: 11px;
+				}
+			}
+		}
+	}
+}
+
+/* qaire dynamic display content */
+
+.qdiv {
+	min-height: 200px;
+	padding-bottom: 40px;
+	position: relative;
+	@media #{$ipad-portrait} {
+		min-height: 200px;
+	}
+	.qaire-nav {
+		position: absolute;
+		bottom: 0;
+	}
+	p {
+		&.disclaimer {
+			font-size: 11px;
+		}
+	}
+
+	.member-form-add-remove {
+		ul {
+			margin: 0 0 0 0;
+			padding-bottom: 20px;
+		}
+		li {
+			float: left;
+			margin: 0 2px 0 0;
+			font-size: 12px;
+			padding: 4px 8px 4px 8px;
+		}
+	}
+
+	/* specific question min height to accommodate the amount of help text */
+	&#q7 {
+		min-height: 320px;
+	}
+
+}
