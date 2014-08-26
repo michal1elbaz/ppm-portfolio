@@ -1,0 +1,1027 @@
+/* colors */
+/* normal bill pay content */
+.content-billpay {
+  width: 688px;
+  margin: 0 auto;
+  border: 2px solid #79b3bf;
+  position: relative;
+  padding: 15px;
+  background: #fff;
+}
+.content-billpay h1 {
+  color: #FB8026;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.content-whats-new {
+  background: #fcfbdb;
+  padding: 15px 20px 20px 20px;
+  margin: 0 0 15px 0;
+  border: 1px solid #ce5c09;
+  color: #ce5c09;
+  position: relative;
+  font-size: 14px;
+}
+.content-whats-new p {
+  font-size: 14px;
+  color: #ce5c09;
+}
+.content-whats-new ul {
+  margin-left: 20px;
+}
+.content-whats-new .dismiss {
+  font-size: 11px;
+  float: right;
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+.content-whats-new .dismiss a {
+  display: block;
+  padding: 3px;
+  color: #ce5c09;
+}
+.content-whats-new .dismiss a span {
+  display: block;
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: -1px;
+  background: transparent url(../images/sprites-buttons.png) no-repeat 0 -515px;
+}
+.content-whats-new .dismiss a:hover {
+  color: #ad5400;
+}
+.content-whats-new .dismiss a:hover span {
+  background-position: 0 -547px;
+}
+/* management menu */
+.nav-manage-billpay {
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: -2px;
+  right: 18px;
+  z-index: 15;
+}
+.nav-manage-billpay a {
+  color: #000;
+}
+.nav-manage-billpay a:hover {
+  text-decoration: none;
+}
+.nav-manage-billpay li {
+  position: relative;
+}
+.nav-manage-billpay > ul > li > a {
+  border: 1px solid #ccc;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  text-align: center;
+  padding: 5px 0 0 2px;
+  display: block;
+  height: 20px;
+  width: 150px;
+  color: #6b6b6b;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.8);
+  background: #eaeaea;
+}
+.nav-manage-billpay > ul > li > a .arrow {
+  display: block;
+  width: 22px;
+  height: 26px;
+  background: transparent url('../images/sprites-buttons.png') no-repeat 0 -194px;
+  border-left: 1px solid #ccc;
+  float: right;
+  margin: -5px 0 0 0;
+}
+.nav-manage-billpay > ul > li > a .gear {
+  display: block;
+  width: 18px;
+  height: 26px;
+  background: transparent url('../images/sprites-buttons.png') no-repeat 0 -450px;
+  float: left;
+  margin-top: -2px;
+}
+.nav-manage-billpay > ul > li:hover > a {
+  color: #000;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background: #f6f6f6;
+}
+.nav-manage-billpay > ul > li:hover > a .arrow {
+  background-position: 0 -226px;
+}
+.nav-manage-billpay > ul > li:hover > a .gear {
+  background-position: 0 -482px;
+}
+.nav-manage-billpay > ul li > ul {
+  display: none;
+}
+.nav-manage-billpay > ul li:hover > ul {
+  display: block;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  position: absolute;
+  right: -1px;
+  top: 23px;
+  width: 153px;
+  /*box-shadow: 1px 1px 2px rgba(0,0,0,0.4);*/
+
+}
+.nav-manage-billpay > ul li:hover > ul a {
+  padding: 8px;
+  display: block;
+}
+.nav-manage-billpay > ul li:hover > ul a:hover {
+  background: #fff;
+  color: #e67700;
+}
+/* first-time bill pay content */
+.content-billpay-firsttime {
+  width: 688px;
+  margin: 0 auto;
+  border: 2px solid #79b3bf;
+  padding: 15px;
+  background: #fff;
+  position: relative;
+}
+.content-billpay-firsttime h1 {
+  font-size: 20px;
+  color: #fb8026;
+  margin: 0 0 10px 0;
+}
+.content-billpay-firsttime p {
+  font-size: 14px;
+  margin: 0 0 4px 0;
+}
+.content-billpay-firsttime ul {
+  margin: 10px 0 4px 20px;
+}
+.content-billpay-firsttime li {
+  font-size: 14px;
+}
+.content-billpay-firsttime .error {
+  border: 1px solid #ccc;
+  padding: 15px;
+  font-size: 14px;
+  margin: 15px 0 15px 0;
+}
+.content-billpay-firsttime .error h2 {
+  font-size: 16px;
+  color: #a30003;
+}
+.content-billpay-firsttime .terms-and-conditions {
+  margin: -10px 0 20px 200px;
+}
+.get-started {
+  width: 700px;
+  display: block;
+  margin: 20px 0 20px 0;
+}
+.get-started .button {
+  width: 400px;
+  font-size: 18px;
+  margin: 0 0 0 130px;
+}
+/* generic errors */
+.submit-error {
+  border: 1px solid #a30003;
+  background: #f8d9db;
+  padding: 14px 15px 10px 15px;
+  margin: 0 0 14px 0;
+  color: #a30003;
+  font-size: 12px !important;
+}
+.submit-error p {
+  font-weight: bold;
+  font-size: 12px !important;
+  color: #a30003;
+}
+.submit-error a {
+  color: #a30003;
+  text-decoration: underline;
+}
+.submit-error a:hover {
+  color: #5d0003;
+}
+/* panel style */
+.paneloverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 50;
+  background: #fff;
+  opacity: 0.8;
+  display: none;
+  top: 0;
+  left: 0;
+}
+.paneloverlay.active {
+  display: block;
+}
+.panel {
+  display: none;
+  position: absolute;
+  z-index: 51;
+  width: 800px;
+  top: 115px;
+  left: 50%;
+  margin: 0 0 40px -400px;
+  background: #ffffff url(../images/bg-panel-top.jpg) repeat-x top;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.panel.active {
+  display: block;
+}
+.panel .container {
+  position: relative;
+  padding: 35px 20px 30px 20px;
+}
+.panel.fixedsize .container {
+  height: 300px;
+}
+.panel h2 {
+  color: #fb8026;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.panel-close {
+  padding: 6px 32px 5px 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  display: block;
+  background: transparent url(../images/sprites-buttons.png) no-repeat 52px 0;
+}
+.panel-close:hover {
+  color: #42909b;
+  text-decoration: none;
+  background-position: 52px -32px;
+}
+.close-grip {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -25px;
+}
+.panel-close-grip {
+  display: block;
+  width: 50px;
+  height: 20px;
+  background: transparent url(../images/sprites-buttons.png) no-repeat 0 -64px;
+  text-indent: -9999px;
+}
+.panel-close-grip:hover {
+  background-position: 0 -96px;
+}
+/* payment source selection */
+.box {
+  padding: 10px 8px 15px 8px;
+  background: #fff;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 25px 0 10px 0;
+}
+.box > h3 {
+  position: absolute;
+  font-size: 16px;
+  top: -9px;
+  left: 6px;
+  color: #579aa8;
+  background: #fff;
+  padding: 0 5px 0 5px;
+}
+.payment-source {
+  display: block;
+  margin: 8px 0 0 2px;
+}
+.payment-source.nofloat li {
+  float: none;
+}
+.payment-source li {
+  margin: 0 2px 4px 0;
+  display: block;
+  background: #ffffff url(../images/bg-payment-source.png) repeat-x top;
+  position: relative;
+  float: left;
+  border: 3px solid #fff;
+}
+.payment-source li:hover {
+  background-position: 0 -130px;
+  border: 3px solid #579aa8;
+}
+.payment-source li.selected {
+  border: 3px solid #68a9b6;
+}
+.payment-source li.selected .payment-cards {
+  border: 1px solid #fff;
+}
+.payment-cards {
+  display: block;
+  background: transparent url(../images/BPP_card_shadow.gif) no-repeat 2px 6px;
+  height: 44px;
+  width: 86px;
+  padding: 10px 0 0 71px;
+  font-size: 16px;
+  color: #339900;
+  line-height: 16px;
+  border: 1px solid #ccc;
+}
+.payment-cards:hover {
+  color: #339900;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+.payment-cards span {
+  font-size: 10px;
+  color: #000;
+}
+.payment-confirmation {
+  display: none;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.payment-confirmation.active {
+  display: block;
+}
+.payment-confirmation p {
+  font-size: 14px;
+}
+/* adding payee */
+.add-payee .auto-complete-search .form-fields .field-label {
+  width: 200px;
+}
+.auto-complete-search {
+  display: none;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+.auto-complete-search input {
+  font-size: 18px;
+  width: 300px;
+}
+.auto-complete-search.active {
+  display: block;
+}
+.auto-complete-search .search-results {
+  margin: 8px 0 0 70px;
+  font-size: 14px;
+  display: none;
+}
+.auto-complete-search .search-results.active {
+  display: block;
+}
+.auto-complete-search .search-results ul {
+  margin: -5px 0 15px 15px;
+}
+.auto-complete-search .search-results .options {
+  font-size: 12px;
+}
+.auto-complete-search .button.search {
+  font-size: 13px;
+  margin: -1px 0 0 5px;
+}
+.backlink {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  color: #ccc;
+}
+.payee-info {
+  position: relative;
+}
+.add-payee {
+  margin: 15px 0 20px 0;
+  padding: 5px 10px 0 10px;
+  font-size: 14px;
+}
+.form-fields {
+  clear: both;
+}
+.form-fields li {
+  float: left;
+  list-style: none;
+  margin-bottom: 8px;
+}
+.form-fields li.field-label {
+  width: 130px;
+  text-align: right;
+  margin: 3px 5px 0 0;
+}
+.form-fields li.nomargin {
+  margin-bottom: 0;
+}
+.form-fields li.errortext {
+  color: #ab0a0a;
+  font-size: 11px;
+  margin: 5px 0 0 8px;
+}
+.form-fields .small {
+  font-size: 11px;
+}
+.text {
+  font-size: 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px;
+  width: 200px;
+}
+.text.zip1 {
+  width: 100px;
+}
+.text.zip2 {
+  width: 70px;
+}
+.text.address {
+  margin-bottom: 2px;
+}
+/* payee selection */
+.payee-cards {
+  display: block;
+  height: 44px;
+  width: 648px;
+  padding: 10px 0 0 10px;
+  font-size: 16px;
+  color: #339900;
+  line-height: 16px;
+  border: 1px solid #ccc;
+}
+.payee-cards:hover {
+  color: #339900;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+.payee-cards:hover span.arrow {
+  background-position: 0 -416px;
+}
+.payee-cards span {
+  font-size: 10px;
+  color: #000;
+}
+.payee-cards span.arrow {
+  display: block;
+  background: transparent url('../images/sprites-buttons.png') no-repeat 0 -384px;
+  width: 15px;
+  height: 25px;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
+/* full payee list */
+.payee-list {
+  display: none;
+  font-size: 12px;
+}
+.payee-list.active {
+  display: block;
+}
+.payee-list-nav {
+  display: block;
+  border: 1px solid #898989;
+  background: #d1d1d1;
+  width: 650px;
+  margin: 8px 0 0 0;
+}
+.payee-list-nav li {
+  float: left;
+}
+.payee-list-nav li a {
+  display: block;
+  padding: 4px 8px 4px 8px;
+  color: #606060;
+}
+.payee-list-nav li a:hover {
+  background: #fff;
+  text-decoration: none;
+}
+.payee-list-display {
+  display: block;
+  width: 650px;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: #fff;
+}
+.payee-list-display h3 {
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.payee-list-display .content {
+  padding: 8px 15px 15px 15px;
+}
+.payee-list-display .content ul {
+  display: block;
+  margin: 10px 0 35px 0;
+}
+.payee-list-display .content ul li {
+  display: block;
+  float: left;
+  width: 200px;
+  margin-bottom: 5px;
+}
+/* payment options */
+.payment-options {
+  margin: 8px 0 0 5px;
+}
+.payment-options .heading {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0 20px 0;
+  width: 655px;
+}
+.payment-options .heading h3 {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  padding: 3px 5px 3px 5px;
+  background: #fff;
+  color: #a6a6a6;
+  font-size: 12px;
+  font-weight: normal;
+}
+.payment-options .indented {
+  margin-left: 10px;
+}
+.payment-options .amount {
+  background: #d9edf0;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 620px;
+}
+.payment-options .amount .text {
+  font-size: 18px;
+  margin-top: -2px;
+  width: 100px;
+  border-color: #666;
+}
+.payment-schedule {
+  font-size: 16px;
+}
+.payment-schedule li {
+  display: block;
+  margin-bottom: 5px;
+  position: relative;
+}
+.payment-schedule li .radio {
+  margin-top: -1px;
+}
+.payment-schedule li.active {
+  margin-bottom: 15px;
+}
+.payment-schedule li.active p {
+  display: block;
+}
+.payment-schedule li.active label {
+  font-weight: bold;
+}
+.payment-schedule li p {
+  margin: 5px 0 5px 25px;
+  font-size: 16px;
+  display: none;
+}
+.payment-schedule label {
+  cursor: pointer;
+}
+.payment-schedule label:hover {
+  color: #e67700;
+}
+.payment-schedule .payment-date-text {
+  color: #a7030a;
+  font-size: 14px;
+}
+.payment-schedule .payment-schedule-datepicker {
+  width: 100px;
+  font-size: 16px;
+  margin-top: -2px;
+}
+.payment-schedule .recurrence {
+  font-size: 14px;
+}
+.payment-schedule .cancel {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 12px;
+}
+.payment-memo {
+  margin: 25px 0 0 0;
+}
+.payment-memo .memo-link {
+  font-size: 14px;
+  cursor: pointer;
+}
+.payment-memo .memo-link:hover {
+  color: #e67700;
+}
+.payment-memo .memo-link:hover .arrow-expand {
+  background-position: 0 -291px;
+}
+.payment-memo .memo-link.active .arrow-expand {
+  background-position: 0 -323px;
+}
+.payment-memo .memo-link.active:hover .arrow-expand {
+  background-position: 0 -355px;
+}
+.payment-memo .memo-link .arrow-expand {
+  display: block;
+  width: 15px;
+  height: 12px;
+  background: transparent url('../images/sprites-buttons.png') no-repeat 0 -259px;
+  margin: 3px 0 0 0;
+  text-indent: -9999px;
+  float: left;
+}
+.payment-memo .memo {
+  display: none;
+  margin: -15px 0 0 12px;
+}
+.payment-memo .memo.active {
+  display: block;
+}
+.payment-memo .memo span {
+  font-size: 12px;
+}
+.payment-memo .memo-input.text {
+  width: 300px;
+}
+/* buttons */
+.button-continue {
+  margin: 25px 0 10px 210px;
+}
+.button-continue .button {
+  width: 220px;
+}
+.button-addpayee {
+  margin: 25px 0 10px 225px;
+}
+.button-addpayee .button {
+  width: 220px;
+}
+.button-submit {
+  margin: 25px 0 10px 215px;
+}
+.button-submit .button {
+  width: 220px;
+}
+.button-close {
+  margin: 25px 0 10px 215px;
+}
+.button-close .button {
+  width: 220px;
+}
+.back-link {
+  position: absolute;
+  top: -27px;
+  left: 0px;
+}
+/* statement tables */
+.statement-header {
+  width: 674px;
+  background: #2096c8;
+  color: #fff;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  padding: 5px 5px 8px 5px;
+}
+.statement-header strong {
+  font-size: 14px;
+}
+.statement-table {
+  display: block;
+  background: #fff;
+  width: 684px;
+  margin-bottom: 15px;
+  border: none;
+}
+.statement-table.hasdetail .list:hover {
+  color: #e67700;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.statement-table > ul {
+  border-bottom: 1px solid #B2DCE5;
+}
+.statement-table > ul:hover .viewdetail span {
+  background-position: 0 -290px;
+}
+.statement-table > ul:hover .viewdetail span.selected {
+  background-position: 0 -354px;
+}
+.statement-table > ul > li {
+  float: left;
+  display: block;
+  padding: 5px 0 5px 5px;
+}
+.statement-table .table-heading {
+  background: #B2DCE6;
+  color: #fff;
+  font-weight: bold;
+}
+.statement-table .table-heading.sortable li {
+  cursor: pointer;
+}
+.statement-table .table-heading.sortable li:hover {
+  background-color: #82c0d5;
+}
+.statement-table .table-heading.sortable li a {
+  color: #fff;
+  padding: 0px 15px 0 0;
+  display: block;
+}
+.statement-table .table-heading.sortable li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.statement-table .table-heading.sortable li .sort {
+  display: block;
+  float: right;
+  width: 15px;
+  height: 15px;
+}
+.statement-table .table-heading.sortable li .sort.descending {
+  background: transparent url(../images/sprites-buttons.png) no-repeat 0 -578px;
+}
+.statement-table .table-heading.sortable li .sort.ascending {
+  background: transparent url(../images/sprites-buttons.png) no-repeat 0 -610px;
+}
+.statement-table > ul.even {
+  background: #E0EFF1;
+}
+.statement-table .date {
+  width: 80px;
+}
+.statement-table .date a {
+  width: 44px;
+}
+.statement-table .schedule {
+  width: 100px;
+}
+.statement-table .schedule a {
+  width: 78px;
+}
+.statement-table .description {
+  width: 280px;
+}
+.statement-table .description a {
+  width: 85px;
+}
+.statement-table .source {
+  width: 91px;
+}
+.statement-table .source a {
+  width: 60px;
+}
+.statement-table .status {
+  width: 92px;
+}
+.statement-table .status a {
+  width: 55px;
+}
+.statement-table .type {
+  width: 100px;
+}
+.statement-table .type a {
+  width: 48px;
+}
+.statement-table .amount {
+  width: 95px;
+}
+.statement-table .amount a {
+  width: 65px;
+}
+.statement-table .viewdetail {
+  width: 15px;
+}
+.statement-table .viewdetail span {
+  display: block;
+  width: 15px;
+  height: 12px;
+  background: transparent url('../images/sprites-buttons.png') no-repeat 0 -258px;
+  margin-bottom: 0;
+  text-indent: -9999px;
+}
+.statement-table .viewdetail span.selected {
+  background-position: 0 -322px;
+}
+.statement-table .pay {
+  margin-top: -2px;
+}
+.statement-table.pending-table .description {
+  width: 300px;
+}
+.statement-table.payee-table .description {
+  width: 320px;
+}
+.statement-table.payee-table .category {
+  width: 100px;
+}
+.statement-table.payee-table .category a {
+  width: 70px;
+}
+.statement-table.payee-table .date {
+  width: 110px;
+}
+.statement-table.payee-table .date a {
+  width: 110px;
+}
+.statement-table .details {
+  width: 684px;
+  clear: both;
+  padding: 0;
+}
+.statement-table .details .button {
+  margin: 5px 10px 10px 0;
+}
+.statement-table .details > .display {
+  display: none;
+  padding: 5px 0 5px 5px;
+  border-bottom: 1px solid #b2dce5;
+  color: #000;
+  cursor: default;
+  background-color: #fff;
+}
+.statement-table .details > .display:hover {
+  color: #000000;
+}
+.statement-table .details > .display li {
+  display: block;
+}
+.statement-table .details > .display li.edit-links {
+  height: 30px;
+}
+.statement-table .details.active > .display {
+  display: block;
+}
+.statement-table .details > .editable {
+  display: none;
+  padding: 5px 0 5px 5px;
+  border-bottom: 1px solid #b2dce5;
+  color: #000;
+  background-color: #fff;
+}
+.statement-table .details > .editable:hover {
+  color: #000;
+}
+.statement-table .details > .editable label {
+  width: 100px;
+  text-align: right;
+  display: block;
+  float: left;
+  font-size: 11px;
+  padding: 5px;
+}
+.statement-table .details > .editable .text {
+  font-size: 11px;
+}
+.statement-table .details > .editable li {
+  display: block;
+  margin-bottom: 5px;
+}
+.statement-table .details > .editable li.edit-links {
+  height: 30px;
+}
+.statement-filters {
+  padding: 5px 0 0 5px;
+}
+.statement-filters .export {
+  float: right;
+  font-weight: bold;
+  margin: 2px 5px 0 0;
+}
+.statement-filters .export select {
+  margin-top: -1px;
+}
+.statement-filters .date-simple {
+  float: left;
+}
+.statement-filters .filter-option {
+  float: right;
+  margin-right: 8px;
+}
+.statement-filters .filter-advanced {
+  margin: 0 0 10px 0;
+}
+.statement-filters .filter-advanced li {
+  display: block;
+  margin: 0 0 3px 0;
+}
+.statement-filters.advanced {
+  display: none;
+}
+.statement-filters.advanced.active {
+  display: block;
+}
+.date-start,
+.date-end {
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 12px;
+  width: 80px;
+}
+.nav-statement {
+  height: 20px;
+  padding-top: 3px;
+}
+.nav-statement .show {
+  float: left;
+  padding-top: 2px;
+}
+.nav-statement .show .showpages {
+  margin-top: -2px;
+}
+.nav-statement .pages {
+  float: right;
+  margin-right: 5px;
+}
+.nav-statement .pages li {
+  float: left;
+  margin: 0;
+}
+.nav-statement .pages li a {
+  display: block;
+  padding: 1px 4px 1px 4px;
+  border-radius: 4px;
+}
+.nav-statement .pages li a:hover,
+.nav-statement .pages li a.current {
+  background: #e67700;
+  color: #fff;
+  text-decoration: none;
+}
+.payment-new {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 662px;
+  padding: 8px 10px 8px 10px;
+  margin-bottom: 10px;
+}
+.payment-new p {
+  font-size: 15px;
+  float: left;
+  margin: 5px 0 0 100px;
+}
+.payment-new .button {
+  width: 140px;
+  float: right;
+}
+.payment-new.bottom {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.payment-new.bottom .button {
+  width: 600px;
+  float: none;
+  margin: 0 auto;
+}
+/* terms & conditions modal */
+#dialog-tc.dialog {
+  width: 640px;
+  height: 400px;
+  margin: 0 0 0 -320px;
+}
+#dialog-tc.dialog .content-tc {
+  display: block;
+  width: 630px;
+  height: 340px;
+  overflow: auto;
+}
+#dialog-tc-2.dialog {
+  width: 640px;
+  height: 400px;
+  margin: 0 0 0 -320px;
+}
+#dialog-tc-2.dialog .content-tc {
+  display: block;
+  width: 630px;
+  height: 240px;
+  overflow: auto;
+}
+#dialog-tc-2.dialog .enroll {
+  margin: 8px 0 0 0;
+}
+#dialog-tc-2.dialog .enroll li {
+  clear: both;
+  display: block;
+  text-align: center;
+  width: 620px;
+}
+#dialog-tc-2.dialog .enroll li .button {
+  width: 140px;
+  margin: 0 0 8px 226px;
+}

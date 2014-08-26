@@ -1,0 +1,53 @@
+/* colors */
+/* styles for checks hackathon project */
+.checks {
+  display: block;
+  width: 667px;
+  height: 303px;
+  position: relative;
+  background: transparent url(../images/bg-check.jpg) no-repeat 0 0;
+  margin: 5px 0 30px 10px;
+}
+.checks .textfield {
+  font-size: 16px;
+  padding: 2px;
+  border: none;
+  position: absolute;
+  background: #daede8;
+  color: #000;
+}
+.checks .textfield:focus {
+  background: #fff;
+}
+.checks .textfield.payto {
+  top: 104px;
+  left: 95px;
+  width: 385px;
+}
+.checks .textfield.date {
+  top: 62px;
+  left: 427px;
+  width: 100px;
+  font-size: 13px;
+}
+.checks .textfield.amount {
+  top: 107px;
+  left: 517px;
+  width: 108px;
+}
+.checks .textfield.memo {
+  top: 222px;
+  left: 64px;
+  width: 198px;
+}
+.check-submit {
+  margin: 0 0 30px 0;
+}
+.check-submit .button {
+  display: block;
+  margin: 0 0 0 28px;
+}
+.check-submit .button.larger {
+  font-size: 18px;
+  width: 600px;
+}

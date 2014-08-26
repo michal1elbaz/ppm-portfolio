@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+    <meta content='chrome=1' http-equiv='X-UA-Compatible'>
+    <title>Manage My Rush Card : Pay My Bills</title>
+    <link href='css/html5reset-1.6.1.css' rel='stylesheet' type='text/css'>
+    <link href='css/common.css' rel='stylesheet' type='text/css'>
+    <link href='css/billpay.css' rel='stylesheet' type='text/css'>
+    <link href='css/checks.css' rel='stylesheet' type='text/css'>
+    <link href='css/smoothness/jquery-ui-1.8.21.custom.css' rel='stylesheet' type='text/css'>
+    <script src='js/modernizr-2.5.3.js' type='text/javascript'></script>
+    <script src='js/jquery-1.7.2.min.js' type='text/javascript'></script>
+    <script src='js/jquery-ui-1.8.21.custom.min.js' type='text/javascript'></script>
+    <script src='js/rc-site-function.min.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <!-- site header -->
+    <div class='header-site'>
+      <div class='container'>
+        <!-- logo -->
+        <a class='logo' href='#'>Rushcard</a>
+        <!-- nav for user related links, logins and etc -->
+        <nav class='nav-user'>
+          <ul>
+            <li>
+              <a href='#'>Customer Care</a>
+            </li>
+            <li>
+              <a href='#'>Setup Profile</a>
+            </li>
+            <li>
+              <a href='#'>Logout</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- site nav -->
+    <nav class='nav-site'>
+      <ul>
+        <li>
+          <a class='selected' href='#'>My Money<span class="arrow"></span></a>
+        </li>
+        <li>
+          <a href='#'>My Health<span class="arrow"></span><span class="new"></span></a>
+        </li>
+        <li>
+          <a href='#'>My Community<span class="arrow"></span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- site content container -->
+    <div class='content-container'>
+      <!-- breadcrumb trail -->
+      <nav class='nav-breadcrumb'>
+        <ul>
+          <li>
+            <a class='home' href='/'>Home<span></span></a>
+          </li>
+          <li>
+            &gt;
+          </li>
+          <li>
+            Pay My Bills
+          </li>
+        </ul>
+      </nav>
+      <div class='clear'></div>
+      <!-- sidebar -->
+      <div class='content-user-profile'>
+        <!-- user profile -->
+        <div class='user-profile'>
+          <p class='message-welcome'>Welcome Back, <span class="username">username</span></p>
+          <div class='user-profile-pic'>
+            <img alt='profilepic_guest' height='60' src='images/profilepic_guest.gif' width='60'>
+          </div>
+          <nav class='user-profile-links'>
+            <ul>
+              <li>
+                <a class='dark' href='#'>Set Up Profile</a>
+              </li>
+              <li>
+                <a class='dark' href='#'>Logout</a>
+              </li>
+            </ul>
+          </nav>
+          <div class='clear'></div>
+        </div>
+        <!-- card, account selection -->
+        <div class='cards selected'>
+          <input class='card-image' src='images/BPP_card_shadow.gif' type='image'>
+          <span class='arrow-selected'></span>
+          <nav class='card-info'>
+            <ul>
+              <li class='available-balance'>$1,496.03</li>
+              <li class='expiration-date'>Exp: 10/14</li>
+              <li class='account-name'>Acct: xx1956</li>
+              <li class='enroll'>
+                <a href='#'>Enroll in Direct Deposit</a>
+              </li>
+            </ul>
+          </nav>
+          <div class='clear'></div>
+          <nav class='card-detail'>
+            <ul class='detail-links'>
+              <li class='plan'>
+                My Plan:
+                <a href='#'>Pay as you go</a>
+              </li>
+              <li class='card-status'>
+                Card Status:
+                <a href='#'>Inactive</a>
+              </li>
+              <li>
+                <a href='#'>View Transactions</a>
+              </li>
+              <li>
+                <a href='#'>Transfer Money</a>
+              </li>
+            </ul>
+            <ul>
+              <li class='view-detail'>
+                <a class='closed' href='#'><span class='float-left'></span>View Details<span class='float-right'></span></a>
+              </li>
+            </ul>
+          </nav>
+          <div class='clear'></div>
+        </div>
+        <div class='cards'>
+          <input class='card-image' src='images/BPP_card_shadow.gif' type='image'>
+          <span class='arrow-selected'></span>
+          <nav class='card-info'>
+            <ul>
+              <li class='available-balance'>$40.03</li>
+              <li class='expiration-date'>Exp: 6/13</li>
+              <li class='account-name'>Acct: xx4241</li>
+              <li class='enroll'>
+                <a href='#'>Enroll in Direct Deposit</a>
+              </li>
+            </ul>
+          </nav>
+          <div class='clear'></div>
+          <nav class='card-detail'>
+            <ul class='detail-links'>
+              <li class='plan'>
+                My Plan:
+                <a href='#'>Pay as you go</a>
+              </li>
+              <li class='card-status'>
+                Card Status:
+                <a href='#'>Inactive</a>
+              </li>
+              <li>
+                <a href='#'>View Transactions</a>
+              </li>
+              <li>
+                <a href='#'>Transfer Money</a>
+              </li>
+            </ul>
+            <ul>
+              <li class='view-detail'>
+                <a class='closed' href='#'><span class='float-left'></span>View Details<span class='float-right'></span></a>
+              </li>
+            </ul>
+          </nav>
+          <div class='clear'></div>
+        </div>
+        <!-- add and remove accounts -->
+        <div class='accounts-add-remove'>
+          <span class='icon'></span><a class='account-add' href='#'>Add</a>/<a class='account-remove' href='#'>Remove</a> Acct.
+        </div>
+        <!-- nav menu in the sidebar -->
+        <nav class='nav-menu'>
+          <ul class='level1'>
+            <li>
+              <a href='#'>View My Account<span class='carrot'></span></a>
+              <ul class='flyout'>
+                <li>
+                  <a href='#'>See My Transactions</a>
+                </li>
+                <li>
+                  <a href='#'>See My Monthly Statements</a>
+                </li>
+                <li>
+                  <a href='#'>See My Spending</a>
+                </li>
+                <li>
+                  <a href='#'>See My Balance Trends</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href='#'>Manage My Money<span class='carrot'></span></a>
+              <ul class='flyout'>
+                <li>
+                  <a class='highlight' href='#'>Set and Track My Budget<span>Create</span></a>
+                </li>
+                <li>
+                  <a class='highlight' href='#'>Go Paperless with eSign<span>Enroll</span></a>
+                </li>
+                <li>
+                  <a class='highlight' href='#'>Pay My Bills<span>Enroll</span></a>
+                </li>
+                <li>
+                  <a href='#'>Change My Future Direct Deposits</a>
+                </li>
+                <li>
+                  <a class='highlight' href='#'>Transfer Money<span>Enroll</span></a>
+                </li>
+                <li>
+                  <a href='#'>Change My Plan</a>
+                </li>
+                <li>
+                  <a href='#'>View Promotions &amp; Shopping Offers</a>
+                </li>
+                <li>
+                  <a class='highlight' href='#'>Rush Text and Email Alerts<span>Enroll</span></a>
+                </li>
+                <li>
+                  <a class='highlight' href='#'>Create My RushGoals<span>Setup</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href='#'>Add Money<span class='carrot'></span></a>
+              <ul class='flyout'>
+                <li>
+                  <a href='#'>Direct Deposit/Tax Refunds</a>
+                </li>
+                <li>
+                  <a href='#'>Federal Benefits</a>
+                </li>
+                <li>
+                  <a href='#'>Add Cash</a>
+                </li>
+                <li>
+                  <a href='#'>Other Ways to Add Money</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href='#'>Manage My Profile<span class='carrot'></span></a>
+              <ul class='flyout'>
+                <li>
+                  <a href='#'>Rush Text and Email Alerts</a>
+                </li>
+                <li>
+                  <a href='#'>Edit My Profile</a>
+                </li>
+                <li>
+                  <a href='#'>Add Account</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href='#'>My health</a>
+            </li>
+            <li>
+              <a href='#'>My Community</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class='nav-social'>
+          <ul>
+            <li>
+              <a class='social-icons facebook' href='#'>Facebook</a>
+            </li>
+            <li>
+              <a class='social-icons myspace' href='#'>My Space</a>
+            </li>
+            <li>
+              <a class='social-icons twitter' href='#'>Twitter</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- main content area -->
+      <div class='content-main'>
+        <div class='content-billpay rounded8'>
+          <!-- content for checks hackathon project starts here -->
+          <div class='checks'>
+            <input class='textfield payto' type='text'>
+            <input class='textfield date' placeholder='MM/DD/YYYY' type='text'>
+            <input class='textfield amount' placeholder='00.00' type='text'>
+            <input class='textfield memo' type='text'>
+          </div>
+          <div class='nav check-submit'>
+            <a class='button orange larger'>submit payment</a>
+            <div class='clear'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
