@@ -2325,6 +2325,10 @@ input[type=checkbox]:checked + label .icon {
   @media only screen and (min-width: 1279px) {
     .panel.home {
       height: 800px; } }
+  .panel.home .link-blog {
+    position: absolute;
+    right: 10px;
+    top: 14px; }
   .panel.home .logo {
     position: absolute;
     left: 56px;

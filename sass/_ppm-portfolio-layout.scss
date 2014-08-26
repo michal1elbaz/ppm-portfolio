@@ -201,6 +201,11 @@
 		@media #{$large-display} {
 			height: 800px;
 		}
+		.link-blog {
+			position: absolute;
+			right: 10px;
+			top: 14px;
+		}
 		.logo {
 			position: absolute;
 			left: 56px;

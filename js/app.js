@@ -177,6 +177,10 @@ $(function(){
 		MyApp.modalFullScreen(thisID);
 	});
 
+	$('.site-header').on('click','.scroll-to-top', function(){
+		$("html, body").animate({ scrollTop: "0" });
+	});
+
 	// bind esc key to close modal 
 	$(document).keyup(function(e){
 		if(e.keyCode === 27) {
