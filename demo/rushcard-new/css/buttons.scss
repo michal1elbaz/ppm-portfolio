@@ -1,0 +1,25 @@
+/* button styles */
+
+.button {
+	display: inline-block;
+	background: #fff;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	padding: 2px;
+	border: 1px solid $color-border-gray;
+	border-radius: 2px;
+	span {
+		background: $color-link;
+		padding: 6px 20px 6px 20px;
+		display: inline-block;
+		border-radius: 2px;
+	}
+	&:hover {
+		span {
+			color: #fff;
+			background: $color-link-hover;
+		}
+	}
+}
