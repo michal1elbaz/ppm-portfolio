@@ -2403,6 +2403,10 @@ input[type=checkbox]:checked + label .icon {
   width: 740px; }
 .panel.presto .gallery {
   background: rgba(0, 0, 0, 0.1); }
+.panel.rushcard h1, .panel.rushcard h2, .panel.rushcard p {
+  color: #4e378f; }
+.panel.rushcard .gallery {
+  background: rgba(0, 0, 0, 0.1); }
 
 /* skills icon */
 .skills-icon {
