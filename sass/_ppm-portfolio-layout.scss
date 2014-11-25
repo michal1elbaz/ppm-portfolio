@@ -197,7 +197,7 @@
 /* panel specific layout - home */
 .panel {
 	&.home {
-		height: 700px;
+		height: 740px;
 		@media #{$large-display} {
 			height: 800px;
 		}
@@ -264,7 +264,6 @@
 				@media #{$large-display} {
 					width: 530px;
 					margin-right: 40px;
-					margin-top: 30px;
 				}
 			}
 			.sidebar {

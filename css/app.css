@@ -2660,7 +2660,7 @@ input[type=checkbox]:checked + label .icon {
 
 /* panel specific layout - home */
 .panel.home {
-  height: 700px; }
+  height: 740px; }
   @media only screen and (min-width: 1279px) {
     .panel.home {
       height: 800px; } }
@@ -2722,8 +2722,7 @@ input[type=checkbox]:checked + label .icon {
       @media only screen and (min-width: 1279px) {
         .panel.home .content .main {
           width: 530px;
-          margin-right: 40px;
-          margin-top: 30px; } }
+          margin-right: 40px; } }
     .panel.home .content .sidebar {
       float: left;
       width: 200px; }

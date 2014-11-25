@@ -1,25 +1,9 @@
 doctype html
 html
 	head
-		meta http-equiv='Content-Type' content='text/html;charset=utf-8'
-		meta http-equiv='X-UA-Compatible' content='IE=Edge'
-		/ meta name='viewport' content='width=device-width; initial-scale=1; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;'
-		title Pixel Pushing Monkey | Portfolio
-		link rel='stylesheet' type='text/css' href='css/app.css'
-		link href="images/favicon.ico" rel="icon" type="image/x-icon"
-		script type='text/javascript' src='js/modernizr-2.8.3.js'
-		script type='text/javascript' src='js/jquery-2.1.1.min.js'
-		script type='text/javascript' src='js/app.min.js'
+		include _head
 	body
-		nav.site-header
-			.container
-				a.logo.small.scroll-to-top
-				nav.site-nav
-					ul.clearfix
-						li
-							a href='/'
-								| back to blog&nbsp;
-								.fa.fa-chevron-circle-right
+		include _site-nav
 
 		.content-container
 
@@ -61,6 +45,9 @@ html
 							li.clearfix
 								.skills-icon.small.rd
 								span Responsive Design
+							li.clearfix
+								.skills-icon.small.visual
+								span Visual Design
 							li.clearfix
 								.skills-icon.small.print
 								span Print Design
