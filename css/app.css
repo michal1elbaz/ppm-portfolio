@@ -2729,14 +2729,14 @@ input[type=checkbox]:checked + label .icon {
       width: 200px; }
       .panel.home .content .sidebar .skills {
         list-style: none;
-        margin-top: 8px; }
+        margin-top: 12px; }
         .panel.home .content .sidebar .skills li {
-          margin: 0 0 4px 0; }
+          margin: 0 0 10px 0; }
           .panel.home .content .sidebar .skills li .skills-icon {
             float: left; }
           .panel.home .content .sidebar .skills li span {
             float: left;
-            margin: 12px 0 0 8px; }
+            margin: 5px 0 0 8px; }
 
 .panel.legalzoom h1, .panel.legalzoom h2, .panel.legalzoom p, .panel.shopsy h1, .panel.shopsy h2, .panel.shopsy p, .panel.zenbe h1, .panel.zenbe h2, .panel.zenbe p {
   color: #fff;
@@ -2832,6 +2832,28 @@ input[type=checkbox]:checked + label .icon {
     width: 30px;
     height: 30px;
     background: transparent url(../images/sprite-skills-icon-smallest.png) no-repeat 0 0; }
+    .skills-icon.smallest.html {
+      background-position: 0 0; }
+    .skills-icon.smallest.js {
+      background-position: 0 -50px; }
+    .skills-icon.smallest.css {
+      background-position: 0 -100px; }
+    .skills-icon.smallest.ui {
+      background-position: 0 -150px; }
+    .skills-icon.smallest.print {
+      background-position: 0 -200px; }
+    .skills-icon.smallest.visual {
+      background-position: 0 -250px; }
+    .skills-icon.smallest.jquery {
+      background-position: 0 -300px; }
+    .skills-icon.smallest.mobile {
+      background-position: 0 -350px; }
+    .skills-icon.smallest.mobile-web {
+      background-position: 0 -400px; }
+    .skills-icon.smallest.rd {
+      background-position: 0 -450px; }
+    .skills-icon.smallest.branding {
+      background-position: 0 -500px; }
   .skills-icon i {
     display: none;
     position: absolute;

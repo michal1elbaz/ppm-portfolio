@@ -82,6 +82,39 @@
 		width: 30px;
 		height: 30px;
 		background: transparent url(../images/sprite-skills-icon-smallest.png) no-repeat 0 0;
+		&.html {
+			background-position: 0 0;
+		}
+		&.js {
+			background-position: 0 -50px;
+		}
+		&.css {
+			background-position: 0 -100px;
+		}
+		&.ui {
+			background-position: 0 -150px;
+		}
+		&.print {
+			background-position: 0 -200px;
+		}
+		&.visual {
+			background-position: 0 -250px;
+		}
+		&.jquery {
+			background-position: 0 -300px;
+		}
+		&.mobile {
+			background-position: 0 -350px;
+		}
+		&.mobile-web {
+			background-position: 0 -400px;
+		}
+		&.rd {
+			background-position: 0 -450px;
+		}
+		&.branding {
+			background-position: 0 -500px;
+		}
 	}
 	i {
 		display: none;
